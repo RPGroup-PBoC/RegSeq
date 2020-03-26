@@ -31,9 +31,12 @@ the package allows for the constant update of the package as it might be
 subject to changes as the project is being developed.
 
 The modules contained in the package include:
+```
 - 'module1.py' : explanation here.
 - 'module1.py' : explanation here.
+```
 
+```
 # License Information
 <img src="https://licensebuttons.net/l/by-nd/3.0/88x31.png"> This work is
 licensed under [CC-BY-ND](https://creativecommons.org/licenses/by-nd/4.0/). All
