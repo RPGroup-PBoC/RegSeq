@@ -1,74 +1,38 @@
 # RegSeq
 
 ## Overview
-This is a GitHub repository for Reg-Seq, a completed project that deterThis repository contains all active research materials for a project using MWC
-model parameters as selectable quantitative traits.
+This is a GitHub repository for Reg-Seq, an experimental protocol that determines the binding energy matrix for regulatory regions of the genome. The website for the original Reg-Seq paper can be found [here](https://www.rpgroup.caltech.edu/RNAseq_SortSeq/).
 
 ## Layout
-The repository is split into seven main directories, many of which have
+The repository is split into three main directories, many of which have
 subdirectories. This structure has been designed to be easily navigable by
 humans and computers alike, allowing for rapid location of specific files and
 instructions. Within each directory is a `README.md` file which summarizes the
 purpose of that directory as well as some examples where necessary. 
 
-### **`evo_mwc`** 
-Custom code written for the project that is *not* executed directly, but is
-called from files in the `code` directory.
+'code' contains Jupyter notebooks to perform computational steps of the Reg-Seq protocol from start to finish. Where all of the executed code lives. This includes pipelines, scripts, and
+figure files.
+
+'data' contains prior data files, such as designed sequences, negative controls, or output analysis files.
+
+'protocol' contains MarkDown files that outline each step to perform Reg-Seq in total.
+
+'RegSeq' contains Python files which can be easily executed to perform your own analyses.
 
 #### **Installing module**
-In order to use the functions within the `evo_mwc` module it is necessary to
+In order to use the functions within the `RegSeq` module it is necessary to
 install the package locally. This can simply be done by navigating in the
 terminal to the main project directory and typing the command
 ```
 pip install -e ./
 ```
-The `setup.py` file will take care of the installation. The `-e` option within
+The 'setup.py' file will take care of the installation. The `-e` option within
 the package allows for the constant update of the package as it might be
 subject to changes as the project is being developed.
 
 The modules contained in the package include:
-- `viz.py` : functions for data visualization and plot styling.
-- `model.py` : functions related to the theoretical model to map biophysical
-  traits to fitness functions.
-- `gaussianprocess.py`, `fitderiv.py` : series of functions to compute
-  derivatives from time series as detailed in [Swain et al,
-  2016](https://www.nature.com/articles/ncomms13766) 
-
-<!-- ### **`code`** 
-Where all of the *executed* code lives. This includes pipelines, scripts, and
-figure files. 
- * **`processing`**: Any code used to *transform* the data into another type
-   should live here. This can include everything from parsing of text data,
-   image segmentation/filtering, or simulations.
- * **`analysis`**: Any code to to *draw conclusions* from an experiment or data
-   set. This may include regression, dimensionality reduction, or calculation
-   of various quantities.
- * **`exploratory`**: A sandbox where you keep a record of your different
-   approaches to transformation, interpretation, cleaning, or generation of
-   data.
- * **`figures`**: Any code used to generate figures for your finished work,
-   presentations, or for any other use.
-
-### **`data`** 
-All raw data collected from your experiments as well as copies of the
-transformed data from your processing code. 
-
-### **`miscellaneous`** 
-Files that may not be code, but are important for reproducibility of your
-findings.
-* **`protocols`**: A well annotated and general description of the experiments.
-
-* **`materials`**: Information regarding the materials used in the experiments
-
-* **`software details`**: Information about your computational environment 
-
-### **`tests`** 
-All test suites for your code. *Any custom code you've written should be
-thoroughly and adequately tested to make sure you know how it is working.*
-
-### **`templates`** 
-Files that serve as blank templates that document the procedures taken for each
-experiment, simulation, or analysis routine.  -->
+- 'module1.py' : explanation here.
+- 'module1.py' : explanation here.
 
 # License Information
 <img src="https://licensebuttons.net/l/by-nd/3.0/88x31.png"> This work is
