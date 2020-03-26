@@ -10,14 +10,14 @@ humans and computers alike, allowing for rapid location of specific files and
 instructions. Within each directory is a `README.md` file which summarizes the
 purpose of that directory as well as some examples where necessary. 
 
-'code' contains Jupyter notebooks to perform computational steps of the Reg-Seq protocol from start to finish. Where all of the executed code lives. This includes pipelines, scripts, and
+`code` contains Jupyter notebooks to perform computational steps of the Reg-Seq protocol from start to finish. Where all of the executed code lives. This includes pipelines, scripts, and
 figure files.
 
-'data' contains prior data files, such as designed sequences, negative controls, or output analysis files.
+`data` contains prior data files, such as designed sequences, negative controls, or output analysis files.
 
-'protocol' contains MarkDown files that outline each step to perform Reg-Seq in total.
+`protocol` contains MarkDown files that outline each step to perform Reg-Seq in total.
 
-'RegSeq' contains Python files which can be easily executed to perform your own analyses.
+`RegSeq` contains Python files which can be easily executed to perform your own analyses.
 
 #### **Installing module**
 In order to use the functions within the `RegSeq` module it is necessary to
@@ -31,12 +31,12 @@ the package allows for the constant update of the package as it might be
 subject to changes as the project is being developed.
 
 The modules contained in the package include:
-```
-- 'module1.py' : explanation here.
-- 'module1.py' : explanation here.
-```
 
-```
+`module1.py` : explanation here.
+`module1.py` : explanation here.
+
+
+
 # License Information
 <img src="https://licensebuttons.net/l/by-nd/3.0/88x31.png"> This work is
 licensed under [CC-BY-ND](https://creativecommons.org/licenses/by-nd/4.0/). All
