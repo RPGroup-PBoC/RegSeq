@@ -10,14 +10,7 @@ A known limitation of the experiment is that the mutational window is limited to
 ## Validation of Mutated Regulatory Binding Sites
 
 ## Ordering Mutated Oligo Library from TWIST or IDT
-Promoter variants were synthesized on a microarray (TWIST Bioscience, San Francisco, CA). The
-sequences were designed computationally such that each base in the 160 bp promtoter region
-has a 10% probability of being mutated. For each given promoter’s library, we ensured that the
-mutation rate as averaged across all sequences was kept between 9.5% and 10.5%, otherwise
-the library was regenerated. There are an average of 2200 unique promoter sequences per gene
-(for an analysis of how our results depend upon number of unique promoter sequences see
-Supplementary Figure S3). An average of 5 unique 20 base pair barcodes per variant promoter
-was used for the purpose of counting transcripts. 
+Promoter variants were synthesized on a microarray (TWIST Bioscience, San Francisco, CA). The sequences were designed computationally such that each base in the 160 bp promoter region has a 10% probability of being mutated. For each given promoter’s library, we ensured that the mutation rate as averaged across all sequences was kept between 9.5% and 10.5%, otherwise the library was regenerated. There are an average of 2200 unique promoter sequences per gene (for an analysis of how our results depend upon number of unique promoter sequences see Supplementary Figure S3 in the Reg-Seq paper from 2020). An average of 5 unique 20 base pair barcodes per variant promoter was used for the purpose of counting transcripts. 
 
 ## Preparation of Oligo Library
 Once the oligo library has arrived from Twist (typically the tube arrives with a yellow screw-top lid), use the [Twist DNA Resuspension](https://www.twistbioscience.com/resources/twist-dna-resuspension-guidelines) guidelines to prepare the oligo library. We typically store oligo libraries at a 10 ng / microliter concentration, in 5 microliter aliquots. 
