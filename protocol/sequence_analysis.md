@@ -1,3 +1,0 @@
-# RegSeq
-
-## Overview

@@ -4,7 +4,7 @@
 This is a GitHub repository for Reg-Seq, an experimental protocol that determines the binding energy matrix for regulatory regions of the genome. The website for the original Reg-Seq paper can be found [here](https://www.rpgroup.caltech.edu/RNAseq_SortSeq/).
 
 ## Layout
-The repository is split into three main directories, many of which have
+The repository is split into four main directories, many of which have
 subdirectories. This structure has been designed to be easily navigable by
 humans and computers alike, allowing for rapid location of specific files and
 instructions. Within each directory is a `README.md` file which summarizes the
@@ -33,9 +33,8 @@ subject to changes as the project is being developed.
 The modules contained in the package include:
 
 `module1.py` : explanation here.
+
 `module1.py` : explanation here.
-
-
 
 # License Information
 <img src="https://licensebuttons.net/l/by-nd/3.0/88x31.png"> This work is
