@@ -33,7 +33,19 @@ To get a better understanding for why some genes are chosen in lieu of others, n
 A known limitation of the RegSeq experiment is that the mutational window is limited to 160 bp. Thus, it is important to correctly target the mutation window to the location around the most active TSS, which demands that you choose those TSS that have experimental evidence. Again, active transcription can be determined from [RACE experiments](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0007526). If the intergenic region is small enough, the 160bp mutational window may cover the entire area of interest. If none of these options were available (in other words, no experimental evidence exists at all), use computationally predicted start sites.
 
 ## Computational Mutations of Regulatory Binding Sites
-After regulatory regions to be studied have been selected, it is time to generate mutational libraries for each. 
+After regulatory regions to be studied have been selected, it is time to generate mutational libraries for each. If you saved the selected genes, from the step above, in the correct format, this process is relatively straightforward.
+
+The first step is to retrieve the 160bp sequence surrounding the TSS for each gene that was selected.
+
+In `code`, there is a .ipynb file called `create_gene_seqs`. Open that Notebook in a JupyterLab environment. This Jupyter notebook uses four total modules, all of which must be installed to utilize the package.
+
+- [BioPython](https://biopython.org/wiki/Getting_Started) can be installed via the terminal using []'pip install biopython'](https://biopython.org/wiki/Download). 
+
+- [Pandas](https://pandas.pydata.org/)
+
+- [NumPy](https://numpy.org/)
+
+This Jupyter notebook loads in the _E. coli_ K12 reference genome from NCBI, the FASTA for which is saved in `data`.
 
 Explain primer pairs by Kosuri
 Explain Python notebooks
