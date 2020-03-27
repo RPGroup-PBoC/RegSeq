@@ -33,3 +33,29 @@ due to limitations in scaling the technique to large numbers of targets. The tra
 identified by this method are enriched more than any other DNA binding protein, with p <
 0.01 using the outlier detection method as outlined by Cox and Mann [56], with corrections for
 multiple hypothesis testing using the method proposed by Benjamini and Hochberg [57].
+
+Uncertainty due to number of independent sequences
+
+1400 promoter variants were ordered from TWIST Bioscience for each promoter studied. Due
+to errors in synthesis, additional mutations are introduced into the ordered oligos. As a result,
+the final number of variants received was an average of 2200 per promoter. To test whether
+the number of promoter variants is a significant source of uncertainty in the experiment we
+computationally reduced the number of promoter variants used in the analysis of the zapAB -10
+RNAP region. Each sub-sampling was performed 3 times. The results, as displayed in Figure S3,
+show that there is only a small effect on the resulting sequence logo until the library has been
+reduced to approximately 500 promoter variants.
+
+In some cases, we used an alternative approach to mass spectrometry to discover the TF identity
+regulating a given promoter based on sequence analysis using a motif comparison tool. TOMTOM
+[14] is a tool that uses a statistical method to infer if a putative motif resembles any previously
+discovered motif in a database. Of interest, it accounts for all possible offsets between the motifs.
+Moreover, it uses a suite of metrics to compare between motifs such as Kullback-Leibler divergence, Pearson correlation, euclidean distance, among others
+
+We performed comparisons of the motifs generated from our energy matrices to those generated from all known transcription factor binding sites in RegulonDB. Figure S4 shows a result of
+TOMTOM, where we compared the motif derived from the -35 region of the ybjX promoter and
+found a good match with the motif of PhoP from RegulonDB.
+The information derived from this approach was then used to guide some of the TF knockout
+experiments, in order to validate its interaction with a target promoter characterized by the loss of
+the information footprint. Furthermore, we also used TOMTOM to search for similarities between
+our own database of motifs, in order to generate regulatory hypotheses in tandem. This was
+particularly useful when looking at the group of GlpR binding sites found in this experiment.

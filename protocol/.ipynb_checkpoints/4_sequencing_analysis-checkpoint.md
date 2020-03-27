@@ -21,7 +21,8 @@ One possible calculation to measure the impact of a given mutation on expression
 read in the sequencing library. By comparing the values for different bases we could determine how large of an effect mutation has on gene expression. 
 
 In **(Table 1)** the frequency of the different nucleotides in the library at position 2 is 40% A, 32% C, 14% G and 14% T. Cytosine is enriched in the mRNA transcripts over the original library, as it now composes 68% of all mRNA sequencing reads while A, G, and T only compose only 20%, 6%, and 6% respectively. Large enrichment of some bases over others occurs when base identity is important for gene expression. We can quantify how important using the mutual information
-between base identity and gene expression level. Mutual information is given at position i by **Equation 1**:
+between base identity and gene expression level. Mutual information is given at position ![i](https://render.githubusercontent.com/render/math?math=i)
+ by **Equation 1**:
 
 ![I_b =  \sum_{m=0}^1  \sum_{\mu=0}^1 p(m,\mu)\log_2\left(\frac{p(m,\mu)}{p_{mut}(m)p_{expr}(\mu)}\right)](https://render.githubusercontent.com/render/math?math=I_b%20%3D%20%20%5Csum_%7Bm%3D0%7D%5E1%20%20%5Csum_%7B%5Cmu%3D0%7D%5E1%20p(m%2C%5Cmu)%5Clog_2%5Cleft(%5Cfrac%7Bp(m%2C%5Cmu)%7D%7Bp_%7Bmut%7D(m)p_%7Bexpr%7D(%5Cmu)%7D%5Cright))
 
