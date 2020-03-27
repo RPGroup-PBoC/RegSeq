@@ -32,17 +32,9 @@ now composes 68% of all mRNA sequencing reads while A, G, and T only compose onl
 is important for gene expression. We can quantify how important using the mutual information
 between base identity and gene expression level. Mutual information is given at position i by **Equation 1**:
 
-![I_b =  \sum_{m=0}^1  \sum_{\mu=0}^1 p(m, \mu) \log_2 (\frac{p(m, \mu)}{p_{mut} (m) p_{expr} (\mu)}](https://render.githubusercontent.com/render/math?math=I_b%20%3D%20%20%5Csum_%7Bm%3D0%7D%5E1%20%20%5Csum_%7B%5Cmu%3D0%7D%5E1%20p(m%2C%20%5Cmu)%20%5Clog_2%20(%5Cfrac%7Bp(m%2C%20%5Cmu)%7D%7Bp_%7Bmut%7D%20(m)%20p_%7Bexpr%7D%20(%5Cmu)%7D)
+![I_b =  \sum_{m=0}^1  \sum_{\mu=0}^1 p(m,\mu)\log_2\left(\frac{p(m,\mu)}{p_{mut}(m)p_{expr}(\mu)}\right)](https://render.githubusercontent.com/render/math?math=I_b%20%3D%20%20%5Csum_%7Bm%3D0%7D%5E1%20%20%5Csum_%7B%5Cmu%3D0%7D%5E1%20p(m%2C%5Cmu)%5Clog_2%5Cleft(%5Cfrac%7Bp(m%2C%5Cmu)%7D%7Bp_%7Bmut%7D(m)p_%7Bexpr%7D(%5Cmu)%7D%5Cright))
 
-
-![p_{mut}(m)](https://render.githubusercontent.com/render/math?math=p_%7Bmut%7D(m))
-
-in equation 1 refers to the probability that a given sequencing read will be from a
-mutated base. 
-
-![p_{expr}(\mu)](https://render.githubusercontent.com/render/math?math=p_%7Bexpr%7D(%5Cmu))
- 
- is a normalizing factor that gives the ratio of the number of DNA or
+![p_{mut}(m)](https://render.githubusercontent.com/render/math?math=p_%7Bmut%7D(m)) in this equation refers to the probability that a given sequencing read will be from a mutated base, and   ![p_{expr}(\mu)](https://render.githubusercontent.com/render/math?math=p_%7Bexpr%7D(%5Cmu)) is a normalizing factor that gives the ratio of the number of DNA or
 mRNA sequencing counts to total number of counts.
 The mutual information quantifies how much a piece of knowledge reduces the entropy of a
 distribution. At a position where base identity matters little for expression level, there would be
