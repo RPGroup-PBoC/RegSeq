@@ -1,8 +1,7 @@
 # RegSeq Sequence Design
 
-```math
-SE = \frac{\sigma}{\sqrt{n}}
-```
+![I_b = \sum_{n=-\infty}^{+\infty}](https://render.githubusercontent.com/render/math?math=I_b%20%3D%20%5Csum_%7Bn%3D-%5Cinfty%7D%5E%7B%2B%5Cinfty%7D)
+
 
 ## Finding Regulatory Sites in the _E. coli_ Genome
 
