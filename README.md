@@ -3,6 +3,8 @@
 ## Overview
 This is a GitHub repository for Reg-Seq, an experimental protocol that determines the binding energy matrix for regulatory regions of the genome. The website for the original Reg-Seq paper can be found [here](https://www.rpgroup.caltech.edu/RNAseq_SortSeq/).
 
+**Check out the Wiki tab to see the full experimental protocol for Reg-Seq**.
+
 ## Layout
 The repository is split into four main directories, many of which have
 subdirectories. This structure has been designed to be easily navigable by
