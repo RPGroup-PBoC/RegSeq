@@ -4,10 +4,19 @@
 https://www.twistbioscience.com/op_protocol_ampguidelines
 
 ## Second Amplification and Barcoding of Oligo Library
+The barcode was inserted 110 base pairs from
+the 5’ end of the mRNA, containing 45 base pairs from the targeted regulatory region, 64 base
+pairs containing primer sites used in the construction of the plasmid, and 11 base pairs containing
+a three frame stop codon. All the sequences are listed in Supplementary Table 1. Following the
+barcode there is an RBS and a GFP coding region. [6]. 
 
 ## Insertion of Barcoded Library into Plasmid Backbone
+Mutated promoters were PCR amplified and
+inserted by Gibson assembly into the plasmid backbone of pJK14 (SC101 origin) 
 
 ## Cloning or Integration of Barcoded Library
+Constructs
+were electroporated into E. coli K-12 MG1655 [54].
 
 ## Pooling of _E. coli_ and DNA / RNA Isolation
 
