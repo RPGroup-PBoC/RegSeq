@@ -1,15 +1,7 @@
-# RegSeq Sequence Design
+# RegSeq Knockout Validation
 
-## Initial Amplification of Oligo Library
-https://www.twistbioscience.com/op_protocol_ampguidelines
+## Ordering from Keio Collection
 
-## Second Amplification and Barcoding of Oligo Library
-
-## Insertion of Barcoded Library into Plasmid Backbone
-
-## Cloning or Integration of Barcoded Library
-
-## Pooling of _E. coli_ and DNA / RNA Isolation
 
 
 Conducting DNA affinity chromatography followed by mass spectrometry on putative binding

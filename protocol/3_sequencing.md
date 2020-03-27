@@ -1,15 +1,7 @@
-# RegSeq Sequence Design
+# RegSeq Sequencing
 
-## Initial Amplification of Oligo Library
-https://www.twistbioscience.com/op_protocol_ampguidelines
+## qPCR to Check DNA Contamination
 
-## Second Amplification and Barcoding of Oligo Library
-
-## Insertion of Barcoded Library into Plasmid Backbone
-
-## Cloning or Integration of Barcoded Library
-
-## Pooling of _E. coli_ and DNA / RNA Isolation
 
 qPCR was preformed to check the level of DNA contamination and the mRNA tags
 were PCR amplified and Illumina sequenced. Within a single growth condition, all promoter

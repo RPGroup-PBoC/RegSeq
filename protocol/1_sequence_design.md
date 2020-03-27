@@ -2,7 +2,6 @@
 
 To generate equations, use: https://alexanderrodin.com/github-latex-markdown/
 
-
 ## Finding Regulatory Sites in the _E. coli_ Genome
 
 ## Computational Mutations of Regulatory Binding Sites

@@ -1,15 +1,7 @@
-# RegSeq Sequence Design
+# RegSeq Mass Spectrometry
 
-## Initial Amplification of Oligo Library
-https://www.twistbioscience.com/op_protocol_ampguidelines
+## DNA Affinity Chromatography
 
-## Second Amplification and Barcoding of Oligo Library
-
-## Insertion of Barcoded Library into Plasmid Backbone
-
-## Cloning or Integration of Barcoded Library
-
-## Pooling of _E. coli_ and DNA / RNA Isolation
 
 Upon identifying a putative transcription factor binding site, we used DNA affinity chromatography, as done in [20] to isolate and enrich for the transcription factor of interest. In brief, we order
 biotinylated oligos of our binding site of interest (Integrated DNA Technologies, Coralville, IA)

@@ -1,4 +1,4 @@
-# RegSeq Sequence Design
+# RegSeq Library Cloning
 
 ## Initial Amplification of Oligo Library
 https://www.twistbioscience.com/op_protocol_ampguidelines
