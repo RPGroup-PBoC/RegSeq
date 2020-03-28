@@ -1,9 +1,3 @@
-
-# coding: utf-8
-
-# In[2]:
-
-from __future__ import division
 import os
 
 # Our numerical workhorses
@@ -63,6 +57,8 @@ def choose_dict(dicttype,modeltype='MAT'):
     return seq_dict,inv_dict
 
 def sliding_window(y,windowsize=3):
+    #we will average information values with their neighbors, this function
+    #will do that.
     out_vec = np.zeros((len(y)-windowsize))
     for i in range(len(y)-windowsize):
         out_vec[i] = np.sum(y[i:i+windowsize])/windowsize
