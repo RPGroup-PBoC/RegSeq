@@ -149,7 +149,7 @@ def seq2array_for_matmodel(dataset_df, chunksize=1000):
         max_base = seq_dict_inv[max_index]
         wt_mat[i*4 + max_index] = 1
 
-    
+   return scipy.sparse.csr(temp_mat),wt_mat
         
     
 
