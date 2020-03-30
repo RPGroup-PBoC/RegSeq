@@ -34,9 +34,17 @@ subject to changes as the project is being developed.
 
 The modules contained in the RegSeq package include:
 
-`module1.py` : explanation here.
+`create_key_to_match_sequence_to_barcode.py` : explanation here.
 
-`module1.py` : explanation here.
+`do_many.py` : explanation here.
+
+`learn_model_mut.py` : explanation here.
+
+`peak_utils.py` : explanation here.
+
+`plot_informationfootprint.py` : explanation here.
+
+`utils.py` : explanation here.
 
 # License Information
 <img src="https://licensebuttons.net/l/by-nd/3.0/88x31.png"> This work is
@@ -44,7 +52,7 @@ licensed under [CC-BY-ND](https://creativecommons.org/licenses/by-nd/4.0/). All
 software is issued under the standard MIT license which is as follows:
 
 ```
-Copyright 2019, The authors
+Copyright 2020, The authors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
