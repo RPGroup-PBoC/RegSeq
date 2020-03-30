@@ -32,7 +32,7 @@ The 'setup.py' file will take care of the installation. The `-e` option within
 the package allows for the constant update of the package as it might be
 subject to changes as the project is being developed.
 
-The modules contained in the package include:
+The modules contained in the RegSeq package include:
 
 `module1.py` : explanation here.
 
