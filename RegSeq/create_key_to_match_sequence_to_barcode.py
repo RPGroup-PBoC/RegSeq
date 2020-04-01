@@ -43,6 +43,7 @@ df = pd.io.parsers.read_csv(input_file_name,delim_whitespace=True,header=None)
 #select only rows with sequences.
 df = df.loc[1::4,0]
 
+print(df)
 
 #we need to filter out incorrect sequence lengths to make sure they don't
 #have improper insertions or deletions
@@ -62,6 +63,7 @@ baddf = df.loc[badlength]
 goodlength = (df.apply(len) == lengthsmax)
 df = df.loc[goodlength]
 
+print(df)
 
 #We will also be discluding those sequences with sequences with undetermined
 #bases (shown as N's).
@@ -80,6 +82,8 @@ else:
     print('Sequences not either 299 or 295 bp')
     raise
 
+print(sliceddf)
+
 def stitch(s):
     #this function will combine the mutated sequence with barcode.
     return s['seq'] + s['tag']
@@ -96,9 +100,12 @@ tempstitched = tempdf.apply(stitch,axis=1)
 noN = tempstitched.apply(check_N)
 tempstitched = tempstitched.loc[noN]
 
+
 #these are the bad sequences.
 badnoN = baddf.apply(check_N)
 baddf = baddf.loc[badnoN]
+
+
 
 #To determine which barcode is linked to which sequence we need to have only
 #sequence matched to each sequence.
@@ -108,10 +115,11 @@ baddf = baddf.loc[badnoN]
 #sequenced.
 q2 = tempstitched.value_counts()
 
+print(q2)
 #we then drop those that only are sequenced 1 time. This will help to cut
 #out some sequencing errors.
-bigdf = q2.loc[q2 > 1]
-
+#bigdf = q2.loc[q2 > 1]
+bigdf = q2
 
 #we will now return the data frame to have separate columns for sequence
 #and barcode.
@@ -129,20 +137,34 @@ outbigdf['tag'] = tempbigdf[0].str.slice(-barcode_length,)
 
 q3 = outbigdf['tag'].value_counts()
 
+print(q3)
+
 temp = bigdf.reset_index()
 outbigdf['ct'] = temp[0]
 
 #this shows the number of sequences for a given tag
 oq = outbigdf['tag'].value_counts()
 
+print(oq)
 
 #we will find those with exactly 1 sequence assocated with them.
 
 goodtags = oq.loc[oq == 1].index
 
+
+
+
+
 toomany = (oq > 1)
 
 outbigdfindexed = outbigdf.set_index('tag')
+
+gooddf = outbigdfindexed.loc[oq == 1]
+
+gooddf = gooddf.reset_index()
+
+print(gooddf)
+print('hi')
 
 toobigdf = outbigdfindexed.loc[toomany]
 
@@ -181,6 +203,10 @@ outbigshares['seq'] = sharesseq.loc[shares>.99]
 outbigshares['ct'] = shares.loc[shares>.99]
 
 outdf5 = outbigshares.reset_index()
+
+outdf5 = pd.concat([gooddf,outdf5])
+print(outdf5)
+
 
 
 print('number of good sequencing counts ' + str(outdf5['ct'].sum()))
@@ -230,7 +256,7 @@ outdf5['nmut'] = outdf5['seq'].apply(findgene_nmut)
 #mutation rate, we will remove it.
 goodmut = outdf5['nmut'] > 80
 outdf6 = outdf5.loc[goodmut]
-
+print(outdf6)
 
 def format_string(x):
     '''We use this to format output string for saving'''
@@ -244,4 +270,4 @@ for gene in outdf6['gene'].value_counts().index:
     outdfgene = outdf6.loc[outdf6['gene'] == gene]
     print(len(outdfgene['seq'].value_counts().index))
     
-    outdfgene.to_string(open(str(gene) + 'gooddataset_nslater','w'), index=False,col_space=10,float_format=format_string,justify='left')
+    outdfgene.to_string(open('/home/bill/test_sets/' + str(gene) + 'gooddataset_nslater','w'), index=False,col_space=10,float_format=format_string,justify='left')
