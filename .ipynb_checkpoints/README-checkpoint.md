@@ -3,6 +3,8 @@
 ## Overview
 This is a GitHub repository for Reg-Seq, an experimental protocol that determines the binding energy matrix for regulatory regions of the genome. The website for the original Reg-Seq paper can be found [here](https://www.rpgroup.caltech.edu/RNAseq_SortSeq/).
 
+**Check out the Wiki tab to see the full experimental protocol for Reg-Seq**.
+
 ## Layout
 The repository is split into four main directories, many of which have
 subdirectories. This structure has been designed to be easily navigable by
@@ -19,22 +21,36 @@ figure files.
 
 `RegSeq` contains Python files which can be easily executed to perform your own analyses.
 
-#### **Installing module**
-In order to use the functions within the `RegSeq` module it is necessary to
-install the package locally. This can simply be done by navigating in the
-terminal to the main project directory and typing the command
-```
-pip install -e ./
-```
-The 'setup.py' file will take care of the installation. The `-e` option within
-the package allows for the constant update of the package as it might be
-subject to changes as the project is being developed.
+#### **Installing MPATHIC and modules**
+Many of the code files in this package rely on `mpathic`, software for quantitative modeling of massively parallel experiments and developed by [GitHub user jbkinney](https://github.com/jbkinney). A link to the GitHub page for the mpathic package is [available here](https://github.com/jbkinney/mpathic).
 
-The modules contained in the package include:
+Currently, installation of this package requires Linux or Mac OS. To install the mpathic package, please run the following commands within an Anaconda terminal:
 
-`module1.py` : explanation here.
+`conda create -n mpathic_env python=3.6.9 pip` --> create a Python environment for version 3.6.9
 
-`module1.py` : explanation here.
+`source activate mpathic_env` --> activate the python 3.6.9 environment
+
+`conda install mpathic -c wireland` --> install the mpathic package, using username 'wireland'
+
+`conda install mpmath` --> install another package, called mpmath
+
+`mpathic learn_model --help` --> verify that the installation proceeded as expected. Running this command should populate the command terminal with a list of available functions.
+
+If you encounter any issues with installation, please contact us through GitHub.
+
+The modules contained in the RegSeq package include:
+
+`create_key_to_match_sequence_to_barcode.py` : initial analysis script to match barcodes to sequences.
+
+`do_many.py` : A script to parallelize analysis via Amazon AWS.
+
+`learn_model_mut.py` :  Infers the effect of mutation on gene expression for each base pair using MCMC. This is crucial for converting to an information footprint.
+
+`peak_utils.py` : functions for information footprints.
+
+`plot_informationfootprint.py` : Python script to generate information footprints from sequencing data.
+
+`utils.py` : functions for analysis.
 
 # License Information
 <img src="https://licensebuttons.net/l/by-nd/3.0/88x31.png"> This work is
@@ -42,7 +58,7 @@ licensed under [CC-BY-ND](https://creativecommons.org/licenses/by-nd/4.0/). All
 software is issued under the standard MIT license which is as follows:
 
 ```
-Copyright 2019, The authors
+Copyright 2020, The authors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
