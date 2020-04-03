@@ -52,6 +52,13 @@ The modules contained in the RegSeq package include:
 
 `utils.py` : functions for analysis.
 
+# MPAthic Dependencies and Kernels for the new environment
+After installing the MPAthic package, those notebooks and code blocks with dependencies can be executed. Note that modern versions of Anaconda **do not** automatically create kernels for new environments. Therefore, you must manually create a kernel while in the mpathic_env. To do that, execute:
+
+`python -m ipykernel install --user --name myenv --display-name "Python (myenv)"` 
+
+from the new environment. Then, after opening the Jupyter notebook (e.g. `checkmutations.ipynb`), click on 'Kernel', 'Change Kernel', and select the newly-created kernel. You will now be able to import the package and execute the code.
+
 # License Information
 <img src="https://licensebuttons.net/l/by-nd/3.0/88x31.png"> This work is
 licensed under [CC-BY-ND](https://creativecommons.org/licenses/by-nd/4.0/). All
