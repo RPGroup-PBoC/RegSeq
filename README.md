@@ -21,7 +21,7 @@ figure files.
 
 `RegSeq` contains Python files which can be easily executed to perform your own analyses.
 
-#### **Installing MPATHIC and modules**
+#### **Package Dependencies**
 Some of the code files in this package rely on `mpathic`, a software package for quantitative modeling of massively parallel experiments and developed by [GitHub user jbkinney](https://github.com/jbkinney). A link to the GitHub page for the mpathic package is [available here](https://github.com/jbkinney/mpathic).
 
 Currently, installation of this package requires Linux or Mac OS. To install the mpathic package, please run the following commands within an Anaconda terminal:
@@ -52,7 +52,7 @@ The modules contained in the RegSeq package include:
 
 `utils.py` : functions for analysis.
 
-# MPAthic Dependencies and Kernels for the new environment
+# Setting up a kernel for MPAthic
 After installing the MPAthic package, those notebooks and code blocks with dependencies can be executed. Note that modern versions of Anaconda **do not** automatically create kernels for new environments. Therefore, you must manually create a kernel while in the mpathic_env. To do that, execute:
 
 `python -m ipykernel install --user --name myenv --display-name "Python (myenv)"` 
