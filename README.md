@@ -1,7 +1,12 @@
 # RegSeq
 
 ## Overview
-This is a GitHub repository for Reg-Seq, an experimental protocol that determines the binding energy matrix for regulatory regions of the genome. The website for the original Reg-Seq paper can be found [here](https://www.rpgroup.caltech.edu/RNAseq_SortSeq/).
+This is a GitHub repository for Reg-Seq, an experimental protocol for deciphering the regulatory architecture of bacterial promoters. Specifically, the goal of Reg-Seq is to take previously uncharacterized or partially characterized promoters and to determine
+the constellation of RNAP and transcription factor binding sites and to determine what transcription factors
+bind those sites. In addition, the method allows for a determination of energy matrices that characterize,
+in k_BT units, the binding strength of transcription factors to their target sites. 
+
+The website for the original Reg-Seq paper can be found [here](https://www.rpgroup.caltech.edu/RNAseq_SortSeq/).
 
 **Check out the Wiki tab to see the full experimental protocol for Reg-Seq**.
 
@@ -12,14 +17,14 @@ humans and computers alike, allowing for rapid location of specific files and
 instructions. Within each directory is a `README.md` file which summarizes the
 purpose of that directory as well as some examples where necessary. 
 
-`code` contains Jupyter notebooks to perform computational steps of the Reg-Seq protocol from start to finish. Where all of the executed code lives. This includes pipelines, scripts, and
+1) `code` contains Jupyter notebooks to perform computational steps of the Reg-Seq protocol from start to finish. Where all of the executed code lives. This includes pipelines, scripts, and
 figure files.
 
-`data` contains prior data files, such as designed sequences, negative controls, or output analysis files.
+2) `data` contains prior data files, such as designed sequences, negative controls, or output analysis files.
 
-`protocol` contains MarkDown files that outline each step to perform Reg-Seq in total.
+3) `protocol` contains MarkDown files that outline each step to perform Reg-Seq in total.
 
-`RegSeq` contains Python files which can be easily executed to perform your own analyses.
+4) `RegSeq` contains Python files which can be easily executed to perform your own analyses.
 
 #### **Package Dependencies**
 Some of the code files in this package rely on `mpathic`, a software package for quantitative modeling of massively parallel experiments and developed by [GitHub user jbkinney](https://github.com/jbkinney). A link to the GitHub page for the mpathic package is [available here](https://github.com/jbkinney/mpathic).
