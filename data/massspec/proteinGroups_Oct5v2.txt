@@ -1,0 +1,1507 @@
+Protein names	Gene names	Ratio H/L 12_30Sep	Ratio H/L thiM	Ratio H/L normalized 12_30Sep	Ratio H/L normalized thiM
+		0.064293	NaN	0.016485	NaN
+		NaN	NaN	NaN	NaN
+		NaN	NaN	NaN	NaN
+		NaN	NaN	NaN	NaN
+		NaN	NaN	NaN	NaN
+		NaN	NaN	NaN	NaN
+		NaN	NaN	NaN	NaN
+		NaN	NaN	NaN	NaN
+		NaN	NaN	NaN	NaN
+		NaN	NaN	NaN	NaN
+		NaN	NaN	NaN	NaN
+		NaN	NaN	NaN	NaN
+		0.56103	NaN	0.1493	NaN
+D-serine dehydratase	dsdA	NaN	NaN	NaN	NaN
+Maltose transport system permease protein MalF	malF	11.068	NaN	2.9606	NaN
+Lactose operon repressor	lacI	NaN	NaN	NaN	NaN
+Transposase InsG for insertion sequence element IS4	insG	NaN	NaN	NaN	NaN
+DNA-3-methyladenine glycosylase 2	alkA	NaN	NaN	NaN	NaN
+Aromatic-amino-acid aminotransferase	tyrB	NaN	NaN	NaN	NaN
+3-dehydroquinate dehydratase	aroD	NaN	NaN	NaN	NaN
+Formamidopyrimidine-DNA glycosylase	mutM	3.4244	NaN	0.97555	NaN
+Vitamin B12 import ATP-binding protein BtuD	btuD	NaN	NaN	NaN	NaN
+Histidinol-phosphate aminotransferase	hisC	NaN	NaN	NaN	NaN
+Lysophospholipase L2	pldB	NaN	NaN	NaN	NaN
+Primosomal replication protein n	priB	NaN	NaN	NaN	NaN
+Sodium/proline symporter	putP	NaN	NaN	NaN	NaN
+Valine--tRNA ligase	valS	NaN	NaN	NaN	NaN
+3-dehydroquinate synthase	aroB	NaN	NaN	NaN	NaN
+tRNA pseudouridine synthase A	truA	NaN	NaN	NaN	NaN
+Thymidine phosphorylase	deoA	NaN	NaN	NaN	NaN
+D-alanine--D-alanine ligase B	ddlB	NaN	NaN	NaN	NaN
+L-arabinose isomerase	araA	NaN	NaN	NaN	NaN
+USG-1 protein	usg	5.2322	NaN	2.903	NaN
+Molybdenum import ATP-binding protein ModC	modC	3.8301	NaN	1.3212	NaN
+ATP-dependent DNA helicase Rep	rep	NaN	NaN	NaN	NaN
+D-amino acid dehydrogenase	dadA	NaN	NaN	NaN	NaN
+Co-chaperone protein HscB	hscB	NaN	NaN	NaN	NaN
+3-oxoacyl-[acyl-carrier-protein] synthase 3	fabH	NaN	NaN	NaN	NaN
+Glutathione-regulated potassium-efflux system ancillary protein KefF	kefF	NaN	NaN	NaN	NaN
+Polyphosphate kinase	ppk	NaN	NaN	NaN	NaN
+NAD kinase	nadK	NaN	NaN	NaN	NaN
+Orotate phosphoribosyltransferase	pyrE	NaN	NaN	NaN	NaN
+Sugar fermentation stimulation protein A	sfsA	NaN	NaN	NaN	NaN
+Aerobic C4-dicarboxylate transport protein	dctA	NaN	NaN	NaN	NaN
+5/3-nucleotidase SurE	surE	3.3506	NaN	0.93576	NaN
+Thymidylate synthase	thyA	NaN	NaN	NaN	NaN
+HTH-type transcriptional regulator HdfR	hdfR	NaN	NaN	NaN	NaN
+Protein Syd	syd	NaN	NaN	NaN	NaN
+Ribonuclease BN	rbn	NaN	NaN	NaN	NaN
+Protein YceI	yceI	NaN	NaN	NaN	NaN
+Acyl-CoA thioester hydrolase YbgC	ybgC	NaN	NaN	NaN	NaN
+MltA-interacting protein	mipA	NaN	NaN	NaN	NaN
+Phospholipase A1	pldA	NaN	NaN	NaN	NaN
+KHG/KDPG aldolase;4-hydroxy-2-oxoglutarate aldolase;2-dehydro-3-deoxy-phosphogluconate aldolase	eda	NaN	NaN	NaN	NaN
+L-asparaginase 1	ansA	NaN	NaN	NaN	NaN
+Cold shock-like protein CspD	cspD	NaN	NaN	NaN	NaN
+Cold shock-like protein CspI	cspI	NaN	NaN	NaN	NaN
+Arabinose operon regulatory protein	araC	0.40629	NaN	0.10473	NaN
+HTH-type transcriptional regulator MetR	metR	NaN	NaN	NaN	NaN
+Nitrite reductase (NADH) small subunit	nirD	NaN	NaN	NaN	NaN
+2-dehydropantoate 2-reductase	panE	NaN	NaN	NaN	NaN
+Ribokinase	rbsK	2.7122	NaN	0.72518	NaN
+Xanthine phosphoribosyltransferase	gpt	NaN	NaN	NaN	NaN
+Gluconate 5-dehydrogenase	idnO	NaN	NaN	NaN	NaN
+Uncharacterized ABC transporter ATP-binding protein YbhF	ybhF	3.5695	NaN	1.0006	NaN
+Low-affinity putrescine importer PlaP	plaP	NaN	NaN	NaN	NaN
+Modulator of FtsH protease YccA	yccA	NaN	NaN	NaN	NaN
+Peptide transport system ATP-binding protein SapD	sapD	3.2348	NaN	0.92721	NaN
+Peptide transport system ATP-binding protein SapF	sapF	NaN	NaN	NaN	NaN
+Miniconductance mechanosensitive channel YbdG	ybdG	NaN	NaN	NaN	NaN
+Lipopolysaccharide assembly protein B	lapB	1.7784	NaN	0.49463	NaN
+FAD:protein FMN transferase	apbE	0.83495	NaN	0.23642	NaN
+Rod shape-determining protein MreD	mreD	NaN	NaN	NaN	NaN
+Cytochrome c-552	nrfA	2.1447	NaN	0.57741	NaN
+Anaerobic C4-dicarboxylate transporter DcuB	dcuB	NaN	NaN	NaN	NaN
+Anaerobic C4-dicarboxylate transporter DcuC	dcuC	NaN	NaN	NaN	NaN
+Enhancing lycopene biosynthesis protein 2	elbB	NaN	NaN	NaN	NaN
+Biopolymer transport protein ExbB	exbB	NaN	NaN	NaN	NaN
+Chaperone SurA	surA	NaN	NaN	NaN	NaN
+Dihydropteroate synthase	folP	NaN	NaN	NaN	NaN
+Cell division protein FtsX	ftsX	3.6174	NaN	1.0252	NaN
+Glutathione S-transferase GstB	gstB	NaN	NaN	NaN	NaN
+HIT-like protein HinT	hinT	NaN	NaN	NaN	NaN
+Glc operon transcriptional activator	glcC	NaN	NaN	NaN	NaN
+Lipid A biosynthesis lauroyltransferase	lpxL	NaN	NaN	NaN	NaN
+Octaprenyl-diphosphate synthase	ispB	NaN	NaN	NaN	NaN
+D-alanyl-D-alanine-carboxypeptidase/endopeptidase AmpH	ampH	NaN	NaN	NaN	NaN
+Acyl-CoA thioesterase I	tesA	NaN	NaN	NaN	NaN
+Lipoprotein-releasing system transmembrane protein LolC	lolC	NaN	NaN	NaN	NaN
+Phosphogluconate dehydratase	edd	3.8943	NaN	0.94697	NaN
+Uncharacterized protein YggN	yggN	NaN	NaN	NaN	NaN
+Ribosomal RNA small subunit methyltransferase D	rsmD	NaN	NaN	NaN	NaN
+Methionine aminopeptidase	map	NaN	NaN	NaN	NaN
+Cation transport regulator ChaB	chaB	NaN	NaN	NaN	NaN
+Sensor protein CpxA	cpxA	NaN	NaN	NaN	NaN
+Serine endoprotease DegS	degS	NaN	NaN	NaN	NaN
+D-galactose-binding periplasmic protein	mglB	NaN	NaN	NaN	NaN
+Glucarate dehydratase	gudD	NaN	NaN	NaN	NaN
+Acid stress chaperone HdeB	hdeB	NaN	NaN	NaN	NaN
+Inosine-guanosine kinase	gsk	NaN	NaN	NaN	NaN
+1-phosphofructokinase	fruK	NaN	NaN	NaN	NaN
+Molybdopterin adenylyltransferase	mog	NaN	NaN	NaN	NaN
+5-methylthioadenosine/S-adenosylhomocysteine nucleosidase	mtnN	NaN	NaN	NaN	NaN
+UPF0047 protein YjbQ	yjbQ	NaN	NaN	NaN	NaN
+Nitrate/nitrite sensor protein NarX	narX	NaN	NaN	NaN	NaN
+Na(+)/H(+) antiporter NhaB	nhaB	NaN	NaN	NaN	NaN
+Nitrogen regulation protein NR(II)	glnL	NaN	NaN	NaN	NaN
+Glycine betaine-binding periplasmic protein	proX	NaN	NaN	NaN	NaN
+Uncharacterized deoxyribonuclease YcfH	ycfH	NaN	NaN	NaN	NaN
+Transcriptional regulatory protein YehT	yehT	NaN	NaN	NaN	NaN
+Uncharacterized transporter YfbS	yfbS	NaN	NaN	NaN	NaN
+Trk system potassium uptake protein TrkH	trkH	NaN	NaN	NaN	NaN
+Ribulose-phosphate 3-epimerase	rpe	NaN	NaN	NaN	NaN
+GTP pyrophosphokinase	relA	NaN	NaN	NaN	NaN
+"Bifunctional (p)ppGpp synthase/hydrolase SpoT;GTP pyrophosphokinase;Guanosine-3,5-bis(diphosphate) 3-pyrophosphohydrolase"	spoT	1.8115	NaN	0.4782	NaN
+Nuclease SbcCD subunit D	sbcD	NaN	NaN	NaN	NaN
+Transcriptional regulatory protein UhpA	uhpA	NaN	NaN	NaN	NaN
+Thiamine-monophosphate kinase	thiL	NaN	NaN	NaN	NaN
+RNA-binding protein YhbY	yhbY	NaN	NaN	NaN	NaN
+Ribosomal RNA small subunit methyltransferase E	rsmE	NaN	NaN	NaN	NaN
+Uracil permease	uraA	NaN	NaN	NaN	NaN
+Small heat shock protein IbpA	ibpA	NaN	NaN	NaN	NaN
+Small-conductance mechanosensitive channel	mscS	NaN	NaN	NaN	NaN
+Ribosomal protein S6--L-glutamate ligase	rimK	NaN	NaN	NaN	NaN
+Inactive ribonuclease PH	rph	3.8016	NaN	1.0208	NaN
+Long-chain fatty acid transport protein	fadL	NaN	NaN	NaN	NaN
+Protein translocase subunit SecA	secA	NaN	NaN	NaN	NaN
+Ribonuclease HII	rnhB	NaN	NaN	NaN	NaN
+DNA polymerase III subunit alpha	dnaE	NaN	NaN	NaN	NaN
+Enterobactin synthase component F	entF	NaN	NaN	NaN	NaN
+Molybdopterin-synthase adenylyltransferase	moeB	NaN	NaN	NaN	NaN
+Adenosylmethionine-8-amino-7-oxononanoate aminotransferase	bioA	NaN	NaN	NaN	NaN
+Catalase-peroxidase	katG	NaN	NaN	NaN	NaN
+Aerobic glycerol-3-phosphate dehydrogenase	glpD	NaN	NaN	NaN	NaN
+RNA polymerase sigma factor RpoS	rpoS	NaN	NaN	NaN	NaN
+Periplasmic trehalase	treA	NaN	NaN	NaN	NaN
+UDP-N-acetylmuramoylalanine--D-glutamate ligase	murD	NaN	NaN	NaN	NaN
+Xaa-Pro aminopeptidase	pepP	NaN	NaN	NaN	NaN
+Quinoprotein glucose dehydrogenase	gcd	NaN	NaN	NaN	NaN
+tRNA dimethylallyltransferase	miaA	NaN	NaN	NaN	NaN
+Maltose regulon regulatory protein MalI	malI	NaN	NaN	NaN	NaN
+Fatty acid oxidation complex subunit alpha;Enoyl-CoA hydratase/Delta(3)-cis-Delta(2)-trans-enoyl-CoA isomerase/3-hydroxybutyryl-CoA epimerase;3-hydroxyacyl-CoA dehydrogenase	fadB	NaN	NaN	NaN	NaN
+Uncharacterized protein YcaC	ycaC	NaN	NaN	NaN	NaN
+Cyclic di-GMP phosphodiesterase YahA	yahA	NaN	NaN	NaN	NaN
+Ecotin	eco	NaN	NaN	NaN	NaN
+Acetylornithine deacetylase	argE	NaN	NaN	NaN	NaN
+Hydrogenase isoenzymes formation protein HypE	hypE	NaN	NaN	NaN	NaN
+HTH-type transcriptional regulator AscG	ascG	NaN	NaN	NaN	NaN
+GTPase HflX	hflX	NaN	NaN	NaN	NaN
+Lysine-specific permease	lysP	7.2661	NaN	2.0318	NaN
+Cell division protein FtsP	ftsP	NaN	NaN	NaN	NaN
+"Lipopolysaccharide 1,6-galactosyltransferase"	rfaB	NaN	NaN	NaN	NaN
+Aminomethyltransferase	gcvT	NaN	NaN	NaN	NaN
+Uroporphyrinogen decarboxylase	hemE	NaN	NaN	NaN	NaN
+Nicotinate-nucleotide pyrophosphorylase [carboxylating]	nadC	4.5164	NaN	1.2146	NaN
+3-isopropylmalate dehydratase small subunit	leuD	NaN	NaN	NaN	NaN
+Sulfur carrier protein ThiS adenylyltransferase	thiF	NaN	NaN	NaN	NaN
+2-iminoacetate synthase	thiH	NaN	NaN	NaN	NaN
+Signal transduction histidine-protein kinase BaeS	baeS	NaN	NaN	NaN	NaN
+Uncharacterized HTH-type transcriptional regulator YihW	yihW	NaN	NaN	NaN	NaN
+Putrescine transport system permease protein PotH	potH	NaN	NaN	NaN	NaN
+Uncharacterized protein YicH	yicH	NaN	NaN	NaN	NaN
+Oxygen-independent coproporphyrinogen-III oxidase	hemN	NaN	NaN	NaN	NaN
+HTH-type transcriptional regulator YiaJ	yiaJ	NaN	NaN	NaN	NaN
+Protein YiiM	yiiM	NaN	NaN	NaN	NaN
+Protein FdhD	fdhD	NaN	NaN	NaN	NaN
+Uncharacterized protein YjaG	yjaG	NaN	NaN	NaN	NaN
+Uncharacterized protein YeiR	yeiR	3.2642	NaN	0.87713	NaN
+Cytochrome c biogenesis ATP-binding export protein CcmA	ccmA	NaN	NaN	NaN	NaN
+Aconitate hydratase B	acnB	2.2908	NaN	0.67981	NaN
+HTH-type transcriptional activator TtdR	ttdR	NaN	NaN	NaN	NaN
+Uncharacterized chaperone protein YegD	yegD	NaN	NaN	NaN	NaN
+Cold shock-like protein CspB	cspB	NaN	NaN	NaN	NaN
+Ribonucleoside-diphosphate reductase 2 subunit beta	nrdF	NaN	NaN	NaN	NaN
+Probable cytochrome c peroxidase	yhjA	NaN	NaN	NaN	NaN
+Inner membrane protein YfdC	yfdC	NaN	NaN	NaN	NaN
+Uncharacterized protein YjjI	yjjI	3.2285	NaN	0.84297	NaN
+CsgBAC operon transcriptional regulatory protein	csgD	NaN	NaN	NaN	NaN
+HTH-type transcriptional regulator GadW	gadW	NaN	NaN	NaN	NaN
+Uncharacterized protein YibQ	yibQ	2.5055	NaN	0.7054	NaN
+Putative lipopolysaccharide biosynthesis O-acetyl transferase WbbJ	wbbJ	NaN	NaN	NaN	NaN
+Gamma-glutamylputrescine oxidoreductase	puuB	NaN	NaN	NaN	NaN
+UPF0053 inner membrane protein YfjD	yfjD	NaN	NaN	NaN	NaN
+Sulfite reductase [NADPH] flavoprotein alpha-component	cysJ	NaN	NaN	NaN	NaN
+Starvation-sensing protein RspB	rspB	NaN	NaN	NaN	NaN
+HTH-type transcriptional repressor ComR	comR	NaN	NaN	NaN	NaN
+Uncharacterized protein YjiN	yjiN	5.6854	NaN	1.5701	NaN
+Inner membrane protein YjiY	yjiY	NaN	NaN	NaN	NaN
+Inner membrane protein YbaL	ybaL	NaN	NaN	NaN	NaN
+Pyrimidine-specific ribonucleoside hydrolase RihA	rihA	NaN	NaN	NaN	NaN
+Glutathionyl-hydroquinone reductase YqjG	yqjG	NaN	NaN	NaN	NaN
+ATP-dependent RNA helicase HrpA	hrpA	NaN	NaN	NaN	NaN
+Inner membrane transport protein YnfM	ynfM	NaN	NaN	NaN	NaN
+Probable HTH-type transcriptional regulator LrhA	lrhA	4.5686	NaN	1.515	NaN
+UPF0718 protein YraQ	yraQ	NaN	NaN	NaN	NaN
+FKBP-type peptidyl-prolyl cis-trans isomerase FkpA	fkpA	1.8906	NaN	0.52594	NaN
+Uncharacterized protease YhbU	yhbU	NaN	NaN	NaN	NaN
+1-deoxy-D-xylulose 5-phosphate reductoisomerase	dxr	NaN	NaN	NaN	NaN
+Uncharacterized oxidoreductase YbdH	ybdH	NaN	NaN	NaN	NaN
+Putative membrane protein IgaA homolog	yrfF	NaN	NaN	NaN	NaN
+Uncharacterized protein YhgE	yhgE	NaN	NaN	NaN	NaN
+Uncharacterized protein YbgF	ybgF	NaN	NaN	NaN	NaN
+Thermoresistant gluconokinase	gntK	NaN	NaN	NaN	NaN
+Oxygen-independent coproporphyrinogen-III oxidase-like protein YggW	yggW	NaN	NaN	NaN	NaN
+Fosmidomycin resistance protein	fsr	NaN	NaN	NaN	NaN
+Psp operon transcriptional activator	pspF	2.5576	NaN	0.88249	NaN
+Uncharacterized protein YfjW	yfjW	NaN	NaN	NaN	NaN
+D-lactate dehydrogenase	ldhA	NaN	NaN	NaN	NaN
+23S rRNA (uracil(1939)-C(5))-methyltransferase RlmD	rlmD	NaN	NaN	NaN	NaN
+Uxu operon transcriptional regulator	uxuR	2.372	NaN	0.62986	NaN
+Uncharacterized protein YpfJ	ypfJ	NaN	NaN	NaN	NaN
+Uncharacterized protein YfgG	yfgG	NaN	NaN	NaN	NaN
+Cell division protein ZapE	zapE	3.3204	NaN	0.84718	NaN
+GMP/IMP nucleotidase YrfG	yrfG	NaN	NaN	NaN	NaN
+"6-carboxy-5,6,7,8-tetrahydropterin synthase"	queD	NaN	NaN	NaN	NaN
+Translation initiation factor IF-1	infA	NaN	NaN	NaN	NaN
+Long-chain-fatty-acid--CoA ligase	fadD	NaN	NaN	NaN	NaN
+Mannose permease IIC component	manY	NaN	NaN	NaN	NaN
+Uncharacterized symporter YagG	yagG	NaN	NaN	NaN	NaN
+Putative gluconeogenesis factor	ybhK	NaN	NaN	NaN	NaN
+Phosphoethanolamine transferase OpgE	opgE	3.7951	NaN	1.0595	NaN
+Uncharacterized protein YbiU	ybiU	NaN	NaN	NaN	NaN
+Sugar phosphatase YbiV	ybiV	NaN	NaN	NaN	NaN
+Uncharacterized protein YcbX	ycbX	2.4188	NaN	0.71103	NaN
+Probable phosphatase YcdX	ycdX	NaN	NaN	NaN	NaN
+Putative oxidoreductase YceM	yceM	NaN	NaN	NaN	NaN
+Uncharacterized HTH-type transcriptional regulator YafC	yafC	1.9587	NaN	0.53236	NaN
+Uncharacterized protein YcgM	ycgM	NaN	NaN	NaN	NaN
+K(+)/H(+) antiporter NhaP2	cvrA	NaN	NaN	NaN	NaN
+Uncharacterized protease YdcP	ydcP	2.6886	NaN	0.67057	NaN
+NADPH-dependent curcumin reductase	curA	NaN	NaN	NaN	NaN
+UPF0187 protein YneE	yneE	NaN	NaN	NaN	NaN
+Succinate semialdehyde dehydrogenase [NAD(P)+] Sad	sad	NaN	NaN	NaN	NaN
+Uncharacterized protein YdhJ	ydhJ	NaN	NaN	NaN	NaN
+Uncharacterized oxidoreductase YdhV	ydhV	NaN	NaN	NaN	NaN
+"Probable L,D-transpeptidase YnhG"	ynhG	NaN	NaN	NaN	NaN
+Probable diguanylate cyclase YeaP	yeaP	3.579	NaN	1.216	NaN
+D-malate dehydrogenase [decarboxylating]	dmlA	NaN	NaN	NaN	NaN
+Ribosomal RNA small subunit methyltransferase F	rsmF	2.084	NaN	0.56277	NaN
+D-cysteine desulfhydrase	dcyD	2.7646	NaN	0.73022	NaN
+UPF0053 protein YegH	yegH	8.0538	NaN	2.0704	NaN
+Hydroxymethylpyrimidine/phosphomethylpyrimidine kinase	thiD	4.4901	NaN	1.1629	NaN
+Protein Rtn	rtn	NaN	NaN	NaN	NaN
+3-ketoacyl-CoA thiolase	fadI	NaN	NaN	NaN	NaN
+Acetyltransferase YpeA	ypeA	NaN	NaN	NaN	NaN
+Uncharacterized lipoprotein YfhM	yfhM	NaN	NaN	NaN	NaN
+Pyridoxamine kinase	pdxY	NaN	NaN	NaN	NaN
+Electron transport complex subunit RsxE	rsxE	NaN	NaN	NaN	NaN
+Uncharacterized oxidoreductase YdfI	ydfI	NaN	NaN	NaN	NaN
+Dipeptide and tripeptide permease A	dtpA	NaN	NaN	NaN	NaN
+Uncharacterized protein YbbN	ybbN	NaN	NaN	NaN	NaN
+Glutaminase 1	glsA1	NaN	NaN	NaN	NaN
+Sensor kinase CusS	cusS	NaN	NaN	NaN	NaN
+Probable ATP-dependent transporter SufC	sufC	3.8704	NaN	1.0249	NaN
+Uncharacterized symporter YdjN	ydjN	NaN	NaN	NaN	NaN
+Uncharacterized protein YahJ	yahJ	NaN	NaN	NaN	NaN
+UDP-4-amino-4-deoxy-L-arabinose--oxoglutarate aminotransferase	arnB	NaN	NaN	NaN	NaN
+Inner membrane transport protein YajR	yajR	NaN	NaN	NaN	NaN
+Uncharacterized oxidoreductase YajO	yajO	NaN	NaN	NaN	NaN
+Uncharacterized protein YdiJ	ydiJ	4.5206	NaN	1.2288	NaN
+Epimerase family protein YfcH	yfcH	3.223	NaN	0.91518	NaN
+Probable dimethyl sulfoxide reductase chain YnfF	ynfF	NaN	NaN	NaN	NaN
+Methionine aminotransferase	ybdL	NaN	NaN	NaN	NaN
+Gamma-glutamylputrescine synthetase PuuA	puuA	NaN	NaN	NaN	NaN
+"2,5-diketo-D-gluconic acid reductase A"	dkgA	NaN	NaN	NaN	NaN
+UPF0313 protein YgiQ	ygiQ	NaN	NaN	NaN	NaN
+Antitoxin MqsA	mqsA	NaN	NaN	NaN	NaN
+Probable protein deglycase	yajL	NaN	NaN	NaN	NaN
+		NaN	NaN	NaN	NaN
+		0.68165	NaN	0.18068	NaN
+		NaN	NaN	NaN	NaN
+		NaN	NaN	NaN	NaN
+		NaN	NaN	NaN	NaN
+		NaN	NaN	NaN	NaN
+Transposase InsH for insertion sequence element IS5Y;Transposase InsH for insertion sequence element IS5T;Transposase InsH for insertion sequence element IS5R;Transposase InsH for insertion sequence element IS5LO;Transposase InsH for insertion sequence element IS5K;Transposase InsH for insertion sequence element IS5I;Transposase InsH for insertion sequence element IS5H;Transposase InsH for insertion sequence element IS5F;Transposase InsH for insertion sequence element IS5D;Transposase InsH for insertion sequence element IS5B;Transposase InsH for insertion sequence element IS5A	insH5;insH11;insH10;insH9;insH8;insH7;insH6;insH4;insH3;insH2;insH1	NaN	37.836	NaN	28.845
+DNA polymerase III subunit beta	dnaN	81.108	21.723	20.76	16.159
+L-asparaginase 2	ansB	NaN	7.0075	NaN	5.5205
+Putative ABC transporter arginine-binding protein 2	artI	NaN	6.8234	NaN	5.4179
+Modulator of drug activity B	mdaB	NaN	6.5486	NaN	5.3106
+Thioredoxin reductase	trxB	NaN	6.5616	NaN	4.9934
+4-aminobutyrate aminotransferase PuuE	puuE	NaN	6.4359	NaN	4.9928
+Lactoylglutathione lyase	gloA	NaN	6.381	NaN	4.9697
+Maltose-binding periplasmic protein	malE	NaN	6.5464	NaN	4.9102
+Cystine-binding periplasmic protein	fliY	5.0586	6.3794	1.4379	4.9058
+Oxygen-insensitive NAD(P)H nitroreductase	nfsB	NaN	6.0669	NaN	4.8181
+D-ribose-binding periplasmic protein	rbsB	NaN	6.153	NaN	4.8012
+Aldose 1-epimerase	galM	5.7928	6.2992	1.4243	4.6783
+Protein GrpE	grpE	NaN	6.1364	NaN	4.6594
+Isoaspartyl dipeptidase	iadA	NaN	5.843	NaN	4.6581
+2-iminobutanoate/2-iminopropanoate deaminase	ridA	NaN	5.9227	NaN	4.6001
+Glucose-1-phosphatase	agp	NaN	5.859	NaN	4.5847
+D-alanine--D-alanine ligase A	ddlA	NaN	5.8537	NaN	4.5762
+Malate synthase A	aceB	5.7435	5.9672	1.4486	4.5376
+Thiosulfate sulfurtransferase YnjE	ynjE	4.2966	5.9106	1.2037	4.5255
+"2,3-bisphosphoglycerate-dependent phosphoglycerate mutase"	gpmA	5.2696	5.806	1.3524	4.4519
+Lysine/arginine/ornithine-binding periplasmic protein	argT	NaN	5.6685	NaN	4.4407
+Superoxide dismutase [Mn]	sodA	NaN	6.0358	NaN	4.4263
+UDP-glucose 4-epimerase	galE	3.6811	5.2432	0.95655	4.4236
+Phosphoenolpyruvate carboxykinase [ATP]	pckA	5.216	5.9009	1.4393	4.4034
+Fructose-bisphosphate aldolase class 2	fbaA	5.0897	5.2078	1.3081	4.4026
+10 kDa chaperonin	groS	NaN	5.5683	NaN	4.3985
+Malonyl CoA-acyl carrier protein transacylase	fabD	4.9814	5.92	1.3266	4.3942
+Inorganic pyrophosphatase	ppa	NaN	5.63	NaN	4.3738
+Leu/Ile/Val-binding protein	livJ	4.6516	5.4836	1.3065	4.3736
+Thiosulfate-binding protein	cysP	4.5351	5.7235	1.2736	4.3721
+Phosphoserine aminotransferase	serC	5.1265	5.6702	1.345	4.3629
+Putrescine-binding periplasmic protein	potF	2.593	5.7965	0.73561	4.3598
+Iron uptake system component EfeO	efeO	4.8869	5.7121	1.3528	4.3449
+Pyridoxine 5-phosphate synthase	pdxJ	NaN	5.5175	NaN	4.3354
+Periplasmic dipeptide transport protein	dppA	5.1182	5.8138	1.4909	4.3339
+Transaldolase B	talB	5.6251	5.8284	1.4132	4.3154
+7-alpha-hydroxysteroid dehydrogenase	hdhA	NaN	5.529	NaN	4.2923
+Glucose-6-phosphate isomerase	pgi	5.8431	5.6145	1.5708	4.2906
+Mannitol-1-phosphate 5-dehydrogenase	mtlD	4.7787	5.6955	1.3242	4.2735
+Osmotically-inducible protein Y	osmY	NaN	5.4925	NaN	4.2672
+Toxin-antitoxin biofilm protein TabA	tabA	NaN	5.1916	NaN	4.2567
+Mannose-6-phosphate isomerase	manA	5.2665	5.5029	1.3871	4.2418
+Arginine--tRNA ligase	argS	4.4368	5.5963	1.2104	4.2355
+Bacterial non-heme ferritin	ftnA	NaN	5.393	NaN	4.2318
+Enolase	eno	4.3731	5.4548	1.1201	4.2207
+Glutathione synthetase	gshB	NaN	5.4796	NaN	4.1979
+L-fucose mutarotase	fucU	NaN	5.136	NaN	4.1963
+Thiamine-binding periplasmic protein	thiB	NaN	5.3229	NaN	4.1733
+Spermidine/putrescine-binding periplasmic protein	potD	5.039	5.3988	1.2426	4.1722
+Thiol:disulfide interchange protein DsbA	dsbA	NaN	5.198	NaN	4.1557
+Isocitrate lyase	aceA	5.687	5.4727	1.4227	4.1548
+Glutamate/aspartate periplasmic-binding protein	gltI	4.5418	5.0348	1.2796	4.1395
+ABC transporter arginine-binding protein 1	artJ	6.9606	5.3235	1.871	4.1345
+Leucine-specific-binding protein	livK	4.9431	5.3483	1.2779	4.1051
+Aspartate aminotransferase	aspC	5.2715	5.2549	1.3298	4.094
+Probable Fe(2+)-trafficking protein	yggX	NaN	5.1753	NaN	4.0933
+Histidinol dehydrogenase	hisD	5.7174	5.3857	1.5283	4.0878
+Superoxide dismutase [Fe]	sodB	NaN	5.34	NaN	4.079
+Putative glucose-6-phosphate 1-epimerase	yeaD	4.5156	5.2664	2.5577	4.0135
+Thiol peroxidase	tpx	NaN	5.3433	NaN	4.0104
+Alkyl hydroperoxide reductase subunit C	ahpC	NaN	5.4035	NaN	4.0019
+Malate dehydrogenase	mdh	3.5455	5.2624	0.89505	3.9935
+Nucleoside diphosphate kinase	ndk	NaN	5.1011	NaN	3.9894
+Uncharacterized protein YahO	yahO	NaN	4.8512	NaN	3.9601
+Cystathionine gamma-synthase	metB	NaN	5.2971	NaN	3.9551
+2-dehydro-3-deoxyphosphooctonate aldolase	kdsA	3.8754	5.2335	1.036	3.9548
+Xaa-Pro dipeptidase	pepQ	4.6971	5.087	3.4871	3.9387
+Argininosuccinate lyase	argH	5.865	5.0946	1.5485	3.9379
+Glutathione reductase	gor	NaN	5.1392	NaN	3.9084
+Cytosol non-specific dipeptidase	pepD	4.4248	5.0756	1.2184	3.8831
+2-deoxyglucose-6-phosphate phosphatase	yniC	NaN	4.9587	NaN	3.8652
+Phosphate-binding protein PstS	pstS	NaN	4.9863	NaN	3.8591
+Peroxiredoxin OsmC	osmC	NaN	4.9426	NaN	3.8446
+Ketol-acid reductoisomerase	ilvC	5.5346	4.9828	1.4261	3.812
+Triosephosphate isomerase	tpiA	4.8509	4.9539	1.2479	3.8056
+Phosphoglycerate kinase	pgk	4.5308	4.9221	1.2095	3.805
+4-aminobutyrate aminotransferase GabT	gabT	NaN	4.8431	NaN	3.7872
+6-phospho-beta-glucosidase BglA	bglA	4.1221	4.9739	5.2821	3.7622
+Peptidyl-prolyl cis-trans isomerase B	ppiB	NaN	4.8006	NaN	3.7303
+Glutamate decarboxylase beta	gadB	5.1179	4.6444	2.2066	3.6816
+Glutamate decarboxylase alpha	gadA	4.8599	4.8274	1.2353	3.6735
+Deoxyribose-phosphate aldolase	deoC	NaN	4.6264	NaN	3.6477
+"2,3,4,5-tetrahydropyridine-2,6-dicarboxylate N-succinyltransferase"	dapD	5.6372	4.8084	1.4567	3.6314
+Cytosine deaminase	codA	NaN	4.8749	NaN	3.6289
+Glutamine-binding periplasmic protein	glnH	NaN	4.6098	NaN	3.6272
+Gamma-glutamyl phosphate reductase	proA	4.4853	4.8178	1.2771	3.6194
+Purine nucleoside phosphorylase DeoD-type	deoD	NaN	4.5686	NaN	3.6019
+Uncharacterized oxidoreductase YghA	yghA	NaN	4.5719	NaN	3.5432
+Phosphoribosylamine--glycine ligase	purD	3.5509	4.6092	1.0316	3.5428
+Sulfate-binding protein	sbp	4.3882	4.4878	1.384	3.5417
+Cytoplasmic alpha-amylase	amyA	NaN	4.4859	NaN	3.5291
+Adenine phosphoribosyltransferase	apt	NaN	4.4671	NaN	3.4877
+Pyridoxine kinase	pdxK	NaN	4.4125	NaN	3.4654
+GMP synthase [glutamine-hydrolyzing]	guaA	5.4864	4.5434	1.477	3.4192
+3-oxoacyl-[acyl-carrier-protein] synthase 1	fabB	4.6732	4.6196	1.2274	3.418
+Glutamine synthetase	glnA	5.7102	4.4888	1.4444	3.363
+Molybdate-binding periplasmic protein	modA	NaN	4.138	NaN	3.3403
+Ornithine carbamoyltransferase chain I	argI	3.4742	4.4245	0.90233	3.3268
+Sugar phosphatase YidA	yidA	NaN	4.2726	NaN	3.3098
+High-affinity zinc uptake system protein ZnuA	znuA	4.4412	4.1642	1.1313	3.3094
+Acetylornithine/succinyldiaminopimelate aminotransferase	argD	4.7115	4.3471	1.2927	3.2921
+Molecular chaperone Hsp31 and glyoxalase 3	hchA	3.9403	4.2381	1.0737	3.2112
+Branched-chain-amino-acid aminotransferase	ilvE	5.3823	4.0042	1.4797	3.2093
+Transaldolase A	talA	3.904	4.162	1.0127	3.185
+Uncharacterized HTH-type transcriptional regulator YijO	yijO	3.6756	4.1023	0.97601	3.1652
+Glutaredoxin-3	grxC	NaN	3.8621	NaN	3.1491
+Lipopolysaccharide export system protein LptA	lptA	NaN	4.002	NaN	3.149
+Succinate-semialdehyde dehydrogenase [NADP(+)] GabD	gabD	5.3964	4.0882	1.4323	3.1043
+Histidine-binding periplasmic protein	hisJ	3.2891	3.8033	0.80788	3.0815
+Oligoribonuclease	orn	NaN	3.8016	NaN	3.0805
+Ribose-5-phosphate isomerase A	rpiA	NaN	3.9266	NaN	3.0679
+Glucose-1-phosphate thymidylyltransferase 1	rmlA1	4.0511	4.079	1.0037	3.0629
+Alkyl hydroperoxide reductase subunit F	ahpF	5.3947	4.0036	1.3676	3.0561
+Periplasmic oligopeptide-binding protein	oppA	4.9913	3.8905	1.2848	3.0504
+Low specificity L-threonine aldolase	ltaE	NaN	3.9659	NaN	3.0424
+Glutathione-binding protein GsiB	gsiB	2.2789	3.9705	0.79925	3.0373
+Polyamine aminopropyltransferase	speE	NaN	3.9254	NaN	3.0234
+Glutaredoxin-2	grxB	4.3062	3.8512	1.2439	3.0089
+tRNA/tmRNA (uracil-C(5))-methyltransferase	trmA	NaN	3.8209	NaN	2.9682
+Riboflavin synthase	ribC	NaN	3.7824	NaN	2.9512
+4-hydroxy-tetrahydrodipicolinate synthase	dapA	4.4849	3.8586	1.2364	2.9406
+NAD-dependent malic enzyme	maeA	4.9752	3.7644	1.3953	2.932
+Delta-aminolevulinic acid dehydratase	hemB	4.2789	3.8487	1.1388	2.9226
+Nitrogen regulatory protein	ptsN	NaN	3.5716	NaN	2.9118
+60 kDa chaperonin	groL	4.4299	3.881	1.2179	2.9079
+"2,3-bisphosphoglycerate-independent phosphoglycerate mutase"	gpmI	3.9605	3.7762	1.0179	2.8388
+Glutamine--tRNA ligase	glnS	2.7098	3.4894	0.75999	2.8173
+Uncharacterized protein YjgR	yjgR	NaN	3.4996	NaN	2.7625
+Flavodoxin-1	fldA	NaN	3.5894	NaN	2.7547
+Lactaldehyde dehydrogenase	aldA	NaN	3.5803	NaN	2.7443
+Erythronate-4-phosphate dehydrogenase	pdxB	4.2181	3.4376	1.5851	2.7397
+Ribonucleoside-diphosphate reductase 1 subunit beta	nrdB	4.0423	3.569	1.0616	2.7241
+Glucose-specific phosphotransferase enzyme IIA component	crr	NaN	3.3708	NaN	2.6801
+Probable phospholipid-binding protein MlaC	mlaC	NaN	3.4064	NaN	2.6797
+sn-glycerol-3-phosphate-binding periplasmic protein UgpB	ugpB	NaN	3.4297	NaN	2.6642
+3-isopropylmalate dehydrogenase	leuB	4.8492	3.473	1.3208	2.6553
+Aspartate ammonia-lyase	aspA	NaN	3.4444	NaN	2.6495
+tRNA-modifying protein YgfZ	ygfZ	NaN	3.4768	NaN	2.6457
+Peptide deformylase	def	NaN	3.141	NaN	2.6336
+Glutamate--cysteine ligase	gshA	NaN	3.4384	NaN	2.5914
+Phenylalanine--tRNA ligase alpha subunit	pheS	3.7365	3.3727	1.2477	2.5793
+"6-phosphogluconate dehydrogenase, decarboxylating"	gnd	3.5244	3.1022	0.90437	2.5655
+Universal stress protein E	uspE	2.4123	3.3973	0.64857	2.5621
+Protein YebF	yebF	NaN	3.2481	NaN	2.5548
+Cysteine--tRNA ligase	cysS	3.2448	3.3662	0.84765	2.5526
+Protein UshA;UDP-sugar hydrolase;5-nucleotidase	ushA	NaN	3.3077	NaN	2.5449
+Putative peroxiredoxin bcp	bcp	NaN	3.1916	NaN	2.5324
+UPF0234 protein YajQ	yajQ	NaN	3.2747	NaN	2.5196
+Peptidase E	pepE	NaN	3.0511	NaN	2.5191
+Tellurite methyltransferase	tehB	NaN	3.1508	NaN	2.4943
+Free methionine-R-sulfoxide reductase	msrC	NaN	3.0602	NaN	2.4755
+Tyrosine--tRNA ligase	tyrS	5.144	3.2528	1.4096	2.473
+Glucokinase	glk	NaN	3.2033	NaN	2.4679
+Deoxyuridine 5-triphosphate nucleotidohydrolase	dut	NaN	3.104	NaN	2.4411
+Glyceraldehyde-3-phosphate dehydrogenase A	gapA	2.3548	3.1811	0.6022	2.44
+Metal-binding protein ZinT	zinT	4.0334	3.1834	1.0519	2.4342
+"dTDP-glucose 4,6-dehydratase 2"	rffG	NaN	3.093	NaN	2.4211
+Cysteine synthase A	cysK	4.401	3.1415	1.1249	2.3985
+Autonomous glycyl radical cofactor	grcA	NaN	3.0959	NaN	2.386
+Vitamin B12 transport periplasmic protein BtuE	btuE	NaN	3.0193	NaN	2.3859
+Periplasmic murein peptide-binding protein	mppA	2.9221	3.046	0.84037	2.3482
+UDP-N-acetylenolpyruvoylglucosamine reductase	murB	4.0505	3.0202	1.0724	2.3335
+NMN amidohydrolase-like protein YfaY	yfaY	NaN	2.9657	NaN	2.303
+D-3-phosphoglycerate dehydrogenase	serA	5.0251	2.9931	1.2727	2.2849
+UDP-N-acetylglucosamine 2-epimerase	wecB	5.8423	2.915	1.5796	2.2682
+Nicotinate phosphoribosyltransferase	pncB	2.6291	2.8619	1.5783	2.2605
+3-phosphoshikimate 1-carboxyvinyltransferase	aroA	4.5742	2.9461	1.3038	2.2575
+N-acetylglucosamine-6-phosphate deacetylase	nagA	NaN	2.8794	NaN	2.2258
+Aspartate-semialdehyde dehydrogenase	asd	NaN	3.0267	NaN	2.2203
+Argininosuccinate synthase	argG	2.3504	2.9421	0.59765	2.2124
+Thiazole synthase	thiG	NaN	2.7636	NaN	2.2107
+Galactose-1-phosphate uridylyltransferase	galT	3.9963	2.9298	1.0547	2.2106
+Respiratory nitrate reductase 1 beta chain	narH	8.455	2.8626	2.2972	2.2039
+Aspartate--tRNA ligase	aspS	4.6008	2.8798	1.2157	2.2007
+Uncharacterized protein YggE	yggE	7.5302	2.8642	2.1162	2.1741
+Cysteine synthase B	cysM	4.2114	2.8456	1.0795	2.1622
+Nicotinate-nucleotide adenylyltransferase	nadD	NaN	2.5817	NaN	2.1325
+Probable acrylyl-CoA reductase AcuI	acuI	3.8497	2.7322	0.99349	2.0912
+Chaperone protein DnaK	dnaK	2.7574	2.6473	0.75514	2.0755
+Acetate kinase	ackA	5.5309	2.7106	1.3996	2.0483
+Tryptophan synthase alpha chain	trpA	2.8465	2.6066	0.72747	2.0373
+Ribosome-recycling factor	frr	NaN	2.6483	NaN	2.0372
+Elongation factor Ts	tsf	4.2913	2.4752	1.0919	1.9871
+Fe/S biogenesis protein NfuA	nfuA	NaN	2.4677	NaN	1.9852
+Acyl carrier protein	acpP	NaN	2.5397	NaN	1.9724
+Ferrienterobactin-binding periplasmic protein	fepB	2.9238	2.5082	0.8499	1.9712
+HTH-type transcriptional regulator AppY	appY	NaN	2.6082	NaN	1.9623
+Phosphoenolpyruvate-protein phosphotransferase	ptsI	3.1327	2.5308	0.88939	1.9538
+"dTDP-glucose 4,6-dehydratase 1"	rfbB	4.5336	2.5005	1.246	1.9129
+Disulfide-bond oxidoreductase YghU	yghU	2.2089	2.5361	0.58199	1.9104
+Dihydroorotase	pyrC	3.7693	2.3501	0.95583	1.908
+"Fumarate hydratase class I, anaerobic"	fumB	2.7765	2.3768	0.74888	1.9042
+S-(hydroxymethyl)glutathione dehydrogenase	frmA	3.0951	2.4079	0.85302	1.8597
+Aldehyde reductase Ahr	ahr	NaN	2.3689	NaN	1.8458
+Cytidine deaminase	cdd	4.0599	2.3671	1.0768	1.8445
+Glucans biosynthesis protein D	mdoD	2.5738	2.3836	0.72827	1.842
+Cytidylate kinase	cmk	NaN	2.2382	NaN	1.8184
+Beta-hexosaminidase	nagZ	3.7454	2.2972	1.018	1.7949
+Uncharacterized protein YgaM	ygaM	NaN	2.2478	NaN	1.7854
+Protein YrdA	yrdA	NaN	2.2742	NaN	1.7799
+tRNA-dihydrouridine synthase A	dusA	2.2432	2.3217	0.60205	1.7772
+5-deoxynucleotidase YfbR	yfbR	NaN	2.2107	NaN	1.7631
+Methionyl-tRNA formyltransferase	fmt	1.4605	2.3328	0.39972	1.7608
+Elongation factor P-like protein	yeiP	2.5493	2.1935	0.67758	1.7591
+Peptide methionine sulfoxide reductase MsrB	msrB	NaN	2.2295	NaN	1.7551
+Uncharacterized lipoprotein YehR	yehR	NaN	2.1157	NaN	1.7537
+S-adenosylmethionine decarboxylase proenzyme;S-adenosylmethionine decarboxylase beta chain;S-adenosylmethionine decarboxylase alpha chain	speD	NaN	2.1986	NaN	1.7375
+"1,4-dihydroxy-2-naphthoyl-CoA synthase"	menB	3.3369	2.2871	0.96728	1.7335
+Protein YhjJ	yhjJ	2.7746	2.2213	0.8036	1.7307
+Putative acid--amine ligase YgiC	ygiC	4.4577	2.1996	1.2464	1.7302
+Probable transcriptional regulatory protein YebC	yebC	4.6248	2.3185	1.1888	1.7293
+ATP-dependent 6-phosphofructokinase isozyme 1	pfkA	4.1604	2.0065	1.7615	1.7248
+Universal stress protein A	uspA	NaN	2.2702	NaN	1.7241
+Cystathionine beta-lyase MetC	metC	3.9	2.2434	1.0723	1.7095
+tRNA (cmo5U34)-methyltransferase	cmoA	NaN	2.1678	NaN	1.7056
+UDP-galactopyranose mutase	glf	3.7936	2.1439	0.97227	1.7003
+Chaperone protein HtpG	htpG	3.7512	2.1391	1.046	1.6967
+Heat shock protein HslJ	hslJ	NaN	2.1383	NaN	1.6916
+Inner membrane protein YhjD	yhjD	7.095	2.2105	1.8959	1.6839
+Elongation factor P	efp	3.6411	2.1773	0.95844	1.656
+ATP synthase epsilon chain	atpC	NaN	2.1228	NaN	1.6428
+Glucosamine-6-phosphate deaminase	nagB	2.3954	2.1404	0.672	1.6406
+Thiol:disulfide interchange protein DsbC	dsbC	0.2905	2.0648	0.077798	1.6329
+Transcriptional regulator KdgR	kdgR	2.1897	2.1453	0.58188	1.6261
+ATP synthase gamma chain	atpG	10.133	2.1479	2.544	1.6124
+4-hydroxy-tetrahydrodipicolinate reductase	dapB	1.6996	2.0905	0.49274	1.5995
+Glutamate--tRNA ligase	gltX	1.6298	2.1087	0.41387	1.5853
+ATP synthase subunit delta	atpH	NaN	2.113	NaN	1.57
+Murein hydrolase activator NlpD	nlpD	NaN	1.9397	NaN	1.5646
+dTDP-4-dehydrorhamnose reductase	rfbD	0.61547	2.1018	0.16917	1.5588
+UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D-alanine ligase	murF	2.9139	2.0111	0.75114	1.5532
+ATP-dependent dethiobiotin synthetase BioD 1	bioD1	3.3593	1.9902	1.5268	1.5366
+HTH-type transcriptional regulator YjdC	yjdC	NaN	1.9323	NaN	1.5345
+Orotidine 5-phosphate decarboxylase	pyrF	NaN	1.9912	NaN	1.5316
+Protein DedA	dedA	NaN	1.9368	NaN	1.5283
+Pantothenate synthetase	panC	2.9407	2.0583	0.75514	1.5253
+Macrolide export protein MacA	macA	4.5818	1.9477	1.2949	1.5228
+"UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2,6-diaminopimelate ligase"	murE	3.1122	1.9842	0.83046	1.5158
+ATP synthase subunit alpha	atpA	8.8227	2.0342	2.2353	1.5136
+Bacterioferritin	bfr	NaN	2.0063	NaN	1.5123
+PTS system mannose-specific EIIAB component;Mannose-specific phosphotransferase enzyme IIA component;Mannose-specific phosphotransferase enzyme IIB component	manX	14.437	1.8234	3.6571	1.5058
+N-methyl-L-tryptophan oxidase	solA	3.083	1.9144	0.81012	1.503
+UDP-3-O-(3-hydroxymyristoyl)glucosamine N-acyltransferase	lpxD	1.3608	1.9801	0.36006	1.494
+Fumarate hydratase class II	fumC	3.3243	1.9347	0.84548	1.4927
+ATP synthase subunit b	atpF	NaN	2.0251	NaN	1.4871
+UPF0301 protein YqgE	yqgE	NaN	1.866	NaN	1.4844
+S-ribosylhomocysteine lyase	luxS	NaN	1.913	NaN	1.4767
+Protein ElaB	elaB	NaN	1.9148	NaN	1.4748
+Phosphatidylserine decarboxylase proenzyme;Phosphatidylserine decarboxylase alpha chain;Phosphatidylserine decarboxylase beta chain	psd	3.287	1.8031	0.96688	1.4687
+FeS cluster assembly protein SufB	sufB	3.209	1.8709	0.91071	1.4627
+ATP-dependent dethiobiotin synthetase BioD 2	bioD2	3.2818	1.8197	1.0514	1.4613
+Gamma-glutamylcyclotransferase family protein YtfP	ytfP	NaN	1.8353	NaN	1.4605
+Oxidoreductase YdhF	ydhF	1.4416	1.9411	0.41014	1.4565
+ATP synthase subunit beta	atpD	8.6346	1.9109	2.211	1.4549
+Single-stranded DNA-binding protein	ssb	1.8311	1.9225	0.47456	1.4471
+Trigger factor	tig	3.3165	1.9048	0.82929	1.4451
+Periplasmic nitrate reductase	napA	4.9526	1.7653	1.3471	1.4422
+Iron-sulfur cluster insertion protein ErpA	erpA	NaN	1.8144	NaN	1.4405
+Probable transcriptional regulatory protein YeeN	yeeN	4.1721	1.8065	1.0953	1.4379
+Stringent starvation protein A	sspA	NaN	1.8467	NaN	1.437
+UPF0001 protein YggS	yggS	NaN	1.8241	NaN	1.4354
+Transcription elongation factor GreA	greA	NaN	1.8108	NaN	1.4338
+RNA polymerase-binding transcription factor DksA	dksA	NaN	1.8427	NaN	1.4284
+Uncharacterized oxidoreductase YhhX	yhhX	1.9677	1.9322	0.55101	1.4248
+"Lipopolysaccharide 1,3-galactosyltransferase"	rfaI	2.8144	1.7812	1.0172	1.4223
+Fructose-bisphosphate aldolase class 1	fbaB	2.2508	1.8612	0.58828	1.4105
+Imidazole glycerol phosphate synthase subunit HisF	hisF	4.2553	1.7872	1.1018	1.4078
+Large-conductance mechanosensitive channel	mscL	NaN	1.7553	NaN	1.4071
+Glutamate synthase [NADPH] small chain	gltD	3.9845	1.8574	1.0118	1.4051
+Dihydroxy-acid dehydratase	ilvD	4.0093	1.8256	1.0606	1.4004
+Uncharacterized lipoprotein YceB	yceB	NaN	1.7518	NaN	1.3992
+Queuine tRNA-ribosyltransferase	tgt	2.8508	1.7666	0.78829	1.3925
+UPF0227 protein YcfP	ycfP	NaN	1.7551	NaN	1.3896
+Sec-independent protein translocase protein TatB	tatB	2.9347	1.772	4.8952	1.3873
+ATP-dependent 6-phosphofructokinase isozyme 2	pfkB	2.9145	1.8452	0.82413	1.3872
+Methylglyoxal synthase	mgsA	NaN	1.7974	NaN	1.3855
+Phosphoglucosamine mutase	glmM	2.7393	1.8398	0.70731	1.3826
+"UDP-N-acetylmuramate--L-alanyl-gamma-D-glutamyl-meso-2,6-diaminoheptandioate ligase"	mpl	3.3061	1.7712	0.95826	1.3769
+N-acetyl-gamma-glutamyl-phosphate reductase	argC	2.4659	1.7416	0.63186	1.3743
+L-lactate dehydrogenase	lldD	2.2575	1.8124	0.60243	1.3734
+Peptide chain release factor 3	prfC	4.0429	1.7925	1.0692	1.3677
+UTP--glucose-1-phosphate uridylyltransferase	galU	2.9779	1.7733	0.76026	1.3655
+Fumarate reductase flavoprotein subunit	frdA	4.4088	1.7787	1.1298	1.3626
+Siroheme synthase;Uroporphyrinogen-III C-methyltransferase;Precorrin-2 dehydrogenase;Sirohydrochlorin ferrochelatase	cysG	3.7596	1.7271	1.0179	1.3611
+Protein YdgA	ydgA	8.1179	1.803	2.0739	1.3611
+Flavohemoprotein	hmp	1.6771	1.7444	0.45939	1.3606
+Lysine--tRNA ligase	lysS	2.5582	1.8036	0.67442	1.3602
+4-alpha-glucanotransferase	malQ	1.1634	1.6638	0.3136	1.3493
+Imidazole glycerol phosphate synthase subunit HisH	hisH	NaN	1.7132	NaN	1.3486
+Shikimate kinase 1	aroK	NaN	1.7083	NaN	1.3422
+Phosphate-specific transport system accessory protein PhoU	phoU	NaN	1.657	NaN	1.3397
+Pyrroline-5-carboxylate reductase	proC	0.80143	1.6971	0.21983	1.3334
+Protein-export protein SecB	secB	NaN	1.7378	NaN	1.3334
+Divalent-cation tolerance protein CutA	cutA	NaN	1.6739	NaN	1.3275
+3-oxoacyl-[acyl-carrier-protein] synthase 2	fabF	3.9813	1.7676	1.0118	1.3265
+Oligopeptide transport system permease protein OppB	oppB	NaN	1.7121	NaN	1.3219
+Phosphoglucomutase	pgm	2.5349	1.7474	0.64859	1.3198
+Putative NAD(P)H nitroreductase YdjA	ydjA	NaN	1.6023	NaN	1.3134
+Uncharacterized protein YciO	yciO	NaN	1.65	NaN	1.3099
+Nitrite reductase (NADH) large subunit	nirB	3.6718	1.6448	0.9894	1.3083
+Bifunctional protein FolC;Folylpolyglutamate synthase;Dihydrofolate synthase	folC	3.74	1.6671	1.3066	1.3062
+33 kDa chaperonin	hslO	NaN	1.7049	NaN	1.3018
+Aldehyde reductase YahK	yahK	2.3514	1.6686	0.66298	1.2907
+"Alanine racemase, biosynthetic"	alr	NaN	1.6397	NaN	1.2901
+"Probable L,D-transpeptidase YbiS"	ybiS	3.2515	1.6326	0.91407	1.2896
+Phosphate acetyltransferase	pta	3.0697	1.667	0.81125	1.2835
+NH(3)-dependent NAD(+) synthetase	nadE	2.4548	1.6824	0.68187	1.2809
+Cytochrome bd-I ubiquinol oxidase subunit 1	cydA	11.552	1.6362	2.9098	1.2802
+Iron-sulfur cluster assembly scaffold protein IscU	iscU	NaN	1.6352	NaN	1.2792
+Uncharacterized protein YffR	yffR	NaN	1.6152	NaN	1.2764
+UPF0257 lipoprotein YnfC	ynfC	NaN	1.5746	NaN	1.2755
+Ribosomal RNA large subunit methyltransferase E	rlmE	3.9757	1.6177	1.065	1.2695
+50S ribosomal protein L7/L12	rplL	NaN	1.6829	NaN	1.2693
+Phosphoribosylformylglycinamidine cyclo-ligase	purM	3.6241	1.7088	0.91491	1.2687
+Cytochrome bd-I ubiquinol oxidase subunit 2	cydB	12.564	1.6303	3.1843	1.2674
+"Fumarate hydratase class I, aerobic"	fumA	2.3528	1.6608	0.62964	1.2654
+Transketolase 1	tktA	2.9251	1.6557	0.77924	1.2648
+Anaerobic dimethyl sulfoxide reductase chain B	dmsB	2.3521	1.5966	1.1308	1.2643
+Phosphopentomutase	deoB	3.78	1.6697	1.0329	1.2629
+Molybdopterin synthase catalytic subunit	moaE	NaN	1.632	NaN	1.2624
+Uncharacterized protein YjiM	yjiM	3.5772	1.661	1.0038	1.2601
+Inner membrane protein YgaP	ygaP	NaN	1.5787	NaN	1.2601
+Phosphoribosylaminoimidazole-succinocarboxamide synthase	purC	3.2099	1.5943	1.1214	1.2572
+UPF0070 protein YfgM	yfgM	NaN	1.5698	NaN	1.2572
+4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin)	ispG	3.3356	1.702	0.87652	1.2565
+Nitrogen regulatory protein P-II 1	glnB	NaN	1.6403	NaN	1.2553
+Proton glutamate symport protein	gltP	12.172	1.6301	3.0224	1.2548
+50S ribosomal protein L25	rplY	NaN	1.6296	NaN	1.2513
+RecBCD enzyme subunit RecD	recD	3.0118	1.6423	0.77808	1.2494
+Riboflavin biosynthesis protein RibF;Riboflavin kinase;FMN adenylyltransferase	ribF	2.2315	1.6205	0.61283	1.2467
+Formate acetyltransferase 1	pflB	3.5957	1.6211	0.9446	1.2423
+Arabinose 5-phosphate isomerase KdsD	kdsD	1.8817	1.648	0.4808	1.2408
+Peptide chain release factor 2	prfB	3.7456	1.5683	1.2931	1.2382
+Glutathione transport system permease protein GsiC	gsiC	NaN	1.5262	NaN	1.2376
+Uncharacterized HTH-type transcriptional regulator YbiH	ybiH	NaN	1.5423	NaN	1.2361
+Shikimate kinase 2	aroL	NaN	1.5377	NaN	1.2355
+4-hydroxy-3-methylbut-2-enyl diphosphate reductase	ispH	NaN	1.5459	NaN	1.2321
+Uncharacterized protein YiiQ	yiiQ	NaN	1.5643	NaN	1.23
+Hydroxyacylglutathione hydrolase	gloB	6.0486	1.5634	1.6483	1.2289
+Alanine--tRNA ligase	alaS	3.1324	1.5781	0.8783	1.2278
+UPF0115 protein YfcN	yfcN	NaN	1.5572	NaN	1.2276
+FeS cluster assembly protein SufD	sufD	3.181	1.6432	0.97486	1.2267
+Flap endonuclease Xni	ygdG	1.1562	1.5557	0.29595	1.226
+D-methionine-binding lipoprotein MetQ	metQ	9.8379	1.5542	2.486	1.2246
+Chaperone protein DnaJ	dnaJ	6.2151	1.5293	1.6355	1.224
+Probable glutamate/gamma-aminobutyrate antiporter	gadC	9.8184	1.5523	2.4995	1.2225
+Outer membrane lipoprotein Blc	blc	NaN	1.5547	NaN	1.2208
+Protease HtpX	htpX	NaN	1.553	NaN	1.2208
+NADH-quinone oxidoreductase subunit B	nuoB	9.1389	1.5526	2.3001	1.2167
+tRNA pseudouridine synthase B	truB	NaN	1.5705	NaN	1.2156
+Hydrogenase isoenzymes nickel incorporation protein HypB	hypB	NaN	1.475	NaN	1.2149
+Quinone oxidoreductase 1	qorA	1.8094	1.5924	0.51497	1.2139
+Cell division protein ZapD	zapD	NaN	1.5497	NaN	1.2137
+Transcriptional regulatory protein RstA	rstA	NaN	1.5558	NaN	1.2137
+Uncharacterized GST-like protein YibF	yibF	NaN	1.5466	NaN	1.2126
+50S ribosomal protein L17	rplQ	NaN	1.624	NaN	1.2124
+Oligopeptide transport ATP-binding protein OppD	oppD	5.0197	1.5829	1.2586	1.2114
+Uncharacterized protein YqjD	yqjD	NaN	1.5927	NaN	1.2093
+tRNA-dihydrouridine synthase B	dusB	NaN	1.5582	NaN	1.2091
+tRNA modification GTPase MnmE	mnmE	4.3606	1.5823	1.2086	1.209
+		7.6578	1.6003	1.983	1.2071
+Acetylglutamate kinase	argB	2.5945	1.5174	0.66381	1.2066
+50S ribosomal protein L32	rpmF	NaN	1.5512	NaN	1.2058
+Protease 4	sppA	8.6876	1.5646	2.1636	1.2039
+50S ribosomal protein L28	rpmB	NaN	1.5356	NaN	1.2016
+Nitrate/nitrite response regulator protein NarL	narL	4.0817	1.536	1.1274	1.2011
+Protein YqjC	yqjC	NaN	1.4986	NaN	1.2004
+UPF0438 protein YifE	yifE	NaN	1.5585	NaN	1.1994
+Dihydroorotate dehydrogenase (quinone)	pyrD	2.4833	1.5772	0.74673	1.1991
+"D-tagatose-1,6-bisphosphate aldolase subunit GatZ"	gatZ	4.8451	1.5708	1.2238	1.1991
+Blue copper oxidase CueO	cueO	5.0425	1.58	1.3703	1.1988
+Multiphosphoryl transfer protein;Phosphocarrier protein HPr;Fructose-specific phosphotransferase enzyme IIA component	fruB	9.3845	1.5847	2.5165	1.1975
+Glutamate 5-kinase	proB	4.6367	1.5173	1.2608	1.1955
+NADP-specific glutamate dehydrogenase	gdhA	1.791	1.5719	0.48598	1.1946
+50S ribosomal protein L6	rplF	3.3581	1.5403	0.86463	1.1938
+DNA polymerase III subunit tau	dnaX	3.214	1.5273	0.86754	1.1928
+Chaperone protein HscA	hscA	3.7132	1.5742	1.0101	1.1904
+Chromosome partition protein MukF	mukF	5.4702	1.6024	1.409	1.1891
+Putative diguanylate cyclase YeaJ	yeaJ	8.0817	1.4877	2.3159	1.1867
+Signal recognition particle receptor FtsY	ftsY	3.2147	1.5728	0.84091	1.1856
+Uncharacterized protein YbiB	ybiB	3.6909	1.5883	1.0139	1.1853
+50S ribosomal protein L14	rplN	NaN	1.5819	NaN	1.1852
+Phosphodiesterase YfcE	yfcE	NaN	1.5274	NaN	1.1851
+Ribosomal RNA large subunit methyltransferase G	rlmG	3.7234	1.449	2.1648	1.1812
+Asparagine--tRNA ligase	asnS	3.635	1.5895	0.92293	1.1802
+Peptide transport system permease protein SapC	sapC	NaN	1.5034	NaN	1.1793
+Protein QmcA	qmcA	8.1335	1.5179	2.1287	1.1781
+Uncharacterized ABC transporter ATP-binding protein YadG	yadG	5.3047	1.5312	1.5901	1.178
+GMP reductase	guaC	1.1207	1.5027	0.28792	1.1763
+Inner membrane protein YghB	yghB	NaN	1.4361	NaN	1.1755
+L-threonine 3-dehydrogenase	tdh	4.8844	1.4806	1.2733	1.1735
+Uracil phosphoribosyltransferase	upp	5.5795	1.5106	1.6209	1.1734
+UTP--glucose-1-phosphate uridylyltransferase	galF	2.8912	1.5375	0.74641	1.1731
+50S ribosomal protein L33	rpmG	NaN	1.5098	NaN	1.1724
+L-seryl-tRNA(Sec) selenium transferase	selA	1.9268	1.5428	0.72509	1.171
+Metalloprotease PmbA	pmbA	4.73	1.5223	1.2528	1.1702
+50S ribosomal protein L18	rplR	NaN	1.4744	NaN	1.1699
+Fumarate reductase iron-sulfur subunit	frdB	3.3882	1.5097	0.94207	1.1681
+Sulfite reductase [NADPH] hemoprotein beta-component	cysI	3.4866	1.5337	0.87752	1.168
+Met repressor	metJ	NaN	1.4829	NaN	1.1658
+50S ribosomal protein L35	rpmI	NaN	1.5457	NaN	1.1651
+Galactokinase	galK	4.1875	1.5051	1.0702	1.1643
+Pyruvate dehydrogenase [ubiquinone];Alpha-peptide	poxB	3.7175	1.5179	0.95972	1.1636
+Adenylosuccinate lyase	purB	2.5785	1.5285	0.69106	1.1628
+Isocitrate dehydrogenase [NADP]	icd	3.4307	1.4364	0.89069	1.1626
+Inosine-5-monophosphate dehydrogenase	guaB	1.6701	1.5224	0.4205	1.1606
+Farnesyl diphosphate synthase	ispA	NaN	1.5011	NaN	1.1592
+tRNA (guanine-N(7)-)-methyltransferase	trmB	NaN	1.4629	NaN	1.1589
+GDP-mannose pyrophosphatase NudK	nudK	NaN	1.5255	NaN	1.1589
+NADH-quinone oxidoreductase subunit F	nuoF	12.395	1.5409	3.1486	1.1583
+UPF0167 protein CbrC	cbrC	NaN	1.411	NaN	1.1574
+Probable iron export ATP-binding protein FetA	fetA	9.562	1.4525	2.6586	1.157
+PTS system mannitol-specific EIICBA component;Mannitol permease IIC component;Mannitol-specific phosphotransferase enzyme IIB component;Mannitol-specific phosphotransferase enzyme IIA component	mtlA	9.9784	1.5444	2.6171	1.1569
+Glutaredoxin-4	grxD	NaN	1.4521	NaN	1.1542
+		NaN	1.4483	NaN	1.154
+30S ribosomal protein S16	rpsP	NaN	1.4717	NaN	1.1528
+Chromosomal replication initiator protein DnaA	dnaA	2.2614	1.433	0.60828	1.1524
+50S ribosomal protein L22	rplV	NaN	1.4875	NaN	1.1524
+Fumarate reductase subunit C	frdC	NaN	1.47	NaN	1.1513
+Protein HemY	hemY	4.8838	1.5122	1.2239	1.1493
+ABC transporter ATP-binding protein YojI	yojI	NaN	1.4976	NaN	1.1491
+Trehalose-6-phosphate phosphatase	otsB	3.4067	1.4291	0.88958	1.149
+50S ribosomal protein L5	rplE	NaN	1.4525	NaN	1.1483
+Metalloprotease TldD	tldD	3.9058	1.4714	1.0241	1.1472
+50S ribosomal protein L1	rplA	4.482	1.4686	1.1422	1.1469
+Bacterial non-heme ferritin-like protein	ftnB	NaN	1.4525	NaN	1.1441
+Transcriptional regulator YqjI	yqjI	NaN	1.4531	NaN	1.1432
+UPF0283 membrane protein YcjF	ycjF	1.2763	1.4197	0.34605	1.1405
+"PTS-dependent dihydroxyacetone kinase, phosphotransferase subunit DhaM;Phosphocarrier protein HPr;Phosphotransferase enzyme IIA component"	dhaM	5.1832	1.5135	1.1313	1.1405
+50S ribosomal protein L19	rplS	NaN	1.4871	NaN	1.1397
+Replication-associated recombination protein A	rarA	4.4286	1.5189	1.0954	1.1394
+Protein TolB	tolB	10.039	1.5302	2.5275	1.1389
+Multidrug resistance protein MdtE	mdtE	9.0598	1.496	2.4185	1.1358
+Electron transport complex subunit RsxB	rsxB	NaN	1.4307	NaN	1.135
+50S ribosomal protein L16	rplP	3.7309	1.5029	1.2188	1.1311
+Signal peptidase I	lepB	4.7852	1.4357	1.2365	1.1307
+N-acetyl-D-glucosamine kinase	nagK	NaN	1.4198	NaN	1.1304
+Ribosomal RNA large subunit methyltransferase I	rlmI	2.2796	1.4929	0.58595	1.1303
+50S ribosomal protein L34	rpmH	NaN	1.4692	NaN	1.13
+50S ribosomal protein L27	rpmA	NaN	1.537	NaN	1.1271
+Uncharacterized protein YjbB	yjbB	5.7292	1.4634	1.5405	1.1264
+50S ribosomal protein L13	rplM	4.7805	1.4732	1.6925	1.1252
+Cytochrome c-type biogenesis protein CcmE	ccmE	NaN	1.4293	NaN	1.125
+Flavin mononucleotide phosphatase YigB	yigB	NaN	1.4473	NaN	1.1235
+DNA replication protein DnaC	dnaC	NaN	1.4182	NaN	1.1228
+DnaJ-like protein DjlA	djlA	NaN	1.446	NaN	1.122
+Glutamate/aspartate transport ATP-binding protein GltL	gltL	5.3635	1.4583	1.7097	1.1213
+Ubiquinone biosynthesis O-methyltransferase	ubiG	2.1764	1.4436	0.59737	1.1193
+		NaN	1.4454	NaN	1.1151
+Peptidyl-prolyl cis-trans isomerase D	ppiD	10.566	1.4371	2.6892	1.114
+50S ribosomal protein L3	rplC	3.8292	1.4429	0.9619	1.1136
+Glutathione S-transferase GstA	gstA	3.4834	1.4446	1.8734	1.1118
+50S ribosomal protein L9	rplI	NaN	1.4804	NaN	1.1109
+Cytochrome bo(3) ubiquinol oxidase subunit 1	cyoB	9.6209	1.364	2.7534	1.1092
+Bifunctional protein GlmU;UDP-N-acetylglucosamine pyrophosphorylase;Glucosamine-1-phosphate N-acetyltransferase	glmU	1.0332	1.4219	0.26386	1.1092
+DNA polymerase III subunit chi	holC	NaN	1.3834	NaN	1.1078
+HTH-type transcriptional repressor PurR	purR	3.1571	1.4175	0.8379	1.105
+Glutamate-pyruvate aminotransferase AlaA	alaA	5.1696	1.4405	1.4356	1.1046
+50S ribosomal protein L15	rplO	4.2154	1.4738	1.2058	1.1032
+Dimethyl sulfoxide reductase DmsA	dmsA	4.2496	1.4306	1.1311	1.1032
+Uncharacterized HTH-type transcriptional regulator YciT	yciT	1.4372	1.3746	0.81523	1.103
+"D-tagatose-1,6-bisphosphate aldolase subunit GatY"	gatY	5.2739	1.4573	1.3225	1.1023
+30S ribosomal protein S21	rpsU	NaN	1.4419	NaN	1.1023
+Hydrogenase-2 large chain	hybC	3.5618	1.4448	0.94325	1.0999
+DNA-binding protein StpA	stpA	NaN	1.3937	NaN	1.0986
+ADP-L-glycero-D-manno-heptose-6-epimerase	hldD	4.5655	1.4017	1.2173	1.0976
+Aerobic respiration control protein ArcA	arcA	2.3413	1.4211	0.62951	1.0966
+GTPase ObgE/CgtA	obgE	3.3931	1.3757	0.87731	1.0961
+"Lysine--tRNA ligase, heat inducible"	lysU	NaN	1.4036	NaN	1.096
+Amidophosphoribosyltransferase	purF	3.2964	1.4039	1.105	1.0956
+Ribonuclease I	rna	3.471	1.4262	0.9772	1.0954
+50S ribosomal protein L21	rplU	NaN	1.4646	NaN	1.0948
+O-acetyl-ADP-ribose deacetylase	ymdB	NaN	1.3899	NaN	1.0944
+UPF0225 protein YchJ	ychJ	NaN	1.3531	NaN	1.0943
+Uncharacterized protein YeaG	yeaG	3.9776	1.3934	1.2063	1.0935
+Metalloprotease LoiP	loiP	2.4257	1.3336	0.61728	1.0913
+50S ribosomal protein L4	rplD	5.009	1.4499	1.3623	1.0912
+50S ribosomal protein L10	rplJ	NaN	1.493	NaN	1.0903
+Maltose/maltodextrin import ATP-binding protein MalK	malK	9.1642	1.4512	2.3268	1.0886
+tRNA-specific 2-thiouridylase MnmA	mnmA	4.2131	1.4054	1.0761	1.088
+3-octaprenyl-4-hydroxybenzoate carboxy-lyase	ubiD	2.0382	1.4228	0.78515	1.087
+Magnesium and cobalt efflux protein CorC	corC	3.4406	1.3622	0.88192	1.0869
+Chromosome partition protein MukE	mukE	NaN	1.3962	NaN	1.0865
+Phosphoethanolamine transferase EptC	eptC	10.658	1.4081	2.7243	1.086
+Uncharacterized protease YegQ	yegQ	2.7682	1.4294	1.0154	1.0852
+Multidrug efflux pump subunit AcrA	acrA	8.6	1.4469	2.2173	1.0849
+Peptidase B	pepB	4.3817	1.419	1.124	1.0844
+Protein DcrB	dcrB	NaN	1.4348	NaN	1.0841
+"Phospho-2-dehydro-3-deoxyheptonate aldolase, Trp-sensitive"	aroH	2.2299	1.4254	0.59794	1.0833
+UPF0716 protein FxsA	fxsA	NaN	1.3762	NaN	1.0813
+Lipid-A-disaccharide synthase	lpxB	3.3682	1.3914	0.91314	1.0809
+Phosphate import ATP-binding protein PstB	pstB	4.8541	1.3946	1.2412	1.0805
+Redox-sensitive transcriptional activator SoxR	soxR	NaN	1.3601	NaN	1.0795
+Esterase FrsA	frsA	2.6215	1.4401	0.70238	1.0793
+D-alanyl-D-alanine carboxypeptidase DacA	dacA	3.3447	1.3467	0.89723	1.0792
+Uncharacterized ABC transporter ATP-binding protein YbbA	ybbA	NaN	1.3478	NaN	1.0788
+Cell division topological specificity factor	minE	NaN	1.3642	NaN	1.0776
+Uncharacterized protein YhhM	yhhM	NaN	1.3688	NaN	1.0775
+Putative lambdoid prophage e14 repressor protein C2	cohE	2.2748	1.361	0.6093	1.0774
+SsrA-binding protein	smpB	NaN	1.3672	NaN	1.0771
+ATP-dependent protease ATPase subunit HslU	hslU	3.2927	1.3923	0.91006	1.076
+50S ribosomal protein L23	rplW	NaN	1.4088	NaN	1.0758
+Pantothenate kinase	coaA	2.3059	1.353	0.62884	1.0749
+ATP-binding/permease protein CydD	cydD	8.108	1.453	2.1609	1.0744
+Lipopolysaccharide heptosyltransferase 1	rfaC	3.5064	1.4373	0.94908	1.0742
+Proline/betaine transporter	proP	9.1911	1.4204	2.3259	1.0735
+Uncharacterized protein YdjY	ydjY	NaN	1.3954	NaN	1.073
+Putative lipoprotein YliF	yliF	5.8517	1.3276	1.6232	1.0728
+Protein HdeD	hdeD	NaN	1.3161	NaN	1.0719
+Lipoprotein 28	nlpA	9.2813	1.3831	2.388	1.0718
+Cell division protein DedD	dedD	9.2926	1.4078	2.3957	1.0717
+tRNA pseudouridine synthase D	truD	2.2395	1.3683	0.68529	1.0714
+Apolipoprotein N-acyltransferase	lnt	8.2481	1.4284	2.2094	1.0711
+NAD-dependent protein deacylase	cobB	4.4004	1.3588	1.181	1.0709
+"Alpha,alpha-trehalose-phosphate synthase [UDP-forming]"	otsA	4.4079	1.3513	1.22	1.0703
+Putative transport protein YbjL	ybjL	NaN	1.3516	NaN	1.069
+Outer membrane protein assembly factor BamA	bamA	NaN	1.2941	NaN	1.0678
+Dipeptide transport ATP-binding protein DppF	dppF	3.393	1.4021	0.85714	1.0676
+Serine--tRNA ligase	serS	3.7312	1.4038	0.95177	1.0669
+NADH dehydrogenase	ndh	3.8061	1.3997	0.97426	1.066
+Hypoxanthine phosphoribosyltransferase	hpt	NaN	1.3804	NaN	1.0658
+Adenylate kinase	adk	NaN	1.4298	NaN	1.065
+Uridine phosphorylase	udp	1.2574	1.4054	0.33167	1.0646
+Ribosomal protein S12 methylthiotransferase accessory factor YcaO	ycaO	3.5131	1.3967	0.93437	1.063
+tRNA-2-methylthio-N(6)-dimethylallyladenosine synthase	miaB	4.5729	1.3845	1.1699	1.0619
+Uncharacterized ABC transporter ATP-binding protein YbiT	ybiT	4.4707	1.3925	1.1423	1.0617
+Universal stress protein F	uspF	NaN	1.414	NaN	1.0605
+Uncharacterized lipoprotein YdcL	ydcL	NaN	1.3383	NaN	1.0603
+30S ribosomal protein S14	rpsN	NaN	1.4053	NaN	1.06
+Citrate synthase	gltA	4.8483	1.3698	1.2503	1.059
+Ribosomal RNA large subunit methyltransferase F	rlmF	NaN	1.3505	NaN	1.0586
+Cytosol aminopeptidase	pepA	1.0762	1.3952	0.26987	1.0571
+3-isopropylmalate dehydratase large subunit	leuC	3.964	1.3377	1.0116	1.0568
+Glucose-6-phosphate 1-dehydrogenase;Extracellular death factor	zwf	3.1115	1.3525	0.82006	1.0552
+30S ribosomal protein S20	rpsT	NaN	1.3662	NaN	1.055
+Type I restriction enzyme EcoKI M protein	hsdM	2.507	1.417	0.69281	1.0545
+Carbamoyl-phosphate synthase small chain	carA	3.6305	1.3755	0.93873	1.054
+DNA primase	dnaG	2.5754	1.3681	0.66699	1.0536
+30S ribosomal protein S19	rpsS	NaN	1.4103	NaN	1.0524
+Ribosome-associated ATPase	rbbA	4.2574	1.3692	1.092	1.0521
+Maf-like protein YceF	yceF	2.6496	1.3302	0.97759	1.0512
+Protein MalY;Cystathionine beta-lyase MalY;Maltose regulon modulator	malY	NaN	1.3092	NaN	1.0494
+Sec-independent protein translocase protein TatC	tatC	NaN	1.3398	NaN	1.049
+Uncharacterized protein YgaU	ygaU	NaN	1.3169	NaN	1.0483
+UPF0325 protein YaeH	yaeH	NaN	1.3337	NaN	1.048
+Uncharacterized tRNA/rRNA methyltransferase YfiF	yfiF	3.6331	1.3101	0.91451	1.0477
+Oligopeptide transport system permease protein OppC	oppC	5.6038	1.3673	4.0737	1.0475
+RNA chaperone ProQ	proQ	1.6167	1.2925	0.43908	1.0463
+Histidine transport ATP-binding protein HisP	hisP	4.1813	1.3341	1.1815	1.0458
+Arabinose 5-phosphate isomerase GutQ	gutQ	2.3376	1.3741	0.67672	1.0455
+Probable deferrochelatase/peroxidase YfeX	yfeX	3.3666	1.3535	0.86935	1.0454
+NADH-quinone oxidoreductase subunit C/D	nuoC	7.5797	1.3522	1.9628	1.0453
+Asparagine synthetase B [glutamine-hydrolyzing]	asnB	4.6606	1.3443	1.1872	1.0441
+Lipopolysaccharide assembly protein A	lapA	NaN	1.3498	NaN	1.044
+Ferrous iron transport protein B	feoB	NaN	1.2947	NaN	1.0435
+Nicotinamide-nucleotide amidohydrolase PncC	pncC	NaN	1.3374	NaN	1.0394
+Lipoprotein-releasing system ATP-binding protein LolD	lolD	4.7884	1.3283	1.8672	1.0387
+30S ribosomal protein S4	rpsD	3.3085	1.3156	0.86574	1.0378
+Enoyl-[acyl-carrier-protein] reductase [NADH] FabI	fabI	NaN	1.3848	NaN	1.0377
+Ribosomal RNA small subunit methyltransferase B	rsmB	2.1859	1.382	0.57789	1.0375
+High-affinity branched-chain amino acid transport ATP-binding protein LivF	livF	NaN	1.3413	NaN	1.0371
+Rare lipoprotein A	rlpA	6.9571	1.397	1.8645	1.0366
+DNA gyrase subunit A	gyrA	2.8706	1.285	0.81619	1.0364
+50S ribosomal protein L24	rplX	NaN	1.4219	NaN	1.0363
+N utilization substance protein B	nusB	NaN	1.297	NaN	1.0354
+Thymidylate kinase	tmk	NaN	1.31	NaN	1.0352
+Histidine--tRNA ligase	hisS	3.8901	1.3756	0.96236	1.0339
+Elongation factor Tu 2;Elongation factor Tu 1	tufB;tufA	4.1352	1.3199	1.1166	1.0338
+ATP-dependent RNA helicase RhlE	rhlE	2.9214	1.3641	0.78604	1.0327
+Transcriptional repressor MprA	mprA	NaN	1.3124	NaN	1.0323
+Ribosomal RNA large subunit methyltransferase H	rlmH	NaN	1.3099	NaN	1.0321
+PTS system N-acetylglucosamine-specific EIICBA component;N-acetylglucosamine permease IIC component;N-acetylglucosamine-specific phosphotransferase enzyme IIB component;N-acetylglucosamine-specific phosphotransferase enzyme IIA component	nagE	11.463	1.3011	2.9046	1.03
+NADP-dependent 3-hydroxy acid dehydrogenase YdfG	ydfG	2.526	1.3211	0.62597	1.0293
+30S ribosomal protein S13	rpsM	NaN	1.3477	NaN	1.0288
+Probable phospholipid import ATP-binding protein MlaF	mlaF	10.745	1.3556	2.6314	1.0286
+Pyruvate dehydrogenase E1 component	aceE	3.0055	1.3085	0.821	1.0269
+ATP-dependent Clp protease ATP-binding subunit ClpX	clpX	2.9741	1.3646	0.78044	1.0266
+Energy-dependent translational throttle protein EttA	ettA	5.0433	1.3462	1.2943	1.0256
+Signal recognition particle protein	ffh	4.2523	1.2749	1.1921	1.0251
+Selenocysteine-specific elongation factor	selB	4.4853	1.2976	1.1867	1.0235
+"Phospho-2-dehydro-3-deoxyheptonate aldolase, Phe-sensitive"	aroG	3.0417	1.3269	0.77363	1.0232
+ATP phosphoribosyltransferase	hisG	5.6822	1.2712	1.4754	1.0225
+Tryptophan biosynthesis protein TrpCF;Indole-3-glycerol phosphate synthase;N-(5-phospho-ribosyl)anthranilate isomerase	trpC	3.9033	1.3391	0.98567	1.022
+Aldehyde-alcohol dehydrogenase;Alcohol dehydrogenase;Acetaldehyde dehydrogenase [acetylating];Pyruvate-formate-lyase deactivase	adhE	3.7518	1.3225	0.97798	1.0217
+Cytochrome bo(3) ubiquinol oxidase subunit 2	cyoA	10.21	1.3257	2.5912	1.0216
+Spermidine/putrescine import ATP-binding protein PotA	potA	8.3101	1.3725	2.1272	1.0212
+Acetyl-coenzyme A carboxylase carboxyl transferase subunit beta	accD	2.1584	1.3065	0.54866	1.0205
+High-affinity branched-chain amino acid transport ATP-binding protein LivG	livG	NaN	1.366	NaN	1.0204
+Transcription termination factor Rho	rho	4.9218	1.3447	1.2369	1.0203
+Uncharacterized protein YrdD	yrdD	NaN	1.2712	NaN	1.02
+Murein hydrolase activator EnvC	envC	2.6905	1.3404	0.68705	1.0197
+Probable phosphoglycerate mutase GpmB	gpmB	NaN	1.3155	NaN	1.0191
+"Cob(I)yrinic acid a,c-diamide adenosyltransferase"	btuR	NaN	1.3001	NaN	1.0183
+30S ribosomal protein S2	rpsB	3.1925	1.3578	0.83737	1.0175
+Putative molybdenum transport ATP-binding protein ModF	modF	4.477	1.2948	1.2699	1.0169
+Histidine biosynthesis bifunctional protein HisB;Histidinol-phosphatase;Imidazoleglycerol-phosphate dehydratase	hisB	3.5415	1.3392	0.8894	1.0155
+Ethanolamine ammonia-lyase heavy chain	eutB	2.3536	1.3428	0.67166	1.0145
+Pyruvate formate-lyase 1-activating enzyme	pflA	3.5152	1.3028	0.90722	1.0144
+Ribosomal RNA large subunit methyltransferase J	rlmJ	4.8571	1.2709	1.215	1.0142
+30S ribosomal protein S10	rpsJ	NaN	1.3347	NaN	1.0119
+Ribonucleotide monophosphatase NagD	nagD	4.1328	1.2682	1.0446	1.0118
+NADH-quinone oxidoreductase subunit I	nuoI	5.4411	1.3653	3.0454	1.0113
+Phosphatidylglycerophosphatase B	pgpB	NaN	1.2688	NaN	1.0112
+UPF0441 protein YgiB	ygiB	11.202	1.301	2.8507	1.0101
+30S ribosomal protein S11	rpsK	2.4037	1.3923	0.61504	1.0097
+Spermidine/putrescine transport system permease protein PotC	potC	NaN	1.2844	NaN	1.0094
+4-diphosphocytidyl-2-C-methyl-D-erythritol kinase	ispE	3.2892	1.3065	0.8376	1.0094
+"30S ribosomal protein S6;30S ribosomal protein S6, fully modified isoform;30S ribosomal protein S6, non-modified isoform"	rpsF	NaN	1.3476	NaN	1.0079
+Quinolinate synthase A	nadA	4.276	1.3272	1.1444	1.0078
+Deoxycytidine triphosphate deaminase	dcd	NaN	1.2737	NaN	1.0078
+Transcription termination/antitermination protein NusG	nusG	NaN	1.2992	NaN	1.0077
+dITP/XTP pyrophosphatase	rdgB	NaN	1.2899	NaN	1.0077
+Phosphoadenosine phosphosulfate reductase	cysH	3.3546	1.2987	0.91382	1.0076
+Chaperone protein ClpB	clpB	1.8797	1.2938	0.52754	1.0067
+Uncharacterized protein YceD	yceD	2.4177	1.2655	1.3243	1.0058
+Exoribonuclease 2	rnb	3.7538	1.3327	0.94287	1.005
+Glycine betaine/L-proline transport ATP-binding protein ProV	proV	NaN	1.2292	NaN	1.0042
+Uncharacterized HTH-type transcriptional regulator YegW	yegW	NaN	1.2615	NaN	1.0041
+Tryptophan synthase beta chain	trpB	4.7912	1.3096	1.2074	1.0039
+Heat shock protein 15	hslR	NaN	1.2484	NaN	1.0037
+Methionine synthase	metH	3.8057	1.2775	1.0548	1.0034
+Low-affinity inorganic phosphate transporter 1	pitA	10.62	1.336	2.7352	1.0028
+Uncharacterized protein YcbL	ycbL	NaN	1.306	NaN	1.0026
+50S ribosomal protein L20	rplT	NaN	1.3959	NaN	0.99892
+DNA repair protein RadA	radA	4.3614	1.2976	1.1215	0.99706
+Transcriptional regulatory protein CpxR	cpxR	1.4341	1.2918	0.37824	0.99563
+6-phosphogluconolactonase	pgl	2.848	1.3108	0.71658	0.99524
+Lysine-sensitive aspartokinase 3	lysC	4.2078	1.3269	1.1062	0.99522
+Uncharacterized protein YtfB	ytfB	NaN	1.2953	NaN	0.99435
+30S ribosomal protein S7	rpsG	3.5244	1.2742	2.768	0.99424
+Succinyl-CoA ligase [ADP-forming] subunit alpha	sucD	3.3398	1.2734	0.86474	0.99414
+Probable tRNA (adenine(37)-N6)-methyltransferase	tsaA	4.3256	1.3018	1.1018	0.99387
+Acyl-CoA thioesterase 2	tesB	2.4981	1.2808	0.65563	0.99234
+Electron transport complex subunit RsxC	rsxC	7.1666	1.3102	1.8137	0.99221
+Phosphoribosylglycinamide formyltransferase 2	purT	3.7646	1.3263	0.98037	0.99198
+Threonine synthase	thrC	4.305	1.2695	1.096	0.99148
+Transcription termination/antitermination protein NusA	nusA	4.8414	1.305	1.338	0.99129
+Penicillin-binding protein 2	mrdA	8.2207	1.2927	2.0003	0.9911
+Carbon starvation protein A	cstA	8.1005	1.2842	2.4877	0.99082
+Lipopolysaccharide core heptose(II) kinase RfaY	rfaY	NaN	1.2625	NaN	0.98994
+5-methylcytosine-specific restriction enzyme B	mcrB	4.1383	1.2871	1.4613	0.98932
+PTS system fructose-specific EIIBC component;Fructose-specific phosphotransferase enzyme IIB component;Fructose permease IIC component	fruA	9.5333	1.3159	2.4484	0.98883
+30S ribosomal protein S8	rpsH	NaN	1.3495	NaN	0.98861
+Bifunctional ligase/repressor BirA	birA	3.1459	1.2983	0.8968	0.98857
+Uncharacterized ABC transporter ATP-binding protein YheS	yheS	5.1587	1.272	1.4639	0.98788
+NAD(P) transhydrogenase subunit beta	pntB	9.4163	1.3018	2.3794	0.98766
+Putative acyl-CoA thioester hydrolase YbhC	ybhC	6.4324	1.3324	2.6916	0.98569
+Glutamate synthase [NADPH] large chain	gltB	2.3651	1.2735	0.98454	0.9856
+Uncharacterized GTP-binding protein YjiA	yjiA	4.5537	1.3145	1.1599	0.98498
+HTH-type transcriptional regulator CysB	cysB	3.6302	1.2537	0.95353	0.98489
+Acyl-[acyl-carrier-protein]--UDP-N-acetylglucosamine O-acyltransferase	lpxA	2.5077	1.3063	0.68112	0.98427
+NADPH-dependent 7-cyano-7-deazaguanine reductase	queF	1.0657	1.2898	0.29379	0.98394
+Glyoxylate/hydroxypyruvate reductase B	ghrB	1.2318	1.235	0.32345	0.98366
+Malate:quinone oxidoreductase	mqo	2.0772	1.2757	0.62692	0.9836
+D-alanyl-D-alanine carboxypeptidase DacC	dacC	2.835	1.2845	0.73062	0.98286
+Mannose permease IID component	manZ	4.3232	1.3413	1.2386	0.98044
+Protein BcsE homolog	bcsE	NaN	1.1733	NaN	0.97965
+50S ribosomal protein L11	rplK	NaN	1.3426	NaN	0.97858
+Protein PhnA	phnA	NaN	1.2516	NaN	0.97718
+Uncharacterized protein YiiD	yiiD	3.3725	1.2534	0.84581	0.97666
+30S ribosomal protein S17	rpsQ	NaN	1.3438	NaN	0.97666
+Putative uroporphyrinogen-III C-methyltransferase	hemX	9.4092	1.2738	2.4819	0.97625
+"Lipopolysaccharide 1,2-N-acetylglucosaminetransferase"	waaU	3.9626	1.2705	1.1184	0.97587
+Sigma-E factor regulatory protein RseB	rseB	3.6771	1.2864	0.96746	0.97573
+Uncharacterized protein YfeY	yfeY	NaN	1.2308	NaN	0.97551
+30S ribosomal protein S12	rpsL	NaN	1.2602	NaN	0.97547
+30S ribosomal protein S18	rpsR	NaN	1.3328	NaN	0.97547
+Bifunctional aspartokinase/homoserine dehydrogenase 2;Aspartokinase;Homoserine dehydrogenase	metL	4.1043	1.1943	1.0496	0.97515
+Pyruvate kinase II	pykA	1.5734	1.2709	0.40504	0.97473
+Glycerol-3-phosphate dehydrogenase [NAD(P)+]	gpsA	4.5823	1.2977	1.1664	0.97457
+Glycine--tRNA ligase alpha subunit	glyQ	4.4268	1.2848	1.1813	0.97454
+Putrescine transport ATP-binding protein PotG	potG	7.4729	1.2424	2.0937	0.97415
+Acetolactate synthase isozyme 1 large subunit	ilvB	4.106	1.2969	1.0269	0.97411
+Phosphoenolpyruvate synthase	ppsA	4.0541	1.2663	1.0377	0.97367
+Probable diguanylate cyclase YdaM	ydaM	2.5495	1.2047	0.67949	0.97344
+CTP synthase	pyrG	3.6942	1.283	0.92776	0.97238
+Succinate dehydrogenase iron-sulfur subunit	sdhB	5.767	1.2854	1.463	0.97204
+Protein AroM	aroM	NaN	1.2113	NaN	0.97048
+Lipid A export ATP-binding/permease protein MsbA	msbA	7.6754	1.2706	1.9775	0.97013
+Galactose-proton symporter	galP	12.86	1.2813	3.3253	0.97005
+HTH-type transcriptional regulator HexR	hexR	4.3759	1.256	1.2232	0.96981
+Uncharacterized HTH-type transcriptional regulator YieP	yieP	NaN	1.249	NaN	0.96969
+Homoserine kinase	thrB	NaN	1.2591	NaN	0.9694
+Carbamoyl-phosphate synthase large chain	carB	3.1209	1.2473	0.81878	0.9693
+Bifunctional protein HldE;D-beta-D-heptose 7-phosphate kinase;D-beta-D-heptose 1-phosphate adenylyltransferase	hldE	3.5385	1.2267	0.91439	0.96905
+Sulfoxide reductase catalytic subunit YedY	yedY	7.0957	1.2937	2.0085	0.96902
+Acetyl-coenzyme A synthetase	acs	2.834	1.2315	0.73939	0.96845
+Anthranilate synthase component 1	trpE	4.0658	1.241	1.0368	0.96736
+RNA-binding protein Hfq	hfq	NaN	1.2554	NaN	0.96723
+Adenylosuccinate synthetase	purA	4.7763	1.2448	1.2134	0.96707
+50S ribosomal protein L2	rplB	3.7694	1.2558	0.97127	0.96636
+Cell division ATP-binding protein FtsE	ftsE	4.4264	1.229	1.2536	0.96632
+30S ribosomal protein S9	rpsI	NaN	1.2373	NaN	0.96548
+Glycine--tRNA ligase beta subunit	glyS	3.968	1.2663	1.0056	0.96523
+RNA polymerase sigma factor RpoH	rpoH	1.8173	1.2411	0.46978	0.96507
+Septum site-determining protein MinD	minD	4.6659	1.2995	1.1732	0.96501
+GTP cyclohydrolase-2	ribA	NaN	1.1755	NaN	0.96342
+High-affinity branched-chain amino acid transport system permease protein LivM	livM	NaN	1.1548	NaN	0.96311
+Probable phospholipid ABC transporter-binding protein MlaD	mlaD	NaN	1.2832	NaN	0.96179
+Ribosomal RNA small subunit methyltransferase C	rsmC	3.5553	1.2287	0.91903	0.96148
+Protein SmtA	smtA	NaN	1.2086	NaN	0.96127
+ATP-dependent RNA helicase RhlB	rhlB	2.626	1.2521	0.6623	0.96081
+Peptidase T	pepT	2.03	1.2833	0.5318	0.9607
+Galactitol-specific phosphotransferase enzyme IIA component	gatA	NaN	1.2833	NaN	0.9606
+Putative GTP cyclohydrolase 1 type 2	ybgI	1.898	1.2253	0.89049	0.95991
+Cell division protein FtsQ	ftsQ	10.558	1.2726	2.6932	0.95953
+Protein YdgH	ydgH	8.9543	1.2259	2.2766	0.95819
+Cysteine desulfurase IscS	iscS	3.6667	1.2555	0.98085	0.95516
+ABC transporter ATP-binding protein uup	uup	NaN	1.2114	NaN	0.955
+Protoporphyrinogen IX dehydrogenase [menaquinone]	hemG	NaN	1.2209	NaN	0.95492
+2-isopropylmalate synthase	leuA	3.5857	1.1806	0.91092	0.95403
+RNA pyrophosphohydrolase	rppH	NaN	1.2233	NaN	0.95366
+Uncharacterized protein YhiI	yhiI	3.0953	1.1656	0.91587	0.95322
+Endonuclease 8	nei	1.151	1.1933	0.2972	0.95269
+Cyclopropane-fatty-acyl-phospholipid synthase	cfa	3.3751	1.1947	1.3828	0.95163
+Adenylyl-sulfate kinase	cysC	NaN	1.2128	NaN	0.95133
+Valine--pyruvate aminotransferase	avtA	4.3325	1.2701	1.0961	0.94827
+Cysteine desulfurase	sufS	2.1091	1.2512	0.54271	0.94629
+Nitrite transporter NirC	nirC	NaN	1.1998	NaN	0.94594
+DNA-binding protein H-NS	hns	NaN	1.2099	NaN	0.94544
+Serine hydroxymethyltransferase	glyA	3.9353	1.204	1.0236	0.94519
+Regulator of RpoS	rssB	NaN	1.2339	NaN	0.94491
+Elongation factor G	fusA	2.8523	1.1897	0.74349	0.9448
+Lipoprotein-releasing system transmembrane protein LolE	lolE	4.1553	1.2411	1.0646	0.94469
+HTH-type transcriptional regulator RpiR	rpiR	3.695	1.2554	0.95752	0.94373
+"Fructose-1,6-bisphosphatase 1 class 2"	glpX	3.7897	1.2467	1.0082	0.94347
+Coenzyme A biosynthesis bifunctional protein CoaBC;Phosphopantothenoylcysteine decarboxylase;Phosphopantothenate--cysteine ligase	coaBC	1.804	1.2314	0.44705	0.94306
+DNA gyrase subunit B	gyrB	3.9712	1.2148	1.0167	0.94244
+Bifunctional NAD(P)H-hydrate repair enzyme Nnr;ADP-dependent (S)-NAD(P)H-hydrate dehydratase;NAD(P)H-hydrate epimerase	nnr	1.9358	1.2679	0.49866	0.94147
+Uncharacterized HTH-type transcriptional regulator YdcR	ydcR	0.46336	1.2485	0.11813	0.94052
+Biotin carboxylase	accC	3.1514	1.2324	0.81325	0.94037
+Uncharacterized protein YheO	yheO	2.6309	1.1739	0.72305	0.93978
+UDP-3-O-[3-hydroxymyristoyl] N-acetylglucosamine deacetylase	lpxC	4.482	1.0922	1.3804	0.93939
+Adenine permease AdeP	adeP	11.084	1.2233	2.7846	0.93936
+"Selenide, water dikinase"	selD	4.0313	1.1722	1.0243	0.93868
+sn-glycerol-3-phosphate import ATP-binding protein UgpC	ugpC	8.575	1.1893	2.39	0.93851
+DNA polymerase I	polA	1.4753	1.249	0.40429	0.93846
+N5-carboxyaminoimidazole ribonucleotide mutase	purE	NaN	1.2059	NaN	0.93799
+Nucleoid-associated protein YejK	yejK	3.2259	1.2373	0.87186	0.93764
+Anaerobic ribonucleoside-triphosphate reductase	nrdD	4.3005	1.1902	1.1114	0.93741
+UPF0755 protein YceG	yceG	6.9919	1.2359	1.7805	0.93719
+Dihydrolipoyllysine-residue acetyltransferase component of pyruvate dehydrogenase complex	aceF	1.9189	1.191	0.52945	0.9366
+		NaN	1.1896	NaN	0.93514
+1-(5-phosphoribosyl)-5-[(5-phosphoribosylamino)methylideneamino] imidazole-4-carboxamide isomerase	hisA	NaN	1.2638	NaN	0.93494
+HTH-type transcriptional regulator ArgP	argP	5.0026	1.2305	1.2824	0.93493
+Uncharacterized lipoprotein YbaY	ybaY	5.4546	1.2552	1.4485	0.93478
+Glutamate-pyruvate aminotransferase AlaC	alaC	3.32	1.2302	0.90773	0.93476
+D-alanyl-D-alanine carboxypeptidase DacB	dacB	3.9525	1.2306	1.0327	0.93454
+Cell division protein FtsL	ftsL	NaN	1.1642	NaN	0.93435
+Inner membrane protein YedI	yedI	NaN	1.1852	NaN	0.93422
+Glutamine transport ATP-binding protein GlnQ	glnQ	4.6446	1.2196	1.163	0.93358
+"Phospho-2-dehydro-3-deoxyheptonate aldolase, Tyr-sensitive"	aroF	1.5411	1.1382	0.42711	0.93325
+Isochorismate synthase MenF	menF	3.118	1.1983	0.85996	0.93313
+"Glutamate-1-semialdehyde 2,1-aminomutase"	hemL	3.7246	1.2252	0.93481	0.93303
+Histidine biosynthesis bifunctional protein HisIE;Phosphoribosyl-AMP cyclohydrolase;Phosphoribosyl-ATP pyrophosphatase	hisI	3.4299	1.2364	0.90417	0.93293
+7-cyano-7-deazaguanine synthase	queC	5.6605	1.1691	1.5183	0.93288
+D-lactate dehydrogenase	dld	2.6263	1.183	0.69387	0.93276
+ATP-dependent RNA helicase SrmB	srmB	3.556	1.2281	0.92338	0.93212
+Methionine import ATP-binding protein MetN	metN	7.9942	1.2161	2.6568	0.93172
+Protein translocase subunit SecE	secE	NaN	1.2226	NaN	0.93129
+4-hydroxythreonine-4-phosphate dehydrogenase	pdxA	2.5663	1.196	0.71261	0.9309
+Hydrogenase-2 operon protein HybA	hybA	2.3701	1.2289	0.94171	0.93063
+Thiol:disulfide interchange protein DsbD	dsbD	11.105	1.2186	2.7159	0.93063
+Bactoprenol glucosyl transferase homolog from prophage CPS-53	yfdH	4.0477	1.225	1.141	0.93002
+Acetolactate synthase isozyme 3 small subunit	ilvH	NaN	1.186	NaN	0.92986
+Soluble pyridine nucleotide transhydrogenase	sthA	4.2488	1.2041	1.0991	0.92961
+Ribosomal protein S12 methylthiotransferase RimO	rimO	4.1649	1.2021	1.0608	0.9294
+UDP-N-acetyl-D-mannosamine dehydrogenase	wecC	3.9824	1.2499	0.91392	0.9279
+Protein RseC	rseC	NaN	1.1667	NaN	0.92783
+Voltage-gated potassium channel Kch	kch	NaN	1.186	NaN	0.92696
+Uridine kinase	udk	NaN	1.1631	NaN	0.92598
+Nitrogen regulation protein NR(I)	glnG	4.4028	1.2277	1.1168	0.92596
+Succinyl-CoA ligase [ADP-forming] subunit beta	sucC	3.2011	1.1689	0.80084	0.92582
+Uncharacterized protein YgiM	ygiM	NaN	1.1919	NaN	0.92522
+Regulator of sigma-E protease RseP	rseP	6.4015	1.198	1.6873	0.92315
+1-deoxy-D-xylulose-5-phosphate synthase	dxs	3.7677	1.2101	1.05	0.92296
+Guanylate kinase	gmk	NaN	1.1758	NaN	0.92292
+DNA-directed RNA polymerase subunit beta	rpoB	3.1519	1.1717	0.90358	0.92265
+Multidrug export protein EmrA	emrA	9.3437	1.1909	2.3491	0.92215
+Polyribonucleotide nucleotidyltransferase	pnp	1.8113	1.1784	0.48342	0.92212
+Protein FdhE	fdhE	5.2322	1.1976	1.4606	0.92164
+Proline--tRNA ligase	proS	3.96	1.2156	1.0091	0.92114
+Uncharacterized protein YigI	yigI	NaN	1.165	NaN	0.92086
+Copper-exporting P-type ATPase A	copA	6.6453	1.2339	1.6529	0.92071
+Glucitol operon repressor	srlR	1.9935	1.1138	0.56977	0.9197
+Aspartate carbamoyltransferase regulatory chain	pyrI	2.6663	1.2259	0.7207	0.91959
+Glycerol kinase	glpK	5.5894	1.2252	1.5352	0.91929
+"Fructose-1,6-bisphosphatase class 1"	fbp	3.7369	1.1824	0.97828	0.91914
+Ribosomal large subunit pseudouridine synthase B	rluB	2.9875	1.2097	0.76055	0.919
+HTH-type transcriptional regulator IlvY	ilvY	1.3354	1.1499	0.36552	0.91885
+Beta-barrel assembly-enhancing protease	bepA	NaN	1.1745	NaN	0.91833
+Homoserine O-succinyltransferase	metA	4.1422	1.208	1.1205	0.91818
+Anaerobic C4-dicarboxylate transporter DcuA	dcuA	11.748	1.2482	3.0167	0.91753
+PTS system glucose-specific EIICB component;Glucose permease IIC component;Glucose-specific phosphotransferase enzyme IIB component	ptsG	10.25	1.1835	2.6547	0.91735
+L-threonine dehydratase biosynthetic IlvA	ilvA	4.2648	1.2062	1.1052	0.91724
+Succinate dehydrogenase flavoprotein subunit	sdhA	4.6048	1.192	1.165	0.91718
+Right origin-binding protein	rob	1.0086	1.1929	0.26463	0.91694
+Probable protease SohB	sohB	4.0064	1.1868	1.1482	0.91598
+Ribosomal large subunit pseudouridine synthase D	rluD	2.6806	1.2098	0.72598	0.91571
+Ribosome-binding ATPase YchF	ychF	3.6008	1.1465	0.90407	0.91515
+DNA polymerase III subunit delta	holB	3.6151	1.1769	0.94994	0.91485
+Bifunctional protein FolD;Methylenetetrahydrofolate dehydrogenase;Methenyltetrahydrofolate cyclohydrolase	folD	4.1693	1.1644	1.055	0.91455
+30S ribosomal protein S5	rpsE	2.9285	1.2747	0.74436	0.91425
+Uncharacterized protein YeaO	yeaO	NaN	1.1312	NaN	0.91363
+Maltose O-acetyltransferase	maa	NaN	1.1352	NaN	0.91351
+Peptidoglycan synthase FtsI	ftsI	3.9538	1.1705	1.0806	0.91312
+Uncharacterized protein YbjS	ybjS	1.4463	1.2052	0.39189	0.91285
+Cell shape-determining protein MreC	mreC	4.5314	1.1485	1.2108	0.91276
+Sigma factor-binding protein Crl	crl	NaN	1.2047	NaN	0.91259
+UPF0194 membrane protein YbhG	ybhG	8.0651	1.1995	2.0507	0.91224
+ATPase RavA	ravA	2.4778	1.162	0.71138	0.91176
+Sulfate adenylyltransferase subunit 1	cysN	4.7544	1.1769	1.2881	0.91124
+tRNA 2-thiocytidine biosynthesis protein TtcA	ttcA	2.3158	1.1647	0.58333	0.91107
+tRNA sulfurtransferase	thiI	3.217	1.1749	0.90244	0.91072
+Bifunctional purine biosynthesis protein PurH;Phosphoribosylaminoimidazolecarboxamide formyltransferase;IMP cyclohydrolase	purH	1.593	1.1752	0.41754	0.90987
+"Beta-1,6-galactofuranosyltransferase WbbI"	wbbI	4.7826	1.1975	1.2106	0.90968
+Probable S-methylmethionine permease	mmuP	9.2127	1.2001	2.6394	0.90968
+Phosphoserine phosphatase	serB	1.8245	1.1408	0.54116	0.90914
+Bifunctional aspartokinase/homoserine dehydrogenase 1;Aspartokinase;Homoserine dehydrogenase	thrA	3.2278	1.1874	0.86382	0.9089
+Cold shock protein CspA;Cold shock-like protein CspG	cspA;cspG	NaN	1.1319	NaN	0.9084
+Curved DNA-binding protein	cbpA	1.7907	1.1789	0.46565	0.90771
+Uncharacterized protein YcgB	ycgB	4.4882	1.1862	1.2125	0.9077
+Dipeptide transport ATP-binding protein DppD	dppD	3.8116	1.1389	1.0009	0.90712
+GTPase Der	der	3.4649	1.1673	0.87758	0.9064
+"Lipopolysaccharide 1,2-glucosyltransferase"	rfaJ	5.5633	1.1639	1.5408	0.90634
+T-protein;Chorismate mutase;Prephenate dehydrogenase	tyrA	3.2498	1.2168	0.89191	0.90606
+Ribose-phosphate pyrophosphokinase	prs	5.409	1.2042	1.3813	0.9059
+Der GTPase-activating protein YihI	yihI	NaN	1.1402	NaN	0.90587
+Phosphomethylpyrimidine synthase	thiC	2.82	1.1556	0.78781	0.90517
+Electron transport complex subunit RsxG	rsxG	NaN	1.1556	NaN	0.90454
+Protein-export membrane protein SecG	secG	NaN	1.2514	NaN	0.9042
+Ribosomal-protein-alanine acetyltransferase	rimJ	NaN	1.159	NaN	0.90369
+Uncharacterized protein YkgG	ykgG	NaN	1.1198	NaN	0.90351
+5-methyltetrahydropteroyltriglutamate--homocysteine methyltransferase	metE	3.4099	1.1236	0.86202	0.90329
+Uncharacterized Na(+)/H(+) exchanger YjcE	yjcE	10.661	1.175	3.0385	0.90313
+UDP-N-acetylmuramate--L-alanine ligase	murC	5.2634	1.1811	1.2776	0.90198
+Lipopolysaccharide core biosynthesis protein RfaS	rfaS	4.9777	1.1807	1.3538	0.90198
+"5,10-methylenetetrahydrofolate reductase"	metF	3.1417	1.1892	0.82515	0.90103
+Formyltetrahydrofolate deformylase	purU	1.2033	1.1913	0.31606	0.90023
+Inner membrane protein YhcB	yhcB	NaN	1.2118	NaN	0.90018
+UPF0307 protein YjgA	yjgA	NaN	1.1509	NaN	0.90017
+Uncharacterized protein YiaF	yiaF	NaN	1.1832	NaN	0.90006
+Cell division protein FtsA	ftsA	4.074	1.1477	1.0703	0.89899
+Transcription elongation factor GreB	greB	NaN	1.1613	NaN	0.89891
+Protein BcsG homolog	bcsG	9.9601	1.1804	2.5824	0.89873
+RNase adapter protein RapZ	rapZ	4.7066	1.2018	1.2535	0.89867
+Sulfate adenylyltransferase subunit 2	cysD	3.9566	1.2044	0.99709	0.89761
+ATP-dependent Clp protease ATP-binding subunit ClpA	clpA	3.5624	1.1404	0.92974	0.89726
+Aconitate hydratase A	acnA	2.2063	1.1215	0.59813	0.89662
+Serine transporter	sdaC	11.188	1.1616	2.7749	0.89649
+GTP-binding protein TypA/BipA	typA	3.59	1.178	0.9239	0.89636
+mRNA endoribonuclease LS	rnlA	3.3183	1.1462	0.91674	0.89625
+High-affinity gluconate transporter	gntT	NaN	1.1458	NaN	0.89585
+Lipopolysaccharide export system permease protein LptF	lptF	NaN	1.127	NaN	0.89582
+GTPase Era	era	4.1466	1.1676	1.0503	0.89574
+Hydrogenase-2 small chain	hybO	3.6975	1.1851	2.1877	0.89409
+Acetyl-coenzyme A carboxylase carboxyl transferase subunit alpha	accA	2.3462	1.1788	0.61705	0.89343
+Isochorismate synthase EntC	entC	NaN	1.1275	NaN	0.89322
+Cytoskeleton protein RodZ	rodZ	8.6397	1.1193	2.11	0.89286
+30S ribosomal protein S3	rpsC	1.705	1.1548	0.42568	0.89271
+Penicillin-binding protein activator LpoB	lpoB	4.1063	1.1707	1.1079	0.89192
+Ubiquinone/menaquinone biosynthesis C-methyltransferase UbiE	ubiE	2.3376	1.1388	0.65668	0.89171
+NAD(P)H dehydrogenase (quinone)	wrbA	NaN	1.1276	NaN	0.89095
+NAD(P) transhydrogenase subunit alpha	pntA	9.6002	1.1876	2.4402	0.89085
+Glycine cleavage system H protein	gcvH	NaN	1.14	NaN	0.8904
+Ferric uptake regulation protein	fur	NaN	1.1287	NaN	0.8899
+Probable formate transporter 1	focA	7.5988	1.1291	8.826	0.88981
+Oligopeptide transport ATP-binding protein OppF	oppF	4.2494	1.1852	1.046	0.88942
+Sensor protein PhoQ	phoQ	3.787	1.1787	1.066	0.8891
+UDP-N-acetylglucosamine--N-acetylmuramyl-(pentapeptide) pyrophosphoryl-undecaprenol N-acetylglucosamine transferase	murG	4.1187	1.177	1.0361	0.88834
+UDP-N-acetylglucosamine 1-carboxyvinyltransferase	murA	4.0536	1.141	1.0143	0.88796
+Pyridoxine/pyridoxamine 5-phosphate oxidase	pdxH	1.0325	1.1791	0.25872	0.88793
+Uncharacterized protein YaiW	yaiW	NaN	1.1684	NaN	0.88748
+"Translation initiation factor IF-3;Translation initiation factor IF-3, N-terminally processed;Translation initiation factor IF-3S"	infC	NaN	1.1628	NaN	0.88703
+Probable DNA endonuclease SmrA	smrA	NaN	1.1329	NaN	0.88689
+Nucleoside permease NupC	nupC	9.545	1.0975	2.4507	0.88656
+Replicative DNA helicase	dnaB	5.0542	1.1734	1.2905	0.88624
+tRNA uridine 5-carboxymethylaminomethyl modification enzyme MnmG	mnmG	2.3119	1.0982	0.64283	0.88614
+Diacylglycerol kinase	dgkA	NaN	1.1327	NaN	0.88585
+Uncharacterized amino-acid ABC transporter ATP-binding protein YecC	yecC	9.7203	1.1559	2.3973	0.8856
+Dual-specificity RNA methyltransferase RlmN	rlmN	4.045	1.1528	1.074	0.88555
+ATP-dependent RNA helicase DeaD	deaD	4.0633	1.1501	1.0848	0.88532
+Ribonuclease G	rng	2.5273	1.1348	0.65745	0.88469
+Ribonucleoside-diphosphate reductase 1 subunit alpha	nrdA	3.0797	1.1505	0.78802	0.88462
+CDP-diacylglycerol--serine O-phosphatidyltransferase	pssA	3.5836	1.1837	0.90621	0.8846
+Protein mrp	mrp	2.8208	1.1563	0.73447	0.88447
+Alpha-ketoglutarate permease	kgtP	NaN	1.1513	NaN	0.88432
+Inner membrane metabolite transport protein YhjE	yhjE	18.689	1.148	4.6503	0.88405
+Trifunctional NAD biosynthesis/regulator protein NadR;Transcriptional regulator NadR;Nicotinamide mononucleotide adenylyltransferase;Ribosylnicotinamide kinase	nadR	1.8214	1.1493	0.48771	0.88373
+Single-stranded-DNA-specific exonuclease RecJ	recJ	4.2391	1.1393	1.1993	0.8837
+Ribosomal RNA large subunit methyltransferase M	rlmM	1.9843	1.1876	0.51254	0.8828
+Lipopolysaccharide export system permease protein LptG	lptG	8.345	1.1397	2.2305	0.88141
+Uncharacterized protein YgaC	ygaC	NaN	1.0923	NaN	0.8811
+L-aspartate oxidase	nadB	3.2368	1.0573	0.89712	0.88102
+Probable diguanylate cyclase YedQ	yedQ	1.8926	1.1451	0.51478	0.88076
+Uncharacterized oxidoreductase YbiC	ybiC	2.5244	1.1124	0.66997	0.87956
+Uracil-DNA glycosylase	ung	1.168	1.1437	0.31334	0.87931
+8-amino-7-oxononanoate synthase	bioF	NaN	1.1072	NaN	0.87869
+Elongation factor 4	lepA	3.863	1.1553	0.96456	0.87803
+Transcriptional regulatory protein PhoP	phoP	2.4359	1.113	0.6059	0.87784
+Cell division protein FtsZ	ftsZ	4.25	1.1383	1.0975	0.87657
+tRNA N6-adenosine threonylcarbamoyltransferase	tsaD	4.2766	1.1079	1.1308	0.87351
+NADH-quinone oxidoreductase subunit G	nuoG	3.9939	1.1398	1.6423	0.87329
+Galactitol permease IIC component	gatC	10.5	1.1125	2.7497	0.87264
+Pyridoxal phosphate phosphatase YbhA	ybhA	3.9952	1.1153	1.0723	0.87154
+Uncharacterized protein YibN	yibN	NaN	1.1256	NaN	0.87135
+1-acyl-sn-glycerol-3-phosphate acyltransferase	plsC	NaN	1.1455	NaN	0.87106
+DNA-directed RNA polymerase subunit beta	rpoC	2.8938	1.0867	0.75545	0.87084
+"dTDP-4-amino-4,6-dideoxygalactose transaminase"	rffA	4.468	1.1392	1.2086	0.87051
+Protein RecA	recA	3.8034	1.1404	0.99497	0.87048
+Riboflavin biosynthesis protein RibD;Diaminohydroxyphosphoribosylaminopyrimidine deaminase;5-amino-6-(5-phosphoribosylamino)uracil reductase	ribD	1.4549	1.1306	0.38444	0.87019
+Aspartate--ammonia ligase	asnA	4.3836	1.1415	1.1136	0.86993
+Mannosyl-D-glycerate transport/metabolism system repressor MngR	mngR	1.0943	1.0912	0.2854	0.86991
+Biotin synthase	bioB	2.9728	1.1039	0.75687	0.86912
+S-adenosylmethionine synthase	metK	4.3434	1.139	1.0983	0.86879
+"Putative L,D-transpeptidase YafK"	yafK	NaN	1.0737	NaN	0.8684
+Uncharacterized protein YfeH	yfeH	NaN	1.1323	NaN	0.86837
+Glutamine--fructose-6-phosphate aminotransferase [isomerizing]	glmS	3.1974	1.1295	0.83277	0.8657
+Inorganic triphosphatase	ygiF	4.6872	1.135	1.3092	0.86532
+Galactitol-1-phosphate 5-dehydrogenase	gatD	2.6949	1.1508	0.67858	0.8645
+Galactose/methyl galactoside import ATP-binding protein MglA	mglA	2.9735	1.1047	0.86083	0.86349
+Ribosome maturation factor RimM	rimM	2.7089	1.0998	0.80075	0.86302
+Probable protein kinase UbiB	ubiB	6.0901	1.112	1.8374	0.86078
+DNA-directed RNA polymerase subunit alpha	rpoA	2.235	1.1407	0.6312	0.86071
+		2.3556	1.0946	0.61816	0.85907
+Translation initiation factor IF-2	infB	3.8315	1.1104	0.98572	0.85852
+Protein-L-isoaspartate O-methyltransferase	pcm	NaN	1.0696	NaN	0.85827
+Protein TolR	tolR	NaN	1.105	NaN	0.85734
+DNA translocase FtsK	ftsK	3.9485	1.0958	1.0793	0.85691
+Mhp operon transcriptional activator	mhpR	3.3105	1.1002	0.8957	0.85655
+Cytosine permease	codB	NaN	1.0717	NaN	0.8546
+Protein translocase subunit SecF	secF	7.4508	1.1473	1.8966	0.85441
+Glucose-1-phosphate adenylyltransferase	glgC	1.5798	1.1391	0.40089	0.85288
+Acetolactate synthase isozyme 3 large subunit	ilvI	4.5681	1.1146	1.2087	0.8514
+Serine acetyltransferase	cysE	2.3945	1.0494	0.62766	0.85129
+Rod shape-determining protein MreB	mreB	4.982	1.0695	1.245	0.85121
+Uncharacterized protein YfeA	yfeA	6.0276	1.0963	1.9467	0.85062
+Protein translocase subunit SecY	secY	6.4252	1.1406	1.9201	0.84894
+Biopolymer transport protein ExbD	exbD	NaN	1.0688	NaN	0.84702
+Bifunctional protein TrpGD;Anthranilate synthase component 2;Anthranilate phosphoribosyltransferase	trpGD	4.4569	1.0363	1.1319	0.84543
+Lipopolysaccharide biosynthesis protein WzzE	wzzE	12.478	1.1214	3.2357	0.84501
+LOG family protein YgdH	ygdH	2.3362	1.1387	0.64769	0.84446
+Modulator of FtsH protease HflK	hflK	10.835	1.1132	2.711	0.84441
+Osmotically-inducible lipoprotein E	osmE	NaN	1.1213	NaN	0.84357
+RNA polymerase-associated protein RapA	rapA	4.1817	1.0872	1.0762	0.8434
+Transcriptional regulatory protein TyrR	tyrR	2.0418	1.0678	0.54995	0.84272
+Cell division protein FtsN	ftsN	1.9885	1.0866	0.6163	0.84216
+Uncharacterized protein YedJ	yedJ	NaN	1.0784	NaN	0.84212
+Lipopolysaccharide core heptosyltransferase RfaQ	rfaQ	4.2507	1.1023	1.1115	0.84153
+Uncharacterized protein YgjP	ygjP	NaN	1.0516	NaN	0.84088
+Chain length determinant protein	wzzB	10.697	1.0685	2.7218	0.83966
+Amino-acid acetyltransferase	argA	4.2834	1.1043	1.0889	0.83964
+Lipopolysaccharide export system protein LptC	lptC	NaN	1.057	NaN	0.839
+Protein Smp	smp	NaN	1.0347	NaN	0.8379
+Periplasmic pH-dependent serine endoprotease DegQ	degQ	1.4992	1.0726	0.4326	0.83766
+Sensor histidine kinase DcuS	dcuS	6.3821	1.0575	2.3441	0.83759
+Ribonuclease E	rne	4.4677	1.1241	1.2285	0.83751
+Protein YhfA	yhfA	3.5851	1.0835	1.0065	0.83738
+Fructokinase	mak	NaN	1.0202	NaN	0.83699
+Transcriptional regulatory protein CusR	cusR	NaN	1.0673	NaN	0.83647
+Cardiolipin synthase A	clsA	7.1377	1.1194	1.8348	0.83573
+Uncharacterized protein YciH	yciH	NaN	1.065	NaN	0.83508
+Ribosome-binding factor A	rbfA	NaN	1.0142	NaN	0.83488
+Ribonuclease 3	rnc	2.7473	1.0861	0.70167	0.83403
+Thymidine kinase	tdk	NaN	1.0744	NaN	0.83378
+Uncharacterized protein YraP	yraP	NaN	1.0594	NaN	0.83022
+Trk system potassium uptake protein TrkA	trkA	4.4454	1.0876	1.1199	0.82862
+UvrABC system protein A	uvrA	1.0827	1.0426	0.29132	0.8283
+30S ribosomal protein S1	rpsA	1.2311	1.0715	0.31179	0.82807
+Enterobactin synthase component B;Isochorismatase;Aryl carrier protein	entB	3.6545	1.1279	0.95478	0.82723
+RNA polymerase sigma factor RpoD	rpoD	1.8046	1.0841	0.44933	0.82715
+Cys-tRNA(Pro)/Cys-tRNA(Cys) deacylase YbaK	ybaK	NaN	1.0175	NaN	0.82427
+UvrABC system protein B	uvrB	0.94014	1.0603	0.24432	0.82362
+Aldehyde dehydrogenase PuuC	puuC	0.90273	1.0815	0.21947	0.8232
+Protein TolA	tolA	1.0624	1.071	0.3085	0.82288
+Uncharacterized transcriptional regulator YjhU	yjhU	2.6768	1.0679	2.421	0.82255
+Uncharacterized lipoprotein YifL	yifL	NaN	1.0322	NaN	0.82244
+Putative kinase YjjJ	yjjJ	NaN	1.0648	NaN	0.82104
+Uncharacterized lipoprotein YedD	yedD	NaN	1.039	NaN	0.81811
+Uncharacterized protein YbgK	ybgK	2.2974	1.0345	0.60823	0.81707
+Carbonic anhydrase 2	can	1.1144	1.0304	0.28808	0.81697
+Endonuclease V	nfi	1.1491	1.0372	0.31612	0.81368
+Lipid A biosynthesis myristoyltransferase	lpxM	2.5585	1.0687	0.70791	0.81353
+ATP-dependent zinc metalloprotease FtsH	ftsH	9.231	1.0667	2.3039	0.81334
+Lipoprotein NlpE	nlpE	NaN	1.0307	NaN	0.81283
+Cell division protein DamX	damX	2.1928	1.0044	0.55228	0.81112
+Sulfate/thiosulfate import ATP-binding protein CysA	cysA	3.5795	1.0198	0.8875	0.81111
+Ribosomal RNA small subunit methyltransferase H	rsmH	1.6938	1.0354	0.44055	0.80843
+Zinc import ATP-binding protein ZnuC	znuC	3.5643	1.0552	0.92178	0.80828
+		NaN	1.0504	NaN	0.80713
+Aerobic respiration control sensor protein ArcB	arcB	1.5135	1.0208	0.8739	0.8068
+Ribosomal small subunit pseudouridine synthase A	rsuA	NaN	0.99445	NaN	0.80648
+AMP nucleosidase	amn	1.9064	1.0777	0.49291	0.80529
+Exu regulon transcriptional regulator	exuR	2.3814	1.033	0.66431	0.8024
+Protein translocase subunit SecD	secD	8.4873	1.0751	2.3657	0.80202
+Probable GTP-binding protein EngB	engB	0.99433	0.97679	0.25731	0.79821
+Uncharacterized protein YbjD	ybjD	NaN	1.0194	NaN	0.79774
+Transcriptional regulatory protein OmpR	ompR	1.4416	1.054	0.36142	0.79767
+Aspartate carbamoyltransferase catalytic chain	pyrB	2.0732	1.0455	0.53206	0.79633
+"1,4-dihydroxy-2-naphthoyl-CoA hydrolase"	menI	NaN	1.0053	NaN	0.79515
+DNA helicase II	uvrD	0.84948	1.0092	0.22541	0.79352
+Membrane-bound lytic murein transglycosylase B	mltB	4.1751	1.0248	1.1879	0.79253
+Paraquat-inducible protein B	pqiB	2.9901	1.0581	0.79142	0.7923
+Outer membrane protein TolC	tolC	7.8729	0.98818	2.1148	0.79173
+Glycogen synthase	glgA	1.8086	1.0226	0.56432	0.79144
+Outer-membrane lipoprotein LolB	lolB	NaN	1.0122	NaN	0.79123
+Penicillin-binding protein activator LpoA	lpoA	6.0788	0.99361	1.66	0.79002
+Putative glycosyltransferase WbbK	wbbK	3.3139	1.0019	0.88427	0.78755
+Protein YobA	yobA	NaN	0.99896	NaN	0.78706
+Threonine--tRNA ligase	thrS	2.9122	1.0205	0.76805	0.78518
+Glycerol-3-phosphate acyltransferase	plsB	2.8339	1.0295	0.75064	0.78356
+N-acetylmuramoyl-L-alanine amidase AmiC	amiC	0.94482	1.0282	0.26713	0.78248
+Putative ribosome biogenesis GTPase RsgA	rsgA	1.8446	1.0298	0.48943	0.78107
+Membrane protein insertase YidC	yidC	9.2654	0.99595	2.3785	0.78037
+UPF0092 membrane protein YajC	yajC	NaN	1.0684	NaN	0.78009
+Peptidyl-tRNA hydrolase	pth	NaN	0.99551	NaN	0.77688
+Lon protease	lon	2.8041	1.0005	0.73657	0.77632
+Transcriptional repressor NrdR	nrdR	NaN	0.99134	NaN	0.77554
+Ribosomal large subunit pseudouridine synthase C	rluC	1.3195	1	0.3585	0.77351
+Periplasmic serine endoprotease DegP	degP	1.683	0.98864	0.43542	0.77299
+Response regulator UvrY	uvrY	2.1964	1.0269	0.53972	0.76819
+DNA-binding protein HU-beta	hupB	NaN	1.0308	NaN	0.76558
+P-protein;Chorismate mutase;Prephenate dehydratase	pheA	1.9229	1.0102	0.49979	0.76514
+Recombination-associated protein RdgC	rdgC	1.0287	0.97203	0.26423	0.76372
+Acyl-CoA thioester hydrolase YciA	yciA	NaN	0.96051	NaN	0.76367
+G/U mismatch-specific DNA glycosylase	mug	NaN	0.99247	NaN	0.76365
+Modulator of FtsH protease HflC	hflC	10.314	0.9949	2.6628	0.76325
+LPS-assembly protein LptD	lptD	NaN	0.95735	NaN	0.76054
+UPF0260 protein YcgN	ycgN	NaN	0.9645	NaN	0.75934
+Lipoyl synthase	lipA	1.5311	0.98514	0.38071	0.75821
+Uncharacterized protein YfdI	yfdI	5.5352	0.99747	2.1054	0.75806
+Guanine/hypoxanthine permease GhxP	ghxP	8.69	0.97528	2.4082	0.75694
+Septum site-determining protein MinC	minC	1.961	0.97912	0.53421	0.75652
+Maltoporin	lamB	6.4955	0.99151	1.7616	0.75645
+HTH-type transcriptional regulator DicA	dicA	NaN	0.995	NaN	0.75368
+Antigen 43;Antigen 43 alpha chain;Antigen 43 beta chain	flu	NaN	0.97992	NaN	0.75107
+Ribosomal RNA small subunit methyltransferase I	rsmI	2.0918	0.94851	0.68201	0.74903
+GTP cyclohydrolase 1	folE	0.83698	1.0221	0.20764	0.74775
+50S ribosomal protein L36 2	ykgO	NaN	0.93294	NaN	0.74641
+mRNA interferase RelE	relE	NaN	0.95874	NaN	0.74619
+Deoxyribose operon repressor	deoR	0.97226	0.99782	0.25393	0.74359
+Mrr restriction system protein	mrr	2.2771	0.96818	0.74027	0.74193
+Holliday junction ATP-dependent DNA helicase RuvA	ruvA	0.92536	0.96239	0.25387	0.74021
+Uncharacterized protein YneG	yneG	NaN	0.94464	NaN	0.73764
+DNA-binding protein HU-alpha	hupA	0.948	0.9584	0.24223	0.73541
+UPF0482 protein YnfB	ynfB	NaN	0.9339	NaN	0.73521
+Chorismate synthase	aroC	1.7516	0.95986	0.45619	0.72714
+Uncharacterized lipoprotein YgeR	ygeR	NaN	0.92572	NaN	0.72583
+HTH-type transcriptional repressor FabR	fabR	NaN	0.95852	NaN	0.72559
+UPF0701 protein YicC	yicC	13.397	0.98039	3.3452	0.72386
+Exodeoxyribonuclease III	xthA	0.7092	0.97258	0.18306	0.72302
+Glyoxylate/hydroxypyruvate reductase A	ghrA	0.85064	0.96089	0.24201	0.72114
+D-erythrose-4-phosphate dehydrogenase	epd	NaN	0.94046	NaN	0.7178
+O-antigen ligase	rfaL	NaN	0.88129	NaN	0.7168
+Outer membrane protein F	ompF	7.0745	0.88607	1.8177	0.71677
+Transcriptional regulatory protein QseB	qseB	NaN	0.90217	NaN	0.7161
+Lipopolysaccharide core biosynthesis protein RfaG	rfaG	NaN	0.89222	NaN	0.71474
+UPF0304 protein YfbU	yfbU	NaN	0.92743	NaN	0.71471
+Transcription antitermination protein RfaH	rfaH	NaN	0.88587	NaN	0.71468
+Phosphoenolpyruvate carboxylase	ppc	2.4266	0.91589	0.65851	0.71408
+LPS-assembly lipoprotein LptE	lptE	NaN	0.906	NaN	0.71304
+Cold shock-like protein CspC	cspC	NaN	0.90263	NaN	0.71293
+Uncharacterized protein YfdS	yfdS	NaN	0.92954	NaN	0.70996
+		0.63487	0.92272	0.16044	0.70863
+Uncharacterized HTH-type transcriptional regulator YdjF	ydjF	NaN	0.85385	NaN	0.70847
+Transcriptional repressor RcnR	rcnR	NaN	0.92526	NaN	0.70565
+Methionine--tRNA ligase	metG	1.5541	0.89165	0.42105	0.70562
+Undecaprenyl-phosphate alpha-N-acetylglucosaminyl 1-phosphate transferase	wecA	NaN	0.86544	NaN	0.70466
+Transcriptional regulatory protein YpdB	ypdB	1.8651	0.88798	0.50208	0.7016
+Outer membrane protein C	ompC	7.4312	0.88543	1.9112	0.69922
+Biotin carboxyl carrier protein of acetyl-CoA carboxylase	accB	NaN	0.93451	NaN	0.69696
+Tryptophan--tRNA ligase	trpS	1.2242	0.83461	0.32039	0.69655
+Vitamin B12 transporter BtuB	btuB	7.3646	0.8668	2.0079	0.69605
+Lipoprotein bor homolog from lambdoid prophage DLP12	borD	NaN	0.88417	NaN	0.69509
+Protease 7	ompT	8.3836	0.86198	2.1498	0.69492
+mRNA interferase HigB	higB	NaN	0.84857	NaN	0.69431
+Negative modulator of initiation of replication	seqA	0.88533	0.91143	0.25923	0.6931
+Spermidine N(1)-acetyltransferase	speG	NaN	0.8695	NaN	0.6926
+Outer membrane protein assembly factor BamB	bamB	6.8314	0.92248	1.764	0.68938
+HTH-type transcriptional repressor NsrR	nsrR	NaN	0.88575	NaN	0.687
+Crossover junction endodeoxyribonuclease RuvC	ruvC	NaN	0.85243	NaN	0.68637
+		3.8372	0.85862	0.96519	0.68525
+"D-erythro-7,8-dihydroneopterin triphosphate epimerase"	folX	NaN	0.90393	NaN	0.68485
+Ribonuclease R	rnr	1.9715	0.90296	0.5151	0.68447
+Type-1 restriction enzyme EcoKI specificity protein	hsdS	0.84502	0.89691	0.24468	0.68377
+UPF0246 protein YaaA	yaaA	0.58903	0.85695	0.39178	0.68366
+Outer membrane protein W	ompW	NaN	0.88817	NaN	0.68213
+3-hydroxydecanoyl-[acyl-carrier-protein] dehydratase	fabA	NaN	0.89725	NaN	0.68053
+tRNA threonylcarbamoyladenosine dehydratase	tcdA	NaN	0.85742	NaN	0.68026
+Uncharacterized HTH-type transcriptional regulator YagI	yagI	NaN	0.86093	NaN	0.67924
+Positive transcription regulator EvgA	evgA	NaN	0.85917	NaN	0.67758
+Putative prophage CP4-6 integrase	intF	0.7218	0.83219	0.221	0.67186
+Poly(A) polymerase I	pcnB	1.8158	0.88223	0.46336	0.67004
+Outer membrane protein slp	slp	NaN	0.87234	NaN	0.67001
+UPF0306 protein YhbP	yhbP	NaN	0.83786	NaN	0.66424
+DNA topoisomerase 3	topB	NaN	0.87619	NaN	0.66402
+Nucleoside-specific channel-forming protein tsx	tsx	7.6938	0.84893	2.0482	0.66397
+Outer membrane lipoprotein SlyB	slyB	NaN	0.83219	NaN	0.65997
+Putrescine aminotransferase	patA	NaN	0.82268	NaN	0.6565
+Outer membrane protein assembly factor BamD	bamD	NaN	0.84935	NaN	0.65379
+23S rRNA (guanosine-2-O-)-methyltransferase RlmB	rlmB	NaN	0.84439	NaN	0.65321
+Protein YhgF	yhgF	1.7025	0.83346	0.45139	0.65311
+Outer membrane protein assembly factor BamC	bamC	5.9747	0.84766	1.5576	0.65118
+Cyclic pyranopterin monophosphate synthase accessory protein	moaC	NaN	0.82786	NaN	0.65093
+Leucine-responsive regulatory protein	lrp	NaN	0.86884	NaN	0.64892
+Maltodextrin glucosidase	malZ	0.57227	0.83414	0.16975	0.64885
+Peptidoglycan-associated lipoprotein	pal	NaN	0.83879	NaN	0.64805
+Cold shock-like protein CspE	cspE	NaN	0.81387	NaN	0.6472
+Endonuclease 4	nfo	0.7493	0.8546	0.19402	0.6444
+Transketolase 2	tktB	1.0524	0.829	0.2781	0.64051
+Outer membrane lipoprotein RcsF	rcsF	NaN	0.76718	NaN	0.63954
+Pyruvate kinase I	pykF	0.58295	0.82939	0.14872	0.63905
+A/G-specific adenine glycosylase	mutY	0.6692	0.83256	0.17894	0.63522
+ADP-heptose--LPS heptosyltransferase 2	rfaF	0.69052	0.8387	0.18026	0.6325
+Peptide transport periplasmic protein SapA	sapA	1.3602	0.81651	0.36801	0.63026
+HTH-type transcriptional regulator PgrR	pgrR	NaN	0.79513	NaN	0.62955
+DNA topoisomerase 4 subunit A	parC	0.51413	0.81909	0.1345	0.62856
+Deoxyribodipyrimidine photo-lyase	phrB	0.86855	0.82696	0.21829	0.62685
+Ribonuclease P protein component	rnpA	NaN	0.79977	NaN	0.6254
+Exodeoxyribonuclease 7 large subunit	xseA	0.70335	0.82821	0.18901	0.62532
+Endonuclease III	nth	NaN	0.783	NaN	0.62404
+Outer membrane protein A	ompA	8.0338	0.80286	2.0483	0.62225
+Prophage CP4-57 integrase	intA	0.6745	0.80215	0.20237	0.6197
+Exodeoxyribonuclease 10	exoX	NaN	0.82543	NaN	0.61802
+Uncharacterized protein YffS	yffS	1.0181	0.79696	0.2795	0.61634
+Antitoxin HipB	hipB	NaN	0.75926	NaN	0.61626
+D-alanyl-D-alanine endopeptidase	pbpG	0.69609	0.8182	0.17467	0.61564
+Protein YibA	yibA	0.66433	0.78489	0.17891	0.61414
+Phosphate starvation-inducible protein PsiF	psiF	NaN	0.78678	NaN	0.61354
+Phosphate acyltransferase	plsX	0.96225	0.79554	0.25102	0.60633
+DNA adenine methylase	dam	NaN	0.82296	NaN	0.60533
+DNA replication terminus site-binding protein	tus	0.52492	0.79534	0.13145	0.60169
+Uncharacterized N-acetyltransferase YhhY	yhhY	NaN	0.75827	NaN	0.60165
+HTH-type transcriptional regulator FrlR	frlR	0.59017	0.74851	0.15457	0.59804
+Uncharacterized protein YncE	yncE	0.6561	0.80466	0.17591	0.5946
+Putative glutamine amidotransferase YafJ	yafJ	0.94479	0.74313	0.25401	0.59116
+HTH-type transcriptional regulator UlaR	ulaR	0.66017	0.76073	0.16624	0.58795
+Transcriptional regulatory protein RcsB	rcsB	NaN	0.77079	NaN	0.5878
+PhoH-like protein	ybeZ	1.6183	0.7744	0.41253	0.58766
+Thiol:disulfide interchange protein DsbG	dsbG	1.0173	0.73287	0.26605	0.58756
+3-oxoacyl-[acyl-carrier-protein] reductase FabG	fabG	NaN	0.72294	NaN	0.57631
+Putative acyl-CoA dehydrogenase AidB	aidB	1.3784	0.7607	0.37212	0.57471
+Inositol-1-monophosphatase	suhB	0.92982	0.75907	0.23755	0.57418
+Chaperone protein Skp	skp	0.68074	0.78959	0.19269	0.57413
+Glycine cleavage system transcriptional activator	gcvA	0.69837	0.76658	0.19396	0.5696
+Ribosomal RNA small subunit methyltransferase A	rsmA	NaN	0.73355	NaN	0.56921
+3-hydroxyacyl-[acyl-carrier-protein] dehydratase FabZ	fabZ	0.53359	0.69875	0.31596	0.56521
+		0.51457	0.6966	0.13052	0.55188
+HTH-type transcriptional regulator RutR	rutR	NaN	0.67455	NaN	0.53932
+UvrABC system protein C	uvrC	0.60765	0.68087	0.15581	0.5371
+Outer membrane protein X	ompX	NaN	0.68805	NaN	0.53434
+DNA-cytosine methyltransferase	dcm	0.62975	0.64451	0.17109	0.53313
+DNA topoisomerase 4 subunit B	parE	0.53599	0.69195	0.13939	0.53269
+Protein HtrL	htrL	0.97085	0.67156	0.25351	0.53262
+Transcriptional regulator SlyA	slyA	NaN	0.64254	NaN	0.53059
+UPF0265 protein YeeX	yeeX	NaN	0.67131	NaN	0.51383
+Zinc uptake regulation protein	zur	NaN	0.66476	NaN	0.51369
+N-acetylglucosamine repressor	nagC	0.52807	0.66685	0.13644	0.51365
+Flavin mononucleotide phosphatase YbjI	ybjI	NaN	0.67463	NaN	0.51215
+Glucans biosynthesis protein G	mdoG	0.68512	0.66907	0.17483	0.50909
+Integration host factor subunit alpha	ihfA	NaN	0.63874	NaN	0.5058
+"Ditrans,polycis-undecaprenyl-diphosphate synthase ((2E,6E)-farnesyl-diphosphate specific)"	ispU	NaN	0.63931	NaN	0.50402
+Putative prophage CPS-53 integrase	intS	0.50091	0.64485	0.13534	0.50136
+Fumarate and nitrate reduction regulatory protein	fnr	0.66212	0.64801	0.19185	0.49837
+Protein YciF	yciF	NaN	0.62544	NaN	0.49602
+Serine/threonine-protein kinase HipA	hipA	0.64353	0.65562	0.17932	0.49352
+Integration host factor subunit beta	ihfB	NaN	0.67485	NaN	0.49286
+Transcriptional repressor PaaX	paaX	NaN	0.61487	NaN	0.48818
+Antitoxin PrlF	prlF	NaN	0.63053	NaN	0.48567
+DNA protection during starvation protein	dps	0.7676	0.62748	0.19261	0.48258
+Acetate operon repressor	iclR	0.4331	0.62191	0.10839	0.48007
+HTH-type transcriptional regulator MurR	murR	0.73872	0.63865	0.19368	0.48002
+Primosomal protein N	priA	0.68015	0.62346	0.22859	0.47921
+Major outer membrane lipoprotein Lpp	lpp	6.9823	0.63777	1.8163	0.47819
+N-acetylmuramoyl-L-alanine amidase AmiA	amiA	0.55802	0.62046	0.147	0.47811
+Uncharacterized protein YfjJ	yfjJ	NaN	0.59977	NaN	0.47794
+Toxin YhaV	yhaV	NaN	0.61883	NaN	0.47527
+Molybdenum cofactor biosynthesis protein B	moaB	1.0639	0.61357	1.5012	0.46415
+Protein CreA	creA	NaN	0.62801	NaN	0.46241
+Inhibitor of g-type lysozyme	pliG	NaN	0.59977	NaN	0.46203
+cAMP-activated global transcriptional regulator CRP	crp	0.60971	0.60165	0.17507	0.4576
+Glycerol-3-phosphate regulon repressor	glpR	0.40304	0.58456	0.10331	0.44271
+2-oxoglutarate dehydrogenase E1 component	sucA	0.77665	0.57855	0.20013	0.44072
+Uncharacterized HTH-type transcriptional regulator YhaJ	yhaJ	0.52958	0.55622	0.13325	0.42827
+DNA topoisomerase 1	topA	0.58121	0.55372	0.15454	0.42558
+Uncharacterized HTH-type transcriptional regulator YgbI	ygbI	0.34987	0.55029	0.089118	0.42289
+Transcriptional regulatory protein BaeR	baeR	1.6	0.51039	0.48197	0.41679
+Alkaline phosphatase isozyme conversion protein	iap	0.34174	0.53416	0.085679	0.40605
+"dTDP-4-dehydrorhamnose 3,5-epimerase"	rfbC	NaN	0.49733	NaN	0.39937
+Exodeoxyribonuclease I	sbcB	0.55254	0.51939	0.13864	0.38795
+Exopolyphosphatase	ppx	0.70819	0.50587	0.20433	0.38015
+Dihydrolipoyllysine-residue succinyltransferase component of 2-oxoglutarate dehydrogenase complex	sucB	0.63415	0.4677	0.16205	0.37295
+Ribosomal large subunit pseudouridine synthase F	rluF	0.82239	0.46793	0.20787	0.37216
+Dihydrolipoyl dehydrogenase	lpdA	0.67297	0.44872	0.17777	0.36918
+3-methyl-2-oxobutanoate hydroxymethyltransferase	panB	0.8145	0.45722	0.20538	0.36147
+UPF0339 protein YegP	yegP	NaN	0.46535	NaN	0.34932
+Methylmalonyl-CoA decarboxylase	scpB	NaN	0.43326	NaN	0.34795
+Phosphate regulon transcriptional regulatory protein PhoB	phoB	NaN	0.42695	NaN	0.33028
+Transcriptional regulator MraZ	mraZ	NaN	0.39504	NaN	0.32038
+		0.61214	0.41817	0.16115	0.31779
+Tyrosine recombinase XerD	xerD	0.23601	0.39807	0.0607	0.30898
+Regulatory protein SdiA	sdiA	NaN	0.38043	NaN	0.30113
+Inhibitor of vertebrate lysozyme	ivy	NaN	0.37887	NaN	0.29349
+L-fucose operon activator	fucR	0.22305	0.35308	0.056608	0.28214
+Transcriptional regulatory protein DpiA	dpiA	0.40416	0.33376	0.10942	0.27451
+Xylose operon regulatory protein	xylR	0.38146	0.35601	0.10695	0.26594
+Probable acyltransferase YihG	yihG	NaN	0.31244	NaN	0.25411
+Transposase InsC for insertion element IS2K;Transposase InsC for insertion element IS2I;Transposase InsC for insertion element IS2H;Transposase InsC for insertion element IS2F;Transposase InsC for insertion element IS2D;Transposase InsC for insertion element IS2A	insC6;insC5;insC4;insC3;insC2;insC1	NaN	0.29707	NaN	0.23237
+		0.34999	0.26616	0.08447	0.20543
+Uncharacterized HTH-type transcriptional regulator YqhC	yqhC	0.14835	0.23045	0.037272	0.17321
+Thioredoxin-1	trxA	0.080189	0.15834	0.021539	0.1255
+Transcriptional regulator GadE	gadE	NaN	0.15688	NaN	0.12496
+HTH-type transcriptional repressor BluR	bluR	0.14493	0.14451	0.035823	0.11474
+		0.069908	0.12747	0.030513	0.10067
+		0.040478	0.11791	0.010804	0.097099
+HTH-type transcriptional regulator TreR	treR	0.099594	0.1268	0.025185	0.094967
+Uncharacterized HTH-type transcriptional regulator YcjW	ycjW	0.115	0.11378	0.029519	0.089161
+		0.059067	0.078663	0.014798	0.059739
+		0.12478	0.075969	0.033615	0.05791
+		0.066189	0.056527	0.017468	0.044288
+		0.072638	0.053597	0.01984	0.041459
+		0.041889	0.050545	0.010774	0.037972
+		0.069977	0.045196	0.019767	0.034707
+		0.1717	0.044855	0.048347	0.034212
+Penicillin-binding protein 1B;Penicillin-insensitive transglycosylase;Penicillin-sensitive transpeptidase	mrcB	NaN	0.03693	NaN	0.027767
+		NaN	0.03233	NaN	0.025906
+		0.041558	0.028577	0.010464	0.021172
+		0.011826	0.016925	0.0029931	0.012982
+		0.066753	0.015473	0.021627	0.011754
+		NaN	0.013731	NaN	0.0097868
+Probable TonB-dependent receptor YncD	yncD	NaN	0.0086482	NaN	0.0066184
