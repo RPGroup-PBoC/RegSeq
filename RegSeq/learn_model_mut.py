@@ -67,6 +67,7 @@ class GaugePreservingStepper(pymc.Metropolis):
         # s is a vector based on r, but along the surface of the hypersphere
         for j in range(emat_temp2.shape[1]):
             s[:,j] = r[:,j] - lambda_0*emat_temp2[:,j] - lambda_vec[j]*(0.5*sp.ones(emat_temp2.shape[0]))
+            
         dx = self.adaptive_scale_factor*s/sp.sqrt(sp.sum(s*s))
         emat_temp2_new = (emat_temp2+dx)
         emat_temp[:2,:160] = emat_temp1_new
@@ -85,10 +86,10 @@ def MaximizeMI_memsaver(
     @pymc.stochastic(observed=True,dtype=pd.DataFrame)
     def pymcdf(value=df):
         return 0
+    
     @pymc.stochastic(dtype=float)
     def emat(p=pymcdf,value=emat_0):
-        #on each iteration we will need to convert a L_bases array to a 
-        #2xL array so we can use the gauge fixing function
+        #convert a L_bases array to a 2xL array for gauge fixing function
         len_seq = len(df.loc[0,'seq'])
         len_barcode = 20
         len_outputseq = len_seq - len_barcode 
@@ -96,9 +97,9 @@ def MaximizeMI_memsaver(
         temp_val = np.zeros(total_params)
         temp_val[:len_outputseq] = value[1,:len_outputseq] - value[0,:len_outputseq]
         temp_val[len_outputseq:] = value[:,len_outputseq:].ravel(order='F')
-        #we now evaluate each sequence in the dataset with the temporary model.         
+        #Evaluate each sequence in the dataset with the temporary model.         
         p['val'] = seq_mat*temp_val      
-        #evaluate mutual information likelihood is the log of this.             
+        #evaluate mutual information, likelihood is the log             
         MI = EstimateMutualInfoforMImax.alt4(p.copy())  # New and improved
         return n_seqs*MI
     if db:

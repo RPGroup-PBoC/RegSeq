@@ -19,13 +19,13 @@ import scipy as sp
 
 
 #define functions
-def seq2mat(seq,seq_dict):
-    '''Function that tells us how to convert a sequence into a matrix representation
-    of shape (4,L)'''
+def seq2mat(seq, seq_dict):
+    '''Convert a sequence into a matrix representation of shape (4,L)'''
     mat = sp.zeros((len(seq_dict),len(seq)),dtype=int)
     for i,bp in enumerate(seq):
         mat[seq_dict[bp],i] = 1
     return mat
+
 
 def choose_dict(dicttype,modeltype='MAT'):
     '''Creates a necessary tool to convert from bp to an index'''
@@ -50,19 +50,21 @@ def choose_dict(dicttype,modeltype='MAT'):
         inv_dict = {seq_dict[i]:i for i in seq_dict.keys()}
     return seq_dict,inv_dict
 
+
 def sliding_window(y,windowsize=3):
-    #we will average information values with their neighbors, this function
-    #will do that.
+    """Average information values with neighbors."""
     out_vec = np.zeros((len(y)-windowsize))
     for i in range(len(y)-windowsize):
         out_vec[i] = np.sum(y[i:i+windowsize])/windowsize
     return out_vec
 
-def calcinfo(prob,bg):
-    '''Calculates mutual information from a probability matrix'''
+
+def calcinfo(prob, bg):
+    '''Calculate mutual information from a probability matrix.'''
     prob = prob + 1e-7
     bg = bg + 1e-7
     return np.sum(prob*np.log2(prob/bg))
+
 
 def convert_to_df(em):
     outdf = pd.DataFrame()
@@ -72,7 +74,8 @@ def convert_to_df(em):
     outdf = outdf[['pos','val_wt','val_mut']]
     return outdf
 
-def effect_df_to_prob_df(effect_df,bg_df,beta):
+
+def effect_df_to_prob_df(effect_df, bg_df, beta):
     prob_df = effect_df.copy()
     vals = effect_df.values
     vals -= vals.min(axis=1)[:,np.newaxis]
@@ -84,10 +87,10 @@ def effect_df_to_prob_df(effect_df,bg_df,beta):
 #is about 10 percent towards being mutated. However, to control for possible
 #differing mutation rates, we will just arbitrarily set the ratio to be 50/50
 
-def main(inarr,for_clip=False,seqlength=160,for_invert=False):
+def main(inarr, for_clip=False, seqlength=160, for_invert=False):
     windowsize=3
 
-    background_array =pd.DataFrame( [[.5,.5]])
+    background_array =pd.DataFrame([[.5,.5]])
 
     energy_df = convert_to_df(inarr)
 
@@ -95,7 +98,6 @@ def main(inarr,for_clip=False,seqlength=160,for_invert=False):
     energyarr = np.array(energy_df[val_cols]).T
 
     seq_dict,inv_dict = choose_dict('dna')
-
 
     #Create a matrix and use it to see if we need to invert all matrix values. We
     #will also use this to set color type of plot.
@@ -106,11 +108,11 @@ def main(inarr,for_clip=False,seqlength=160,for_invert=False):
 
     if for_invert == 'invert':
         y_sub = y_sub*-1
+        
     y_sub_smoothed = sliding_window(y_sub)
     abs_sub = np.abs(y_sub_smoothed)
     maxval = np.max(abs_sub)
     y_sub_normed = y_sub_smoothed/maxval/2 + 0.5
-
     colorinputs = np.zeros((seqlength))
     for i in range(seqlength-windowsize):
         if y_sub_smoothed[i] < 0:
@@ -120,7 +122,6 @@ def main(inarr,for_clip=False,seqlength=160,for_invert=False):
 
     if for_clip == 'clip':
         total_length = len(energy_df.index)
-
         energy_df = energy_df.loc[:total_length-21,:]
 
     energy_df = energy_df[['val_wt','val_mut']]
@@ -134,7 +135,6 @@ def main(inarr,for_clip=False,seqlength=160,for_invert=False):
     mid_val=0
 
     #calculate the probability matrices
-
     mutlogo = effect_df_to_prob_df(energy_df_scaled,background_df,1)
     mut2logo = effect_df_to_prob_df(-1*energy_df_scaled,background_df,1)
     mutarr = np.array(mutlogo).T
@@ -150,13 +150,10 @@ def main(inarr,for_clip=False,seqlength=160,for_invert=False):
             mutinfo[i] = calcinfo(mutarr[:,i],mutbgprob)
         else:
             mutinfo[i] = -1*calcinfo(mut2arr[:,i],mutbgprob)
+            
     tempoutdf = pd.DataFrame()
     tempoutdf['pos'] = range(1,seqlength-windowsize+1)
     tempoutdf['info'] = sliding_window(mutinfo)
-
-
-
     smoothinfo = sliding_window(np.abs(mutinfo),windowsize=windowsize)
-
     shiftcolors = plt.cm.bwr(colorinputs)
     return np.abs(smoothinfo), shiftcolors

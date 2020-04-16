@@ -125,7 +125,7 @@ def alt4(df, coarse_graining_level = 0.01,return_freg=False):
         return info.mutualinfo(f_reg)
 
 def seq2array_for_matmodel(dataset_df, chunksize=1000):
-    # Compute the wt sequence
+    """Compute the wt sequence. """
     #use first sequence to figure out how many basepairs (and so number of
     #features to fit)
     seq_dict,inv_dict = choose_dict('dna')
@@ -157,11 +157,8 @@ def seq2array_for_matmodel(dataset_df, chunksize=1000):
     return scipy.sparse.csr(temp_mat),wt_mat
         
     
-
-
-# Given a large list of sequences, produce a (sparse) mutation array
 def dataset2mutarray(dataset_df, modeltype, chunksize=1000, rowsforwtcalc=100):
-
+    """Produce sparse mutation array for large list of sequences."""
     # Determine the type of model and set seq2array function appropriately
     if modeltype=='MAT':
         seqs2array = seqs2array_for_matmodel
@@ -414,3 +411,10 @@ def check_mutation_rate(genes, sequences, buffer=10):
         relevantfreqmat = np.array(relevantfreq[['freq_A','freq_C','freq_G','freq_T']])
         if (freqmin < .02).any():
             print("Base with low mutation rate for gene {} ".format(gene))
+            
+            
+            
+def calc_test_stat(allratios, r1, r0):
+    """
+    """
+    return (allratios - r0) / (r1 - r0)
