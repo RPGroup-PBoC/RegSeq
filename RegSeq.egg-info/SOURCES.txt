@@ -1,0 +1,6 @@
+README.md
+setup.py
+RegSeq.egg-info/PKG-INFO
+RegSeq.egg-info/SOURCES.txt
+RegSeq.egg-info/dependency_links.txt
+RegSeq.egg-info/top_level.txt
