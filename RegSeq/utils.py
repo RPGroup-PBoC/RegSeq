@@ -8,6 +8,7 @@ import mpathic.utils
 import mpathic.profile_mut as profile_mut
 import mpathic.profile_freq as profile_freq
 from scipy.special import erfc
+import logomaker
 
 def choose_dict(dicttype,modeltype='LinearEmat'):
     '''Get numbering dictionary for either dna,rna, or proteins'''
@@ -55,6 +56,31 @@ class GaugePreservingStepper(pymc.Metropolis):
             s[:,j] = r[:,j] - lambda_0*emat_temp[:,j] - lambda_vec[j]*(0.5*sp.ones(emat_temp.shape[0]))
         dx = self.adaptive_scale_factor*s/sp.sqrt(sp.sum(s*s))
         self.stochastic.value = (emat_temp+dx)/sp.sqrt(sp.sum((emat_temp+dx)**2))
+
+def get_beta_for_effect_df(effect_df,target_info,\
+    min_beta=.001,max_beta=100,num_betas=1000):
+    '''This function finds the appropriate scaling factor for displaying sequence
+    logos. From empirical results, most binding sites will ahve approximately
+    1 bit per base pair of information'''
+    betas = np.exp(np.linspace(np.log(min_beta),np.log(max_beta),num_betas))
+    infos = np.zeros(len(betas))
+    for i, beta in enumerate(betas):
+        prob_df = logomaker.transform_matrix(df=beta*effect_df,from_type='weight',to_type='probability')
+        infos[i] = get_info(prob_df)
+    i = np.argmin(np.abs(infos-target_info))
+    beta = betas[i]
+    return beta
+
+
+def get_info(df):
+    '''This function finds the total information content of a binding site'''
+    #define the background probabilities for E. coli bases.
+    gc = .508
+    background_array =np.array([(1-gc)/2,gc/2,gc/2,(1-gc)/2])
+    #add in small value to make sure no probabilities are exactly zero.
+    df = df + 1e-7
+    
+    return np.sum(df.values*np.log2(df.values/background_array))
 
 def alt4(df, coarse_graining_level = 0.01,return_freg=False):
     '''
