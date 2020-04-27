@@ -18,6 +18,17 @@ Description: # RegSeq
         
         **Check out the Wiki tab to see the full experimental protocol for Reg-Seq**.
         
+        ## Installation
+        To reproduce this work, you will need to use the RegSeq module -- a homegrown Python software package written explicitly for this work. The requirements can be installed by executing the following command using pip in the command line:
+        
+        pip install -r requirements.txt
+        
+        The software module itself can be installed locally by executing the command in the root directory,
+        
+        pip install -e ./
+        
+        When installed, a new folder mut.egg-info will be installed and is necessary to run any of the code.
+        
         ## Layout
         The repository is split into four main directories, many of which have
         subdirectories. This structure has been designed to be easily navigable by
