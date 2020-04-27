@@ -1,0 +1,57 @@
+# ##############################################################################
+# ABOUT
+# ------------------------------------------------------------------------------
+# This data file contains all information that will be displayed on the home
+# page of your website. The fields `title` and `authors` are necessary. These
+# keys cannot be changed or they will not be displayed on the website.
+#
+# The remainder of the fileds can be changed to fit your needs. The field name
+# (e.g. abstract, summary, etc) Will appear with as H2 headings on the website.
+# The content below will appear
+
+title: >
+  Deciphering the regulatory genome of *Escherichia coli*, one hundred promoters at a time
+authors: >
+  William T. Ireland, Suzannah M. Beeler, Emanuel Flores-Bautista, Nathan
+  M. Belliveau, Michael J. Sweredoski, Annie Moradian, Justin Kinney,
+  Rob Phillips
+
+Manuscript: >
+  The full manuscript can be found <a href="https://www.rpgroup.caltech.edu/RNAseq_SortSeq/assets/RegSeq_arxiv_main.pdf"> here</a>,
+  as well as the <a href="https://www.rpgroup.caltech.edu/RNAseq_SortSeq/assets/RegSeq_arxiv_SI.pdf"> associated SI.</a>
+
+Abstract: >
+  Advances in DNA sequencing have revolutionized our ability to read genomes.
+  However, even in the most well-studied of organisms, the bacterium *Escherichia
+  coli*, for ~65% of the promoters we remain completely ignorant of their regulation.
+  Until we have cracked this regulatory Rosetta Stone, efforts to read and write
+  genomes will remain haphazard. We introduce a new method (Reg-Seq) linking a
+  massively-parallel reporter assay and mass spectrometry to produce a base pair
+  resolution dissection of more than 100 promoters in *E. coli* in 12 different
+  growth conditions. First, we show that our method recapitulates regulatory
+  information from known sequences. Then, we examine the regulatory architectures
+  for more than 80 promoters in the *E. coli* genome which previously had no known
+  regulation. In many cases, we also identify which transcription factors mediate
+  their regulation. The method introduced here clears a path for fully characterizing
+  the regulatory genome of model organisms, with the potential of moving on to an
+  array of other microbes of ecological and medical relevance.
+
+Acknowledgments: >
+  We are grateful to Rachel Banks, Stephanie Barnes,  Curt Callan, Griffin Chure,
+  Ana Duarte, Vahe Galstyan, Hernan Garcia, Soichi Hirokawa, Thomas Lecuit, Heun
+  Jin Lee, Madhav Mani, Nicholas McCarty, Muir Morrison, Steve Quake, Tom
+  Röschinger, Manuel Razo-Mejia, Gabe Salmon, and Guillaume Urtecho for useful
+  discussion and feedback on the manuscript. Guillaume Urtecho and Sri Kosuri
+  have been instrumental in providing key advice and protocols at various stages
+  in the development of this work.  We would like to thank Jost Vielmetter and
+  Nina Budaeva for providing access to their Cell Disruptor. Brett Lomenick
+  provided crucial help and advice with protein preparation. We also thank
+  Igor Antoshechkin for his help with sequencing at the Caltech Genomics Facility.
+
+Funding:
+  We are deeply grateful for support from NIH Grants DP1 OD000217 (Director's
+  Pioneer Award) and  1R35 GM118043-01 (Maximizing Investigators Research Award)
+  which made it possible to undertake this multi-year project. N.M.B. was supported
+  by an HHMI International Student Research Fellowship. S.M.B was supported by the
+  NIH Institutional National Research Service Award (5T32GM007616-38) provided
+  through Caltech.

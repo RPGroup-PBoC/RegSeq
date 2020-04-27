@@ -1,0 +1,71 @@
+# ##############################################################################
+# Authors List
+# ------------------------------------------------------------------------------
+# This YAML data file contains entry for each author involved in the work
+# This YAML data file contains information for each author of the work. The
+# author list will be generated in the order in which they are listed below.
+# You can  add additional fields to each person, but these will not show up
+# automatically and must then be included manually in the Liquid template code
+# of the `page01_people.md` file.
+# ##############################################################################
+
+- author:
+  name: William Ireland
+  title: Physics Ph.D student
+  img: billireland.jpg
+  institute: California Institute of Technology, Pasadena, CA, USA
+  other_info:
+     Email Address: "wireland [at] caltech [dot] edu"
+
+- author:
+  name: Suzannah Beeler
+  link: "https://sbeeler.github.io/"
+  title: Biology Ph.D Student
+  img: suzy.jpg
+  institute: California Institute of Technology, Pasadena, CA, USA
+  other_info:
+     Email Address: "sbeeler [at] caltech [dot] edu"
+
+- author:
+  name: Emanuel Flores-Bautista
+  title: Biochemistry and Molecular Biophysics Ph.D. Student
+  img: manu.jpg
+  institute: California Institute of Technology, Pasadena, CA, USA
+
+- author:
+  name: Nathan Belliveau
+  title: Bioengineering Ph.D Student
+  img: nathan.jpg
+  institute: California Institute of Technology, Pasadena, CA, USA
+  other_info:
+      Current Institute: University of Washington, Seattle, WA
+
+- author:
+  name: Michael J. Sweredoski
+  title: Senior Bioinformatician of Proteome Exploration Laboratory
+  img: mike.jpg
+  institute: California Institute of Technology, Pasadena, CA, USA
+
+- author:
+  name: Annie Moradian
+  title: Senior Lab Manager of Proteome Exploration Laboratory
+  img: annie.jpg
+  institute: California Institute of Technology, Pasadena, CA, USA
+
+- author:
+  name: Justin Kinney
+  link: http://kinneylab.labsites.cshl.edu/
+  title: Associate Professor
+  img: justin.png
+  institute: Cold Spring Harbor Laboratory, Cold Spring Harbor, NY
+  other_info:
+      Email Address: "jkinney [at] cshl [dot] edu"
+
+- author:
+  name: Rob Phillips
+  link: https://rpgroup.caltech.edu/
+  title: Fred and Nancy Morris Professor of Biology and Biophysics
+  img: rob.jpg
+  institute: California Institute of Technology, Pasadena, CA, USA
+  other_info:
+    Email Address: "phillips [at] pboc [dot] caltech [dot] edu"

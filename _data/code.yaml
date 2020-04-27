@@ -1,0 +1,26 @@
+- script:
+  name: auto_peak_call.ipynb
+  desc: >
+    Finds regions that have a signficant effect on gene expression.
+- script:
+  name: SortSeq_Information_Footprints.ipynb
+  desc: >
+    Tutorial script which plots information footprints.
+- script:
+  name: plot_informationfootprint.py
+  desc: >
+    Script which plots information footprints.
+- script:
+  name: find_all_regions.ipynb
+  desc: >
+    Combines the output of the auto_peak_call.ipynb into potential transcription factor binding sites.
+- script:
+  name: peak_utils.py
+  desc: >
+    Support functions for the auto_peak_call.ipynb notebook.
+- script:
+  name: software.tar.gz
+  desc: >
+    All code files with associated data files in the right directory structure.
+
+
