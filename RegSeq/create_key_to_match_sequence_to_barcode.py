@@ -38,12 +38,10 @@ df = pd.io.parsers.read_csv(input_file_name,delim_whitespace=True,header=None)
 
 #as it is a fastq file, the actual sequences will occur every 4 lines (starting
 #with line index 1). The
-#sequences will already have been filtered for quality score (phred > 20). 
+#sequences will already have been filtered for quality score (phred > 20).
 
 #select only rows with sequences.
 df = df.loc[1::4,0]
-
-print(df)
 
 #we need to filter out incorrect sequence lengths to make sure they don't
 #have improper insertions or deletions
@@ -63,7 +61,6 @@ baddf = df.loc[badlength]
 goodlength = (df.apply(len) == lengthsmax)
 df = df.loc[goodlength]
 
-print(df)
 
 #We will also be discluding those sequences with sequences with undetermined
 #bases (shown as N's).
@@ -82,7 +79,6 @@ else:
     print('Sequences not either 299 or 295 bp')
     raise
 
-print(sliceddf)
 
 def stitch(s):
     #this function will combine the mutated sequence with barcode.
@@ -115,7 +111,6 @@ baddf = baddf.loc[badnoN]
 #sequenced.
 q2 = tempstitched.value_counts()
 
-print(q2)
 #we then drop those that only are sequenced 1 time. This will help to cut
 #out some sequencing errors.
 #bigdf = q2.loc[q2 > 1]
@@ -137,15 +132,11 @@ outbigdf['tag'] = tempbigdf[0].str.slice(-barcode_length,)
 
 q3 = outbigdf['tag'].value_counts()
 
-print(q3)
-
 temp = bigdf.reset_index()
 outbigdf['ct'] = temp[0]
 
 #this shows the number of sequences for a given tag
 oq = outbigdf['tag'].value_counts()
-
-print(oq)
 
 #we will find those with exactly 1 sequence assocated with them.
 
@@ -162,9 +153,6 @@ outbigdfindexed = outbigdf.set_index('tag')
 gooddf = outbigdfindexed.loc[oq == 1]
 
 gooddf = gooddf.reset_index()
-
-print(gooddf)
-print('hi')
 
 toobigdf = outbigdfindexed.loc[toomany]
 
@@ -194,18 +182,20 @@ shares = toobigdf[['tag','seq','ct']].groupby(by='tag').apply(findshare)
 
 sharesseq = toobigdf[['tag','seq','ct']].groupby(by='tag').apply(findmaxseq)
 
-bigshares = sharesseq.loc[shares>.99]
+if len(toobigdf.index) != 0:
+    bigshares = sharesseq.loc[shares>.99]
 
-outbigshares = pd.DataFrame()
+    outbigshares = pd.DataFrame()
 
-outbigshares['seq'] = sharesseq.loc[shares>.99]
+    outbigshares['seq'] = sharesseq.loc[shares>.99]
 
-outbigshares['ct'] = shares.loc[shares>.99]
+    outbigshares['ct'] = shares.loc[shares>.99]
 
-outdf5 = outbigshares.reset_index()
+    outdf5 = outbigshares.reset_index()
+else:
+    outdf5 = pd.DataFrame()
 
 outdf5 = pd.concat([gooddf,outdf5])
-print(outdf5)
 
 
 
@@ -231,7 +221,7 @@ def findgene(s):
     '''this function will return the genename from a set of sequences'''
     tempdf = genedf['geneseq'].apply(check_all_muts,args=(np.array(list(s)),))
     nmut = np.max(tempdf)
-    maxind = np.argmax(tempdf)
+    maxind = np.argmax(np.array(tempdf))
     genename = genedf.loc[maxind,'name']
     return genename
 
@@ -241,7 +231,7 @@ def findgene_nmut(s):
     '''
     tempdf = genedf['geneseq'].apply(check_all_muts,args=(np.array(list(s)),))
     nmut = np.max(tempdf)
-    maxind = np.argmax(tempdf)
+    maxind = np.argmax(np.array(tempdf))
     genename = genedf.loc[maxind,'name']
     return nmut
 
@@ -256,7 +246,6 @@ outdf5['nmut'] = outdf5['seq'].apply(findgene_nmut)
 #mutation rate, we will remove it.
 goodmut = outdf5['nmut'] > 80
 outdf6 = outdf5.loc[goodmut]
-print(outdf6)
 
 def format_string(x):
     '''We use this to format output string for saving'''
@@ -268,6 +257,5 @@ pd.set_option('max_colwidth',int(1e8))
 #and sequence for each gene.
 for gene in outdf6['gene'].value_counts().index:
     outdfgene = outdf6.loc[outdf6['gene'] == gene]
-    print(len(outdfgene['seq'].value_counts().index))
-    
-    outdfgene.to_string(open('/home/bill/test_sets/' + str(gene) + 'gooddataset_nslater','w'), index=False,col_space=10,float_format=format_string,justify='left')
+
+    outdfgene.to_string(open(sys.argv[2],'w'), index=False,col_space=10,float_format=format_string,justify='left')
