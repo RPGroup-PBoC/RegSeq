@@ -206,7 +206,7 @@ print('number of good sequencing counts ' + str(outdf5['ct'].sum()))
 
 #we now want to automatically identify and split the identified sequences
 #into genes.
-genedf = pd.io.parsers.read_csv('/home/bill/next100genes/compedgenesv4.csv')
+genedf = pd.io.parsers.read_csv('../test_data/wtsequences.csv')
 
 
 
