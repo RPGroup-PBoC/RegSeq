@@ -19,6 +19,9 @@ import sys
 name = sys.argv[1]
 nameplas = sys.argv[2]
 
+barcode_length = 20
+trailing_sequence_length = 21
+
 #define needed functions
 
 def comb_tag(s):
@@ -42,7 +45,7 @@ df = df.loc[1::4]
 #we will select out the barcodes from each sequence. They will be located
 #from -41 to -21 bases from the end of the sequence.
 
-tags = df[0].str.slice(-41,-21)
+tags = df[0].str.slice(-trailing_sequence_length - barcode_length,-trailing_sequence_length)
 
 #we will get the numbers of each barcode.
 
@@ -54,7 +57,7 @@ dfplas = pd.io.parsers.read_csv(nameplas,header=None)
 
 dfplas = dfplas.loc[1::4]
 
-tagsplas = dfplas[0].str.slice(-41,-21)
+tagsplas = dfplas[0].str.slice(-trailing_sequence_length - barcode_length,-trailing_sequence_length)
 
 tagcountsplas = tagsplas.value_counts()
 
