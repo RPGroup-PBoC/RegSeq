@@ -1,3 +1,4 @@
+
 import os
 
 # Our numerical workhorses
@@ -88,6 +89,8 @@ def effect_df_to_prob_df(effect_df, bg_df, beta):
 #differing mutation rates, we will just arbitrarily set the ratio to be 50/50
 
 def main(inarr, for_clip=False, seqlength=160, for_invert=False):
+    """
+    """
     windowsize=3
 
     background_array =pd.DataFrame([[.5,.5]])
@@ -128,7 +131,7 @@ def main(inarr, for_clip=False, seqlength=160, for_invert=False):
 
     energy_df_scaled = energy_df
 
-    background_df = pd.DataFrame(pd.np.tile(background_array,
+    background_df = pd.DataFrame(np.tile(background_array,
                         (len(energy_df_scaled), 1)), columns=['val_wt','val_mut'])
     emat_min = -2
     emat_max = 2

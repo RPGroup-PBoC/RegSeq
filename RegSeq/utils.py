@@ -368,9 +368,10 @@ def mutation_sequences(genes, fwdprimes, revprimes, nseqs):
     """
     
     allseqs = pd.DataFrame()
+    primer_df = pd.DataFrame()
     for i,row in genes.iterrows():
-       
-        primernum = int(np.floor(i/6))
+        
+        primernum = int(np.floor(i/5))
         # get fwd and rev primer.
         thefwdprimer = fwdprimes[primernum]
         therevprimer = revprimes[primernum]
@@ -381,13 +382,26 @@ def mutation_sequences(genes, fwdprimes, revprimes, nseqs):
         #we will build up the final dataframe of mutated sequences from the individual
         #dataframes of sequences. 
         allseqs = pd.concat([allseqs,tempdf],axis=0)
-        
-    return allseqs
+        primer_df = pd.concat(
+            [primer_df,
+             pd.DataFrame([[row['name'], row['geneseq'], thefwdprimer, therevprimer]], columns=['name', 'geneseq', "fwd_primer", "rev_primer"])],
+          ignore_index=True
+        )
+    return allseqs, primer_df
 
 
-def check_mutation_rate(genes, sequences, buffer=10):
+def check_mutation_rate(
+    genes, 
+    sequences, 
+    buffer=10, 
+    fix_ex_rate=False, 
+    fix_rep=False,
+    fix_low_base=False,
+    primer_df=pd.DataFrame()
+):
     """
-    Check mutation rate of generated sequences.
+    Check mutation rate of generated sequences. Sequences can be generated again,
+    if certain tests are not passed.
     
     Parameters
     ----------
@@ -397,53 +411,92 @@ def check_mutation_rate(genes, sequences, buffer=10):
         DataFrame of mutated sequences for each gene
     buffer : int
         Number of bases as buffer when checking non-primer and non-wildtype bases
+    fix_ex_rate : boolean, default False
+        States if sequences should be re-generated if mutation rate is far away from
+        expectation.
+    fix_rep : boolean, default False
+        States if sequences should be re-generated if sequences are repeated.
+    fix_low_base : boolean, default False
+        States if sequences should be re-generated if there is a base with outstanding
+        low mutation rate.
+    primer_df : Pandas.DataFrame
+        DataFrame containing information about wild type sequence and primer pairs, 
+        needed to generate new sequences if any of the fix* arguments is True.
+    
+    Returns
+    -------
+    sequences : Pandas.DataFrame
+        DataFrame of mutated sequences for each gene. Possibly with new sequences, if
+        input sequences did not match criteria.
     """
     
+    # Check that primer_df is given i
+    if np.array([fix_ex_rate, fix_rep, fix_low_base]).any():
+        if primer_df.empty:
+            raise Exception('If sequences are supposed to be fixed, primers have to be given.')
+
+    
+    
     for i,row in genes.iterrows():
-        bad_rates = 0
-        
         gene = row['name']
         #dnaE gene is bugged out right now, just skip it for the moment.
         if gene == 'dnaE':
             continue
 
         # get sequences from target gene
-        partialdf = sequences.loc[sequences['gene'] == gene,['seq']]
+        partialdf = _make_partial(gene, sequences)
+        if np.array([fix_ex_rate, fix_rep, fix_low_base]).any():
+            if np.array([fix_ex_rate * _check_mut_rate(partialdf, buffer),
+                fix_rep * _check_repeated(partialdf),
+                fix_low_base * _check_bases(partialdf, buffer)]).any() :
+                fixed = False
+                max_it = 10
+                it = 0
+                fwd = primer_df.loc[primer_df["name"] == gene, "fwd_primer"].values
+                rev = primer_df.loc[primer_df["name"] == gene, "rev_primer"].values
+                while fixed==False and it<max_it:
+                    gene_df = primer_df.loc[primer_df["name"] == gene]
+                    gene_df.index = [0]
+                    temp, _ = mutation_sequences(gene_df, fwd, rev, len(partialdf))
+                    temp = _make_partial(gene, temp)
+                    if not np.array(
+                        [fix_ex_rate * _check_mut_rate(temp, buffer),
+                        fix_rep * _check_repeated(temp),
+                        fix_low_base * _check_bases(temp, buffer)
+                        ]).any() :
+                        fixed = True
+                    it += 1
+                    
+                sequences.loc[sequences['gene'] == gene,['seq']] = temp['seq']
+                if it == max_it:
+                    if _check_mut_rate(temp, buffer):
+                        print('Bad mutation rate in gene {}!'.format(gene))
 
-        # Assign test count
-        partialdf['ct'] = 1
-        partialdf = partialdf[['ct','seq']]
-        partialdf = partialdf.reset_index(drop=True)
-        
-        # Compute mutation rate
-        mut = profile_mut.main(partialdf)
+                    if _check_repeated(temp):
+                        print('Repeated sequence for gene {}'.format(gene))
 
-        #Check mutation rate of non-primer and non-wildtype bases
-        relevantmuts = mut.loc[buffer + 20:179-buffer*2,'mut']
+                    if _check_bases(temp, buffer):
+                        print("Base with low frequency in gene {}!".format(gene))
+        else:
 
-        # Check for positions with abnormal mutation rate
-        if (relevantmuts > .14).any() or (relevantmuts < .07).any():
-            print('Bad mutation rate for gene {}.'.format(gene))
+            if _check_mut_rate(partialdf, buffer):
+                print('Bad mutation rate in gene {}!'.format(gene))
             
-        # Check for repeated sequences
-        if len(partialdf['seq'].index) != len(partialdf['seq'].unique()):
-            print('Repeated sequences for gene {}.'.format(gene))
+            if _check_repeated(partialdf):
+                print('Repeated sequence for gene {}'.format(gene))
             
-        # Check frequencies of each base in the sequence range
-        freqmat = profile_freq.main(partialdf)
-        relevantfreq = freqmat.loc[20 + buffer:179-buffer*2,:]
-        
-        # Check mutation rates of all bases
-        freqmin = relevantfreq[['freq_A','freq_C','freq_G','freq_T']].min(axis=1)
-        relevantfreqmat = np.array(relevantfreq[['freq_A','freq_C','freq_G','freq_T']])
-        if (freqmin < .02).any():
-            print("Base with low mutation rate for gene {} ".format(gene))
+            if _check_bases(partialdf, buffer):
+                print("Base with low frequency in gene {}!".format(gene))
+        print("Gene {} done.".format(gene))
+                    
+    return sequences
+                    
+                    
+
             
             
             
 def calc_test_stat(allratios, r1, r0):
-    """
-    """
     return (allratios - r0) / (r1 - r0)
 
 
@@ -481,3 +534,40 @@ def cox_mann_p_values(files, output_file='test_pval.txt'):
         # Write results to file.
         with open(output_file,'a') as f:
             f.write(indf_ratio_col + ',' + str(p.min()*len(allratios)) + '\n')
+
+
+            
+# Helper functions
+def _check_mut_rate(partialdf, buffer):
+    mut = profile_mut.main(partialdf)
+
+    #Check mutation rate of non-primer and non-wildtype bases
+    relevantmuts = mut.loc[buffer + 20:179-buffer*2,'mut']
+    return ((relevantmuts > .14).any() or (relevantmuts < .07).any())
+    
+    
+def _check_repeated(partialdf):
+    # Check for repeated sequences
+    return len(partialdf['seq'].index) != len(partialdf['seq'].unique())
+     
+        
+def _check_bases(partialdf, buffer):
+    # Check frequencies of each base in the sequence range
+    freqmat = profile_freq.main(partialdf)
+    relevantfreq = freqmat.loc[20 + buffer:179-buffer*2,:]
+
+    # Check mutation rates of all bases
+    freqmin = relevantfreq[['freq_A','freq_C','freq_G','freq_T']].min(axis=1)
+    relevantfreqmat = np.array(relevantfreq[['freq_A','freq_C','freq_G','freq_T']])
+    return (freqmin < .02).any()
+    
+    
+def _make_partial(gene, sequences):
+    # get sequences from target gene
+    partialdf = sequences.loc[sequences['gene'] == gene,['seq']]
+
+    # Assign test count
+    partialdf['ct'] = 1
+    partialdf = partialdf[['ct','seq']]
+    partialdf = partialdf.reset_index(drop=True)
+    return partialdf
