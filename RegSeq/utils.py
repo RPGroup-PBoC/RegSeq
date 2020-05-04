@@ -9,6 +9,8 @@ import mpathic.profile_mut as profile_mut
 import mpathic.profile_freq as profile_freq
 from scipy.special import erfc
 import logomaker
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 def choose_dict(dicttype,modeltype='LinearEmat'):
     '''Get numbering dictionary for either dna,rna, or proteins'''
@@ -505,7 +507,6 @@ def cox_mann_p_values(files, output_file='test_pval.txt'):
     for z, name in enumerate(files):
         # load in file with proteins and enrichments
         indf = pd.read_csv(name, delimiter="\t")
-
         # get the correct column name that contains the heavy to light ratio.
         indf_ratio_col = "Ratio H/L normalized"
         row = indf.loc[0,:]
@@ -533,7 +534,8 @@ def cox_mann_p_values(files, output_file='test_pval.txt'):
         pval = pval*len(p)
         # Write results to file.
         with open(output_file,'a') as f:
-            f.write(indf_ratio_col + ',' + str(p.min()*len(allratios)) + '\n')
+            f.write("Gene: {}, {}: {} \n ".format(name, indf_ratio_col, str(p.min()*len(allratios))))
+            
 
 
             
@@ -571,3 +573,36 @@ def _make_partial(gene, sequences):
     partialdf = partialdf[['ct','seq']]
     partialdf = partialdf.reset_index(drop=True)
     return partialdf
+
+
+#set the plotting style
+def pboc_style_mpl():
+    """
+    Formats matplotlib plotting enviroment to the style used in
+    Physical Biology of the Cell, 2nd edition.
+    """
+    rc = {'lines.linewidth': 1.25,
+          'axes.labelsize': 8,
+          'axes.titlesize': 9,
+          'axes.facecolor': '#E3DCD0',
+          'xtick.labelsize': 7,
+          'ytick.labelsize': 7,
+          'font.family': 'Lucida Sans Unicode',
+          'grid.linestyle': '-',
+          'grid.linewidth': 0.5,
+          'grid.color': '#ffffff',
+          'legend.fontsize': 8,
+          'figure.dpi': 300,
+          'savefig.dpi': 300}
+    plt.rc('text.latex', preamble=r'\usepackage{sfmath}')
+    plt.rc('xtick.major', pad=-1)
+    plt.rc('ytick.major', pad=-1)
+    plt.rc('mathtext', fontset='stixsans', sf='sansserif')
+    plt.rc('figure', figsize=[3.5, 2.5])
+    plt.rc('svg', fonttype='none')
+    plt.rc('legend', title_fontsize='8', frameon=True,
+           facecolor='#E3DCD0', framealpha=1)
+    sns.set_style('darkgrid', rc=rc)
+    sns.set_palette("colorblind", color_codes=True)
+    sns.set_context('notebook', rc=rc)
+pboc_style_mpl()

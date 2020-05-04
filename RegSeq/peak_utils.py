@@ -4,12 +4,14 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import scipy as sp
 
+
 def seq2mat(seq,seq_dict):
 
     mat = sp.zeros((len(seq_dict),len(seq)),dtype=int)
     for i,bp in enumerate(seq):
         mat[seq_dict[bp],i] = 1
     return mat
+
 
 def choose_dict(dicttype,modeltype='MAT'):
 
@@ -33,6 +35,7 @@ def choose_dict(dicttype,modeltype='MAT'):
             for i in range(len(seq_dict)) for z in range(len(seq_dict))}
         inv_dict = {seq_dict[i]:i for i in seq_dict.keys()}
     return seq_dict,inv_dict
+
 
 def sliding_window(y,windowsize=3):
         out_vec = np.zeros_like(y)
