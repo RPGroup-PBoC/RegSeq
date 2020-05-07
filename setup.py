@@ -4,9 +4,9 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="RegSeq",
+    name="regseq",
     version="0.0.1",
-    author="Bill Ireland, Niko McCarty, Rob Phillips",
+    author="Bill Ireland, Niko McCarty, Tom Roeschinger, Rob Phillips",
     author_email="nmccarty {at} caltech {dot} edu",
     description="This repository contains all active research materials for the Reg-Seq project.",
     long_description=long_description,
