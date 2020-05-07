@@ -1,0 +1,19 @@
+name: mpathic_env
+channels:
+  - wireland
+dependencies:
+  - python=3.6.9
+  - numpy
+  - pandas
+  - Biopython
+  - matplotlib
+  - seaborn
+  - scipy
+  - pymc
+  - ipython
+  - scikit-learn
+  - mpathic
+  - mpmath
+  - pip
+  - pip:
+    - -e .
