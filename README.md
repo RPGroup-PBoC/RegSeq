@@ -11,15 +11,31 @@ The website for the original Reg-Seq paper can be found [here](https://www.rpgro
 **Check out the Wiki tab to see the full experimental protocol for Reg-Seq**.
 
 ## Installation
-To reproduce this work, you will need to use the RegSeq module -- a homegrown Python software package written explicitly for this work. The requirements can be installed by executing the following command using pip in the command line:
+To reproduce this work, you will need to use the RegSeq module -- a homegrown Python software package written explicitly for this work. We recommend having installed Anaconda3. The package relies on the `mpathic` package, a software package for quantitative modeling of massively parallel experiments and developed by [GitHub user jbkinney](https://github.com/jbkinney). A link to the GitHub page for the mpathic package is [available here](https://github.com/jbkinney/mpathic). `mpathic` relies on Python 3.6.9. Since this is not the most recent python version, it is very likely that a new Python environment is necessary. To create this environment, simply navigate into the `RegSeq/` folder and run the following line in the terminal:
 
-pip install -r requirements.txt
+`conda env create -f environment.yml`
 
-The software module itself can be installed locally by executing the command in the root directory,
+Now there should be new python environment titled `mpathic_env`. The environment can be activated by:
 
-pip install -e ./
+`conda activate mpathic_env`
 
-When installed, a new folder mut.egg-info will be installed and is necessary to run any of the code.
+And deactivated by:
+
+`conda deactivate`
+
+If any commands are run from the command line, it needs to be done inside the created environment. To confirm that the environment is functional, run the following line after activating the new environment:
+
+`mpathic learn_model --help` 
+
+Which verifies that the installation proceeded as expected. Running this command should populate the command terminal with a list of available functions.
+
+If you encounter any issues with installation, please contact us through GitHub.
+
+Finally, to use this environment in a Jupyter notebook, a kernel needs to be created. Therefore, deactivate the environment and run the following line:
+
+`python -m ipykernel install --user --name mpathic_env --display-name "Python (mpathic)"`
+
+When opening a notebook from the `RegSeq/code` folder, click on 'Kernel', 'Change Kernel', and select the newly-created kernel. You will now be able to import the package and execute the code.
 
 ## Layout
 The repository is split into four main directories, many of which have
@@ -35,45 +51,8 @@ figure files.
 
 3) `protocol` contains MarkDown files that outline each step to perform Reg-Seq in total.
 
-4) `RegSeq` contains Python files which can be easily executed to perform your own analyses.
+4) `reqseq` contains Python files which can be easily executed to perform your own analyses.
 
-#### **Package Dependencies**
-Some of the code files in this package rely on `mpathic`, a software package for quantitative modeling of massively parallel experiments and developed by [GitHub user jbkinney](https://github.com/jbkinney). A link to the GitHub page for the mpathic package is [available here](https://github.com/jbkinney/mpathic).
-
-Currently, installation of this package requires Linux or Mac OS. To install the mpathic package, please run the following commands within an Anaconda terminal:
-
-`conda create -n mpathic_env python=3.6.9 pip` --> create a Python environment for version 3.6.9
-
-`conda activate mpathic_env` --> activate the python 3.6.9 environment
-
-`conda install mpathic -c wireland` --> install the mpathic package, using username 'wireland'
-
-`conda install mpmath` --> install another package, called mpmath
-
-`mpathic learn_model --help` --> verify that the installation proceeded as expected. Running this command should populate the command terminal with a list of available functions.
-
-If you encounter any issues with installation, please contact us through GitHub.
-
-The modules contained in the RegSeq package include:
-
-`create_key_to_match_sequence_to_barcode.py` : initial analysis script to match barcodes to sequences.
-
-`do_many.py` : A script to parallelize analysis via Amazon AWS.
-
-`learn_model_mut.py` :  Infers the effect of mutation on gene expression for each base pair using MCMC. This is crucial for converting to an information footprint.
-
-`peak_utils.py` : functions for information footprints.
-
-`plot_informationfootprint.py` : Python script to generate information footprints from sequencing data.
-
-`utils.py` : functions for analysis.
-
-# Setting up a kernel for MPAthic
-After installing the MPAthic package, those notebooks and code blocks with dependencies can be executed. Note that modern versions of Anaconda **do not** automatically create kernels for new environments. Therefore, you must manually create a kernel while in the mpathic_env. To do that, execute:
-
-`python -m ipykernel install --user --name myenv --display-name "Python (myenv)"` 
-
-from the new environment. Then, after opening the Jupyter notebook (e.g. `checkmutations.ipynb`), click on 'Kernel', 'Change Kernel', and select the newly-created kernel. You will now be able to import the package and execute the code.
 
 # License Information
 <img src="https://licensebuttons.net/l/by-nd/3.0/88x31.png"> This work is
