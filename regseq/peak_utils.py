@@ -4,7 +4,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import scipy as sp
 
+from deprecated import deprecated
 
+@deprecated(version='0.0.2', reason="This module is moved to utils.py")
 def seq2mat(seq,seq_dict):
 
     mat = sp.zeros((len(seq_dict),len(seq)),dtype=int)
@@ -12,7 +14,7 @@ def seq2mat(seq,seq_dict):
         mat[seq_dict[bp],i] = 1
     return mat
 
-
+@deprecated(version='0.0.2', reason="This module is moved to utils.py")
 def choose_dict(dicttype,modeltype='MAT'):
 
     if dicttype == 'dna':
@@ -36,7 +38,7 @@ def choose_dict(dicttype,modeltype='MAT'):
         inv_dict = {seq_dict[i]:i for i in seq_dict.keys()}
     return seq_dict,inv_dict
 
-
+@deprecated(version='0.0.2', reason="This module is moved to utils.py")
 def sliding_window(y,windowsize=3):
         out_vec = np.zeros_like(y)
         for i in range(len(y)-windowsize):
