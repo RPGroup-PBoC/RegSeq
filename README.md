@@ -44,7 +44,7 @@ Currently, installation of this package requires Linux or Mac OS. To install the
 
 `conda create -n mpathic_env python=3.6.9 pip` --> create a Python environment for version 3.6.9
 
-`source activate mpathic_env` --> activate the python 3.6.9 environment
+`conda activate mpathic_env` --> activate the python 3.6.9 environment
 
 `conda install mpathic -c wireland` --> install the mpathic package, using username 'wireland'
 
