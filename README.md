@@ -31,7 +31,7 @@ Which verifies that the installation proceeded as expected. Running this command
 
 If you encounter any issues with installation, please contact us through GitHub.
 
-Finally, to use this environment in a Jupyter notebook, a kernel needs to be created. Therefore, deactivate the environment and run the following line:
+Finally, to use this environment in a Jupyter notebook, a kernel needs to be created. Therefore, activate the environment and run the following line:
 
 `python -m ipykernel install --user --name mpathic_env --display-name "Python (mpathic)"`
 
