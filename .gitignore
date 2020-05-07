@@ -3,3 +3,11 @@
 *.ipynb_checkpoints*
 **/.ipynb_checkpoints/
 *pycache*
+*.o
+*.hpp
+*.d
+
+
+#Ignore files generated when installing package
+RegSeq.egg-info/
+regseq.egg-info/
