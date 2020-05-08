@@ -1,8 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-import sys
-
+from .seq_utils import stitch, format_string
 
 
 def check_length(input_file_name, barcode_length=20, sequence_length=160):
@@ -63,11 +62,6 @@ def check_N(s):
         return False
     else:
         return True
-
-    
-def stitch(s):
-    """Combine the mutated sequence with barcode."""
-    return s['seq'] + s['tag']  
 
 
 def stitch_barcode_sequence(df, sequence_length=160, barcode_length=20):
@@ -214,7 +208,7 @@ def detect_genes(df, output_file, wildtypefile):
             open(output_file,'w'), 
             index=False, 
             col_space=10,
-            float_format=_format_string,
+            float_format=format_string,
             justify='left'
         )
     
@@ -332,7 +326,3 @@ def findgene_nmut(s, df):
     nmut = np.max(tempdf)
     return nmut
 
-
-def _format_string(x):
-    '''Format output string for saving'''
-    return '%10.6f' %x

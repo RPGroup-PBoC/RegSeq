@@ -5,9 +5,9 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="regseq",
-    version="0.0.1",
+    version="0.0.2",
     author="Bill Ireland, Niko McCarty, Tom Roeschinger, Rob Phillips",
-    author_email="nmccarty {at} caltech {dot} edu",
+    author_email="troeschi@caltech.edu",
     description="This repository contains all active research materials for the Reg-Seq project.",
     long_description=long_description,
     long_description_content_type="text/markdown",

@@ -28,9 +28,6 @@ def comb_tag(s):
     '''function to combine mutated sequence with barcode'''
     return s['seq'] + s['tag']
 
-def format_string(x):
-    'basic function to format output string'
-    return '%10.6f' %x
 
 #set no maximum length on output column size.
 pd.set_option('max_colwidth',int(1e8))
