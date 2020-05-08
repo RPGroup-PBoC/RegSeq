@@ -1,19 +1,17 @@
 
 import os
 
-# Our numerical workhorses
 import numpy as np
 import pandas as pd
 
-# Import the project utils
+
 import sys
 
-# Import matplotlib stuff for plotting
 import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 
-# Logo-generating module
+
 import pandas as pd
 import numpy as np
 import scipy as sp
