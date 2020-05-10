@@ -10,7 +10,7 @@ import os
 #bdcR_matching_sequencing.fastq is the input file name for the bdcR gene
 #bdcR_barcode_key is the output file name for the barcode matching.
 
-os.system('''python create_key_to_match_sequence_to_barcode.py
+os.system('''python deprecated/create_key_to_match_sequence_to_barcode.py
              ../data/sequencing_data/mappingseqs.fastq 
              ../data/test_data/bdcR_barcode_key''')
 
@@ -35,7 +35,7 @@ os.system('''python create_key_to_match_sequence_to_barcode.py
 #5: the target gene name.
 #group numbers for each gene can be found in the file genetogroupnum
 
-os.system('''python matchdatasets.py ../data/sequencing_data/BI94_102_mRNA 
+os.system('''python deprecated/matchdatasets.py ../data/sequencing_data/BI94_102_mRNA 
              ../data/sequencing_data/BI95_102_DNA ../data/test_data/bdcR_barcode_key ../data/sequencing_data/bdcRAnaerodataset bdcR''')
 
 #The output file name will be bdcRAnaerodataset
@@ -53,15 +53,17 @@ os.system('''python matchdatasets.py ../data/sequencing_data/BI94_102_mRNA
 # of the inference.
 
 #original command
-#os.system('''python learn_model_mut.py bdcRAnaerodataset bdcRAnaerodataset_db bdcRAnaero_MCMC_mut''')
+os.system('''python deprecated/learn_model_mut.py ../data/sequencing_data/bdcRAnaerodataset ../data/sequencing_data/bdcRAnaerodataset_db ../data/sequencing_data/bdcRAnaero_MCMC_mut''')
 
+"""
 #Least squares command
-os.system('''python compute_least_squares.py ../data/sequencing_data/bdcRAnaerodataset
+os.system('''python deprecated/compute_least_squares.py ../data/sequencing_data/bdcRAnaerodataset
              ../data/test_data/bdcRAnaero_LS_mut bdcR''')
 
 #Now we can create an information footprint from the previous models
-os.system('''python output_information_footprint.py
+os.system('''deprecated/python output_information_footprint.py
              ../data/test_data/bdcRAnaero_LS_mut 
              ../data/test_data/bdcRAnaero_informationfootprint.pdf''')
 
 #The following commands are used to fit energy matrices.... to do
+"""
