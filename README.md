@@ -4,7 +4,7 @@
 This is a GitHub repository for Reg-Seq, an experimental protocol for deciphering the regulatory architecture of bacterial promoters. Specifically, the goal of Reg-Seq is to take previously uncharacterized or partially characterized promoters and to determine
 the constellation of RNAP and transcription factor binding sites and to determine what transcription factors
 bind those sites. In addition, the method allows for a determination of energy matrices that characterize,
-in k_BT units, the binding strength of transcription factors to their target sites. 
+in k_BT units, the binding strength of transcription factors to their target sites.
 
 The website for the original Reg-Seq paper can be found [here](https://www.rpgroup.caltech.edu/RNAseq_SortSeq/).
 
@@ -25,7 +25,7 @@ And deactivated by:
 
 If any commands are run from the command line, it needs to be done inside the created environment. To confirm that the environment is functional, run the following line after activating the new environment:
 
-`mpathic learn_model --help` 
+`mpathic learn_model --help`
 
 Which verifies that the installation proceeded as expected. Running this command should populate the command terminal with a list of available functions.
 
@@ -42,7 +42,7 @@ The repository is split into four main directories, many of which have
 subdirectories. This structure has been designed to be easily navigable by
 humans and computers alike, allowing for rapid location of specific files and
 instructions. Within each directory is a `README.md` file which summarizes the
-purpose of that directory as well as some examples where necessary. 
+purpose of that directory as well as some examples where necessary.
 
 1) `code` contains Jupyter notebooks to perform computational steps of the Reg-Seq protocol from start to finish. Where all of the executed code lives. This includes pipelines, scripts, and
 figure files.
@@ -56,7 +56,7 @@ figure files.
 
 # License Information
 <img src="https://licensebuttons.net/l/by-nd/3.0/88x31.png"> This work is
-licensed under [CC-BY-ND](https://creativecommons.org/licenses/by-nd/4.0/). All
+licensed under a [Creative Commons CC-BY 4.0 Attribution license](https://creativecommons.org/licenses/by/4.0/). All
 software is issued under the standard MIT license which is as follows:
 
 ```
