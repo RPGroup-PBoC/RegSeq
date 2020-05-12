@@ -29,13 +29,13 @@ If any commands are run from the command line, it needs to be done inside the cr
 
 Which verifies that the installation proceeded as expected. Running this command should populate the command terminal with a list of available functions.
 
-If you encounter any issues with installation, please contact us through GitHub.
-
 Finally, to use this environment in a Jupyter notebook, a kernel needs to be created. Therefore, activate the environment and run the following line:
 
 `python -m ipykernel install --user --name mpathic_env --display-name "Python (mpathic)"`
 
 When opening a notebook from the `RegSeq/code` folder, click on 'Kernel', 'Change Kernel', and select the newly-created kernel. You will now be able to import the package and execute the code.
+
+You should be set up to use all code provided in this repository. If you encounter any issues with the installation, please contact us through GitHub.
 
 ## Layout
 The repository is split into four main directories, many of which have
