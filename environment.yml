@@ -14,8 +14,9 @@ dependencies:
   - scikit-learn
   - ipykernel
   - mpathic
-  - logomaker
   - mpmath
   - pip
   - pip:
     - -e .
+    - watermark
+    - logomaker

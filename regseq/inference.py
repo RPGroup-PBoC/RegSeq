@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 import scipy.sparse
 import scipy as sp
 
-import mpathic.utils as utils
+import mpathic.utils
 import mpathic.EstimateMutualInfoforMImax as EstimateMutualInfoforMImax
 import mpathic.numerics as numerics
 import mpathic.io as io
@@ -19,6 +19,7 @@ import mpathic.stepper as stepper
 import pymc
 import pdb
 
+from .utils import choose_dict
 
 def least_squares(raveledmat, batch):
     """Linear regression of effects on gene expression of mutation of the
@@ -52,7 +53,7 @@ def lin_reg(inputname, outputname, gene="aphA"):
     seqlength = len(df['seq'][0]) - taglength #160 bp
     
     #we create dictionaries that relate A,C,G,T to the number 1,2,3,4
-    seq_dict,inv_dict = pli.choose_dict('dna')
+    seq_dict,inv_dict = choose_dict('dna')
 
     # Initialize array to paramaterize sequence. Mutations are denoted by 1
     all_mutarr = np.zeros((len(df.index),seqlength))
@@ -220,7 +221,17 @@ def MaximizeMI_memsaver(
     return emat_mean
 
 
-def perform_mcmc(data_set_file, output_db, output_mean):
+def max_inf_mcmc(
+    data_set_file, 
+    output_db, 
+    output_mean,
+    burnin=1000,
+    iteration=30000,
+    thin=10,
+    runnum=0,
+    verbose=False,
+    temp=4200
+    ):
     """ Perform MCMC.
     
     Parameters
@@ -236,8 +247,8 @@ def perform_mcmc(data_set_file, output_db, output_mean):
     
     """
     # Load data set
-    df = df = pd.io.parsers.read_csv(data_set_file, delim_whitespace=True)
-    print(seqtype)
+    df = pd.io.parsers.read_csv(data_set_file, delim_whitespace=True)
+
     temp_seq_mat, wtrow = numerics.dataset2mutarray(df.copy(),'MAT')
     temp_seq_mat2 = temp_seq_mat.toarray()
 
@@ -255,20 +266,20 @@ def perform_mcmc(data_set_file, output_db, output_mean):
     seq_mat[:, len_outputseq:] = temp_seq_mat2[:, -len_barcode * 4:]
     seq_mat = scipy.sparse.csr_matrix(seq_mat)
     emat_0 = np.zeros((4, len_seq))
-    emat_0[:2, :len_outputseq] = utils.RandEmat(len_outputseq, 2)
-    emat_0[:, len_outputseq:] = utils.RandEmat(20, 4)
+    emat_0[:2, :len_outputseq] = mpathic.utils.RandEmat(len_outputseq, 2)
+    emat_0[:, len_outputseq:] = mpathic.utils.RandEmat(20, 4)
     emat = MaximizeMI_memsaver(
         seq_mat,
         df.copy(),
         emat_0,
         wtrow,
         db=output_db,
-        iteration=600000,
-        burnin=1000,
-        thin=60,
-        runnum=0,
-        verbose=True,
-        temp=4200
+        iteration=iteration,
+        burnin=burnin,
+        thin=thin,
+        runnum=runnum,
+        verbose=verbose,
+        temp=temp
     )
 
     np.savetxt(output_mean, emat)

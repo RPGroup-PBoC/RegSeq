@@ -4,7 +4,7 @@ import scipy as sp
 import numpy as np
 import Bio.Seq as Seq
 import mpathic.simulate_library as simulate_library
-import mpathic.utils
+from mpathic.utils import collapse_further
 import mpathic.profile_mut as profile_mut
 import mpathic.profile_freq as profile_freq
 from scipy.special import erfc
@@ -322,7 +322,7 @@ def mut_seq_random(s, fwdprimer, revprimer, nseqs):
     # use mpathic function to generate randomly mutated library
     seqs_df = simulate_library.main(wtseq=s[firstbase:finalbase], numseq=nseqs)
     # only take independent sequences
-    seqs_df = mpathic.utils.collapse_further(seqs_df)
+    seqs_df = collapse_further(seqs_df)
     seqs = seqs_df['seq']
     # remove wild type sequences
     outseqs = [fwdprimer + s + revprimer]  + [fwdprimer + s[:firstbase] + str(x) + s[finalbase:] + revprimer  for x in seqs]
