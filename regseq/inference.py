@@ -35,11 +35,10 @@ def least_squares(raveledmat, batch):
 def lin_reg(inputname, outputname, gene="aphA"):
 
     # Load data
-    df = pd.io.parsers.read_csv(inputname,delim_whitespace=True)
-
+    df = pd.io.parsers.read_csv(inputname)
     # Load wild type sequences
     genedf = pd.io.parsers.read_csv('../data/test_data/wtsequences.csv')
-
+    
     # Extract the wild type sequence of gene of interest
     wt = str(genedf.loc[genedf['name'] == gene,'geneseq'].tolist()[0])
 
@@ -65,13 +64,13 @@ def lin_reg(inputname, outputname, gene="aphA"):
         s_clipped = s[:seqlength]
         # Find mutations
         all_mutarr[i,:seqlength] = (wtlist != s_clipped)
-
+    print(all_mutarr)
     # IUse the ratio of mRNA counts to DNA counts to regress against. Add a pseudocount of 1.
     thetarget = np.array((df['ct_0']+1)/(df['ct_1']+1))
     
     # Center the mean
     thetarget = thetarget - np.mean(thetarget)
-
+    print(thetarget)
     # Fit mutation effects using linear regression
     emat = least_squares(all_mutarr, thetarget)
 
