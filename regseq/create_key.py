@@ -194,23 +194,12 @@ def detect_genes(df, output_file, wildtypefile):
 
 
     # Filter overly mutated sequences, if >50% is mutated
-    goodmut = df['nmut'] > 80
+    goodmut = df['nmut'] < 80
     temp_df = df.loc[goodmut]
 
     pd.set_option('max_colwidth',int(1e8))
-
-    #loop through all genes in the experiment, outputing a key between barcode
-    #and sequence for each gene.
-    for gene in temp_df['gene'].value_counts().index:
-        outdfgene = temp_df.loc[temp_df['gene'] == gene]
-
-        outdfgene.to_string(
-            open(output_file,'w'), 
-            index=False, 
-            col_space=10,
-            float_format=format_string,
-            justify='left'
-        )
+    return temp_df
+    
     
     
 def key_barcode_sequence(data_file, output_file, wildtypefile='../data/test_data/wtsequences.csv'): 
@@ -245,8 +234,9 @@ def key_barcode_sequence(data_file, output_file, wildtypefile='../data/test_data
     seq_tag_df = check_rare_barcode_errors(barcodes, counts, seq_tag_df)
     
     # Find gene relating to sequence and store result
-    detect_genes(seq_tag_df, output_file, wildtypefile)
-    
+    df = detect_genes(seq_tag_df, output_file, wildtypefile)
+    for gene in df["gene"].unique():
+        df.loc[df["gene"] ==gene].to_csv(output_file + gene + "_barcode_key.csv", index=False)
     
 def findshare(df):
     """Finds percentage of single counted sequences."""
@@ -275,7 +265,7 @@ def findmaxseq(df):
 def check_all_muts(s, seq):
     """Compare two sequences for identical bases."""
     temparr = np.array(list(s))
-    return np.sum(temparr==seq)
+    return np.sum(temparr!=seq)
 
 
 def findgene(s, df):
@@ -298,7 +288,7 @@ def findgene(s, df):
     """
 
     tempdf = df['geneseq'].apply(check_all_muts, args=(np.array(list(s)),))
-    maxind = np.argmax(np.array(tempdf))
+    maxind = np.argmin(np.array(tempdf))
     genename = df.loc[maxind, 'name']
     return genename
 
@@ -323,6 +313,6 @@ def findgene_nmut(s, df):
     """
 
     tempdf = df['geneseq'].apply(check_all_muts,args=(np.array(list(s)),))
-    nmut = np.max(tempdf)
+    nmut = np.min(tempdf)
     return nmut
 

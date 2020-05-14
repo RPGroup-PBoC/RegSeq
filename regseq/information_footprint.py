@@ -157,7 +157,7 @@ def main(inarr, for_clip=False, seqlength=160, for_invert=False):
     return np.abs(smoothinfo), shiftcolors
 
 
-def plot_footprint(matrix, output_file):
+def plot_footprint(matrix, output_file=None):
     """ Plot information footprint.
     
     Footprint is smoothed with a window of size=3. Bars are colored by
@@ -183,5 +183,6 @@ def plot_footprint(matrix, output_file):
     ax.set_ylabel('Information (bits)',fontname='DejaVu Sans',fontsize=12)
     ax.set_xlabel('position',fontname='DejaVu Sans',fontsize=12)
     ax.bar(range(-114,43),np.abs(smoothinfo),color=shiftcolors)
-    plt.savefig(sys.argv[2],format='pdf')
+    if not output_file == None:
+        plt.savefig(output_file,format='pdf')
     return plt

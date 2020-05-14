@@ -62,7 +62,7 @@ def combine_counts(
     """
     
     # Load barcode key
-    tagkey = pd.read_csv(tag_key_file, delim_whitespace=True)
+    tagkey = pd.read_csv(tag_key_file)
     tagkey = tagkey.set_index('tag')
     
     # Load mRNA data
@@ -76,7 +76,7 @@ def combine_counts(
     tempdf = tempdf.dropna()
 
     # Load DNA plasmid data
-    DNA_counts = read_data(mRNA_file)
+    DNA_counts = read_data(DNA_file)
     
     # Make dataframe with mutated sequence and barcode
     c = tagkey.reindex(DNA_counts.copy().index)
@@ -92,7 +92,7 @@ def combine_counts(
     output_df = output_df.fillna(0)
     
     # Remove unnecessary columns
-    output_df = output_df[['ct_0','ct_1','seq']]
+    output_df = output_df[['ct_0','ct_1','gene','seq']]
 
     # Total counts column
     output_df['ct'] = output_df[['ct_0','ct_1']].sum(axis=1)
@@ -102,22 +102,21 @@ def combine_counts(
     output_df = output_df.rename(columns={'index':'tag'})
     
     # Combine sequence and barcode
-    output_df['seqall'] = output_df.apply(stitch, axis=1)
-    
-    # Reorder columns
-    output_df = output_df[['ct','ct_0','ct_1','seqall']]
-    
-    # Rename columns
-    output_df = output_df.rename(columns={'seqall':'seq'})
-    output_df = output_df.groupby(by='seq').sum()
+    output_df['seq'] = output_df.apply(stitch, axis=1)
+
+    output_df = output_df.groupby(by=['seq',"gene"]).mean()
+
     output_df = output_df.reset_index()
-    output_df = output_df[['ct','ct_0','ct_1','seq']]
+    output_df = output_df[['ct','ct_0','ct_1','gene','seq']]
 
     #Output the final dataset for associated gene.
-    output_df.to_string(
-        open(output_file,'w'), 
-        index=False,
-        col_space=10,
-        float_format=format_string,
-        justify='left'
-    )
+    output_df.to_csv(output_file, index=False)
+    
+    # Old output format, might be needed again
+    #output_df.to_string(
+    #    open(output_file,'w'), 
+    #    index=False,
+    #    col_space=10,
+    #    float_format=format_string,
+    #    justify='left'
+    #)
