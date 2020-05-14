@@ -624,4 +624,3 @@ def pboc_style_mpl():
     sns.set_style('darkgrid', rc=rc)
     sns.set_palette("colorblind", color_codes=True)
     sns.set_context('notebook', rc=rc)
-pboc_style_mpl()

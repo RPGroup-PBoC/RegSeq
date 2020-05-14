@@ -13,6 +13,7 @@ import pandas as pd
 import numpy as np
 import scipy as sp
 
+import logomaker
 
 #define functions
 def seq2mat(seq, seq_dict):
@@ -83,7 +84,7 @@ def effect_df_to_prob_df(effect_df, bg_df, beta):
 #is about 10 percent towards being mutated. However, to control for possible
 #differing mutation rates, we will just arbitrarily set the ratio to be 50/50
 
-def main(inarr, for_clip=False, seqlength=160, for_invert=False):
+def footprint(inarr, for_clip=False, seqlength=160, for_invert=False):
     """
     """
     windowsize=3
@@ -157,32 +158,32 @@ def main(inarr, for_clip=False, seqlength=160, for_invert=False):
     return np.abs(smoothinfo), shiftcolors
 
 
-def plot_footprint(matrix, output_file=None):
-    """ Plot information footprint.
-    
-    Footprint is smoothed with a window of size=3. Bars are colored by
-    increased or decreased expression.
-    
-    Parameters
-    ----------
-    matrix : str
-        File path for energy matrix
-    output_file : 
-        File path to store plot
 
-    Returns
-    -------
-    plt : matplotlib.pyplot object
-        Information Footprint
+def get_info(df, gc=.508):
+    '''Find the total information content of a binding site.'''
     
-    """
+
+    background_array = np.array([(1 - gc) / 2, gc / 2, gc / 2, (1 - gc) / 2])
     
-    emat = np.loadtxt(matrix)
-    smoothinfo, shiftcolors = main(emat)
-    fig,ax = plt.subplots(figsize=(10,2))
-    ax.set_ylabel('Information (bits)',fontname='DejaVu Sans',fontsize=12)
-    ax.set_xlabel('position',fontname='DejaVu Sans',fontsize=12)
-    ax.bar(range(-114,43),np.abs(smoothinfo),color=shiftcolors)
-    if not output_file == None:
-        plt.savefig(output_file,format='pdf')
-    return plt
+    #add in small value to make sure no probabilities are exactly zero.
+    df = df + 1e-9
+    
+    return np.sum(df.values * np.log2(df.values/background_array))
+
+
+def get_beta_for_effect_df(
+    effect_df,
+    target_info,
+    min_beta=.001,
+    max_beta=100,
+    num_betas=1000):
+    '''Find the appropriate scaling factor for displaying sequence
+    logos. '''
+    betas = np.exp(np.linspace(np.log(min_beta),np.log(max_beta),num_betas))
+    infos = np.zeros(len(betas))
+    for i, beta in enumerate(betas):
+        prob_df = logomaker.transform_matrix(df=beta*effect_df,from_type='weight',to_type='probability')
+        infos[i] = get_info(prob_df)
+    i = np.argmin(np.abs(infos-target_info))
+    beta = betas[i]
+    return beta
