@@ -167,7 +167,7 @@ def check_rare_barcode_errors(goodtags, counts, df):
     return output_df
   
 
-def detect_genes(df, output_file, wildtypefile):
+def detect_genes(df, wildtypefile):
     """
     Find genes that sequences belong to.
     
@@ -234,9 +234,9 @@ def key_barcode_sequence(data_file, output_path, wildtypefile='../data/test_data
     seq_tag_df = check_rare_barcode_errors(barcodes, counts, seq_tag_df)
     
     # Find gene relating to sequence and store result
-    df = detect_genes(seq_tag_df, output_file, wildtypefile)
+    df = detect_genes(seq_tag_df, wildtypefile)
     for gene in df["gene"].unique():
-        df.loc[df["gene"] ==gene].to_csv(output_file + gene + "_barcode_key.csv", index=False)
+        df.loc[df["gene"] ==gene].to_csv(output_path + gene + "_barcode_key.csv", index=False)
     
 def findshare(df):
     """Finds percentage of single counted sequences."""
