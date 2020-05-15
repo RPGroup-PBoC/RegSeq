@@ -104,7 +104,7 @@ def combine_counts(
     # Combine sequence and barcode
     output_df['seq'] = output_df.apply(stitch, axis=1)
 
-    output_df = output_df.groupby(by=['seq',"gene"]).mean()
+    output_df = output_df.groupby(by=['seq',"gene"]).sum()
 
     output_df = output_df.reset_index()
     output_df = output_df[['ct','ct_0','ct_1','gene','seq']]

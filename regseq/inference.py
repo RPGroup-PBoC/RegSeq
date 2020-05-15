@@ -246,7 +246,7 @@ def max_inf_mcmc(
     
     """
     # Load data set
-    df = pd.io.parsers.read_csv(data_set_file, delim_whitespace=True)
+    df = pd.io.parsers.read_csv(data_set_file)#, delim_whitespace=True)
 
     temp_seq_mat, wtrow = numerics.dataset2mutarray(df.copy(),'MAT')
     temp_seq_mat2 = temp_seq_mat.toarray()

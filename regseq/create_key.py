@@ -202,7 +202,7 @@ def detect_genes(df, output_file, wildtypefile):
     
     
     
-def key_barcode_sequence(data_file, output_file, wildtypefile='../data/test_data/wtsequences.csv'): 
+def key_barcode_sequence(data_file, output_path, wildtypefile='../data/test_data/wtsequences.csv', gene=None): 
     """
     Go through functions to create unique map of barcode to sequence and gene in wiltype.
     
@@ -215,8 +215,8 @@ def key_barcode_sequence(data_file, output_file, wildtypefile='../data/test_data
     ----------
     data_file : str
         Path to file containing sequencing data.
-    output_file : str
-        Path to file where results are stored.
+    output_path : str
+        Path to folder where results are stored.
     
     Returns
     -------
