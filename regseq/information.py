@@ -80,6 +80,12 @@ def effect_df_to_prob_df(effect_df, bg_df, beta):
     prob_df.loc[:,:] = weights/weights.sum(axis=1)[:,np.newaxis]
     return prob_df
 
+
+def get_prob_df_info(prob_df,bg_df):
+    prob_df = prob_df + 1e-7
+    bg_df = bg_df + 1e-7
+    return np.sum(prob_df.values*np.log2(prob_df.values/bg_df.values),axis=1)
+
 #determine the relative probabilities of being mutated/being wt. In reality this
 #is about 10 percent towards being mutated. However, to control for possible
 #differing mutation rates, we will just arbitrarily set the ratio to be 50/50
@@ -187,3 +193,56 @@ def get_beta_for_effect_df(
     i = np.argmin(np.abs(infos-target_info))
     beta = betas[i]
     return beta
+
+
+def emat_to_information(
+        file, 
+        wildtypefile='../data/prior_designs/wtsequences.csv', 
+        clip=False, 
+        invert=True
+    ):
+    """
+    
+    Parameters
+    ----------
+    file: str
+        Energy matrix file
+    wildtypefile: str, default
+        File with wild type sequences
+    clip : boolean, default False
+        If True, clip off last 20 bases.
+    invert : boolean, default True
+        If True, flip signs for binding energy, if wildtype energy is positive.
+    save : boolean, default False
+        If True, save array as txt
+    """
+    
+    #input the gene name, so we can get the wt sequence.
+    gene = file.split("/")[-1].split("_")[0]
+
+    genedf = pd.read_csv(wildtypefile)
+    am = str(genedf.loc[genedf['name'] == gene, 'geneseq'].tolist()[0])
+    length_wt = len(am)
+    
+    # Load in the energy matrix
+    energy_df = pd.read_csv(file)
+
+    #convert to a numpy array
+    val_cols = ['val_A','val_C','val_G','val_T']
+    energyarr = np.array(energy_df[val_cols]).T
+        
+    #load in sequence dictionary and get matrix representation of wt seq.
+    seq_dict,inv_dict = choose_dict('dna')
+    wt_mat = seq2mat(am, seq_dict)
+
+    #we now get a matrix that contains wt vs non-wt entries (averaged).
+    wt_val = energyarr[:,:length_wt]*wt_mat
+    submat = energyarr[:,:length_wt] - wt_val.sum(axis=0)
+    y_sub = -1*submat.sum(axis=0)/3
+
+    #make sure wild type energy is negative, if not flip the entries.
+    if invert and y_sub.sum() > 0:
+        y_sub = y_sub*-1
+
+    return y_sub
+    

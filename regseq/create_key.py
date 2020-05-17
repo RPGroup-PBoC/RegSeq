@@ -188,7 +188,6 @@ def detect_genes(df, wildtypefile):
     """
     
     wildtype_df = pd.read_csv(wildtypefile)
-    
     df['gene'] = df['seq'].apply(findgene, args=(wildtype_df,))
     df['nmut'] = df['seq'].apply(findgene_nmut, args=(wildtype_df,))
 
@@ -202,7 +201,7 @@ def detect_genes(df, wildtypefile):
     
     
     
-def key_barcode_sequence(data_file, output_path, wildtypefile='../data/test_data/wtsequences.csv', gene=None): 
+def key_barcode_sequence(data_file, output_path, wildtypefile='../data/prior_designs/wtsequences.csv', genes=None): 
     """
     Go through functions to create unique map of barcode to sequence and gene in wiltype.
     
@@ -217,10 +216,17 @@ def key_barcode_sequence(data_file, output_path, wildtypefile='../data/test_data
         Path to file containing sequencing data.
     output_path : str
         Path to folder where results are stored.
-    
+    wildtypefile : str
+        Path for file containing wild type genetic sequences.
+    genes : List, default None
+        List of genes for which mapping is returned. If None, all maps are returned.
     Returns
     -------
     """
+    if genes != None:
+        if type(gene) != list:
+            raise RuntimeError("Type of `genes` has to be list.")
+    
     # Find sequences with correct length
     correct_seq = check_length(data_file)
     
@@ -235,8 +241,14 @@ def key_barcode_sequence(data_file, output_path, wildtypefile='../data/test_data
     
     # Find gene relating to sequence and store result
     df = detect_genes(seq_tag_df, wildtypefile)
-    for gene in df["gene"].unique():
-        df.loc[df["gene"] ==gene].to_csv(output_path + gene + "_barcode_key.csv", index=False)
+    if genes == None:
+        for gene in df["gene"].unique():
+            genedf = df.loc[df["gene"] ==gene]
+            genedf.drop(['gene'], axis=1).to_csv(output_path + gene + "_barcode_key.csv", index=False)
+    else:
+        for gene in genes:
+            genedf = df.loc[df["gene"] ==gene]
+            genedf.drop(['gene'], axis=1).to_csv(output_path + gene + "_barcode_key.csv", index=False)
     
 def findshare(df):
     """Finds percentage of single counted sequences."""

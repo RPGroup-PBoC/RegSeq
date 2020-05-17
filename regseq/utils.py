@@ -391,7 +391,6 @@ def mutation_sequences(genes, fwdprimes, revprimes, nseqs):
     allseqs = pd.DataFrame()
     primer_df = pd.DataFrame()
     for i,row in genes.iterrows():
-        
         primernum = int(np.floor(i/5))
         # get fwd and rev primer.
         thefwdprimer = fwdprimes[primernum]
