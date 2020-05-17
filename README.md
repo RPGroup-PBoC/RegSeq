@@ -44,15 +44,19 @@ humans and computers alike, allowing for rapid location of specific files and
 instructions. Within each directory is a `README.md` file which summarizes the
 purpose of that directory as well as some examples where necessary.
 
-1) `code` contains Jupyter notebooks to perform computational steps of the Reg-Seq protocol from start to finish. Where all of the executed code lives. This includes pipelines, scripts, and
+### notebooks 
+Contains Jupyter notebooks to perform computational steps of the Reg-Seq protocol from start to finish. Where all of the executed code lives. This includes pipelines, scripts, and
 figure files.
 
-2) `data` contains prior data files, such as designed sequences, negative controls, or output analysis files.
+### data 
+Contains prior data files, such as designed sequences, negative controls, or output analysis files.
 
-3) `protocol` contains MarkDown files that outline each step to perform Reg-Seq in total.
 
-4) `reqseq` contains Python files which can be easily executed to perform your own analyses.
+### reqseq
+Python module which can be easily executed to perform your own analyses.
 
+### figures
+Contains all generated figures.
 
 # License Information
 <img src="https://licensebuttons.net/l/by-nd/3.0/88x31.png"> This work is
