@@ -11,7 +11,7 @@ The website for the original Reg-Seq paper can be found [here](https://www.rpgro
 **Check out the [Wiki tab](https://github.com/RPGroup-PBoC/RegSeq/wiki) to see the full experimental protocol for Reg-Seq**.
 
 ## Installation
-To reproduce this work, you will need to use the RegSeq module -- a homegrown Python software package written explicitly for this work. We recommend having installed Anaconda3. The package relies on the `mpathic` package, a software package for quantitative modeling of massively parallel experiments and developed by [GitHub user jbkinney](https://github.com/jbkinney). A link to the GitHub page for the mpathic package is [available here](https://github.com/jbkinney/mpathic). `mpathic` relies on Python 3.6.9. Since this is not the most recent python version, it is very likely that a new Python environment is necessary. To create this environment, simply navigate into the `RegSeq/` folder and run the following line in the terminal:
+To reproduce this work, you will need to use the RegSeq module -- a homegrown Python software package written explicitly for this work. We recommend having installed [Anaconda3](https://www.anaconda.com/products/individual). The package relies on the `mpathic` package, a software package for quantitative modeling of massively parallel experiments and developed by [GitHub user jbkinney](https://github.com/jbkinney). A link to the GitHub page for the mpathic package is [available here](https://github.com/jbkinney/mpathic). `mpathic` relies on Python 3.6.9. Since this is not the most recent python version, it is very likely that a new Python environment is necessary. To create this environment, simply navigate into the `RegSeq/` folder and run the following line in the terminal:
 
 `conda env create -f environment.yml`
 
@@ -23,6 +23,7 @@ And deactivated by:
 
 `conda deactivate`
 
+The commands `conda activate` and `conda deactivate` only work for conda versions 4.6 and higher. If you run an older conda version, then you need to use `source activate` and `source deactivate` for Linux and macOS, and `activate` and `deactivate` for windows.
 If any commands are run from the command line, it needs to be done inside the created environment. To confirm that the environment is functional, run the following line after activating the new environment:
 
 `mpathic learn_model --help`
