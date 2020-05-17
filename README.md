@@ -8,7 +8,7 @@ in k_BT units, the binding strength of transcription factors to their target sit
 
 The website for the original Reg-Seq paper can be found [here](https://www.rpgroup.caltech.edu/RNAseq_SortSeq/).
 
-**Check out the Wiki tab to see the full experimental protocol for Reg-Seq**.
+**Check out the [Wiki tab](https://github.com/RPGroup-PBoC/RegSeq/wiki) to see the full experimental protocol for Reg-Seq**.
 
 ## Installation
 To reproduce this work, you will need to use the RegSeq module -- a homegrown Python software package written explicitly for this work. We recommend having installed Anaconda3. The package relies on the `mpathic` package, a software package for quantitative modeling of massively parallel experiments and developed by [GitHub user jbkinney](https://github.com/jbkinney). A link to the GitHub page for the mpathic package is [available here](https://github.com/jbkinney/mpathic). `mpathic` relies on Python 3.6.9. Since this is not the most recent python version, it is very likely that a new Python environment is necessary. To create this environment, simply navigate into the `RegSeq/` folder and run the following line in the terminal:
