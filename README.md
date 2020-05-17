@@ -60,7 +60,7 @@ Python module which can be easily executed to perform your own analyses.
 Contains all generated figures.
 
 # License Information
-<img src="https://licensebuttons.net/l/by-nd/3.0/88x31.png"> This work is
+<img src="https://licensebuttons.net/l/by/3.0/88x31.png"> This work is
 licensed under a [Creative Commons CC-BY 4.0 Attribution license](https://creativecommons.org/licenses/by/4.0/). All
 software is issued under the standard MIT license which is as follows:
 
