@@ -1,0 +1,36 @@
+,Protein names,Peptide counts (razor+unique),Ratio H/L normalized
+1131,Uncharacterized HTH-type transcriptional regulator YgbI,3,12.38
+412,HTH-type transcriptional regulator UlaR,9,4.5760000000000005
+514,L-fucose operon activator,3,2.8504
+1004,Curved DNA-binding protein,7,2.3881
+513,Deoxyribose operon repressor,5,2.1546
+753,Acetate operon repressor,3,1.9955
+284,DNA-directed RNA polymerase subunit alpha,5,1.95
+373,Arabinose operon regulatory protein,3,1.8381
+615,N-acetylglucosamine repressor,8,1.8026
+507,DNA-binding protein HU-alpha,4,1.7874
+570,Transcriptional regulatory protein YpdB,2,1.7842
+419,Transcriptional regulatory protein OmpR,1,1.7799
+375,HTH-type transcriptional regulator CysB,3,1.6692
+335,HTH-type transcriptional regulator ArgP,4,1.4142
+649,Sigma-E factor regulatory protein RseB,2,1.3903
+374,Fumarate and nitrate reduction regulatory protein,4,1.3675
+512,cAMP-activated global transcriptional regulator CRP,13,1.2344
+337,DNA-directed RNA polymerase subunit beta,19,1.1544
+1040,Murein hydrolase activator EnvC,5,1.0909
+779,DNA topoisomerase 4 subunit B,11,1.0847
+601,DNA gyrase subunit B,15,1.0605
+108,DNA topoisomerase 1,27,1.0233
+1104,HTH-type transcriptional regulator FrlR,4,0.98835
+752,DNA replication terminus site-binding protein,6,0.93584
+515,Glycerol-3-phosphate regulon repressor,2,0.9024700000000001
+340,DNA-directed RNA polymerase subunit beta,20,0.88894
+43,DNA polymerase I,23,0.8775299999999999
+449,Penicillin-binding protein activator LpoB,2,0.85898
+821,Transcriptional regulatory protein PhoP,3,0.64302
+719,Uracil-DNA glycosylase,1,0.63659
+617,Nitrate/nitrite response regulator protein NarL,7,0.44071000000000005
+1252,Putative lambdoid prophage e14 repressor protein C2,1,0.36139
+77,Lactose operon repressor,1,0.32614
+1275,Transcriptional regulator KdgR,3,0.23331
+306,Probable transcriptional regulatory protein YebC,10,0.050172

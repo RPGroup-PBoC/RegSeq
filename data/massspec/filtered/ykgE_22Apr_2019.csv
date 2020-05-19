@@ -1,0 +1,38 @@
+,Protein names,Peptide counts (razor+unique),Ratio H/L normalized
+651,Cation transport regulator ChaB,3,9.3646
+347,Transcriptional repressor NrdR,8,2.978
+422,G/U mismatch-specific DNA glycosylase,9,2.4055
+773,Single-stranded DNA-binding protein,4,2.0365
+576,cAMP-activated global transcriptional regulator CRP,12,1.8685
+454,HTH-type transcriptional regulator UlaR,7,1.7055
+120,DNA topoisomerase 1,44,1.6640000000000001
+87,DNA helicase II,8,1.5701
+464,Transcriptional regulatory protein OmpR,2,1.5108
+943,ATP-dependent DNA helicase RecG,5,1.4797
+569,DNA-binding protein HU-beta,8,1.4655
+568,DNA-binding protein HU-alpha,5,1.4317
+1287,Carbon storage regulator,2,1.4057
+417,HTH-type transcriptional regulator CysB,7,1.3383
+282,Aspartate carbamoyltransferase regulatory chain,9,1.3049
+570,DNA-binding protein H-NS,8,1.2803
+575,Leucine-responsive regulatory protein,5,1.1748
+533,DNA protection during starvation protein,10,1.1216
+797,Transcriptional regulatory protein RcsB,8,1.0816
+378,DNA-directed RNA polymerase subunit beta,39,1.0712
+831,DNA topoisomerase 3,16,1.041
+321,DNA-directed RNA polymerase subunit alpha,8,1.034
+374,DNA-directed RNA polymerase subunit beta,31,1.0298
+684,DNA gyrase subunit B,17,0.95485
+461,Nitrogen regulatory protein P-II 1,3,0.88759
+129,HTH-type transcriptional regulator DicA,5,0.8786299999999999
+1082,Curved DNA-binding protein,9,0.8764200000000001
+571,DNA-binding protein StpA,4,0.8659600000000001
+850,Acetate operon repressor,7,0.8274299999999999
+916,Transcriptional regulatory protein PhoP,4,0.75463
+1248,Transcriptional repressor RcnR,5,0.74441
+704,Nitrate/nitrite response regulator protein NarL,7,0.7179
+588,HTH-type transcriptional repressor FabR,3,0.67648
+52,DNA polymerase I,36,0.65305
+577,Deoxyribose operon repressor,5,0.64193
+724,DNA topoisomerase 4 subunit A,16,0.60106
+875,DNA topoisomerase 4 subunit B,13,0.45255

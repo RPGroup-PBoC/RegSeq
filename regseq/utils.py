@@ -89,6 +89,7 @@ def cox_mann_p_values(files, output_file='test_pval.txt'):
         noleader = name.split('/')[-1]
         # load in file with proteins and enrichments
         indf = pd.read_csv(name, delimiter=",")
+        print(indf)
 
         # get the correct column name that contains the heavy to light ratio.
         indf_ratio_col = "Ratio H/L normalized"

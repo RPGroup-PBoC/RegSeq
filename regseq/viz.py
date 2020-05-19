@@ -183,7 +183,7 @@ def energy_matrix(file, limit=(), save=False):
     return ax
 
 
-def mass_spec(file, inname="A5", save=False):
+def mass_spec(file, good_column="Ratio H/L normalized", save=False):
     def check_DNA(s):
         '''Return only proteins which have DNA binding activity.'''
         with open('../data/massspec/DNAbinding_genenames.txt') as f:
@@ -195,23 +195,22 @@ def mass_spec(file, inname="A5", save=False):
             return False
     
     
-    df = pd.io.parsers.read_csv(file, sep='\t')
+    df = pd.io.parsers.read_csv(file, sep=',')
     # Column name that contains the normal
-    good_column = 'Ratio H/L normalized ' + inname
     # Extract the only necessary columns, protein name and normalized ratio
     enrichment = df[['Protein names',good_column]]
     
     enrichment2 = enrichment.dropna()
     enrichment2 = enrichment2.sort_values(by=good_column,ascending=False)
     
-    goodrows = enrichment2['Protein names'].apply(check_DNA)
-    enrichment3 = enrichment2[goodrows]
+    #goodrows = enrichment2['Protein names'].apply(check_DNA)
+    #enrichment3 = enrichment2[goodrows]
     
     fig,ax = plt.subplots()
     ax.set_xlabel('')
     ax.set_xticks([])
     ax.set_ylabel('enrichment')
-    sns.stripplot(data=list(enrichment3[good_column]),jitter=True,size=12)
+    sns.stripplot(data=list(enrichment2[good_column]),jitter=True,size=12)
     ax.set_xticks([])
     if save == True:
         plt.savefig(inname + '_output.eps', format='eps')
