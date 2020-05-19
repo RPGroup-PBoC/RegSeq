@@ -68,7 +68,7 @@ def footprint_from_emat(file, output_file=None):
     return plt
 
 
-def logo(file, limit=(), min_beta=.001, max_beta=100, num_betas=1000, output_file=None):
+def logo(file, limit=(), min_beta=.001, max_beta=100, num_betas=1000, output_file=None,save=False):
     """ Plot logo using Logomaker package.
     
     Parameters

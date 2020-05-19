@@ -23,8 +23,6 @@ def find_edges(em,start,end,thresh=0.00025):
     return newstart, newend
 
 def select_region(temp_significant,gene,growth,thresh=0.00025):
-    print(temp_significant)
-    print(temp_significant.shape)
     #initialize the variable 'ongoing'. this shows whether or not the current base is part of a binding site
     #or if its starting a new one.
     info_length = len(temp_significant)
@@ -56,7 +54,6 @@ def select_region(temp_significant,gene,growth,thresh=0.00025):
             #has ended at the current base. To do that we first check if the new base is not significant.
             future_sum = temp_significant[i:i+4].sum()
             if (temp_significant[i] == 0):
-                print(i)
                 #next, if there is only a 1-4 base pair break in which bases are significant, the whole
                 #thing is probably still part of one binding site. So we check whether or not the next 4
                 #base pairs are not significant, if they are not we declare the binding site ended.
@@ -83,8 +80,6 @@ def select_region(temp_significant,gene,growth,thresh=0.00025):
                 else:
                     pass
             elif (temp_significant[i-1] == 1 and temp_significant[i] == -1 and future_sum < .5):
-                print(i)
-                print('changing from rep to act')
                 end = i
                 outdf.loc[counter,['gene','growth','feat_num','start','end','type']] = [gene,growth,num_feat,start,end,TF_type]
                 start = i
@@ -92,8 +87,6 @@ def select_region(temp_significant,gene,growth,thresh=0.00025):
                 TF_type = 'act'
                 counter = counter + 1
             elif (temp_significant[i-1] == -1 and temp_significant[i] == 1 and future_sum > -.5):
-                print(i)
-                print('changing from act to rep')
                 end = i
                 outdf.loc[counter,['gene','growth','feat_num','start','end','type']] = [gene,growth,num_feat,start,end,TF_type]
                 start = i
@@ -155,7 +148,6 @@ def find_region(df,gene,growth):
         counter = 0
         outdf = pd.DataFrame(columns=['gene','growth','feat_num','start','end','type'])
         info_length = len(df.index)
-        print(info_length)
         #we will use pymc to load in the database of all MCMC steps.
         em = np.abs(np.array(list(df['info'])))
         em_noabs = np.array(list(df['info']))
