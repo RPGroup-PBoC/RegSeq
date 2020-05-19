@@ -6,6 +6,7 @@ from sklearn.preprocessing import StandardScaler
 import scipy.sparse
 import scipy as sp
 import pdb
+import pymc
 
 from .utils import choose_dict
 
@@ -67,8 +68,7 @@ def lin_reg(inputname, outputname, wildtypefile='../data/prior_designs/wtsequenc
     #output results
     np.savetxt(outputname,emat)
     
-    
-<<<<<<< HEAD
+
 class GaugePreservingStepper(pymc.Metropolis):
     """Perform monte carlo steps that preserve the following choise of gauge:
     sum of elements in each column = 0, overall matrix norm = 1."""
@@ -273,5 +273,3 @@ def max_inf_mcmc(
     )
 
     np.savetxt(output_mean, emat)
-=======
->>>>>>> b97ea39149725ac7ec72d8098c2305481b89c1cf
