@@ -92,7 +92,7 @@ def combine_counts(
     output_df = output_df.fillna(0)
     
     # Remove unnecessary columns
-    output_df = output_df[['ct_0','ct_1','gene','seq']]
+    output_df = output_df[['ct_0','ct_1','seq']]
 
     # Total counts column
     output_df['ct'] = output_df[['ct_0','ct_1']].sum(axis=1)
@@ -104,10 +104,10 @@ def combine_counts(
     # Combine sequence and barcode
     output_df['seq'] = output_df.apply(stitch, axis=1)
 
-    output_df = output_df.groupby(by=['seq',"gene"]).sum()
+    output_df = output_df.groupby(by=['seq']).sum()
 
     output_df = output_df.reset_index()
-    output_df = output_df[['ct','ct_0','ct_1','gene','seq']]
+    output_df = output_df[['ct','ct_0','ct_1','seq']]
 
     #Output the final dataset for associated gene.
     output_df.to_csv(output_file, index=False)

@@ -1,4 +1,4 @@
-
+from .utils import choose_dict, seq2mat
 import os
 
 import numpy as np
@@ -14,38 +14,6 @@ import numpy as np
 import scipy as sp
 
 import logomaker
-
-#define functions
-def seq2mat(seq, seq_dict):
-    '''Convert a sequence into a matrix representation of shape (4,L)'''
-    mat = sp.zeros((len(seq_dict),len(seq)),dtype=int)
-    for i,bp in enumerate(seq):
-        mat[seq_dict[bp],i] = 1
-    return mat
-
-
-def choose_dict(dicttype,modeltype='MAT'):
-    '''Creates a necessary tool to convert from bp to an index'''
-    if dicttype == 'dna':
-        seq_dict = {'A':0,'C':1,'G':2,'T':3}
-        inv_dict = {0:'A',1:'C',2:'G',3:'T'}
-    elif dicttype == 'rna':
-        seq_dict = {'A':0,'C':1,'G':2,'U':3}
-        inv_dict = {0:'A',1:'C',2:'G',3:'U'}
-    elif dicttype == 'protein':
-        seq_dict = {
-            '*':0,'A':1,'C':2,'D':3,'E':4,'F':5,'G':6,'H':7,'I':8,'K':9,'L':10,
-            'M':11,'N':12,'P':13,'Q':14,'R':15,'S':16,'T':17,'V':18,'W':19,'Y':20}
-        inv_dict = {v:k for k,v in seq_dict.items()}
-    else:
-        raise SortSeqError('Unkonwn dicttype: %s'%dicttype)
-
-    if modeltype == 'NBR' or modeltype == 'PAIR':
-        seq_dict = {
-            ''.join([inv_dict[i],inv_dict[z]]):i*len(seq_dict)+z
-            for i in range(len(seq_dict)) for z in range(len(seq_dict))}
-        inv_dict = {seq_dict[i]:i for i in seq_dict.keys()}
-    return seq_dict,inv_dict
 
 
 def sliding_window(y,windowsize=3):
@@ -80,12 +48,25 @@ def effect_df_to_prob_df(effect_df, bg_df, beta):
     prob_df.loc[:,:] = weights/weights.sum(axis=1)[:,np.newaxis]
     return prob_df
 
+
+def get_prob_df_info(prob_df,bg_df):
+    prob_df = prob_df + 1e-7
+    bg_df = bg_df + 1e-7
+    return np.sum(prob_df.values*np.log2(prob_df.values/bg_df.values),axis=1)
+
 #determine the relative probabilities of being mutated/being wt. In reality this
 #is about 10 percent towards being mutated. However, to control for possible
 #differing mutation rates, we will just arbitrarily set the ratio to be 50/50
 
-def footprint(inarr, for_clip=False, seqlength=160, for_invert=False):
+def footprint(inarr, for_clip=None, seqlength=160, for_invert=False):
     """
+    Compute information footprint from expression changes per position.
+    
+    Parameters
+    ----------
+    inarr : numpy array
+        Change of expression per position.
+    for_clip : 
     """
     windowsize=3
 
@@ -113,7 +94,7 @@ def footprint(inarr, for_clip=False, seqlength=160, for_invert=False):
     maxval = np.max(abs_sub)
     y_sub_normed = y_sub_smoothed/maxval/2 + 0.5
     colorinputs = np.zeros((seqlength))
-    for i in range(seqlength-windowsize):
+    for i in range(seqlength - windowsize):
         if y_sub_smoothed[i] < 0:
             colorinputs[i] = 0.0
         else:
@@ -121,14 +102,14 @@ def footprint(inarr, for_clip=False, seqlength=160, for_invert=False):
 
     if for_clip == 'clip':
         total_length = len(energy_df.index)
-        energy_df = energy_df.loc[:total_length-21,:]
+        energy_df = energy_df.loc[:total_length - 21, :]
 
-    energy_df = energy_df[['val_wt','val_mut']]
+    energy_df = energy_df[['val_wt', 'val_mut']]
 
     energy_df_scaled = energy_df
 
     background_df = pd.DataFrame(np.tile(background_array,
-                        (len(energy_df_scaled), 1)), columns=['val_wt','val_mut'])
+                        (len(energy_df_scaled), 1)), columns=['val_wt', 'val_mut'])
     emat_min = -2
     emat_max = 2
     mid_val=0
@@ -187,3 +168,56 @@ def get_beta_for_effect_df(
     i = np.argmin(np.abs(infos-target_info))
     beta = betas[i]
     return beta
+
+
+def emat_to_information(
+        file, 
+        wildtypefile='../data/prior_designs/wtsequences.csv', 
+        clip=False, 
+        invert=False
+    ):
+    """
+    
+    Parameters
+    ----------
+    file: str
+        Energy matrix file
+    wildtypefile: str, default
+        File with wild type sequences
+    clip : boolean, default False
+        If True, clip off last 20 bases.
+    invert : boolean, default True
+        If True, flip signs for binding energy, if wildtype energy is positive.
+    save : boolean, default False
+        If True, save array as txt
+    """
+    
+    #input the gene name, so we can get the wt sequence.
+    gene = file.split("/")[-1].split("_")[0]
+
+    genedf = pd.read_csv(wildtypefile)
+    am = str(genedf.loc[genedf['name'] == gene, 'geneseq'].tolist()[0])
+    length_wt = len(am)
+    
+    # Load in the energy matrix
+    energy_df = pd.read_csv(file)
+
+    #convert to a numpy array
+    val_cols = ['val_A','val_C','val_G','val_T']
+    energyarr = np.array(energy_df[val_cols]).T
+        
+    #load in sequence dictionary and get matrix representation of wt seq.
+    seq_dict,inv_dict = choose_dict('dna')
+    wt_mat = seq2mat(am, seq_dict)
+
+    #we now get a matrix that contains wt vs non-wt entries (averaged).
+    wt_val = energyarr[:,:length_wt]*wt_mat
+    submat = energyarr[:,:length_wt] - wt_val.sum(axis=0)
+    y_sub = -1*submat.sum(axis=0)/3
+
+    #make sure wild type energy is negative, if not flip the entries.
+    if invert and y_sub.sum() > 0:
+        y_sub = y_sub*-1
+
+    return y_sub
+    

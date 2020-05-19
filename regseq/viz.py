@@ -37,7 +37,61 @@ def footprint(matrix, output_file=None):
     return plt
 
 
-def logo(arraydf, min_beta=.001, max_beta=100, num_betas=1000):
+def footprint_from_emat(file, output_file=None):
+    """ Plot information footprint.
+    
+    Footprint is smoothed with a window of size=3. Bars are colored by
+    increased or decreased expression.
+    
+    Parameters
+    ----------
+    matrix : str
+        File path for energy matrix
+    output_file : str
+        If not None, path where figure is saved as pdf.
+
+    Returns
+    -------
+    plt : matplotlib.pyplot object
+        Information Footprint
+    
+    """
+    
+    arr = information.emat_to_information(file)
+    smoothinfo, shiftcolors = information.footprint(arr)
+    fig,ax = plt.subplots(figsize=(10,2))
+    ax.set_ylabel('Information (bits)',fontname='DejaVu Sans',fontsize=12)
+    ax.set_xlabel('position',fontname='DejaVu Sans',fontsize=12)
+    ax.bar(range(-114,43),np.abs(smoothinfo),color=shiftcolors)
+    if not output_file == None:
+        plt.savefig(output_file,format='pdf')
+    return plt
+
+
+def logo(file, limit=(), min_beta=.001, max_beta=100, num_betas=1000, output_file=None):
+    """ Plot logo using Logomaker package.
+    
+    Parameters
+    ----------
+    file : str
+        file containing energy matrix
+    limit : Tuple, default ()
+        range of positions plotted
+    out
+    
+    """
+    
+    # Load in a binding site matrix.
+    arraydf = pd.read_csv(file, index_col="pos")
+    
+    # Rename columns to be useable by the logomaker package
+    arraydf = arraydf.rename(columns={'val_A':'A','val_C':'C','val_G':'G','val_T':'T'})
+    
+    if len(limit) != 0:
+        if len(limit) != 2:
+            raise RuntimeError("limit must have length 2.")
+        else:
+            arraydf = arraydf.iloc[limit[0]:limit[1]+1]
     # finding scaling factor
     target_info = len(arraydf.index)
     beta = information.get_beta_for_effect_df(
@@ -66,12 +120,40 @@ def logo(arraydf, min_beta=.001, max_beta=100, num_betas=1000):
     binding_logo.ax.xaxis.set_tick_params(pad=-1)
     binding_logo.ax.grid(False)
     
+    if save:
+        plt.savefig("../figures/"+file.split("/")[-1].split(".")[0]+'_logo.pdf',format='pdf')
+        
     return binding_logo
 
 
-def energy_matrix(file, save=False):
-
-    tempdf = pd.io.parsers.read_csv(file,delim_whitespace=True)
+def energy_matrix(file, limit=(), save=False):
+    """ Plot energy matrix.
+    
+    Parameters
+    ----------
+    file : str
+        File for energy matrix.
+    limit : Tuple, default ()
+        range of positions plotted
+    save : boolean, default False
+        If True, save result with "_array.pdf" attached in RegSeq/figures/.
+        
+    Returns 
+    -------
+    ax : atplotlib.axes._subplots.AxesSubplot
+        Plotted energy matrix
+    """
+    
+     # Load in a binding site matrix.
+    tempdf = pd.read_csv(file, index_col="pos")
+    
+    # Apply Limit if given
+    if len(limit) != 0:
+        if len(limit) != 2:
+            raise RuntimeError("limit must have length 2.")
+        else:
+            arraydf = arraydf.iloc[limit[0]:limit[1]+1]
+            
     # Convert to numpy array
     temparr = np.array(tempdf[['val_A','val_C','val_G','val_T']])
     
@@ -94,8 +176,9 @@ def energy_matrix(file, save=False):
     ax.grid(False)
     for item in [fig, ax]:
         item.patch.set_visible(True)
-    if save == True:
-        plt.savefig(file+'_array.png',format='png')
+    
+    if save:
+        plt.savefig("../figures/"+file.split("/")[-1].split(".")[0]+'_array.pdf',format='pdf')
     
     return ax
 

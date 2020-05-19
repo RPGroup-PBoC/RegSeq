@@ -3,20 +3,8 @@ import pandas as pd
 
 from sklearn import linear_model
 from sklearn.preprocessing import StandardScaler
-
 import scipy.sparse
 import scipy as sp
-
-import mpathic.utils
-import mpathic.EstimateMutualInfoforMImax as EstimateMutualInfoforMImax
-import mpathic.numerics as numerics
-import mpathic.io as io
-import mpathic.gauge as gauge
-import mpathic.qc as qc
-from mpathic import shutthefuckup
-from mpathic import SortSeqError
-import mpathic.stepper as stepper
-import pymc
 import pdb
 
 from .utils import choose_dict
@@ -32,12 +20,16 @@ def least_squares(raveledmat, batch):
     return emat
 
 
-def lin_reg(inputname, outputname, gene="aphA"):
+def lin_reg(inputname, outputname, wildtypefile='../data/prior_designs/wtsequences.csv'):
 
     # Load data
-    df = pd.io.parsers.read_csv(inputname)
+    df = pd.read_csv(inputname)
+    
     # Load wild type sequences
-    genedf = pd.io.parsers.read_csv('../data/test_data/wtsequences.csv')
+    genedf = pd.read_csv('../data/prior_designs/wtsequences.csv')
+    
+    # Gene name
+    gene = inputname.split('/')[-1].split('_')[0]
     
     # Extract the wild type sequence of gene of interest
     wt = str(genedf.loc[genedf['name'] == gene,'geneseq'].tolist()[0])
@@ -64,13 +56,11 @@ def lin_reg(inputname, outputname, gene="aphA"):
         s_clipped = s[:seqlength]
         # Find mutations
         all_mutarr[i,:seqlength] = (wtlist != s_clipped)
-    print(all_mutarr)
     # IUse the ratio of mRNA counts to DNA counts to regress against. Add a pseudocount of 1.
     thetarget = np.array((df['ct_0']+1)/(df['ct_1']+1))
     
     # Center the mean
     thetarget = thetarget - np.mean(thetarget)
-    print(thetarget)
     # Fit mutation effects using linear regression
     emat = least_squares(all_mutarr, thetarget)
 
@@ -78,6 +68,7 @@ def lin_reg(inputname, outputname, gene="aphA"):
     np.savetxt(outputname,emat)
     
     
+<<<<<<< HEAD
 class GaugePreservingStepper(pymc.Metropolis):
     """Perform monte carlo steps that preserve the following choise of gauge:
     sum of elements in each column = 0, overall matrix norm = 1."""
@@ -282,3 +273,5 @@ def max_inf_mcmc(
     )
 
     np.savetxt(output_mean, emat)
+=======
+>>>>>>> b97ea39149725ac7ec72d8098c2305481b89c1cf
