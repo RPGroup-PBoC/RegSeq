@@ -20,3 +20,4 @@ dependencies:
     - -e .
     - watermark
     - logomaker
+    - pytest  

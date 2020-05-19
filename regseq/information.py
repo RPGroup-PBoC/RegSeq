@@ -58,8 +58,15 @@ def get_prob_df_info(prob_df,bg_df):
 #is about 10 percent towards being mutated. However, to control for possible
 #differing mutation rates, we will just arbitrarily set the ratio to be 50/50
 
-def footprint(inarr, for_clip=False, seqlength=160, for_invert=False):
+def footprint(inarr, for_clip=None, seqlength=160, for_invert=False):
     """
+    Compute information footprint from expression changes per position.
+    
+    Parameters
+    ----------
+    inarr : numpy array
+        Change of expression per position.
+    for_clip : 
     """
     windowsize=3
 
@@ -87,7 +94,7 @@ def footprint(inarr, for_clip=False, seqlength=160, for_invert=False):
     maxval = np.max(abs_sub)
     y_sub_normed = y_sub_smoothed/maxval/2 + 0.5
     colorinputs = np.zeros((seqlength))
-    for i in range(seqlength-windowsize):
+    for i in range(seqlength - windowsize):
         if y_sub_smoothed[i] < 0:
             colorinputs[i] = 0.0
         else:
@@ -95,14 +102,14 @@ def footprint(inarr, for_clip=False, seqlength=160, for_invert=False):
 
     if for_clip == 'clip':
         total_length = len(energy_df.index)
-        energy_df = energy_df.loc[:total_length-21,:]
+        energy_df = energy_df.loc[:total_length - 21, :]
 
-    energy_df = energy_df[['val_wt','val_mut']]
+    energy_df = energy_df[['val_wt', 'val_mut']]
 
     energy_df_scaled = energy_df
 
     background_df = pd.DataFrame(np.tile(background_array,
-                        (len(energy_df_scaled), 1)), columns=['val_wt','val_mut'])
+                        (len(energy_df_scaled), 1)), columns=['val_wt', 'val_mut'])
     emat_min = -2
     emat_max = 2
     mid_val=0
@@ -167,7 +174,7 @@ def emat_to_information(
         file, 
         wildtypefile='../data/prior_designs/wtsequences.csv', 
         clip=False, 
-        invert=True
+        invert=False
     ):
     """
     

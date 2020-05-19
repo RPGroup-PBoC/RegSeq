@@ -22,7 +22,7 @@ def seq2mat(seq,seq_dict):
 
 
 def choose_dict(dicttype,modeltype='MAT'):
-    '''Get numbering dictionary for either dna,rna, or proteins'''
+    '''Creates a necessary tool to convert from bp to an index'''
     if dicttype == 'dna':
         seq_dict = {'A':0,'C':1,'G':2,'T':3}
         inv_dict = {0:'A',1:'C',2:'G',3:'T'}
@@ -35,11 +35,11 @@ def choose_dict(dicttype,modeltype='MAT'):
             'M':11,'N':12,'P':13,'Q':14,'R':15,'S':16,'T':17,'V':18,'W':19,'Y':20}
         inv_dict = {v:k for k,v in seq_dict.items()}
     else:
-        raise SortSeqError('Unknown dicttype: %s'%dicttype)
+        raise SortSeqError('Unkonwn dicttype: %s'%dicttype)
 
-    if modeltype == 'NBR' or modeltype == 'PAIR' or "Neighbor":
+    if modeltype == 'NBR' or modeltype == 'PAIR':
         seq_dict = {
-            ''.join([inv_dict[i],inv_dict[z]]):i*len(seq_dict)+z 
+            ''.join([inv_dict[i],inv_dict[z]]):i*len(seq_dict)+z
             for i in range(len(seq_dict)) for z in range(len(seq_dict))}
         inv_dict = {seq_dict[i]:i for i in seq_dict.keys()}
     return seq_dict,inv_dict
