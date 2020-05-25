@@ -81,9 +81,9 @@ def mut_seq_random(s, fwdprimer, revprimer, nseqs):
         Dataframe of mutated sequences
     """
     
-    # mutate interal 140 bp.
-    firstbase = 10
-    finalbase = 150
+    # mutate interal all bp. Can be changed if other regions are mutated.
+    firstbase = 0
+    finalbase = 160
     
     # use mpathic function to generate randomly mutated library
     seqs_df = simulate_library.main(wtseq=s[firstbase:finalbase], numseq=nseqs)
