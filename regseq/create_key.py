@@ -4,7 +4,14 @@ import numpy as np
 from .seq_utils import stitch, format_string
 
 
-def check_length(input_file_name, barcode_length=20, sequence_length=160):
+def check_length(
+    input_file_name, 
+    barcode_length=20, 
+    sequence_length=160, 
+    optimal_lengths= np.array([299, 295]), 
+    trailing_lengths= np.array([24, 20]),
+    starting_length=20
+):
     """
     Check length of sequences.
     
@@ -16,18 +23,29 @@ def check_length(input_file_name, barcode_length=20, sequence_length=160):
         file name for the fastq sequencing
     barcode_length : int, default 20
     sequence_length : int, default 160
+    optimal_lengths : array-like, default np.array([299, 295])
+        Numpy array containing possible lengths of sequences
+    trailing_lengths : array-like, default np.array([24, 20])
+        Numpy array containing possible number of trailing bp after barcode
+    starting_length : int, default 20
+        Number of bp preceeding the sequence of interest
     
     Return
     ------
+    sliceddf : Pandas DataFrame
+        DataFrame containing only the mutated sequence and the barcode
     
     """
-    # two possible lengths of trailing bp
-    longth_trailing_length = 24
-    short_trailing_length = 20
-    
-    # Length of bp before sequence of interest
-    starting_length = 20
-    
+    if type(trailing_lengths) == list:
+        trailing_lengths = np.array(trailing_lengths)
+    else:
+        raise RuntimeError("`trailing_lengths` has to be a numpy array or list.")
+        
+    if type(optimal_lengths) == list:
+        optimal_lengths = np.array(optimal_lengths)
+    else:
+        raise RuntimeError("`optimal_lengths` has to be a numpy array or list.")
+        
     # Load data
     df = pd.io.parsers.read_csv(input_file_name,delim_whitespace=True,header=None)
 
@@ -45,13 +63,11 @@ def check_length(input_file_name, barcode_length=20, sequence_length=160):
     # Find all sequences with correct length.
     goodlength = (df.apply(len) == lengthsmax)
     df = df.loc[goodlength]
-    
-    if lengthsmax == 295:
-        sliceddf = df.str.slice(starting_length,-short_trailing_length)
-    elif lengthsmax == 299:
-        sliceddf = df.str.slice(starting_length,-long_trailing_length)
+    ind = np.where(optimal_lengths ==lengthsmax)[0]
+    if len(ind) == 0:
+        raise ValueError('Sequence length not in the list of required lengths.')
     else:
-        raise ValueError('Sequences not either 299 or 295 bp')
+        sliceddf = df.str.slice(starting_length,-trailing_lengths[ind[0]])
         
     return sliceddf
 
