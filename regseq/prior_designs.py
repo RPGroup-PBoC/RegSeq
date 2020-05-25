@@ -81,7 +81,7 @@ def mut_seq_random(s, fwdprimer, revprimer, nseqs):
         Dataframe of mutated sequences
     """
     
-    # mutate interal all bp. Can be changed if other regions are mutated.
+    # mutate interal all bp. Can be changed if o
     firstbase = 0
     finalbase = 160
     
@@ -179,7 +179,8 @@ def mutation_sequences(genes, fwdprimes, revprimes, nseqs):
 def check_mutation_rate(
     genes, 
     sequences, 
-    buffer=10, 
+    buffer=0,
+    max_it=10,
     fix_ex_rate=False, 
     fix_rep=False,
     fix_low_base=False,
@@ -197,6 +198,8 @@ def check_mutation_rate(
         DataFrame of mutated sequences for each gene
     buffer : int
         Number of bases as buffer when checking non-primer and non-wildtype bases
+    max_int : int
+        Number of maximal interations.
     fix_ex_rate : boolean, default False
         States if sequences should be re-generated if mutation rate is far away from
         expectation.
@@ -236,7 +239,6 @@ def check_mutation_rate(
                 fix_rep * _check_repeated(partialdf),
                 fix_low_base * _check_bases(partialdf, buffer)]).any() :
                 fixed = False
-                max_it = 10
                 it = 0
                 fwd = primer_df.loc[primer_df["name"] == gene, "fwd_primer"].values
                 rev = primer_df.loc[primer_df["name"] == gene, "rev_primer"].values
