@@ -365,7 +365,7 @@ def gen_mutated_seq(
     # Get primer pairs
     num_groups = int(np.ceil(ngenes/5))
     fwdprimes, revprimes = get_primers(kosprimefwd, kosprimerev, 100, 100+num_groups-1)
-    nseqs = int(np.floor(norder/ngenes))-1
+    nseqs = int(np.floor(norder/ngenes))
     
     # Generate sequences
     allseqs, primer_df = mutation_sequences(df, fwdprimes, revprimes, nseqs)
