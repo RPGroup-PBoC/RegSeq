@@ -38,11 +38,15 @@ def check_length(
     """
     if type(trailing_lengths) == list:
         trailing_lengths = np.array(trailing_lengths)
+    elif type(trailing_lengths) == np.ndarray:
+        pass
     else:
         raise RuntimeError("`trailing_lengths` has to be a numpy array or list.")
         
     if type(optimal_lengths) == list:
         optimal_lengths = np.array(optimal_lengths)
+    elif type(optimal_lengths) == np.ndarray:
+        pass
     else:
         raise RuntimeError("`optimal_lengths` has to be a numpy array or list.")
         
