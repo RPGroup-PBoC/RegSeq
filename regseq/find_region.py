@@ -6,15 +6,15 @@ import numpy as np
 #the any energy matrices.
 val_cols = ['val_A','val_C','val_G','val_T']
 
-def find_edges(em,start,end,thresh=0.00025):
+def find_edges(em, start, end, thresh=0.00025):
     newstart = np.nan
-    newend=np.nan
+    newend = np.nan
     em_abs = np.abs(em)
     for s in range(start,end+15):
         if em_abs[s] > thresh:
             newstart = s
             break
-    for s in range(end+14,end-1,-1):
+    for s in range(end+14, end-1, -1):
         if em_abs[s] > thresh:
             newend = s
             break
@@ -22,73 +22,109 @@ def find_edges(em,start,end,thresh=0.00025):
             newend = s
     return newstart, newend
 
-def select_region(temp_significant,gene,growth,thresh=0.00025):
-    #initialize the variable 'ongoing'. this shows whether or not the current base is part of a binding site
-    #or if its starting a new one.
-    info_length = len(temp_significant)
-    outdf = pd.DataFrame(columns=['gene','growth','feat_num','start','end','type'])
+def select_region(temp_significant, gene, growth, windowsize=15):
+    """Find all transcription factor binding sites in a sequence given thresholded 
+    information about expression shift for each base in case of mutation.
+    
+    If there is only a 1-4 base pair break in significance, the part
+    is likely still part of one binding site. If none of those bases are signifanct, the 
+    binding site has ended. 
+    If the binding site is an activator, and none of the next four bases are also activator like
+    we end the binding site (if instead they are repressor like, in other words if
+    significant is > 0, then we can still assume the binding site has ended).
+    
+    Parameters
+    ----------
+    temp_significant : array-like
+        List if significance for each base in the sequence. -1 if expression is
+        significantly reduced, 1 if expression is significantly increased, and 0 if no
+        significance for base
+    gene : str
+        Name of the gene
+    growth : str
+        Name of the growth condition
+    windowsize : Int, default 15
+        Minimal size of binding site
+        
+    Returns
+    -------
+    outdf : Pandas DataFrame
+    """
+    # Shows whether or not the current base is part of a binding site or if its starting a new one.
     ongoing = 0
+    
+    info_length = len(temp_significant)
+    outdf = pd.DataFrame(columns=['gene', 'growth', 'feat_num', 'start', 'end', 'type'])
+    
     TF_type = 'None'
     num_feat = 0
     counter = 0
-    #loop through only 145 base pairs (we don't go to 160 becuase the regions are 15 base pairs long.)
-    for i in range(0,info_length-windowsize):
+    
+    for i in range(0, info_length):
 
-        #if we are not currently part of a binding site then we do this...
-        if not ongoing:
-            #if we have a new significant base pair we will start to log a new binding site.
-            if (temp_significant[i-1] == 0 or temp_significant[i-1] == -1 or i == 0) and temp_significant[i] == 1:
+        # Look for new binding site if not in one currently
+        if not ongoing and i < info_length - windowsize:
+            # Log new repressor binding site (expression is increased by mutation)
+            if (temp_significant[i - 1] == 0 or temp_significant[i - 1] == -1 or i == 0) and temp_significant[i] == 1:
                 start = i
                 ongoing = 1
-                #we checked whether temp_signficant was '1' which means the effect of mutation on expression
-                #is positive. This would indicate that the transcription factor type is 'repressor'
                 TF_type = 'rep'
+                
+            # Log new activator binding site (expression is decreased by mutation)
             elif (temp_significant[i-1] == 0 or temp_significant[i-1] == 1 or i == 0) and temp_significant[i] == -1:
                 start = i
                 ongoing = 1
-                #we checked whether temp_signficant was '-1' which means the effect of mutation on expression
-                #is negative. This would indicate that the transcription factor type is 'activator'
                 TF_type = 'act'
+                
         elif ongoing:
-            #if we are currently within an ongoing binding site we need to see whether or not the binding site
-            #has ended at the current base. To do that we first check if the new base is not significant.
+            # Compute significance of next 4 bases
             future_sum = temp_significant[i:i+4].sum()
             if (temp_significant[i] == 0):
-                #next, if there is only a 1-4 base pair break in which bases are significant, the whole
-                #thing is probably still part of one binding site. So we check whether or not the next 4
-                #base pairs are not significant, if they are not we declare the binding site ended.
-                #if the binding site is an activator, and none of the next four bases are also activator like
-                #we end the binding site (if instead they are repressor like, in other words if
-                #significant is > 0, then we can still assume the binding site has ended)
+                # Activator binding site ends if next bases are not activator like (negative significance)
                 if future_sum > -.5 and (TF_type == 'act'):
                     end = i
+                    
+                    # Store information about binding site in data frame
+                    outdf.loc[counter,['gene', 'growth', 'feat_num', 'start', 'end', 'type']] = [gene, growth, num_feat, start, end, TF_type]
+                    
+                    # Reset variables and increase counters
                     ongoing = 0
-
-                    #now that the current binding site has ended we will update the list of binding sites.
-                    outdf.loc[counter,['gene','growth','feat_num','start','end','type']] = [gene,growth,num_feat,start,end,TF_type]
                     num_feat = num_feat + 1
                     TF_type = 'None'
                     counter = counter + 1
-                #now do the same in the case that the current binding site is a repressor.
+                    
+                # Repressor binding site ends if next bases are not repressor like (positive significance)
                 elif future_sum < .5 and (TF_type == 'rep'):
                     end = i
+                    
+                    # Store information about binding site in data frame
+                    outdf.loc[counter, ['gene', 'growth', 'feat_num', 'start', 'end', 'type']] = [gene, growth, num_feat, start, end, TF_type]
+                    
+                    # Reset variables and increase counters
                     ongoing = 0
-                    outdf.loc[counter,['gene','growth','feat_num','start','end','type']] = [gene,growth,num_feat,start,end,TF_type]
                     num_feat = num_feat + 1
                     TF_type = 'None'
                     counter = counter + 1
                 else:
                     pass
-            elif (temp_significant[i-1] == 1 and temp_significant[i] == -1 and future_sum < .5):
+            
+            # Possibly adjacent binding sites 
+            elif (temp_significant[i - 1] == 1 and temp_significant[i] == -1 and future_sum < .5):
                 end = i
-                outdf.loc[counter,['gene','growth','feat_num','start','end','type']] = [gene,growth,num_feat,start,end,TF_type]
+                # Store information about binding site in data frame
+                outdf.loc[counter,['gene', 'growth', 'feat_num', 'start', 'end', 'type']] = [gene, growth, num_feat, start, end, TF_type]
+                
+                # Start new binding site
                 start = i
                 num_feat = num_feat + 1
                 TF_type = 'act'
                 counter = counter + 1
             elif (temp_significant[i-1] == -1 and temp_significant[i] == 1 and future_sum > -.5):
                 end = i
+                # Store information about binding site in data frame
                 outdf.loc[counter,['gene','growth','feat_num','start','end','type']] = [gene,growth,num_feat,start,end,TF_type]
+                
+                # Start new binding site
                 start = i
                 num_feat = num_feat + 1
                 TF_type = 'rep'
@@ -96,34 +132,47 @@ def select_region(temp_significant,gene,growth,thresh=0.00025):
 
     return outdf
 
-windowsize = 15
-def do_sum2(s):
-    '''this function does a summation 15 base pairs from the experession shifts models.
-    We will be seeing if the summation of 15 consecutive base pairs are significant for gene
-    expression (99% confidence interval).'''
+
+def do_sum2(s, windowsize=15):
+    """Compute the sum of expression shifts of all sub-sequences of a given length
+    
+    Parameters
+    ----------
+    s : array-like
+        List of expression shifts for single mutations.
+    windowsize : Int, default 15
+        Length of sequences to be summed over.
+        
+    Returns
+    -------
+    outarr : array-like
+        Array of sums of expression shifts from one base of the next number of bases
+        defined by windowsize.
+    """
+    
     info_length = len(s)
     outarr = np.zeros(info_length - windowsize)
     for i in range(info_length-windowsize):
         outarr[i] = s[i:(i+windowsize)].sum()
     return outarr
 
-def merge_growths(df,info_length=160):
+def merge_growths(df, info_length=160):
     allgenes = list(set(df['gene']))
-    processed_df = pd.DataFrame(columns=['gene','feat_num','start','end','type'])
+    processed_df = pd.DataFrame(columns=['gene', 'feat_num', 'start', 'end', 'type'])
     counter = 0
     for gene in allgenes:
         tempdf = df.loc[df['gene'] == gene]
-        all_acts_df = tempdf.loc[tempdf['type']=='act']
-        all_rep_df = tempdf.loc[tempdf['type']=='rep']
+        all_acts_df = tempdf.loc[tempdf['type'] == 'act']
+        all_rep_df = tempdf.loc[tempdf['type'] == 'rep']
         act_array = np.zeros(info_length)
         rep_array = np.zeros(info_length)
-        for i,row in all_acts_df.iterrows():
+        for i, row in all_acts_df.iterrows():
             act_array[int(row['start']):int(row['end'])] = 1
-        for i,row in all_rep_df.iterrows():
+        for i, row in all_rep_df.iterrows():
             rep_array[int(row['start']):int(row['end'])] = 1
 
-        outdf_temp_act = select_region(act_array,gene,growth='combined')
-        outdf_temp_rep = select_region(rep_array,gene,growth='combined')
+        outdf_temp_act = select_region(act_array, gene, growth='combined')
+        outdf_temp_rep = select_region(rep_array, gene, growth='combined')
         if len(all_acts_df.index) != 0:
             for i,row in outdf_temp_act.iterrows():
                 start = row['start']
@@ -142,9 +191,8 @@ def merge_growths(df,info_length=160):
 
 
 
-def find_region(df,gene,growth):
-        #information threshhold
-        thresh = 0.00025
+def find_region(df, gene,growth, thresh=0.00025):
+
         counter = 0
         outdf = pd.DataFrame(columns=['gene','growth','feat_num','start','end','type'])
         info_length = len(df.index)

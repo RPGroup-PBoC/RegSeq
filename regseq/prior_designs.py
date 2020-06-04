@@ -365,10 +365,19 @@ def gen_mutated_seq(
     # Get primer pairs
     num_groups = int(np.ceil(ngenes/5))
     fwdprimes, revprimes = get_primers(kosprimefwd, kosprimerev, 100, 100+num_groups-1)
-    nseqs = int(np.floor(norder/ngenes))
+    nseqs = int(np.floor(norder/ngenes)) - 1
     
     # Generate sequences
     allseqs, primer_df = mutation_sequences(df, fwdprimes, revprimes, nseqs)
+    
+    # Check for number of primer pairs
+    if not len(np.unique(np.array([s[:20] for s in allseqs["seq"].values]))) == np.ceil(len(primer_df) / 5):
+        raise RuntimeError("Number of primer pairs not as expected.")
+    
+    # Check if wildtype sequences are present
+    seqs = [s[20:180] for s in allseqs["seq"].values]
+    if np.any([s not in seqs for s in primer_df["geneseq"].values]):
+        raise RuntimeError("Wildtype sequence not in sequence list.")
     
     # Check criteria
     allseqs = check_mutation_rate(
