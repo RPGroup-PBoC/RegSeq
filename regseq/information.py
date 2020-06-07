@@ -18,9 +18,14 @@ import logomaker
 
 def sliding_window(y,windowsize=3):
     """Average information values with neighbors."""
-    out_vec = np.zeros((len(y)-windowsize))
-    for i in range(len(y)-windowsize):
-        out_vec[i] = np.sum(y[i:i+windowsize])/windowsize
+    
+    if windowsize%2 != 1:
+        raise RuntimeError("Window size has to be odd.")
+        
+    cut = int((windowsize - 1) / 2)
+    out_vec = np.zeros(len(y)-2*cut)
+    for i in range(cut, len(y)-cut):
+        out_vec[i-cut] = np.sum(y[i-cut:i+cut])/windowsize
     return out_vec
 
 
@@ -58,7 +63,7 @@ def get_prob_df_info(prob_df,bg_df):
 #is about 10 percent towards being mutated. However, to control for possible
 #differing mutation rates, we will just arbitrarily set the ratio to be 50/50
 
-def footprint(inarr, for_clip=None, seqlength=160, for_invert=False):
+def footprint(inarr, for_clip=None, seqlength=160, for_invert=False, windowsize=3):
     """
     Compute information footprint from expression changes per position.
     
@@ -68,7 +73,7 @@ def footprint(inarr, for_clip=None, seqlength=160, for_invert=False):
         Change of expression per position.
     for_clip : 
     """
-    windowsize=3
+    
 
     background_array =pd.DataFrame([[.5,.5]])
 
@@ -93,7 +98,7 @@ def footprint(inarr, for_clip=None, seqlength=160, for_invert=False):
     abs_sub = np.abs(y_sub_smoothed)
     maxval = np.max(abs_sub)
     y_sub_normed = y_sub_smoothed/maxval/2 + 0.5
-    colorinputs = np.zeros((seqlength))
+    colorinputs = np.zeros((len(y_sub_smoothed)))
     for i in range(seqlength - windowsize):
         if y_sub_smoothed[i] < 0:
             colorinputs[i] = 0.0
@@ -123,20 +128,22 @@ def footprint(inarr, for_clip=None, seqlength=160, for_invert=False):
 
     mutinfo = np.zeros(seqlength)
     mutbgprob = np.zeros(2)
+    
+    # store sign of expression change
+    exp_change = np.ones(seqlength)
+    
     for i in range(seqlength):
         mutbgprob[0] = .5
         mutbgprob[1] = 1-mutbgprob[0]
-        if y_sub[i] > 0:
-            mutinfo[i] = calcinfo(mutarr[:,i],mutbgprob)
-        else:
-            mutinfo[i] = -1*calcinfo(mut2arr[:,i],mutbgprob)
-            
-    tempoutdf = pd.DataFrame()
-    tempoutdf['pos'] = range(1,seqlength-windowsize+1)
-    tempoutdf['info'] = sliding_window(mutinfo)
+        
+        mutinfo[i] = calcinfo(mutarr[:,i],mutbgprob)
+        if y_sub[i] < 0:
+            exp_change[i] *= -1
+    
+    cut = windowsize
     smoothinfo = sliding_window(np.abs(mutinfo),windowsize=windowsize)
     shiftcolors = plt.cm.bwr(colorinputs)
-    return np.abs(smoothinfo), shiftcolors
+    return smoothinfo, shiftcolors, exp_change[1:-1]
 
 
 
@@ -174,7 +181,9 @@ def emat_to_information(
         file, 
         wildtypefile='../data/prior_designs/wtsequences.csv', 
         clip=False, 
-        invert=False
+        invert=False,
+        old_format=False,
+        gene=None
     ):
     """
     
@@ -188,19 +197,25 @@ def emat_to_information(
         If True, clip off last 20 bases.
     invert : boolean, default True
         If True, flip signs for binding energy, if wildtype energy is positive.
-    save : boolean, default False
-        If True, save array as txt
+    old_format : boolean, default False
+        Determines if files are of old format
+    gene : None
+        For old file names, name of gene has to be given
     """
     
     #input the gene name, so we can get the wt sequence.
-    gene = file.split("/")[-1].split("_")[0]
+    if gene == None:
+        gene = file.split("/")[-1].split("_")[0]
+    elif type(gene) != str:
+        raise RuntimeError("gene has to be of type string.")
 
     genedf = pd.read_csv(wildtypefile)
     am = str(genedf.loc[genedf['name'] == gene, 'geneseq'].tolist()[0])
     length_wt = len(am)
     
     # Load in the energy matrix
-    energy_df = pd.read_csv(file)
+
+    energy_df = pd.read_csv(file, delim_whitespace=old_format)
 
     #convert to a numpy array
     val_cols = ['val_A','val_C','val_G','val_T']

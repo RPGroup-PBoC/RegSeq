@@ -27,17 +27,17 @@ def footprint(matrix, output_file=None):
     """
     
     emat = np.loadtxt(matrix)
-    smoothinfo, shiftcolors = information.footprint(emat)
+    smoothinfo, shiftcolors = information.footprint(emat)[:2]
     fig,ax = plt.subplots(figsize=(10,2))
     ax.set_ylabel('Information (bits)',fontname='DejaVu Sans',fontsize=12)
     ax.set_xlabel('position',fontname='DejaVu Sans',fontsize=12)
-    ax.bar(range(-114,43),np.abs(smoothinfo),color=shiftcolors)
+    ax.bar(range(-114,44),np.abs(smoothinfo),color=shiftcolors)
     if not output_file == None:
         plt.savefig(output_file,format='pdf')
     return plt
 
 
-def footprint_from_emat(file, output_file=None):
+def footprint_from_emat(file, output_file=None, old_format=False, gene=None):
     """ Plot information footprint.
     
     Footprint is smoothed with a window of size=3. Bars are colored by
@@ -49,7 +49,10 @@ def footprint_from_emat(file, output_file=None):
         File path for energy matrix
     output_file : str
         If not None, path where figure is saved as pdf.
-
+    old_format : boolean, default False
+        Determines if file is loaded from old format.
+    gene : str, default None
+        Name of gene has to be given in case of old file format
     Returns
     -------
     plt : matplotlib.pyplot object
@@ -57,12 +60,12 @@ def footprint_from_emat(file, output_file=None):
     
     """
     
-    arr = information.emat_to_information(file)
-    smoothinfo, shiftcolors = information.footprint(arr)
+    arr = information.emat_to_information(file, old_format=old_format, gene=gene)
+    smoothinfo, shiftcolors = information.footprint(arr)[:2]
     fig,ax = plt.subplots(figsize=(10,2))
     ax.set_ylabel('Information (bits)',fontname='DejaVu Sans',fontsize=12)
     ax.set_xlabel('position',fontname='DejaVu Sans',fontsize=12)
-    ax.bar(range(-114,43),np.abs(smoothinfo),color=shiftcolors)
+    ax.bar(range(-114,44),np.abs(smoothinfo),color=shiftcolors)
     if not output_file == None:
         plt.savefig(output_file,format='pdf')
     return plt
@@ -119,6 +122,7 @@ def logo(file, limit=(), min_beta=.001, max_beta=100, num_betas=1000, output_fil
     binding_logo.ax.xaxis.set_ticks_position('none')
     binding_logo.ax.xaxis.set_tick_params(pad=-1)
     binding_logo.ax.grid(False)
+    #binding_logo.ax.set_xticks(range(-114,44))
     
     if save:
         plt.savefig("../figures/"+file.split("/")[-1].split(".")[0]+'_logo.pdf',format='pdf')
