@@ -179,7 +179,7 @@ def get_beta_for_effect_df(
 
 def emat_to_information(
         file, 
-        wildtypefile='../data/prior_designs/wtsequences.csv', 
+        wildtype_file='../data/prior_designs/wtsequences.csv', 
         clip=False, 
         invert=False,
         old_format=False,
@@ -209,7 +209,7 @@ def emat_to_information(
     elif type(gene) != str:
         raise RuntimeError("gene has to be of type string.")
 
-    genedf = pd.read_csv(wildtypefile)
+    genedf = pd.read_csv(wildtype_file)
     am = str(genedf.loc[genedf['name'] == gene, 'geneseq'].tolist()[0])
     length_wt = len(am)
     

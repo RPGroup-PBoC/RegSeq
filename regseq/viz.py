@@ -129,21 +129,11 @@ def footprint_from_emat(
     return plt
 
 
-def logo(file, limit=(), min_beta=.001, max_beta=100, num_betas=1000, output_file=None,save=False):
-    """ Plot logo using Logomaker package.
-    
-    Parameters
-    ----------
-    file : str
-        file containing energy matrix
-    limit : Tuple, default ()
-        range of positions plotted
-    out
-    
-    """
+def logo(file, limit=(), min_beta=.001, max_beta=100, num_betas=1000, output_file=None, save=False, old_format=False, pos=0):
+
     
     # Load in a binding site matrix.
-    arraydf = pd.read_csv(file, index_col="pos")
+    arraydf = pd.read_csv(file, index_col="pos", delim_whitespace=old_format)
     
     # Rename columns to be useable by the logomaker package
     arraydf = arraydf.rename(columns={'val_A':'A','val_C':'C','val_G':'G','val_T':'T'})
@@ -152,7 +142,7 @@ def logo(file, limit=(), min_beta=.001, max_beta=100, num_betas=1000, output_fil
         if len(limit) != 2:
             raise RuntimeError("limit must have length 2.")
         else:
-            arraydf = arraydf.iloc[limit[0]:limit[1]+1]
+            arraydf = arraydf.iloc[limit[0]+pos:limit[1]+1+pos]
     # finding scaling factor
     target_info = len(arraydf.index)
     beta = information.get_beta_for_effect_df(
@@ -180,7 +170,7 @@ def logo(file, limit=(), min_beta=.001, max_beta=100, num_betas=1000, output_fil
     binding_logo.ax.xaxis.set_ticks_position('none')
     binding_logo.ax.xaxis.set_tick_params(pad=-1)
     binding_logo.ax.grid(False)
-    #binding_logo.ax.set_xticks(range(-114,44))
+    binding_logo.ax.set_xticklabels(np.arange(limit[0], limit[1]+1))
     
     if save:
         plt.savefig("../figures/"+file.split("/")[-1].split(".")[0]+'_logo.pdf',format='pdf')

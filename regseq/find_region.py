@@ -64,7 +64,6 @@ def select_region(temp_significant, gene, growth, pos, windowsize=15):
     TF_type = 'None'
     num_feat = 0
     counter = 0
-    
     for i in range(0, info_length):
 
         # Look for new binding site if not in one currently
@@ -91,7 +90,7 @@ def select_region(temp_significant, gene, growth, pos, windowsize=15):
                     
                     # Store information about binding site in data frame
                     outdf.loc[counter,['gene', 'growth', 'feat_num', 'start', 'end', 'type']] = \
-                        [gene, growth, num_feat, start, end, TF_type]
+                        [gene, growth, num_feat, start + pos, end + pos, TF_type]
                     
                     # Reset variables and increase counters
                     ongoing = 0
@@ -105,7 +104,7 @@ def select_region(temp_significant, gene, growth, pos, windowsize=15):
                     
                     # Store information about binding site in data frame
                     outdf.loc[counter, ['gene', 'growth', 'feat_num', 'start', 'end', 'type']] =\
-                        [gene, growth, num_feat, start, end, TF_type]
+                        [gene, growth, num_feat, start + pos, end + pos, TF_type]
                     
                     # Reset variables and increase counters
                     ongoing = 0
@@ -120,7 +119,7 @@ def select_region(temp_significant, gene, growth, pos, windowsize=15):
                 end = i
                 # Store information about binding site in data frame
                 outdf.loc[counter,['gene', 'growth', 'feat_num', 'start', 'end', 'type']] =\
-                    [gene, growth, num_feat, start, end, TF_type]
+                    [gene, growth, num_feat, start + pos, end + pos, TF_type]
                 
                 # Start new binding site
                 start = i
@@ -131,7 +130,7 @@ def select_region(temp_significant, gene, growth, pos, windowsize=15):
                 end = i
                 # Store information about binding site in data frame
                 outdf.loc[counter,['gene','growth','feat_num','start','end','type']] =\
-                    [gene, growth, num_feat, start, end, TF_type]
+                    [gene, growth, num_feat, start + pos, end + pos, TF_type]
                 
                 # Start new binding site
                 start = i
@@ -166,7 +165,7 @@ def do_sum2(s, windowsize=15):
     return outarr
 
 
-def find_region(file, gene, growth, windowsize=15, thresh=0.00025, old_format=False):
+def find_region(file, gene, growth, windowsize=15, thresh=0.00025, old_format=False, wildtype_file='../data/prior_designs/wtsequences.csv'):
     """Find activator and repressor binding sites in sequence.
     
     Parameters
@@ -179,18 +178,24 @@ def find_region(file, gene, growth, windowsize=15, thresh=0.00025, old_format=Fa
     infofootprint = information.emat_to_information(
         file, 
         old_format=old_format,
-        gene=gene
+        gene=gene,
+        wildtype_file=wildtype_file
     )
+    
+    genedf = pd.read_csv(wildtype_file)
+    
+    pos = -44 if genedf.loc[genedf["name"] == gene, "rev"].values == "fwd" else -114
+    #pos=0
+    
     info, _, signs = information.footprint(infofootprint)
-    pos = np.arange(-114, 44)
     counter = 0
     outdf = pd.DataFrame(columns=['gene', 'growth', 'feat_num', 'start', 'end', 'type'])
     info_length = len(info)
     
     em = info
-    em_noabs = info * signs
+    em_noabs = info * signs * (-1)
 
-    em_noabs = em_noabs*-1
+
 
     #sum into groupings of 15 base pairs so that we can see if large regions are statistically
     #signficant for expression.
@@ -202,34 +207,29 @@ def find_region(file, gene, growth, windowsize=15, thresh=0.00025, old_format=Fa
         else:
             summedarr_noabs[q] = -1
 
-    #initialize array where we will store whether or not the outcome is signficant.
+    # initialize array where we will store whether or not the outcome is signficant.
     is_significant = np.zeros(info_length - windowsize)
     for i in range(info_length - windowsize):
-        #make a 99.5 percent confidence interval
-        #to do this we will check from .5 to .95 because we want to know if 0
-        #is in the range (.5% to 100%) or (0 to 99.5%) range, depending on
-        #whether the shift is positive or negative.
-        #is_significant[q,i] = summedarr2[i] > thresh*meanval*windowsize
         is_significant[i] = summedarr2[i] > thresh * windowsize
         is_significant[i] = is_significant[i]*summedarr_noabs[i]
-        #if zero is in interval, the base is not signficant, otherwise it is.
-
+        
     outdf_temp = select_region(is_significant, gene, growth, pos)
     for i,row in outdf_temp.iterrows():
         start = row['start']
         end = row['end']
-        newstart,newend = find_edges(em,start,end)
+        newstart, newend = find_edges(em, start, end, pos)
         outdf.loc[counter, ['gene', 'growth', 'feat_num', 'start', 'end', 'type']] =\
             [row['gene'], growth, row['feat_num'], newstart, newend, row['type']]
         counter = counter + 1
-    output_merged = merge_growths(outdf, windowsize, info_length=info_length)
+        
+    output_merged = merge_growths(outdf, windowsize, info_length=info_length, pos=0)
     return output_merged
 
 
 
 
 
-def merge_growths(df, windowsize, info_length=160):
+def merge_growths(df, windowsize, pos, info_length=160):
     allgenes = list(set(df['gene']))
     processed_df = pd.DataFrame(columns=['gene', 'feat_num', 'start', 'end', 'type'])
     counter = 0
@@ -244,8 +244,8 @@ def merge_growths(df, windowsize, info_length=160):
         for i, row in all_rep_df.iterrows():
             rep_array[int(row['start']):int(row['end'])] = 1
 
-        outdf_temp_act = select_region(act_array, gene, pos=0, growth='combined')
-        outdf_temp_rep = select_region(rep_array, gene, pos=0, growth='combined')
+        outdf_temp_act = select_region(act_array, gene, pos=pos, growth='combined')
+        outdf_temp_rep = select_region(rep_array, gene, pos=pos, growth='combined')
         if len(all_acts_df.index) != 0:
             for i,row in outdf_temp_act.iterrows():
                 start = row['start']
