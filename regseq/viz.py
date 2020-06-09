@@ -6,7 +6,13 @@ import pandas as pd
 import seaborn as sns
 
 
-def footprint(matrix, output_file=None):
+def footprint(
+    matrix, 
+    output_file=None, 
+    wildtype_file='../data/prior_designs/wtsequences.csv', 
+    gene=None, 
+    show_real_pos=False
+):
     """ Plot information footprint.
     
     Footprint is smoothed with a window of size=3. Bars are colored by
@@ -18,26 +24,56 @@ def footprint(matrix, output_file=None):
         File path for energy matrix
     output_file : 
         File path to store plot
-
+    wildtype_file : str, default None
+        Path to file containing information about gene TSS and direction of transcription
+    gene : str, default None
+        Gene name in to find TSS and direction of transcription in gene file.
+    show_real_pos : boolean, default False
+        If True, positions will be given as in the genome. If False, positions are shown
+        relative to TSS.
+        
     Returns
     -------
     plt : matplotlib.pyplot object
         Information Footprint
     
     """
+   
+    if gene == None:
+        raise RuntimeError("Give gene name to find TSS and direction of trancription.")
     
+    genedf = pd.read_csv(wildtype_file)
+    
+    
+    direction = 0 if genedf.loc[genedf["name"] == gene, "rev"].values == "fwd" else 1
+    
+    if direction == 0:
+        x = np.arange(-44, 114)
+    else:
+        x = np.arange(-114, 44)
+    
+    if show_real_pos:
+        TSS = int(genedf.loc[genedf["name"] == gene, "start_site"].values)
+        x = x + TSS
+        
     emat = np.loadtxt(matrix)
-    smoothinfo, shiftcolors = information.footprint(emat)
+    smoothinfo, shiftcolors = information.footprint(emat)[:2]
     fig,ax = plt.subplots(figsize=(10,2))
     ax.set_ylabel('Information (bits)',fontname='DejaVu Sans',fontsize=12)
     ax.set_xlabel('position',fontname='DejaVu Sans',fontsize=12)
-    ax.bar(range(-114,43),np.abs(smoothinfo),color=shiftcolors)
+    ax.bar(x,np.abs(smoothinfo),color=shiftcolors)
     if not output_file == None:
         plt.savefig(output_file,format='pdf')
     return plt
 
 
-def footprint_from_emat(file, output_file=None):
+def footprint_from_emat(
+    file, 
+    output_file=None, 
+    old_format=False, 
+    wildtype_file='../data/prior_designs/wtsequences.csv', 
+    gene=None, 
+    show_real_pos=False):
     """ Plot information footprint.
     
     Footprint is smoothed with a window of size=3. Bars are colored by
@@ -49,40 +85,55 @@ def footprint_from_emat(file, output_file=None):
         File path for energy matrix
     output_file : str
         If not None, path where figure is saved as pdf.
-
+    old_format : boolean, default False
+        Determines if file is loaded from old format.
+    wildtype_file : str, default None
+        Path to file containing information about gene TSS and direction of transcription
+    gene : str, default None
+        Name of gene has to be given in case of old file format
+    show_real_pos : boolean, default False
+        If True, positions will be given as in the genome. If False, positions are shown
+        relative to TSS.
+        
     Returns
     -------
     plt : matplotlib.pyplot object
         Information Footprint
     
     """
+    if gene == None:
+        raise RuntimeError("Give gene name to find TSS and direction of trancription.")
     
-    arr = information.emat_to_information(file)
-    smoothinfo, shiftcolors = information.footprint(arr)
+    genedf = pd.read_csv(wildtype_file)
+    
+    
+    direction = 0 if genedf.loc[genedf["name"] == gene, "rev"].values == "fwd" else 1
+    
+    if direction == 0:
+        x = np.arange(-44, 114)
+    else:
+        x = np.arange(-114, 44)
+    
+    if show_real_pos:
+        TSS = int(genedf.loc[genedf["name"] == gene, "start_site"].values)
+        x = x + TSS
+        
+    arr = information.emat_to_information(file, old_format=old_format, gene=gene)
+    smoothinfo, shiftcolors = information.footprint(arr)[:2]
     fig,ax = plt.subplots(figsize=(10,2))
     ax.set_ylabel('Information (bits)',fontname='DejaVu Sans',fontsize=12)
     ax.set_xlabel('position',fontname='DejaVu Sans',fontsize=12)
-    ax.bar(range(-114,43),np.abs(smoothinfo),color=shiftcolors)
+    ax.bar(x, np.abs(smoothinfo), color=shiftcolors)
     if not output_file == None:
         plt.savefig(output_file,format='pdf')
     return plt
 
 
-def logo(file, limit=(), min_beta=.001, max_beta=100, num_betas=1000, output_file=None,save=False):
-    """ Plot logo using Logomaker package.
-    
-    Parameters
-    ----------
-    file : str
-        file containing energy matrix
-    limit : Tuple, default ()
-        range of positions plotted
-    out
-    
-    """
+def logo(file, limit=(), min_beta=.001, max_beta=100, num_betas=1000, output_file=None, save=False, old_format=False, pos=0):
+
     
     # Load in a binding site matrix.
-    arraydf = pd.read_csv(file, index_col="pos")
+    arraydf = pd.read_csv(file, index_col="pos", delim_whitespace=old_format)
     
     # Rename columns to be useable by the logomaker package
     arraydf = arraydf.rename(columns={'val_A':'A','val_C':'C','val_G':'G','val_T':'T'})
@@ -91,7 +142,7 @@ def logo(file, limit=(), min_beta=.001, max_beta=100, num_betas=1000, output_fil
         if len(limit) != 2:
             raise RuntimeError("limit must have length 2.")
         else:
-            arraydf = arraydf.iloc[limit[0]:limit[1]+1]
+            arraydf = arraydf.iloc[limit[0]+pos:limit[1]+1+pos]
     # finding scaling factor
     target_info = len(arraydf.index)
     beta = information.get_beta_for_effect_df(
@@ -119,6 +170,7 @@ def logo(file, limit=(), min_beta=.001, max_beta=100, num_betas=1000, output_fil
     binding_logo.ax.xaxis.set_ticks_position('none')
     binding_logo.ax.xaxis.set_tick_params(pad=-1)
     binding_logo.ax.grid(False)
+    binding_logo.ax.set_xticklabels(np.arange(limit[0], limit[1]+1))
     
     if save:
         plt.savefig("../figures/"+file.split("/")[-1].split(".")[0]+'_logo.pdf',format='pdf')
