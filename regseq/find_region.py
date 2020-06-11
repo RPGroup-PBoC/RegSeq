@@ -212,7 +212,7 @@ def find_region(file, gene, growth, windowsize=15, thresh=0.00025, old_format=Fa
     info_length = len(info)
 
     em = info
-    em_noabs = info * signs * (-1)
+    em_noabs = info * signs
 
 
     pos_mat = np.zeros(160)
@@ -234,16 +234,8 @@ def find_region(file, gene, growth, windowsize=15, thresh=0.00025, old_format=Fa
         is_significant_neg[i] = summedarr2_neg[i] > thresh*windowsize
         is_significant_neg[i] = is_significant_neg[i]*-1
 
-    outdf_temp = select_region(is_significant, gene, growth, pos)
-    for i,row in outdf_temp.iterrows():
-        start = row['start']
-        end = row['end']
-        newstart, newend = find_edges(em, start, end, pos)
-        outdf.loc[counter, ['gene', 'growth', 'feat_num', 'start', 'end', 'type']] =\
-            [row['gene'], growth, row['feat_num'], newstart, newend, row['type']]
-        counter = counter + 1
-    outdf_temp = select_region(is_significant,gene,growth)
-    outdf_temp2 = select_region(is_significant_neg,gene,growth)
+    outdf_temp = select_region(is_significant,gene,growth,pos)
+    outdf_temp2 = select_region(is_significant_neg,gene,growth,pos)
     for i,row in outdf_temp.iterrows():
         start = row['start']
         end = row['end']
