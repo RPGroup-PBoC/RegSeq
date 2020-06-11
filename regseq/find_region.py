@@ -26,7 +26,7 @@ def find_edges(em, start, end, thresh=0.00020):
 
 
 
-def select_region(temp_significant, gene, growth, pos, windowsize=15):
+def select_region(temp_significant, gene, growth, windowsize=15):
     """Find all transcription factor binding sites in a sequence given thresholded
     information about expression shift for each base in case of mutation.
 
@@ -47,8 +47,6 @@ def select_region(temp_significant, gene, growth, pos, windowsize=15):
         Name of the gene
     growth : str
         Name of the growth condition
-    pos : int
-        Positions of the first base
     windowsize : Int, default 15
         Minimal size of binding site
 
@@ -91,7 +89,7 @@ def select_region(temp_significant, gene, growth, pos, windowsize=15):
 
                     # Store information about binding site in data frame
                     outdf.loc[counter,['gene', 'growth', 'feat_num', 'start', 'end', 'type']] = \
-                        [gene, growth, num_feat, start + pos, end + pos, TF_type]
+                        [gene, growth, num_feat, start, end, TF_type]
 
                     # Reset variables and increase counters
                     ongoing = 0
@@ -105,7 +103,7 @@ def select_region(temp_significant, gene, growth, pos, windowsize=15):
 
                     # Store information about binding site in data frame
                     outdf.loc[counter, ['gene', 'growth', 'feat_num', 'start', 'end', 'type']] =\
-                        [gene, growth, num_feat, start + pos, end + pos, TF_type]
+                        [gene, growth, num_feat, start, end, TF_type]
 
                     # Reset variables and increase counters
                     ongoing = 0
@@ -120,7 +118,7 @@ def select_region(temp_significant, gene, growth, pos, windowsize=15):
                 end = i
                 # Store information about binding site in data frame
                 outdf.loc[counter,['gene', 'growth', 'feat_num', 'start', 'end', 'type']] =\
-                    [gene, growth, num_feat, start + pos, end + pos, TF_type]
+                    [gene, growth, num_feat, start, end, TF_type]
 
                 # Start new binding site
                 start = i
@@ -131,7 +129,7 @@ def select_region(temp_significant, gene, growth, pos, windowsize=15):
                 end = i
                 # Store information about binding site in data frame
                 outdf.loc[counter,['gene','growth','feat_num','start','end','type']] =\
-                    [gene, growth, num_feat, start + pos, end + pos, TF_type]
+                    [gene, growth, num_feat, start, end, TF_type]
 
                 # Start new binding site
                 start = i
@@ -143,7 +141,7 @@ def select_region(temp_significant, gene, growth, pos, windowsize=15):
             end = i
             ongoing = 0
             outdf.loc[counter,['gene','growth','feat_num','start','end','type']] =\
-                [gene, growth, num_feat, start + pos, end + pos, TF_type]
+                [gene, growth, num_feat, start, end, TF_type]
             num_feat = num_feat + 1
             TF_type = 'None'
             counter = counter + 1
@@ -152,7 +150,7 @@ def select_region(temp_significant, gene, growth, pos, windowsize=15):
             ongoing = 0
             #now that the current binding site has ended we will update the list of binding sites.
             outdf.loc[counter,['gene','growth','feat_num','start','end','type']] =\
-                [gene, growth, num_feat, start + pos, end + pos, TF_type]
+                [gene, growth, num_feat, start, end, TF_type]
             num_feat = num_feat + 1
             TF_type = 'None'
             counter = counter + 1
@@ -202,11 +200,9 @@ def find_region(file, gene, growth, windowsize=15, thresh=0.00025, old_format=Fa
     )
 
     genedf = pd.read_csv(wildtype_file)
-
-    pos = -44 if genedf.loc[genedf["name"] == gene, "rev"].values == "fwd" else -114
-    #pos=0
-
-    info, _, signs = information.footprint(infofootprint)
+    
+    # Compute unsmoothed information footprint
+    info, _, signs = information.footprint(infofootprint, windowsize=1)
     counter = 0
     outdf = pd.DataFrame(columns=['gene', 'growth', 'feat_num', 'start', 'end', 'type'])
     info_length = len(info)
@@ -228,37 +224,39 @@ def find_region(file, gene, growth, windowsize=15, thresh=0.00025, old_format=Fa
     summedarr2_neg = do_sum2(neg_mat)
     # initialize array where we will store whether or not the outcome is signficant.
     is_significant = np.zeros(info_length-windowsize)
-    is_significant_neg = np.zeros(info_length-windowsize)
+    is_significant_neg = np.zeros(info_length-windowsize) 
     for i in range(info_length - windowsize):
         is_significant[i] = summedarr2[i] > thresh*windowsize
         is_significant_neg[i] = summedarr2_neg[i] > thresh*windowsize
         is_significant_neg[i] = is_significant_neg[i]*-1
 
-    outdf_temp = select_region(is_significant,gene,growth,pos)
-    outdf_temp2 = select_region(is_significant_neg,gene,growth,pos)
+    outdf_temp = select_region(is_significant,gene,growth)
+    outdf_temp2 = select_region(is_significant_neg,gene,growth)
     for i,row in outdf_temp.iterrows():
         start = row['start']
         end = row['end']
-        newstart,newend = find_edges(pos_mat,start,end,pos)
+        newstart,newend = find_edges(pos_mat, start, end)
         outdf.loc[counter,['gene','growth','feat_num','start','end','type']] =\
             [row['gene'],growth,row['feat_num'],newstart,newend,row['type']]
         counter = counter + 1
     for i,row in outdf_temp2.iterrows():
         start = row['start']
         end = row['end']
-        newstart,newend = find_edges(neg_mat,start,end,pos)
+        newstart,newend = find_edges(neg_mat, start, end)
         outdf.loc[counter,['gene','growth','feat_num','start','end','type']] =\
             [row['gene'],growth,row['feat_num'],newstart,newend,row['type']]
         counter = counter + 1
 
-    output_merged = merge_growths(outdf, windowsize, info_length=info_length, pos=0)
+    output_merged = merge_growths(outdf, windowsize, info_length=info_length)
+    output_merged["start"] -= 115
+    output_merged["end"] -= 115
     return output_merged
 
 
 
 
 
-def merge_growths(df, windowsize, pos, info_length=160):
+def merge_growths(df, windowsize, info_length=160):
     allgenes = list(set(df['gene']))
     processed_df = pd.DataFrame(columns=['gene', 'feat_num', 'start', 'end', 'type'])
     counter = 0
@@ -273,8 +271,8 @@ def merge_growths(df, windowsize, pos, info_length=160):
         for i, row in all_rep_df.iterrows():
             rep_array[int(row['start']):int(row['end'])] = 1
 
-        outdf_temp_act = select_region(act_array, gene, pos=pos, growth='combined')
-        outdf_temp_rep = select_region(rep_array, gene, pos=pos, growth='combined')
+        outdf_temp_act = select_region(act_array, gene, growth='combined')
+        outdf_temp_rep = select_region(rep_array, gene, growth='combined')
         if len(all_acts_df.index) != 0:
             for i,row in outdf_temp_act.iterrows():
                 start = row['start']

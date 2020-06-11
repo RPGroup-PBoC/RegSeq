@@ -11,7 +11,8 @@ def footprint(
     output_file=None, 
     wildtype_file='../data/prior_designs/wtsequences.csv', 
     gene=None, 
-    show_real_pos=False
+    show_real_pos=False,
+    windowsize=3
 ):
     """ Plot information footprint.
     
@@ -31,7 +32,8 @@ def footprint(
     show_real_pos : boolean, default False
         If True, positions will be given as in the genome. If False, positions are shown
         relative to TSS.
-        
+    windowsize: Int, default 3
+        Size of sliding window used to average mutual information
     Returns
     -------
     plt : matplotlib.pyplot object
@@ -44,20 +46,22 @@ def footprint(
     
     genedf = pd.read_csv(wildtype_file)
     
-    
     direction = 0 if genedf.loc[genedf["name"] == gene, "rev"].values == "fwd" else 1
     
+    cut = int((windowsize - 1) / 2)
     if direction == 0:
-        x = np.arange(-44, 114)
+        #x = np.arange(-45 + cut, 115 - cut)
+        # We always plot upstream to downstream
+        x = np.arange(-115 + cut, 45 - cut)
     else:
-        x = np.arange(-114, 44)
+        x = np.arange(-115 + cut, 44 - cut)
     
     if show_real_pos:
         TSS = int(genedf.loc[genedf["name"] == gene, "start_site"].values)
         x = x + TSS
         
     emat = np.loadtxt(matrix)
-    smoothinfo, shiftcolors = information.footprint(emat)[:2]
+    smoothinfo, shiftcolors = information.footprint(emat, windowsize=windowsize)[:2]
     fig,ax = plt.subplots(figsize=(10,2))
     ax.set_ylabel('Information (bits)',fontname='DejaVu Sans',fontsize=12)
     ax.set_xlabel('position',fontname='DejaVu Sans',fontsize=12)
@@ -73,7 +77,9 @@ def footprint_from_emat(
     old_format=False, 
     wildtype_file='../data/prior_designs/wtsequences.csv', 
     gene=None, 
-    show_real_pos=False):
+    show_real_pos=False,
+    windowsize=3
+):
     """ Plot information footprint.
     
     Footprint is smoothed with a window of size=3. Bars are colored by
@@ -94,6 +100,8 @@ def footprint_from_emat(
     show_real_pos : boolean, default False
         If True, positions will be given as in the genome. If False, positions are shown
         relative to TSS.
+    windowsize: Int, default 3
+        Size of sliding window used to average mutual information
         
     Returns
     -------
@@ -109,17 +117,21 @@ def footprint_from_emat(
     
     direction = 0 if genedf.loc[genedf["name"] == gene, "rev"].values == "fwd" else 1
     
+    cut = int((windowsize - 1) / 2)
+    
     if direction == 0:
-        x = np.arange(-44, 114)
+        #x = np.arange(-45 + cut, 115 - cut)
+        # We always plot upstream to downstream
+        x = np.arange(-115 + cut, 45 - cut)
     else:
-        x = np.arange(-114, 44)
+        x = np.arange(-115 + cut, 45 - cut)
     
     if show_real_pos:
         TSS = int(genedf.loc[genedf["name"] == gene, "start_site"].values)
         x = x + TSS
         
     arr = information.emat_to_information(file, old_format=old_format, gene=gene)
-    smoothinfo, shiftcolors = information.footprint(arr)[:2]
+    smoothinfo, shiftcolors = information.footprint(arr, windowsize=windowsize)[:2]
     fig,ax = plt.subplots(figsize=(10,2))
     ax.set_ylabel('Information (bits)',fontname='DejaVu Sans',fontsize=12)
     ax.set_xlabel('position',fontname='DejaVu Sans',fontsize=12)
@@ -178,7 +190,7 @@ def logo(file, limit=(), min_beta=.001, max_beta=100, num_betas=1000, output_fil
     return binding_logo
 
 
-def energy_matrix(file, limit=(), save=False):
+def energy_matrix(file, limit=(), save=False, old_format=False):
     """ Plot energy matrix.
     
     Parameters
@@ -197,7 +209,7 @@ def energy_matrix(file, limit=(), save=False):
     """
     
      # Load in a binding site matrix.
-    tempdf = pd.read_csv(file, index_col="pos")
+    arraydf = pd.read_csv(file, index_col="pos", delim_whitespace=old_format)
     
     # Apply Limit if given
     if len(limit) != 0:
@@ -207,15 +219,14 @@ def energy_matrix(file, limit=(), save=False):
             arraydf = arraydf.iloc[limit[0]:limit[1]+1]
             
     # Convert to numpy array
-    temparr = np.array(tempdf[['val_A','val_C','val_G','val_T']])
+    temparr = np.array(arraydf[['val_A','val_C','val_G','val_T']])
     
     # find maximum absolute to center colorbar
     maximum = np.max(np.abs(temparr))
-    
     #now plot using matplotlib
     fig,ax = plt.subplots(figsize=((10,2)))
     plt.imshow(
-        temparr.T, 
+        temparr.T,
         aspect='auto', 
         interpolation='nearest',
         cmap='coolwarm',
@@ -224,8 +235,13 @@ def energy_matrix(file, limit=(), save=False):
     )
     plt.colorbar()
     plt.xlabel('Position')
-    ax.set_yticklabels(['','A','C','G','T'])
+    ax.set_yticks([0, 1, 2, 3])
+    ax.set_yticklabels(['A','C','G','T'])
+    ax.set_xticks(np.arange(0, len(temparr), step=5))
+    if len(limit) != 0:
+        ax.set_xticklabels(np.arange(limit[0], limit[1]+1, step=5))
     ax.grid(False)
+
     for item in [fig, ax]:
         item.patch.set_visible(True)
     
@@ -255,9 +271,9 @@ def mass_spec(file, good_column="Ratio H/L normalized", save=False):
     enrichment2 = enrichment.dropna()
     enrichment2 = enrichment2.sort_values(by=good_column,ascending=False)
     
-    #goodrows = enrichment2['Protein names'].apply(check_DNA)
-    #enrichment3 = enrichment2[goodrows]
-    
+    goodrows = enrichment2['Protein names'].apply(check_DNA)
+    enrichment3 = enrichment2[goodrows]
+    print(enrichment3)
     fig,ax = plt.subplots()
     ax.set_xlabel('')
     ax.set_xticks([])

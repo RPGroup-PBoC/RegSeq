@@ -205,6 +205,8 @@ def detect_genes(df, wildtypefile):
         
     Returns
     -------
+    temp_df : Pandas DataFrame
+        DataFrame containing found sequences for each gene and number of mutations
     """
     
     wildtype_df = pd.read_csv(wildtypefile)
@@ -269,6 +271,7 @@ def key_barcode_sequence(data_file, output_path, wildtypefile='../data/prior_des
         for gene in genes:
             genedf = df.loc[df["gene"] ==gene]
             genedf.drop(['gene'], axis=1).to_csv(output_path + gene + "_barcode_key.csv", index=False)
+    
     
 def findshare(df):
     """Finds percentage of single counted sequences."""

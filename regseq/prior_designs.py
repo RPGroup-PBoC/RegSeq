@@ -87,9 +87,11 @@ def mut_seq_random(s, fwdprimer, revprimer, nseqs):
     
     # use mpathic function to generate randomly mutated library
     seqs_df = simulate_library.main(wtseq=s[firstbase:finalbase], numseq=nseqs)
+    
     # only take independent sequences
     seqs_df = collapse_further(seqs_df)
     seqs = seqs_df['seq']
+    
     # remove wild type sequences
     outseqs = [fwdprimer + s + revprimer]  + [fwdprimer + s[:firstbase] + str(x) + s[finalbase:] + revprimer  for x in seqs]
     outdf = pd.DataFrame()
@@ -280,50 +282,6 @@ def check_mutation_rate(
     return sequences
                     
                     
-
-            
-            
-            
-def calc_test_stat(allratios, r1, r0):
-    return (allratios - r0) / (r1 - r0)
-
-
-def cox_mann_p_values(files, output_file='test_pval.txt'):
-    """Compute p-values following Cox and Mann, Nature Biotechnology 2008."""
-    for z, name in enumerate(files):
-        # load in file with proteins and enrichments
-        indf = pd.read_csv(name, delimiter="\t")
-        # get the correct column name that contains the heavy to light ratio.
-        indf_ratio_col = "Ratio H/L normalized"
-        row = indf.loc[0,:]
-        name = row['Protein names']
-        
-        # Get the column of all enrichment ratios.
-        q = indf[indf_ratio_col]
-
-        # Drop any ratios equal to zero.
-        q = q[q > 1e-8]
-        
-        # log transform ratios 
-        allratios = np.log(np.array(list(q)))
-        
-        # Estimate the S.D.
-        [rlow,r0,r1] = np.percentile(allratios,[15.87,50,84.13])
-        
-        # Compute the test stat z 
-        test_stats = calc_test_stat(allratios,r0=r0,r1=r1)
-        # Calculate the p_values f
-        p = .5*erfc(test_stats/np.sqrt(2))
-        # Check lowest p-value to see if the most enriched protein is an outlier
-        pval = p.min()
-        # Multiply by the number of enrichment ratios to correct for multiple hypothesis testing.
-        pval = pval*len(p)
-        # Write results to file.
-        with open(output_file,'a') as f:
-            f.write("Gene: {}, {}: {} \n ".format(name, indf_ratio_col, str(p.min()*len(allratios))))
-            
-
-
 def gen_mutated_seq(
     file,
     output,

@@ -78,8 +78,6 @@ def seq2array_for_matmodel(dataset_df, chunksize=1000):
     return scipy.sparse.csr(temp_mat),wt_mat
 
 def calc_test_stat(allratios, r1, r0):
-    """
-    """
     return (allratios - r0) / (r1 - r0)
 
 
@@ -89,7 +87,6 @@ def cox_mann_p_values(files, output_file='test_pval.txt'):
         noleader = name.split('/')[-1]
         # load in file with proteins and enrichments
         indf = pd.read_csv(name, delimiter=",")
-        print(indf)
 
         # get the correct column name that contains the heavy to light ratio.
         indf_ratio_col = "Ratio H/L normalized"

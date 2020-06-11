@@ -21,16 +21,17 @@ def least_squares(raveledmat, batch):
     return emat
 
 
-def lin_reg(inputname, outputname, wildtypefile):
+def lin_reg(inputname, outputname, wildtypefile, old_format=False, gene=None):
 
     # Load data
-    df = pd.read_csv(inputname)
+    df = pd.read_csv(inputname, delim_whitespace=old_format)
     
     # Load wild type sequences
     genedf = pd.read_csv(wildtypefile)
     
     # Gene name
-    gene = inputname.split('/')[-1].split('_')[0]
+    if gene == None:
+        gene = inputname.split('/')[-1].split('_')[0]
     # Extract the wild type sequence of gene of interest
     wt = str(genedf.loc[genedf['name'] == gene,'geneseq'].tolist()[0])
 

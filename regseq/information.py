@@ -25,7 +25,7 @@ def sliding_window(y,windowsize=3):
     cut = int((windowsize - 1) / 2)
     out_vec = np.zeros(len(y)-2*cut)
     for i in range(cut, len(y)-cut):
-        out_vec[i-cut] = np.sum(y[i-cut:i+cut])/windowsize
+        out_vec[i-cut] = np.sum(y[i-cut:i+cut+1])/windowsize
     return out_vec
 
 
@@ -94,7 +94,7 @@ def footprint(inarr, for_clip=None, seqlength=160, for_invert=False, windowsize=
     if for_invert == 'invert':
         y_sub = y_sub*-1
         
-    y_sub_smoothed = sliding_window(y_sub)
+    y_sub_smoothed = sliding_window(y_sub, windowsize=windowsize)
     abs_sub = np.abs(y_sub_smoothed)
     maxval = np.max(abs_sub)
     y_sub_normed = y_sub_smoothed/maxval/2 + 0.5
@@ -140,11 +140,14 @@ def footprint(inarr, for_clip=None, seqlength=160, for_invert=False, windowsize=
         if y_sub[i] < 0:
             exp_change[i] *= -1
     
-    cut = windowsize
+    cut = int((windowsize - 1)/2)
     smoothinfo = sliding_window(np.abs(mutinfo),windowsize=windowsize)
     shiftcolors = plt.cm.bwr(colorinputs)
-    return smoothinfo, shiftcolors, exp_change[1:-1]
-
+    
+    if cut != 0:
+        return smoothinfo, shiftcolors, exp_change[cut:-cut]
+    else:
+        return smoothinfo, shiftcolors, exp_change
 
 
 def get_info(df, gc=.508):
