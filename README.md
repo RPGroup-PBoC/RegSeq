@@ -6,7 +6,7 @@ the constellation of RNAP and transcription factor binding sites and to determin
 bind those sites. In addition, the method allows for a determination of energy matrices that characterize,
 in k_BT units, the binding strength of transcription factors to their target sites.
 
-The website for the original Reg-Seq paper can be found [here](https://www.rpgroup.caltech.edu/RNAseq_SortSeq/).
+The website for the original Reg-Seq paper can be found [here](https://www.rpgroup.caltech.edu/RegSeq/).
 
 **Check out the [Wiki tab](https://github.com/RPGroup-PBoC/RegSeq/wiki) to see the full experimental protocol for Reg-Seq**.
 
