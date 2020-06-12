@@ -63,7 +63,7 @@ def get_prob_df_info(prob_df,bg_df):
 #is about 10 percent towards being mutated. However, to control for possible
 #differing mutation rates, we will just arbitrarily set the ratio to be 50/50
 
-def footprint(inarr, for_clip=None, seqlength=160, for_invert=False, windowsize=3):
+def footprint(inarr, for_clip=None, seqlength=160, windowsize=3):
     """
     Compute information footprint from expression changes per position.
     
@@ -71,7 +71,21 @@ def footprint(inarr, for_clip=None, seqlength=160, for_invert=False, windowsize=
     ----------
     inarr : numpy array
         Change of expression per position.
-    for_clip : 
+    for_clip : str, default None
+        if "clip", clip of last 21 bases
+    seqlength : int, default 160
+        Length of generated sequences without barcodes
+    windowsize : int, default 3
+        number of bases used to averagee footprint (has to be odd)
+        
+    Returns
+    -------
+    smoothinfo : numpy array
+        mutual information at every base
+    shiftcolors : numpy array
+        colors for barplot
+    signs : numpy array
+        List of 1 and -1, saying if mutation at a base increased or decreased expression
     """
     
 
@@ -91,9 +105,6 @@ def footprint(inarr, for_clip=None, seqlength=160, for_invert=False, windowsize=
     if y_sub.sum() > 0:
         y_sub = y_sub*-1
 
-    if for_invert == 'invert':
-        y_sub = y_sub*-1
-        
     y_sub_smoothed = sliding_window(y_sub, windowsize=windowsize)
     abs_sub = np.abs(y_sub_smoothed)
     maxval = np.max(abs_sub)
@@ -120,8 +131,8 @@ def footprint(inarr, for_clip=None, seqlength=160, for_invert=False, windowsize=
     mid_val=0
 
     #calculate the probability matrices
-    mutlogo = effect_df_to_prob_df(energy_df_scaled,background_df,1)
-    mut2logo = effect_df_to_prob_df(-1*energy_df_scaled,background_df,1)
+    mutlogo = effect_df_to_prob_df(energy_df_scaled, background_df, 1)
+    mut2logo = effect_df_to_prob_df(-1*energy_df_scaled, background_df, 1)
     mutarr = np.array(mutlogo).T
     mut2arr = np.array(mut2logo).T
 

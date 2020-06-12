@@ -16,7 +16,7 @@ def footprint(
 ):
     """ Plot information footprint.
     
-    Footprint is smoothed with a window of size=3. Bars are colored by
+    Footprint is smoothed with a window of size windowsize. Bars are colored by
     increased or decreased expression.
     
     Parameters
@@ -34,9 +34,10 @@ def footprint(
         relative to TSS.
     windowsize: Int, default 3
         Size of sliding window used to average mutual information
+    
     Returns
     -------
-    plt : matplotlib.pyplot object
+    ax : matplotlib.pyplot object
         Information Footprint
     
     """
@@ -67,8 +68,8 @@ def footprint(
     ax.set_xlabel('position',fontname='DejaVu Sans',fontsize=12)
     ax.bar(x,np.abs(smoothinfo),color=shiftcolors)
     if not output_file == None:
-        plt.savefig(output_file,format='pdf')
-    return plt
+        plt.savefig(output_file)
+    return ax
 
 
 def footprint_from_emat(
@@ -141,8 +142,37 @@ def footprint_from_emat(
     return plt
 
 
-def logo(file, limit=(), min_beta=.001, max_beta=100, num_betas=1000, output_file=None, save=False, old_format=False, pos=0):
-
+def logo(
+    file, 
+    limit=(),
+    output_file=None, 
+    old_format=False,
+    min_beta=.001, 
+    max_beta=100., 
+    num_betas=1000
+   ):
+    """Plot sequence logos using logomaker.
+    
+    Parameters
+    ----------
+    file : str
+        path to file containing energy matrix
+    limit : Tuple, default ()
+        first and last base of sequence that is converted into logo
+    output_file : str, default None
+        path where plot is saved to, if not None
+    old_format : boolean, default False
+        If True, file is loaded with extra argument "delim_whitespace"
+    min_beta : float, default 0.001
+        minimal scaling factor
+    max_beta : float, default 100
+        maximal scaling factor
+    max_beta : int, default 1000
+        number of tested scaling factors
+    Returns
+    -------
+    binding_logo : logomaker.src.Logo.Logo
+    """
     
     # Load in a binding site matrix.
     arraydf = pd.read_csv(file, index_col="pos", delim_whitespace=old_format)
@@ -154,7 +184,7 @@ def logo(file, limit=(), min_beta=.001, max_beta=100, num_betas=1000, output_fil
         if len(limit) != 2:
             raise RuntimeError("limit must have length 2.")
         else:
-            arraydf = arraydf.iloc[limit[0]+pos:limit[1]+1+pos]
+            arraydf = arraydf.iloc[limit[0]:limit[1]+1]
     # finding scaling factor
     target_info = len(arraydf.index)
     beta = information.get_beta_for_effect_df(
@@ -184,13 +214,13 @@ def logo(file, limit=(), min_beta=.001, max_beta=100, num_betas=1000, output_fil
     binding_logo.ax.grid(False)
     binding_logo.ax.set_xticklabels(np.arange(limit[0], limit[1]+1))
     
-    if save:
-        plt.savefig("../figures/"+file.split("/")[-1].split(".")[0]+'_logo.pdf',format='pdf')
+    if output_file != None:
+        plt.savefig(output_file)
         
     return binding_logo
 
 
-def energy_matrix(file, limit=(), save=False, old_format=False):
+def energy_matrix(file, limit=(), output_file=None, old_format=False):
     """ Plot energy matrix.
     
     Parameters
@@ -199,8 +229,8 @@ def energy_matrix(file, limit=(), save=False, old_format=False):
         File for energy matrix.
     limit : Tuple, default ()
         range of positions plotted
-    save : boolean, default False
-        If True, save result with "_array.pdf" attached in RegSeq/figures/.
+    output_file : str, default None
+        path where plot is saved to, if not None
         
     Returns 
     -------
@@ -245,13 +275,32 @@ def energy_matrix(file, limit=(), save=False, old_format=False):
     for item in [fig, ax]:
         item.patch.set_visible(True)
     
-    if save:
-        plt.savefig("../figures/"+file.split("/")[-1].split(".")[0]+'_array.pdf',format='pdf')
+    if output_file != None:
+        plt.savefig(output_file)
     
     return ax
 
 
-def mass_spec(file, good_column="Ratio H/L normalized", save=False):
+def mass_spec(file, good_column="Ratio H/L normalized", output_file=None, filtered=True):
+    """Jitter plot for protein enrichment.
+    
+    Parameters
+    ---------
+    file : str
+        path to mass spec file
+    good_column : str, default "Ratio H/L normalized"
+        plotted column
+    output_file : str, default None
+        path where plot is saved to, if not None
+    filtered : boolean, default True
+        If False, check which proteins bind DNA
+        
+    Returns
+    -------
+    ax : pyplot axes
+        Plot
+    """
+    
     def check_DNA(s):
         '''Return only proteins which have DNA binding activity.'''
         with open('../data/massspec/DNAbinding_genenames.txt') as f:
@@ -264,23 +313,26 @@ def mass_spec(file, good_column="Ratio H/L normalized", save=False):
     
     
     df = pd.io.parsers.read_csv(file, sep=',')
-    # Column name that contains the normal
-    # Extract the only necessary columns, protein name and normalized ratio
     enrichment = df[['Protein names',good_column]]
     
     enrichment2 = enrichment.dropna()
     enrichment2 = enrichment2.sort_values(by=good_column,ascending=False)
     
-    goodrows = enrichment2['Protein names'].apply(check_DNA)
-    enrichment3 = enrichment2[goodrows]
-    print(enrichment3)
+   
     fig,ax = plt.subplots()
     ax.set_xlabel('')
     ax.set_xticks([])
     ax.set_ylabel('enrichment')
-    sns.stripplot(data=list(enrichment2[good_column]),jitter=True,size=12)
+    if filtered:
+        sns.stripplot(data=list(enrichment2[good_column]),jitter=True,size=12)
+    else:
+        goodrows = enrichment2['Protein names'].apply(check_DNA)
+        enrichment3 = enrichment2[goodrows]
+        sns.stripplot(data=list(enrichment2[good_column]),jitter=True,size=12)
+        
     ax.set_xticks([])
-    if save == True:
-        plt.savefig(inname + '_output.eps', format='eps')
+    
+    if output_file != None:
+        plt.savefig(output_file)
         
     return ax

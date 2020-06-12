@@ -142,36 +142,7 @@ def MaximizeMI_memsaver(
     verbose=False,
     temp=4200
     ):
-    """Performs MCMC MI maximzation in the case where lm = memsaver
-    
-    
-    Parameters
-    ----------
-    seq_mat : 
-    
-    df : 
-    
-    emat_0 : 
-    
-    wtrow : 
-    
-    db : 
-    
-    burnin : 
-    
-    iteration : 
-    
-    thin : 
-    
-    runnum : 
-    
-    verbose : 
-    
-    temp : 
-    
-    Returns
-    -------
-    """
+
     
     # Number of sequences in the dataset.
     n_seqs = len(df.index)

@@ -182,15 +182,38 @@ def do_sum2(s, windowsize=15):
     return outarr
 
 
-def find_region(file, gene, growth, windowsize=15, thresh=0.00025, old_format=False, wildtype_file='../data/prior_designs/wtsequences.csv'):
+def find_region(
+    file, 
+    gene, 
+    growth, 
+    windowsize=15, 
+    thresh=0.00025, 
+    old_format=False, 
+    wildtype_file='../data/prior_designs/wtsequences.csv'
+):
     """Find activator and repressor binding sites in sequence.
 
     Parameters
     ----------
-
+    file : str
+        path to file containing energy matrix
+    gene : str,
+        name of observed gene
+    growth : str
+        name of growth condition
+    windowsize : int, default 15
+        size of window to average over to find regions
+    thresh : float, default 0.00025
+        emperically determined threshold to identify significant sites
+    old_format : boolean, default False
+        if True, loads file with argument `delim_whitespace`
+    wildtype_file : str, default '../data/prior_designs/wtsequences.csv'
+        location of file containing wildtype promoter sequences
+        
     Returns
     -------
-
+    output_merged : Pandas DataFrame
+        Dataframe with start and end of significant sites, and if activator or repressor
     """
     infofootprint = information.emat_to_information(
         file,
@@ -257,6 +280,21 @@ def find_region(file, gene, growth, windowsize=15, thresh=0.00025, old_format=Fa
 
 
 def merge_growths(df, windowsize, info_length=160):
+    """Merge close binding sites.
+    
+    Parameters
+    ----------
+    df : Pandas DataFrame
+        Dataframe of observed significant sites
+    windowsize : int
+        size of minimal number of bases between sites to be distinguished\
+        
+    Returns
+    -------
+    df : Pandas DataFrame
+        Dataframe of merged sites
+    """
+    
     allgenes = list(set(df['gene']))
     processed_df = pd.DataFrame(columns=['gene', 'feat_num', 'start', 'end', 'type'])
     counter = 0

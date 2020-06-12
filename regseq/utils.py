@@ -14,7 +14,6 @@ import seaborn as sns
 
 
 def seq2mat(seq,seq_dict):
-
     mat = sp.zeros((len(seq_dict),len(seq)),dtype=int)
     for i,bp in enumerate(seq):
         mat[seq_dict[bp],i] = 1

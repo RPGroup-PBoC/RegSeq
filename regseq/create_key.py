@@ -198,8 +198,6 @@ def detect_genes(df, wildtypefile):
     df : Pandas.Dataframe
         DataFrame containg barcodes and sequences that have been
         checked to unique mapping.
-    output_file : str
-        Path to file where mapping is written to.
     wildtypefile : str
         Path to file containing genes and sequences of wildtype
         
@@ -242,7 +240,6 @@ def key_barcode_sequence(data_file, output_path, wildtypefile='../data/prior_des
         Path for file containing wild type genetic sequences.
     genes : List, default None
         List of genes for which mapping is returned. If None, all maps are returned.
-    Returns
     -------
     """
     if genes != None:
