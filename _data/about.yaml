@@ -12,8 +12,8 @@
 title: >
   Deciphering the regulatory genome of *Escherichia coli*, one hundred promoters at a time
 authors: >
-  William T. Ireland, Suzannah M. Beeler, Emanuel Flores-Bautista, Nathan
-  M. Belliveau, Michael J. Sweredoski, Annie Moradian, Justin Kinney,
+  William T. Ireland, Suzannah M. Beeler, Emanuel Flores-Bautista, Nicholas S. McCarty,
+  Tom Röschinger, Nathan M. Belliveau, Michael J. Sweredoski, Annie Moradian, Justin Kinney,
   Rob Phillips
 
 Manuscript: >
@@ -39,14 +39,14 @@ Abstract: >
 Acknowledgments: >
   We are grateful to Rachel Banks, Stephanie Barnes,  Curt Callan, Griffin Chure,
   Ana Duarte, Vahe Galstyan, Hernan Garcia, Soichi Hirokawa, Thomas Lecuit, Heun
-  Jin Lee, Madhav Mani, Nicholas McCarty, Muir Morrison, Steve Quake, Tom
-  Röschinger, Manuel Razo-Mejia, Gabe Salmon, and Guillaume Urtecho for useful
-  discussion and feedback on the manuscript. Guillaume Urtecho and Sri Kosuri
-  have been instrumental in providing key advice and protocols at various stages
-  in the development of this work.  We would like to thank Jost Vielmetter and
-  Nina Budaeva for providing access to their Cell Disruptor. Brett Lomenick
-  provided crucial help and advice with protein preparation. We also thank
-  Igor Antoshechkin for his help with sequencing at the Caltech Genomics Facility.
+  Jin Lee, Madhav Mani, Muir Morrison, Steve Quake, Manuel Razo-Mejia, Gabe Salmon,
+  and Guillaume Urtecho for useful discussion and feedback on the manuscript.
+  Guillaume Urtecho and Sri Kosuri have been instrumental in providing key advice
+  and protocols at various stages in the development of this work. We would like
+  to thank Jost Vielmetter and Nina Budaeva for providing access to their Cell
+  Disruptor. Brett Lomenick provided crucial help and advice with protein preparation.
+  We also thank Igor Antoshechkin for his help with sequencing at the Caltech
+  Genomics Facility.
 
 Funding:
   We are deeply grateful for support from NIH Grants DP1 OD000217 (Director's
