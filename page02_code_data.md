@@ -1,20 +1,12 @@
 ---
 layout: page
-title: Code and Data
+title: Data
 img: cartoons3.jpg
 permalink: code
 sidebar: true
 ---
 
 ---
-
-{% if site.data.code %}
-## Code
-{% for script in site.data.code %}
-* [**{{script.name}}**](https://www.rpgroup.caltech.edu/RNAseq_SortSeq/software/{{script.name}})
-  \| {{script.desc}}
-{% endfor %}
-{% endif %}
 
 {% if site.data.datasets %}
 ## Data Sets

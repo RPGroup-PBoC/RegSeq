@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Interactive Figure
-permalink: interactive_a
+permalink: interactive
 sidebar: true
 interactive: main_interactive_fig.html
 ---
