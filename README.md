@@ -49,8 +49,9 @@ purpose of that directory as well as some examples where necessary.
 Contains Jupyter notebooks to perform computational steps of the Reg-Seq protocol from start to finish. Where all of the executed code lives. This includes pipelines, scripts, and
 figure files.
 
+
 ### data 
-Contains prior data files, such as designed sequences, negative controls, or output analysis files.
+Contains prior data files, such as designed sequences, negative controls, or output analysis files. Example files for each step of the analysis are provided.
 
 
 ### reqseq
@@ -58,6 +59,10 @@ Python module which can be easily executed to perform your own analyses.
 
 ### figures
 Contains all generated figures.
+
+### wiki_img
+Contain all figures which are shown in the Wiki.
+
 
 # License Information
 <img src="https://licensebuttons.net/l/by/3.0/88x31.png"> This work is
