@@ -41,12 +41,12 @@ Code and Data Availability: >
     used in this study can be found on the <a href="https://github.com/RPGroup-PBoC/RegSeq/wiki"> GitHub Wiki</a>
     for this study. All code used for processing data and plotting as well as the
     final processed data, plasmid sequences, and primer sequences can also be found
-    on the <a href="https://github.com/RPGroup-PBoC/RegSeq"> GitHub repository </a>.
+    on the <a href="https://github.com/RPGroup-PBoC/RegSeq"> GitHub repository</a>.
     Energy matrices were generated using the MPAthic
     software. All raw sequencing data is available at the Sequence Read Archive
     (accession no.PRJNA599253 and PRJNA603368). All inferred information footprints
-    and energy matrices can be found on the CaltechData repository (<a href="https://doi.org/10.22002/d1.1331"> (DOI) </a>)
-    All mass spectrometry raw data is available on the CaltechData repository (<a href="https://doi.org/10.22002/d1.1336q"> (DOI) </a>).
+    and energy matrices can be found on the CaltechData repository <a href="https://doi.org/10.22002/d1.1331"> (DOI)</a>
+    All mass spectrometry raw data is available on the CaltechData repository <a href="https://doi.org/10.22002/d1.1336"> (DOI)</a>.
 
 Acknowledgments: >
   We are grateful to Rachel Banks, Stephanie Barnes, Curt Callan, Griffin Chure,
