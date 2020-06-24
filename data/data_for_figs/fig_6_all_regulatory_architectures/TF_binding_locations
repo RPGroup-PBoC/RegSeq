@@ -1,0 +1,32 @@
+gene,identify,start,end,TF name,newly discovered,growth condition derived
+bdcR,rep,88,109,NsrR,yes,Anaero
+ftsK,rep,107,119,LexA,no,Fe
+ykgE,act,12,33,FNR,yes,Anaero
+ykgE,rep,80,92,YieP,yes,Anaero
+groSL,act,120,130,,arabinose ************************flip act, split from auto**********************
+aphA,act,47,71,FNR,yes,Anaero **********************split from auto***************
+aphA,act,,,,LB **********************check DeoR*******************
+yedJ,rep,75,103,,,
+rapA,rep,110,125,GlpR,yes,heat shock
+mscM,rep,141,155,,,Fe
+minC,act,39,57,,,arabinose ********************not in auto TF finding**************************
+rlmA,act,28,38,,,arabinose ***********************not in auto TF finding ******************
+araAB,act,15,29,CRP,no,arabinose
+araAB,act,42,29,CRP,no,arabinose ******************************************split check false pos, also need to do labels on fig*************************
+araAB,act,15,85,CRP,no,arabinose **************************************** split check false pos **************************
+mscS,act,96,108,,,SS ******************** needs to be shifted from autoTF (to 91 100) **************************
+idnK,rep,67,82,YgbI,no,Anaero
+iap,act,119,125,,,Fe *********limits are too small*************************
+yjjJ,rep,91,122,marA,no,SS
+yjjJ,rep,149,159,,,M9 *************** gotta check autoTF, gotta fix TF cartoon*******************
+yecE,rep,0,109,122,,,arabinose
+dusC,rep,71,86,,,arabinose
+fdhE ****************************not found by autoTF********************************
+ilvC,act,44,74,,,Fe
+ilvC,rep,84,90,IlvY,yes,Fe
+mscL *****************not found by autoTF*******************************
+rhlE,rep,99,109,GlpR,,M9 ****************need to scale up with autoTF*******************
+maoP,act,33,58,HdfR,yes,Anaero
+maoP,act,54,87,PhoP,yes,Anaero
+maoP,rep,91,102,GlpR,yes,Sodium Salicylate
+
