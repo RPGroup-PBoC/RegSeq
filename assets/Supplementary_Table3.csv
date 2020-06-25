@@ -1,0 +1,1320 @@
+#This file contains all putative binding regions identified by the automated putative binding site algorithm.,,,,,
+#The ‘start’ and ‘end’ columns are with respect to the predicted TSS contained in supplementary file 1. Negative base pairs are upstream of the TSS.,,,,,
+"#Activators that overlap with activator (in the same growth condition), or repressorressors that overlap with repressorressors are treated as one larger site.",,,,,
+"#As different growth conditions can alter the concentration and DNA binding activity of Tfs, binding sites might not appear in all growth conditions",,,,,
+#Final repressororted binding sites in the paper can be either found in this table or have additional evidence for their presence.,,,,,
+"#However, many of the binding sites here will be removed manually before repressororting, the reasons for which can be found in the methods sections of the paper. Additionally, some sites will have been split into two sites manually.",,,,,
+,,,,,
+gene,growth,start,end,type (activator or repressor),Is the putative binding site predicted to contain part of an RNAP site?
+rapA,deoR knockout growth,6,25,activator,False
+rapA,LB,71,110,activator,True
+rapA,Iron supplemented growth,69,90,activator,True
+rapA,Iron supplemented growth,99,110,activator,True
+rapA,Iron supplemented growth,81,96,repressor,True
+rapA,Iron supplemented growth,101,123,repressor,True
+rapA,xanthosine supplemented growth,72,110,activator,True
+rapA,xanthosine supplemented growth,96,115,repressor,True
+rapA,Anaerobic growth,80,110,activator,True
+rapA,Anaerobic growth,96,107,repressor,True
+rapA,Trehalose growth,77,85,activator,False
+rapA,Trehalose growth,103,110,activator,True
+rapA,Trehalose growth,102,126,repressor,True
+rapA,M9,100,126,activator,True
+rapA,M9,3,16,repressor,False
+rapA,Zinc supplemented growth,72,110,activator,True
+rapA,Zinc supplemented growth,81,126,repressor,True
+rapA,xylose + arabinose growth,72,110,activator,True
+rapA,xylose + arabinose growth,81,123,repressor,True
+rapA,heat shock,6,16,activator,False
+rapA,heat shock,102,126,repressor,True
+yagH,arabinose,104,118,repressor,False
+yncD,Trehalose growth,118,131,activator,False
+mscS,Iron supplemented growth,96,109,activator,True
+mscS,xanthosine supplemented growth,92,108,activator,True
+mscS,Zinc supplemented growth,92,109,activator,True
+mscS,xylose + arabinose growth,96,109,activator,True
+mscS,heat shock,92,109,activator,True
+znuA,Iron supplemented growth,119,144,activator,True
+znuA,Iron supplemented growth,135,144,repressor,False
+znuA,xanthosine supplemented growth,123,144,activator,True
+znuA,xanthosine supplemented growth,133,144,repressor,False
+znuA,Anaerobic growth,120,144,activator,True
+znuA,Anaerobic growth,106,116,repressor,False
+znuA,Trehalose growth,128,143,activator,True
+znuA,Zinc supplemented growth,123,144,activator,True
+znuA,xylose + arabinose growth,123,144,activator,True
+znuA,xylose + arabinose growth,133,144,repressor,False
+znuA,heat shock,123,134,repressor,True
+yecE,deoR knockout growth,113,127,activator,True
+yecE,LB,84,119,activator,True
+yecE,LB,109,124,repressor,True
+yecE,fum1,81,118,act,True
+yecE,fum1,103,124,rep,True
+yecE,Iron supplemented growth,83,132,activator,True
+yecE,Iron supplemented growth,111,124,repressor,True
+yecE,xanthosine supplemented growth,81,118,activator,True
+yecE,xanthosine supplemented growth,109,124,repressor,True
+yecE,Anaerobic growth,84,132,activator,True
+yecE,Anaerobic growth,109,124,repressor,True
+yecE,phoP knockout growth,83,129,activator,True
+yecE,phoP knockout growth,109,124,repressor,True
+yecE,M9,109,124,activator,True
+yecE,M9,80,105,repressor,True
+yecE,Zinc supplemented growth,75,118,activator,True
+yecE,Zinc supplemented growth,109,124,repressor,True
+yecE,xylose + arabinose growth,83,118,activator,True
+yecE,xylose + arabinose growth,109,124,repressor,True
+yecE,heat shock,109,123,activator,True
+yecE,heat shock,80,118,repressor,True
+yqhC,deoR knockout growth,124,135,activator,True
+yqhC,LB,124,128,activator,True
+yqhC,fum1,14,29,act,True
+yqhC,fum1,124,135,act,True
+yqhC,Iron supplemented growth,117,132,activator,True
+yqhC,Iron supplemented growth,21,27,repressor,True
+yqhC,Iron supplemented growth,115,135,repressor,True
+yqhC,xanthosine supplemented growth,21,22,activator,False
+yqhC,xanthosine supplemented growth,115,135,activator,True
+yqhC,Anaerobic growth,117,131,activator,True
+yqhC,Anaerobic growth,115,135,repressor,True
+yqhC,Trehalose growth,21,22,activator,False
+yqhC,Trehalose growth,115,135,activator,True
+yqhC,M9,21,22,activator,False
+yqhC,M9,115,135,activator,True
+yqhC,Zinc supplemented growth,21,22,activator,False
+yqhC,Zinc supplemented growth,115,135,activator,True
+yqhC,xylose + arabinose growth,21,22,repressor,False
+yqhC,xylose + arabinose growth,115,135,repressor,True
+yqhC,heat shock,21,22,activator,False
+yqhC,heat shock,115,135,activator,True
+ydhO,M9,12,29,activator,False
+ydhO,M9,78,88,activator,False
+ydhO,M9,131,143,activator,False
+ydhO,M9,55,81,repressor,False
+ydhO,Zinc supplemented growth,122,138,activator,True
+ydhO,Zinc supplemented growth,104,113,repressor,False
+maoP,0cAMP,37,107,activator,True
+maoP,LB,35,110,activator,True
+maoP,LB,66,81,repressor,True
+maoP,Iron supplemented growth,36,109,activator,True
+maoP,Iron supplemented growth,91,102,repressor,True
+maoP,xanthosine supplemented growth,43,56,activator,True
+maoP,xanthosine supplemented growth,64,109,activator,True
+maoP,xanthosine supplemented growth,90,102,repressor,True
+maoP,Anaerobic growth,35,98,activator,True
+maoP,phoP knockout growth,15,98,activator,True
+maoP,M9,93,104,repressor,True
+maoP,Zinc supplemented growth,35,110,activator,True
+maoP,Zinc supplemented growth,91,102,repressor,True
+maoP,xylose + arabinose growth,36,109,activator,True
+maoP,xylose + arabinose growth,93,102,repressor,True
+maoP,heat shock,36,48,activator,False
+maoP,heat shock,55,110,activator,True
+maoP,heat shock,91,104,repressor,True
+ybiP,Iron supplemented growth,107,116,repressor,True
+ybiP,heat shock,107,116,activator,True
+ybiP,heat shock,97,116,repressor,True
+araC,arabinose,49,91,activator,True
+araC,arabinose,68,88,repressor,True
+araC,0cAMP,1,17,activator,False
+araC,0cAMP,64,83,activator,True
+araC,LB,49,91,activator,True
+araC,LB,75,84,repressor,True
+araC,Iron supplemented growth,49,91,activator,True
+araC,xanthosine supplemented growth,49,91,activator,True
+araC,xanthosine supplemented growth,22,29,repressor,False
+araC,xanthosine supplemented growth,75,88,repressor,True
+araC,Anaerobic growth,31,91,activator,True
+araC,Anaerobic growth,75,84,repressor,True
+araC,Trehalose growth,49,91,activator,True
+araC,Trehalose growth,75,84,repressor,True
+araC,Zinc supplemented growth,49,91,activator,True
+araC,Zinc supplemented growth,75,82,repressor,True
+araC,xylose + arabinose growth,49,91,activator,True
+araC,xylose + arabinose growth,75,88,repressor,True
+araC,heat shock,49,77,activator,True
+araC,heat shock,75,84,repressor,True
+ybdG,0cAMP,17,23,activator,False
+ybdG,0cAMP,114,131,activator,False
+ybdG,LB,80,115,activator,True
+ybdG,xanthosine supplemented growth,104,119,activator,True
+ybdG,M9,95,115,activator,True
+adiY,Zinc supplemented growth,101,114,activator,False
+adiY,heat shock,64,78,repressor,False
+motAB-cheAW,Iron supplemented growth,69,84,activator,False
+motAB-cheAW,Zinc supplemented growth,143,144,repressor,False
+motAB-cheAW,xylose + arabinose growth,143,144,repressor,False
+mscM,LB,144,144,activator,False
+mscM,Iron supplemented growth,87,123,activator,False
+mscM,Iron supplemented growth,96,102,repressor,False
+mscM,Iron supplemented growth,135,144,repressor,False
+mscM,Trehalose growth,135,144,repressor,False
+mscM,Zinc supplemented growth,135,144,repressor,False
+mscM,xylose + arabinose growth,135,144,repressor,False
+mscM,heat shock,139,144,activator,False
+mscM,heat shock,143,144,repressor,False
+xapAB,xylose + arabinose growth,75,84,activator,False
+pcm,LB,70,92,activator,True
+pcm,LB,98,108,activator,True
+pcm,LB,100,105,repressor,True
+pcm,fum1,104,117,rep,True
+pcm,Iron supplemented growth,102,104,repressor,True
+pcm,xanthosine supplemented growth,97,110,repressor,True
+pcm,Anaerobic growth,69,83,activator,False
+pcm,Anaerobic growth,99,113,activator,True
+pcm,Anaerobic growth,95,109,repressor,True
+pcm,Zinc supplemented growth,102,119,repressor,True
+pcm,xylose + arabinose growth,98,108,activator,True
+pcm,xylose + arabinose growth,104,105,repressor,True
+pcm,heat shock,90,115,activator,True
+htrB,LB,68,80,activator,False
+htrB,LB,98,109,activator,True
+htrB,LB,71,85,repressor,False
+ompR,xanthosine supplemented growth,112,130,activator,False
+ompR,Anaerobic growth,99,105,activator,True
+ompR,Anaerobic growth,69,83,repressor,False
+ompR,M9,118,144,activator,False
+ompR,acetate growth,78,80,activator,False
+ompR,acetate growth,142,144,activator,False
+ompR,acetate growth,2,21,repressor,False
+ompR,acetate growth,59,90,repressor,True
+ompR,acetate growth,114,128,repressor,False
+ompR,heat shock,9,18,repressor,False
+hslU,heat shock,82,120,activator,True
+lac,LB,1,25,activator,False
+lac,LB,38,44,activator,False
+lac,LB,63,68,activator,False
+bdcR,0cAMP,68,87,activator,True
+bdcR,0cAMP,99,108,activator,True
+bdcR,deoR knockout growth,73,115,activator,True
+bdcR,deoR knockout growth,93,109,repressor,True
+bdcR,LB,80,108,activator,True
+bdcR,LB,88,116,repressor,True
+bdcR,Iron supplemented growth,68,118,activator,True
+bdcR,Iron supplemented growth,88,110,repressor,True
+bdcR,xanthosine supplemented growth,68,118,activator,True
+bdcR,xanthosine supplemented growth,90,116,repressor,True
+bdcR,Anaerobic growth,68,108,activator,True
+bdcR,Anaerobic growth,88,116,repressor,True
+bdcR,Trehalose growth,68,108,activator,True
+bdcR,Trehalose growth,88,111,repressor,True
+bdcR,M9,73,87,activator,True
+bdcR,M9,99,108,activator,True
+bdcR,Zinc supplemented growth,68,108,activator,True
+bdcR,Zinc supplemented growth,88,110,repressor,True
+bdcR,xylose + arabinose growth,21,27,activator,False
+bdcR,xylose + arabinose growth,68,108,activator,True
+bdcR,xylose + arabinose growth,88,116,repressor,True
+bdcR,heat shock,68,112,activator,True
+bdcR,heat shock,90,116,repressor,True
+ymgG,LB,1,13,activator,False
+ymgG,LB,33,47,activator,False
+ymgG,LB,67,94,repressor,True
+ymgG,xanthosine supplemented growth,59,83,activator,False
+ymgG,xanthosine supplemented growth,92,105,repressor,True
+ymgG,Anaerobic growth,122,136,activator,False
+ymgG,Anaerobic growth,144,144,repressor,False
+ymgG,M9,4,18,repressor,False
+ymgG,Zinc supplemented growth,65,84,activator,False
+ymgG,SS,64,79,activator,False
+ymgG,heat shock,62,81,activator,False
+ymgG,heat shock,102,117,activator,True
+WaaA-coaD,0cAMP,100,118,activator,True
+WaaA-coaD,LB,65,83,activator,True
+WaaA-coaD,LB,101,117,activator,True
+WaaA-coaD,LB,92,103,repressor,True
+WaaA-coaD,xanthosine supplemented growth,62,106,activator,True
+WaaA-coaD,Anaerobic growth,71,83,activator,True
+WaaA-coaD,Anaerobic growth,91,120,activator,True
+WaaA-coaD,M9,102,116,activator,True
+WaaA-coaD,M9,102,116,repressor,True
+WaaA-coaD,Zinc supplemented growth,65,83,activator,True
+WaaA-coaD,Zinc supplemented growth,102,114,activator,True
+WaaA-coaD,xylose + arabinose growth,62,114,activator,True
+ycbZ,0cAMP,101,111,activator,True
+ycbZ,0cAMP,83,91,repressor,True
+ycbZ,LB,76,112,activator,True
+ycbZ,LB,83,93,repressor,True
+ycbZ,Iron supplemented growth,72,92,activator,True
+ycbZ,Iron supplemented growth,101,120,activator,True
+ycbZ,Iron supplemented growth,83,93,repressor,True
+ycbZ,xanthosine supplemented growth,77,123,activator,True
+ycbZ,xanthosine supplemented growth,83,103,repressor,True
+ycbZ,Anaerobic growth,36,112,activator,True
+ycbZ,Anaerobic growth,83,103,repressor,True
+ycbZ,phoP knockout growth,78,111,activator,True
+ycbZ,phoP knockout growth,83,91,repressor,True
+ycbZ,Trehalose growth,78,92,activator,True
+ycbZ,Trehalose growth,101,123,activator,True
+ycbZ,Trehalose growth,83,93,repressor,True
+ycbZ,Zinc supplemented growth,78,92,activator,True
+ycbZ,Zinc supplemented growth,101,123,activator,True
+ycbZ,Zinc supplemented growth,83,93,repressor,True
+ycbZ,xylose + arabinose growth,77,123,activator,True
+ycbZ,xylose + arabinose growth,83,103,repressor,True
+ycbZ,heat shock,78,92,activator,True
+ycbZ,heat shock,101,123,activator,True
+ycbZ,heat shock,83,93,repressor,True
+ycbZ,heat shock,141,144,repressor,True
+ygeR,arabinose,101,110,activator,True
+ygeR,arabinose,84,99,repressor,False
+ygeR,0cAMP,2,11,activator,False
+ygeR,0cAMP,80,91,activator,True
+ygeR,0cAMP,4,16,repressor,False
+ygeR,LB,70,109,activator,True
+ygeR,LB,70,109,repressor,True
+ygeR,Iron supplemented growth,81,92,activator,True
+ygeR,Iron supplemented growth,101,109,activator,True
+ygeR,Iron supplemented growth,84,98,repressor,False
+ygeR,xanthosine supplemented growth,81,120,activator,True
+ygeR,xanthosine supplemented growth,74,99,repressor,True
+ygeR,Anaerobic growth,81,111,activator,True
+ygeR,Anaerobic growth,84,98,repressor,False
+ygeR,Zinc supplemented growth,80,89,activator,True
+ygeR,Zinc supplemented growth,101,120,activator,True
+ygeR,Zinc supplemented growth,78,99,repressor,True
+ygeR,xylose + arabinose growth,73,110,activator,True
+ygeR,xylose + arabinose growth,77,99,repressor,True
+ygeR,heat shock,81,89,activator,True
+ygeR,heat shock,101,119,activator,True
+ygeR,heat shock,84,99,repressor,False
+yajL,LB,6,17,activator,False
+ecnB,LB,112,134,repressor,False
+ecnB,Iron supplemented growth,92,109,activator,True
+ecnB,Trehalose growth,98,123,activator,True
+ecnB,Zinc supplemented growth,98,109,activator,True
+ecnB,heat shock,89,110,activator,True
+holC,deoR knockout growth,114,126,repressor,False
+holC,heat shock,80,122,activator,True
+sdaB,LB,80,105,activator,False
+sdaB,LB,68,113,repressor,False
+sdaB,Iron supplemented growth,86,113,activator,False
+sdaB,xanthosine supplemented growth,68,82,activator,False
+sdaB,xanthosine supplemented growth,86,113,activator,False
+sdaB,xanthosine supplemented growth,89,107,repressor,False
+sdaB,Anaerobic growth,68,82,activator,False
+sdaB,Anaerobic growth,94,113,activator,False
+sdaB,Anaerobic growth,91,105,repressor,False
+sdaB,Trehalose growth,86,113,activator,False
+sdaB,M9,88,100,activator,False
+sdaB,Zinc supplemented growth,82,113,activator,False
+sdaB,xylose + arabinose growth,92,113,activator,False
+sdaB,xylose + arabinose growth,97,107,repressor,False
+sdaB,heat shock,92,113,activator,False
+sdaB,heat shock,97,107,repressor,False
+arcA,LB,9,28,activator,False
+arcA,LB,51,59,repressor,True
+arcA,Iron supplemented growth,12,28,activator,False
+arcA,xanthosine supplemented growth,1,28,activator,False
+arcA,xanthosine supplemented growth,51,59,repressor,True
+arcA,Anaerobic growth,16,52,activator,True
+arcA,Anaerobic growth,94,111,activator,True
+arcA,Anaerobic growth,118,129,repressor,False
+arcA,Trehalose growth,11,28,activator,False
+arcA,Zinc supplemented growth,11,28,activator,False
+arcA,Zinc supplemented growth,51,59,repressor,True
+arcA,xylose + arabinose growth,11,28,activator,False
+arcA,xylose + arabinose growth,51,59,repressor,True
+cra,0cAMP,103,116,repressor,True
+cra,LB,97,110,activator,True
+cra,LB,103,119,repressor,True
+cra,fum1,0,12,act,False
+cra,fum1,79,81,act,False
+cra,fum1,115,129,act,False
+cra,Iron supplemented growth,100,107,activator,True
+cra,Iron supplemented growth,103,111,repressor,True
+cra,xanthosine supplemented growth,78,89,activator,True
+cra,xanthosine supplemented growth,97,107,activator,True
+cra,xanthosine supplemented growth,97,111,repressor,True
+cra,Anaerobic growth,93,107,activator,True
+cra,Anaerobic growth,103,111,repressor,True
+cra,Trehalose growth,94,107,activator,True
+cra,Zinc supplemented growth,97,107,activator,True
+cra,Zinc supplemented growth,103,111,repressor,True
+cra,acetate growth,96,106,activator,True
+cra,xylose + arabinose growth,97,107,activator,True
+cra,xylose + arabinose growth,99,111,repressor,True
+cra,heat shock,103,111,repressor,True
+thrLABC,LB,69,110,activator,True
+thrLABC,LB,99,106,repressor,True
+thrLABC,Iron supplemented growth,69,110,activator,True
+thrLABC,xanthosine supplemented growth,58,115,activator,True
+thrLABC,Anaerobic growth,58,115,activator,True
+thrLABC,Trehalose growth,58,115,activator,True
+thrLABC,M9,74,87,activator,True
+thrLABC,M9,97,106,repressor,True
+thrLABC,Zinc supplemented growth,63,107,activator,True
+thrLABC,xylose + arabinose growth,63,108,activator,True
+thrLABC,heat shock,58,112,activator,True
+iap,LB,103,125,activator,True
+iap,LB,87,102,repressor,True
+iap,LB,137,144,repressor,False
+iap,Iron supplemented growth,103,144,activator,True
+iap,Iron supplemented growth,92,110,repressor,True
+iap,Iron supplemented growth,139,144,repressor,False
+iap,xanthosine supplemented growth,98,125,activator,True
+iap,xanthosine supplemented growth,92,114,repressor,True
+iap,xanthosine supplemented growth,137,144,repressor,False
+iap,Anaerobic growth,98,125,activator,True
+iap,Anaerobic growth,138,144,activator,False
+iap,Anaerobic growth,91,114,repressor,True
+iap,Anaerobic growth,143,144,repressor,False
+iap,Zinc supplemented growth,103,129,activator,True
+iap,Zinc supplemented growth,92,115,repressor,True
+iap,Zinc supplemented growth,139,144,repressor,False
+iap,xylose + arabinose growth,103,144,activator,True
+iap,xylose + arabinose growth,92,110,repressor,True
+iap,xylose + arabinose growth,137,144,repressor,False
+iap,heat shock,103,109,activator,True
+tig,LB,79,109,activator,True
+tig,LB,75,86,repressor,True
+tig,Iron supplemented growth,79,109,activator,True
+tig,Iron supplemented growth,75,95,repressor,True
+tig,xanthosine supplemented growth,79,109,activator,True
+tig,xanthosine supplemented growth,74,95,repressor,True
+tig,Anaerobic growth,79,109,activator,True
+tig,Anaerobic growth,74,86,repressor,True
+tig,phoP knockout growth,79,109,activator,True
+tig,Trehalose growth,79,84,activator,True
+tig,Trehalose growth,101,108,activator,True
+tig,Trehalose growth,74,86,repressor,True
+tig,Zinc supplemented growth,79,109,activator,True
+tig,Zinc supplemented growth,75,86,repressor,True
+tig,xylose + arabinose growth,79,109,activator,True
+tig,xylose + arabinose growth,74,86,repressor,True
+tig,heat shock,79,108,activator,True
+tig,heat shock,74,95,repressor,True
+tig,heat shock,100,116,repressor,True
+yehS,LB,93,132,activator,True
+yehS,LB,99,103,repressor,False
+yehS,Iron supplemented growth,113,127,activator,True
+yehS,xanthosine supplemented growth,90,127,activator,True
+yehS,xanthosine supplemented growth,99,108,repressor,True
+yehS,Anaerobic growth,90,132,activator,True
+yehS,Trehalose growth,113,127,activator,True
+yehS,M9,55,83,activator,False
+yehS,M9,111,142,activator,True
+yehS,Zinc supplemented growth,101,132,activator,True
+yehS,Zinc supplemented growth,99,105,repressor,True
+yehS,xylose + arabinose growth,90,132,activator,True
+yehS,xylose + arabinose growth,99,105,repressor,True
+yehS,heat shock,113,127,activator,True
+leuABCD,0cAMP,68,84,activator,True
+leuABCD,0cAMP,102,109,activator,True
+leuABCD,0cAMP,105,118,repressor,True
+leuABCD,deoR knockout growth,79,83,activator,False
+leuABCD,LB,76,109,activator,True
+leuABCD,LB,100,107,repressor,True
+leuABCD,fum1,67,110,act,True
+leuABCD,Iron supplemented growth,77,122,activator,True
+leuABCD,xanthosine supplemented growth,77,109,activator,True
+leuABCD,xanthosine supplemented growth,118,132,activator,True
+leuABCD,Anaerobic growth,76,109,activator,True
+leuABCD,Trehalose growth,77,109,activator,True
+leuABCD,Zinc supplemented growth,65,109,activator,True
+leuABCD,acetate growth,65,109,activator,True
+leuABCD,xylose + arabinose growth,77,109,activator,True
+leuABCD,heat shock,77,109,activator,True
+tff-rpsB-tsf,0cAMP,71,84,activator,True
+tff-rpsB-tsf,0cAMP,96,115,activator,True
+tff-rpsB-tsf,LB,71,84,activator,True
+tff-rpsB-tsf,LB,96,107,activator,True
+tff-rpsB-tsf,Iron supplemented growth,71,80,activator,False
+tff-rpsB-tsf,Iron supplemented growth,97,115,activator,True
+tff-rpsB-tsf,xanthosine supplemented growth,70,84,activator,True
+tff-rpsB-tsf,xanthosine supplemented growth,96,115,activator,True
+tff-rpsB-tsf,Anaerobic growth,70,80,activator,False
+tff-rpsB-tsf,Anaerobic growth,96,115,activator,True
+tff-rpsB-tsf,phoP knockout growth,71,84,activator,True
+tff-rpsB-tsf,phoP knockout growth,97,115,activator,True
+tff-rpsB-tsf,Trehalose growth,71,84,activator,True
+tff-rpsB-tsf,Trehalose growth,95,115,activator,True
+tff-rpsB-tsf,Trehalose growth,109,122,repressor,False
+tff-rpsB-tsf,Zinc supplemented growth,71,80,activator,False
+tff-rpsB-tsf,Zinc supplemented growth,96,115,activator,True
+tff-rpsB-tsf,xylose + arabinose growth,70,79,activator,False
+tff-rpsB-tsf,xylose + arabinose growth,96,115,activator,True
+tff-rpsB-tsf,heat shock,25,35,activator,True
+tff-rpsB-tsf,heat shock,71,80,activator,False
+tff-rpsB-tsf,heat shock,97,106,activator,True
+tff-rpsB-tsf,heat shock,107,122,repressor,True
+ynaI,LB,67,109,activator,True
+ynaI,Iron supplemented growth,79,83,activator,False
+ynaI,Iron supplemented growth,99,116,activator,True
+ynaI,Iron supplemented growth,75,80,repressor,False
+ynaI,xanthosine supplemented growth,76,116,activator,True
+ynaI,Anaerobic growth,76,108,activator,True
+ynaI,Anaerobic growth,133,144,activator,False
+ynaI,Trehalose growth,71,109,activator,True
+ynaI,Zinc supplemented growth,79,108,activator,True
+ynaI,xylose + arabinose growth,79,108,activator,True
+ynaI,xylose + arabinose growth,66,81,repressor,False
+ynaI,heat shock,101,108,activator,True
+ycgB,M9,98,117,activator,True
+ycgB,Zinc supplemented growth,95,108,activator,True
+ycgB,xylose + arabinose growth,102,108,activator,True
+ycgB,heat shock,88,109,activator,True
+yedJ,LB,61,66,activator,False
+yedJ,LB,81,95,activator,True
+yedJ,LB,84,86,repressor,True
+yedJ,Iron supplemented growth,61,97,activator,True
+yedJ,Iron supplemented growth,84,92,repressor,True
+yedJ,xanthosine supplemented growth,52,72,activator,True
+yedJ,xanthosine supplemented growth,81,95,activator,True
+yedJ,xanthosine supplemented growth,75,92,repressor,True
+yedJ,Anaerobic growth,52,95,activator,True
+yedJ,Anaerobic growth,75,103,repressor,True
+yedJ,Trehalose growth,61,70,activator,True
+yedJ,Trehalose growth,81,95,activator,True
+yedJ,Trehalose growth,84,103,repressor,True
+yedJ,Zinc supplemented growth,52,98,activator,True
+yedJ,Zinc supplemented growth,75,103,repressor,True
+yedJ,xylose + arabinose growth,61,98,activator,True
+yedJ,xylose + arabinose growth,75,92,repressor,True
+yedJ,heat shock,55,109,activator,True
+yedJ,heat shock,91,115,repressor,True
+dpiBA,LB,74,103,activator,True
+dpiBA,LB,60,69,repressor,False
+dpiBA,LB,83,85,repressor,False
+dpiBA,Anaerobic growth,100,104,activator,False
+dpiBA,Anaerobic growth,78,93,repressor,True
+dpiBA,Zinc supplemented growth,59,123,activator,True
+dpiBA,Zinc supplemented growth,90,102,repressor,True
+dpiBA,xylose + arabinose growth,74,101,activator,True
+dpiBA,heat shock,0,12,activator,False
+dpiBA,heat shock,71,86,activator,False
+dpiBA,heat shock,77,98,repressor,True
+marR,LB,31,50,activator,False
+marR,LB,69,75,activator,False
+marR,LB,92,97,activator,False
+marR,LB,81,91,repressor,False
+marR,LB,101,129,repressor,False
+yedK,deoR knockout growth,116,138,activator,True
+yedK,deoR knockout growth,112,140,repressor,True
+yedK,LB,122,142,activator,True
+yedK,Iron supplemented growth,112,142,activator,True
+yedK,Iron supplemented growth,104,116,repressor,True
+yedK,Iron supplemented growth,127,132,repressor,True
+yedK,Anaerobic growth,93,105,activator,False
+yedK,Anaerobic growth,122,142,activator,True
+yedK,Trehalose growth,101,140,activator,True
+yedK,Trehalose growth,112,142,repressor,True
+yedK,M9,101,111,activator,True
+yedK,M9,126,140,activator,True
+yedK,M9,119,142,repressor,True
+yedK,Zinc supplemented growth,101,139,activator,True
+yedK,Zinc supplemented growth,112,142,repressor,True
+yedK,xylose + arabinose growth,119,142,activator,True
+yedK,xylose + arabinose growth,101,132,repressor,True
+yedK,heat shock,101,140,activator,True
+yedK,heat shock,104,140,repressor,True
+sdiA,LB,36,67,activator,True
+sdiA,LB,48,85,repressor,True
+sdiA,Iron supplemented growth,32,44,activator,True
+sdiA,Iron supplemented growth,49,59,repressor,True
+sdiA,Iron supplemented growth,85,99,repressor,False
+sdiA,xanthosine supplemented growth,32,43,activator,True
+sdiA,xanthosine supplemented growth,52,70,activator,True
+sdiA,xanthosine supplemented growth,86,100,activator,False
+sdiA,xanthosine supplemented growth,56,72,repressor,True
+sdiA,Anaerobic growth,30,78,activator,True
+sdiA,Anaerobic growth,55,74,repressor,True
+sdiA,Zinc supplemented growth,36,43,activator,True
+sdiA,Zinc supplemented growth,52,67,activator,True
+sdiA,Zinc supplemented growth,56,74,repressor,True
+sdiA,xylose + arabinose growth,36,43,activator,True
+sdiA,xylose + arabinose growth,52,67,activator,True
+sdiA,xylose + arabinose growth,55,74,repressor,True
+sdiA,heat shock,52,67,activator,True
+yjiY,deoR knockout growth,53,90,activator,False
+yjiY,deoR knockout growth,119,144,activator,False
+yjiY,deoR knockout growth,6,20,repressor,False
+yjiY,fum1,73,144,act,False
+yjiY,fum1,1,73,rep,False
+yjiY,fum1,115,129,rep,False
+yjiY,M9,118,131,activator,False
+yjiY,heat shock,131,141,activator,False
+dusC,0cAMP,61,69,activator,False
+dusC,0cAMP,89,109,activator,True
+dusC,LB,67,73,activator,True
+dusC,LB,89,97,activator,True
+dusC,Iron supplemented growth,67,75,activator,True
+dusC,Iron supplemented growth,85,97,activator,True
+dusC,Iron supplemented growth,72,99,repressor,True
+dusC,xanthosine supplemented growth,67,73,activator,True
+dusC,xanthosine supplemented growth,85,97,activator,True
+dusC,xanthosine supplemented growth,72,99,repressor,True
+dusC,Anaerobic growth,67,73,activator,True
+dusC,Anaerobic growth,87,97,activator,True
+dusC,Trehalose growth,67,73,activator,True
+dusC,Trehalose growth,85,96,activator,True
+dusC,Trehalose growth,112,138,activator,True
+dusC,Trehalose growth,72,99,repressor,True
+dusC,M9,86,99,activator,True
+dusC,M9,89,111,repressor,True
+dusC,Zinc supplemented growth,67,73,activator,True
+dusC,Zinc supplemented growth,85,97,activator,True
+dusC,Zinc supplemented growth,72,99,repressor,True
+dusC,xylose + arabinose growth,67,97,activator,True
+dusC,xylose + arabinose growth,72,99,repressor,True
+dusC,heat shock,67,73,activator,True
+dusC,heat shock,85,96,activator,True
+dusC,heat shock,72,99,repressor,True
+ftsK,0cAMP,76,83,repressor,True
+ftsK,LB,67,104,activator,True
+ftsK,LB,70,77,repressor,False
+ftsK,Iron supplemented growth,99,104,activator,True
+ftsK,xanthosine supplemented growth,67,80,activator,False
+ftsK,xanthosine supplemented growth,94,104,activator,True
+ftsK,xanthosine supplemented growth,70,76,repressor,False
+ftsK,Anaerobic growth,69,79,activator,False
+ftsK,Anaerobic growth,99,104,activator,True
+ftsK,Anaerobic growth,76,77,repressor,False
+ftsK,Zinc supplemented growth,99,104,activator,True
+ftsK,acetate growth,69,91,activator,True
+ftsK,acetate growth,76,82,repressor,True
+ftsK,acetate growth,107,119,repressor,False
+ftsK,xylose + arabinose growth,77,80,activator,False
+ftsK,xylose + arabinose growth,99,104,activator,True
+ftsK,xylose + arabinose growth,70,77,repressor,False
+aphA,0cAMP,94,108,repressor,True
+aphA,deoR knockout growth,72,86,activator,True
+aphA,deoR knockout growth,100,114,activator,True
+aphA,deoR knockout growth,94,109,repressor,True
+aphA,LB,72,85,activator,True
+aphA,LB,101,113,activator,True
+aphA,LB,94,109,repressor,True
+aphA,Iron supplemented growth,79,85,activator,True
+aphA,Iron supplemented growth,96,114,activator,True
+aphA,Iron supplemented growth,95,109,repressor,True
+aphA,xanthosine supplemented growth,79,85,activator,True
+aphA,xanthosine supplemented growth,98,108,activator,True
+aphA,xanthosine supplemented growth,42,53,repressor,False
+aphA,xanthosine supplemented growth,94,109,repressor,True
+aphA,Anaerobic growth,44,85,activator,True
+aphA,Anaerobic growth,98,122,activator,True
+aphA,Anaerobic growth,94,108,repressor,True
+aphA,Trehalose growth,57,64,activator,False
+aphA,Trehalose growth,68,115,activator,True
+aphA,Trehalose growth,38,54,repressor,False
+aphA,Trehalose growth,80,90,repressor,True
+aphA,Trehalose growth,97,108,repressor,True
+aphA,M9,99,108,repressor,True
+aphA,Zinc supplemented growth,79,85,activator,True
+aphA,Zinc supplemented growth,96,114,activator,True
+aphA,Zinc supplemented growth,95,116,repressor,True
+aphA,xylose + arabinose growth,79,85,activator,True
+aphA,xylose + arabinose growth,96,113,activator,True
+aphA,xylose + arabinose growth,42,47,repressor,False
+aphA,xylose + arabinose growth,94,109,repressor,True
+aphA,heat shock,96,107,activator,True
+aphA,heat shock,95,116,repressor,True
+coaA,LB,70,85,activator,True
+coaA,LB,98,108,activator,True
+coaA,LB,78,82,repressor,False
+coaA,LB,97,116,repressor,True
+coaA,Iron supplemented growth,70,85,activator,True
+coaA,Iron supplemented growth,98,120,activator,True
+coaA,Iron supplemented growth,78,109,repressor,True
+coaA,xanthosine supplemented growth,70,85,activator,True
+coaA,xanthosine supplemented growth,90,107,activator,True
+coaA,xanthosine supplemented growth,78,116,repressor,True
+coaA,Anaerobic growth,70,122,activator,True
+coaA,Anaerobic growth,138,144,activator,False
+coaA,Anaerobic growth,78,109,repressor,True
+coaA,phoP knockout growth,70,85,activator,True
+coaA,phoP knockout growth,96,107,activator,True
+coaA,Trehalose growth,87,115,activator,True
+coaA,Trehalose growth,78,111,repressor,True
+coaA,M9,99,107,activator,True
+coaA,M9,69,95,repressor,True
+coaA,Zinc supplemented growth,99,107,activator,True
+coaA,Zinc supplemented growth,78,82,repressor,False
+coaA,Zinc supplemented growth,97,111,repressor,True
+coaA,acetate growth,99,107,activator,True
+coaA,acetate growth,68,81,repressor,False
+coaA,acetate growth,97,111,repressor,True
+coaA,xylose + arabinose growth,70,85,activator,True
+coaA,xylose + arabinose growth,98,114,activator,True
+coaA,xylose + arabinose growth,136,144,activator,False
+coaA,xylose + arabinose growth,78,116,repressor,True
+coaA,heat shock,69,82,repressor,False
+uvrD,0cAMP,72,86,activator,True
+uvrD,0cAMP,102,107,activator,True
+uvrD,deoR knockout growth,70,83,repressor,False
+uvrD,LB,100,107,activator,True
+uvrD,LB,83,84,repressor,False
+uvrD,Iron supplemented growth,143,144,activator,False
+uvrD,Iron supplemented growth,83,84,repressor,False
+uvrD,xanthosine supplemented growth,99,107,activator,True
+uvrD,xanthosine supplemented growth,143,144,activator,False
+uvrD,xanthosine supplemented growth,83,84,repressor,False
+uvrD,Anaerobic growth,143,144,activator,False
+uvrD,Anaerobic growth,76,84,repressor,False
+uvrD,Zinc supplemented growth,83,84,repressor,False
+uvrD,acetate growth,137,144,activator,False
+uvrD,acetate growth,141,144,repressor,False
+uvrD,xylose + arabinose growth,83,84,repressor,False
+ygdH,LB,78,108,activator,True
+ygdH,LB,88,106,repressor,True
+ygdH,Iron supplemented growth,78,110,activator,True
+ygdH,Iron supplemented growth,141,144,activator,True
+ygdH,Iron supplemented growth,86,106,repressor,True
+ygdH,xanthosine supplemented growth,72,108,activator,True
+ygdH,xanthosine supplemented growth,86,106,repressor,True
+ygdH,Anaerobic growth,78,108,activator,True
+ygdH,Anaerobic growth,144,144,activator,True
+ygdH,Anaerobic growth,88,106,repressor,True
+ygdH,Trehalose growth,78,108,activator,True
+ygdH,Trehalose growth,86,106,repressor,True
+ygdH,Zinc supplemented growth,78,108,activator,True
+ygdH,Zinc supplemented growth,86,106,repressor,True
+ygdH,xylose + arabinose growth,78,108,activator,True
+ygdH,xylose + arabinose growth,86,106,repressor,True
+ygdH,heat shock,71,108,activator,True
+ygdH,heat shock,86,106,repressor,True
+poxB,Iron supplemented growth,97,107,activator,True
+poxB,M9,97,107,activator,True
+poxB,Zinc supplemented growth,97,107,activator,True
+poxB,xylose + arabinose growth,96,107,activator,True
+poxB,heat shock,89,115,activator,True
+groSL,fum1,64,90,act,True
+groSL,fum1,97,109,act,True
+groSL,Iron supplemented growth,95,109,activator,True
+groSL,Iron supplemented growth,124,137,activator,True
+groSL,xanthosine supplemented growth,120,137,activator,True
+groSL,Anaerobic growth,69,82,activator,True
+groSL,Anaerobic growth,98,109,activator,True
+groSL,Anaerobic growth,125,140,activator,True
+groSL,phoP knockout growth,74,84,activator,True
+groSL,phoP knockout growth,98,114,activator,True
+groSL,phoP knockout growth,123,133,activator,True
+groSL,M9,138,144,activator,True
+groSL,xylose + arabinose growth,125,137,activator,True
+groSL,heat shock,63,114,activator,True
+ybiO,LB,83,103,activator,True
+ybiO,LB,104,130,repressor,True
+ybiO,Iron supplemented growth,119,144,activator,True
+ybiO,Iron supplemented growth,104,130,repressor,True
+ybiO,xanthosine supplemented growth,88,103,activator,True
+ybiO,xanthosine supplemented growth,104,130,repressor,True
+ybiO,Trehalose growth,79,83,activator,False
+ybiO,Trehalose growth,99,106,repressor,False
+ybiO,Trehalose growth,110,130,repressor,True
+ybiO,Zinc supplemented growth,121,144,activator,True
+ybiO,Zinc supplemented growth,104,130,repressor,True
+ybiO,xylose + arabinose growth,117,143,activator,True
+ybiO,xylose + arabinose growth,104,130,repressor,True
+ybiO,heat shock,117,144,activator,True
+ybiO,heat shock,104,136,repressor,True
+mutM,LB,92,106,repressor,False
+mutM,LB,132,144,repressor,False
+arcB,LB,91,120,activator,True
+arcB,Anaerobic growth,94,108,activator,True
+arcB,Anaerobic growth,75,89,repressor,True
+arcB,xylose + arabinose growth,101,108,activator,True
+yehU,LB,58,67,activator,True
+yehU,LB,97,116,activator,True
+yehU,xanthosine supplemented growth,37,52,activator,True
+yehU,xanthosine supplemented growth,59,77,activator,True
+yehU,xanthosine supplemented growth,96,116,activator,True
+yehU,Anaerobic growth,53,122,activator,True
+yehU,Zinc supplemented growth,34,46,activator,False
+yehU,Zinc supplemented growth,106,112,activator,True
+yehU,Zinc supplemented growth,60,83,repressor,True
+yehU,xylose + arabinose growth,32,46,activator,False
+yehU,xylose + arabinose growth,59,73,activator,True
+yehU,xylose + arabinose growth,95,112,activator,True
+yehU,xylose + arabinose growth,60,83,repressor,True
+yehU,heat shock,60,88,activator,True
+ygjP,LB,54,103,activator,True
+ygjP,LB,85,97,repressor,True
+ygjP,fum1,83,104,act,True
+ygjP,fum1,75,98,rep,True
+ygjP,Iron supplemented growth,82,96,activator,True
+ygjP,xanthosine supplemented growth,65,96,activator,True
+ygjP,xanthosine supplemented growth,75,97,repressor,True
+ygjP,Anaerobic growth,54,69,activator,False
+ygjP,Anaerobic growth,87,96,activator,True
+ygjP,Anaerobic growth,85,97,repressor,True
+ygjP,M9,88,103,activator,True
+ygjP,M9,85,93,repressor,True
+ygjP,Zinc supplemented growth,28,48,activator,False
+ygjP,Zinc supplemented growth,87,96,activator,True
+ygjP,Zinc supplemented growth,68,97,repressor,True
+ygjP,xylose + arabinose growth,54,69,activator,False
+ygjP,xylose + arabinose growth,87,96,activator,True
+ygjP,xylose + arabinose growth,68,71,repressor,False
+ygjP,xylose + arabinose growth,85,97,repressor,True
+ygjP,heat shock,87,103,activator,True
+ygjP,heat shock,85,93,repressor,True
+ybeZ,LB,119,132,activator,True
+ybeZ,LB,136,144,activator,True
+ybeZ,LB,134,144,repressor,True
+ybeZ,Iron supplemented growth,108,144,activator,True
+ybeZ,Iron supplemented growth,130,144,repressor,True
+ybeZ,xanthosine supplemented growth,140,144,activator,True
+ybeZ,xanthosine supplemented growth,137,144,repressor,True
+ybeZ,Anaerobic growth,118,144,activator,True
+ybeZ,Anaerobic growth,130,144,repressor,True
+ybeZ,Trehalose growth,118,144,activator,True
+ybeZ,Trehalose growth,130,144,repressor,True
+ybeZ,Zinc supplemented growth,119,124,activator,False
+ybeZ,Zinc supplemented growth,140,144,activator,True
+ybeZ,Zinc supplemented growth,130,144,repressor,True
+ybeZ,xylose + arabinose growth,79,94,activator,False
+ybeZ,xylose + arabinose growth,110,123,activator,False
+ybeZ,xylose + arabinose growth,140,144,activator,True
+ybeZ,xylose + arabinose growth,130,144,repressor,True
+ybeZ,heat shock,77,104,activator,True
+ybjL,LB,50,62,activator,True
+ybjL,LB,96,108,activator,True
+ybjL,LB,28,37,repressor,False
+ybjL,LB,101,113,repressor,True
+ybjL,Iron supplemented growth,89,113,activator,True
+ybjL,Iron supplemented growth,104,108,repressor,True
+ybjL,xanthosine supplemented growth,50,68,activator,True
+ybjL,xanthosine supplemented growth,103,107,activator,True
+ybjL,xanthosine supplemented growth,35,37,repressor,False
+ybjL,xanthosine supplemented growth,89,113,repressor,True
+ybjL,Anaerobic growth,52,62,activator,True
+ybjL,Anaerobic growth,28,37,repressor,False
+ybjL,Anaerobic growth,101,113,repressor,True
+ybjL,Trehalose growth,53,62,activator,True
+ybjL,Trehalose growth,95,108,activator,True
+ybjL,Trehalose growth,115,128,repressor,False
+ybjL,Zinc supplemented growth,50,62,activator,True
+ybjL,Zinc supplemented growth,100,108,activator,True
+ybjL,xylose + arabinose growth,50,62,activator,True
+ybjL,xylose + arabinose growth,100,108,activator,True
+ybjL,xylose + arabinose growth,35,37,repressor,False
+ybjL,xylose + arabinose growth,89,113,repressor,True
+ybjL,heat shock,101,115,activator,True
+ybjL,heat shock,95,108,repressor,True
+dicB,LB,81,97,activator,False
+thiM,0cAMP,69,108,activator,True
+thiM,deoR knockout growth,78,85,activator,False
+thiM,deoR knockout growth,106,107,activator,True
+thiM,deoR knockout growth,98,116,repressor,True
+thiM,LB,73,86,activator,True
+thiM,LB,103,116,activator,True
+thiM,fum1,69,117,act,True
+thiM,fum1,97,119,rep,True
+thiM,Iron supplemented growth,73,117,activator,True
+thiM,xanthosine supplemented growth,73,86,activator,True
+thiM,xanthosine supplemented growth,103,116,activator,True
+thiM,Anaerobic growth,69,86,activator,True
+thiM,Anaerobic growth,102,116,activator,True
+thiM,Trehalose growth,73,86,activator,True
+thiM,Trehalose growth,102,117,activator,True
+thiM,M9,55,117,activator,True
+thiM,M9,91,115,repressor,True
+thiM,Zinc supplemented growth,69,86,activator,True
+thiM,Zinc supplemented growth,102,117,activator,True
+thiM,acetate growth,73,117,activator,True
+thiM,xylose + arabinose growth,69,86,activator,True
+thiM,xylose + arabinose growth,102,117,activator,True
+thiM,xylose + arabinose growth,67,94,repressor,True
+thiM,heat shock,73,86,activator,True
+thiM,heat shock,102,117,activator,True
+thiM,heat shock,106,119,repressor,True
+sbcB,LB,92,116,activator,True
+sbcB,LB,82,86,repressor,False
+sbcB,xanthosine supplemented growth,102,114,activator,True
+sbcB,xanthosine supplemented growth,72,83,repressor,False
+sbcB,Anaerobic growth,75,86,repressor,False
+sbcB,Trehalose growth,102,110,activator,True
+sbcB,xylose + arabinose growth,102,116,activator,True
+sbcB,xylose + arabinose growth,72,90,repressor,True
+sbcB,heat shock,88,110,activator,True
+sbcB,heat shock,75,83,repressor,False
+xylF,deoR knockout growth,101,118,activator,False
+xylF,LB,55,76,activator,False
+xylF,LB,136,144,activator,False
+xylF,LB,78,105,repressor,False
+xylF,xanthosine supplemented growth,78,104,repressor,False
+xylF,Trehalose growth,68,115,activator,False
+xylF,Trehalose growth,80,90,repressor,False
+xylF,Zinc supplemented growth,78,104,activator,False
+xylF,xylose + arabinose growth,37,88,activator,False
+xylF,heat shock,90,104,activator,False
+mscK,fum1,54,68,act,False
+mscK,fum1,129,144,act,False
+mscK,fum1,67,85,rep,True
+mscK,fum1,109,121,rep,False
+fdhE,LB,96,107,activator,True
+fdhE,Iron supplemented growth,103,107,activator,True
+fdhE,Iron supplemented growth,69,82,repressor,False
+fdhE,xanthosine supplemented growth,96,114,activator,True
+fdhE,xanthosine supplemented growth,69,82,repressor,False
+fdhE,Anaerobic growth,65,81,activator,False
+fdhE,Anaerobic growth,96,119,activator,True
+fdhE,Trehalose growth,61,107,activator,True
+fdhE,Trehalose growth,104,118,repressor,True
+fdhE,M9,0,16,repressor,False
+fdhE,Zinc supplemented growth,96,107,activator,True
+fdhE,xylose + arabinose growth,96,107,activator,True
+fdhE,xylose + arabinose growth,67,82,repressor,False
+fdhE,heat shock,0,16,repressor,False
+yfhG,Anaerobic growth,78,82,activator,False
+yfhG,Anaerobic growth,106,107,activator,True
+yfhG,Anaerobic growth,98,116,repressor,True
+yfhG,Zinc supplemented growth,114,126,activator,False
+asnA,LB,93,110,activator,True
+asnA,Iron supplemented growth,15,25,activator,False
+asnA,Iron supplemented growth,93,116,activator,True
+asnA,xanthosine supplemented growth,28,48,activator,False
+asnA,xanthosine supplemented growth,93,110,activator,True
+asnA,Anaerobic growth,93,118,activator,True
+asnA,Trehalose growth,102,118,activator,True
+asnA,Zinc supplemented growth,93,110,activator,True
+asnA,xylose + arabinose growth,93,118,activator,True
+asnA,heat shock,102,118,activator,True
+rspA,arabinose,58,97,activator,False
+rspA,arabinose,110,124,activator,True
+rspA,arabinose,98,117,repressor,True
+rspA,LB,59,96,activator,False
+rspA,LB,110,132,activator,True
+rspA,LB,87,117,repressor,True
+rspA,Iron supplemented growth,58,97,activator,False
+rspA,Iron supplemented growth,116,132,activator,True
+rspA,Iron supplemented growth,87,117,repressor,True
+rspA,xanthosine supplemented growth,59,96,activator,False
+rspA,xanthosine supplemented growth,109,132,activator,True
+rspA,xanthosine supplemented growth,98,115,repressor,True
+rspA,Anaerobic growth,58,122,activator,True
+rspA,Anaerobic growth,98,117,repressor,True
+rspA,Trehalose growth,58,127,activator,True
+rspA,Trehalose growth,98,115,repressor,True
+rspA,Zinc supplemented growth,59,97,activator,False
+rspA,Zinc supplemented growth,109,122,activator,True
+rspA,Zinc supplemented growth,98,117,repressor,True
+rspA,xylose + arabinose growth,59,132,activator,True
+rspA,xylose + arabinose growth,98,115,repressor,True
+rspA,heat shock,87,115,activator,True
+ydjA,LB,66,106,activator,True
+ydjA,LB,94,112,repressor,True
+ydjA,Iron supplemented growth,76,79,activator,True
+ydjA,Iron supplemented growth,95,106,activator,True
+ydjA,Iron supplemented growth,104,120,repressor,True
+ydjA,xanthosine supplemented growth,78,106,activator,True
+ydjA,xanthosine supplemented growth,94,116,repressor,True
+ydjA,Anaerobic growth,91,106,activator,True
+ydjA,Anaerobic growth,104,116,repressor,True
+ydjA,Trehalose growth,91,106,activator,True
+ydjA,Trehalose growth,105,116,repressor,True
+ydjA,Zinc supplemented growth,86,106,activator,True
+ydjA,Zinc supplemented growth,105,116,repressor,True
+ydjA,xylose + arabinose growth,78,106,activator,True
+ydjA,xylose + arabinose growth,94,116,repressor,True
+ydjA,heat shock,78,106,activator,True
+ydjA,heat shock,94,116,repressor,True
+acuI,LB,2,14,repressor,False
+acuI,LB,84,99,repressor,False
+acuI,Iron supplemented growth,2,14,activator,False
+acuI,Iron supplemented growth,78,99,activator,False
+acuI,xanthosine supplemented growth,2,27,repressor,False
+acuI,xanthosine supplemented growth,84,99,repressor,False
+acuI,Anaerobic growth,81,94,activator,False
+acuI,Anaerobic growth,12,16,repressor,False
+acuI,Anaerobic growth,78,99,repressor,False
+acuI,Anaerobic growth,111,123,repressor,False
+acuI,Trehalose growth,78,99,repressor,False
+acuI,Trehalose growth,123,136,repressor,False
+acuI,M9,2,15,activator,False
+acuI,M9,89,99,activator,False
+acuI,Zinc supplemented growth,14,27,activator,False
+acuI,Zinc supplemented growth,89,99,activator,False
+acuI,xylose + arabinose growth,2,15,repressor,False
+acuI,xylose + arabinose growth,78,99,repressor,False
+acuI,heat shock,2,27,activator,False
+acuI,heat shock,77,99,activator,False
+mtgA,0cAMP,25,28,activator,False
+mtgA,LB,20,28,repressor,True
+mtgA,Iron supplemented growth,20,28,repressor,True
+mtgA,xanthosine supplemented growth,16,28,repressor,True
+mtgA,Anaerobic growth,16,28,repressor,True
+mtgA,Trehalose growth,20,28,activator,True
+mtgA,Trehalose growth,102,111,activator,False
+mtgA,Trehalose growth,20,39,repressor,True
+mtgA,Trehalose growth,118,129,repressor,False
+mtgA,Zinc supplemented growth,20,26,activator,False
+mtgA,xylose + arabinose growth,20,39,activator,True
+mtgA,heat shock,15,39,activator,True
+yjjJ,LB,61,123,activator,True
+yjjJ,LB,130,133,repressor,True
+yjjJ,Iron supplemented growth,124,137,activator,True
+yjjJ,Iron supplemented growth,91,125,repressor,True
+yjjJ,xanthosine supplemented growth,93,133,activator,True
+yjjJ,xanthosine supplemented growth,93,133,repressor,True
+yjjJ,Anaerobic growth,91,138,activator,True
+yjjJ,phoP knockout growth,97,134,activator,True
+yjjJ,Trehalose growth,102,129,repressor,True
+yjjJ,Zinc supplemented growth,101,108,repressor,True
+yjjJ,xylose + arabinose growth,89,134,activator,True
+yjjJ,xylose + arabinose growth,130,133,repressor,True
+yjjJ,heat shock,93,123,repressor,True
+yehT,LB,97,108,activator,True
+yehT,LB,73,82,repressor,False
+yehT,Iron supplemented growth,97,108,activator,True
+yehT,Iron supplemented growth,120,138,activator,True
+yehT,xanthosine supplemented growth,73,92,repressor,True
+yehT,Anaerobic growth,72,82,repressor,False
+yehT,Trehalose growth,69,82,activator,False
+yehT,Trehalose growth,103,111,repressor,True
+yehT,Zinc supplemented growth,96,116,activator,True
+yehT,Zinc supplemented growth,73,82,repressor,False
+yehT,xylose + arabinose growth,97,117,activator,True
+yehT,xylose + arabinose growth,73,82,repressor,False
+yehT,heat shock,97,108,activator,True
+yehT,heat shock,69,92,repressor,True
+rumB,deoR knockout growth,21,39,repressor,False
+rumB,fum1,13,27,act,False
+rumB,fum1,67,82,act,False
+rumB,fum1,94,144,act,True
+rumB,fum1,41,62,rep,False
+rumB,fum1,73,87,rep,True
+rumB,fum1,115,128,rep,False
+rumB,Anaerobic growth,70,118,activator,True
+yicI,LB,3,19,activator,False
+yicI,LB,76,87,activator,False
+yicI,Iron supplemented growth,4,20,activator,False
+yicI,Iron supplemented growth,50,58,activator,False
+yicI,Iron supplemented growth,72,99,activator,False
+yicI,Iron supplemented growth,110,130,activator,False
+yicI,xanthosine supplemented growth,85,99,activator,False
+yicI,xanthosine supplemented growth,118,122,activator,False
+yicI,Anaerobic growth,85,99,activator,False
+yicI,Anaerobic growth,105,122,activator,False
+yicI,Trehalose growth,50,53,activator,False
+yicI,Trehalose growth,75,99,activator,False
+yicI,Trehalose growth,110,133,activator,False
+yicI,Zinc supplemented growth,72,99,activator,False
+yicI,Zinc supplemented growth,110,122,activator,False
+yicI,xylose + arabinose growth,75,99,activator,False
+yicI,xylose + arabinose growth,118,122,activator,False
+yicI,heat shock,3,15,activator,False
+yicI,heat shock,76,99,activator,False
+yicI,heat shock,110,133,activator,False
+dinJ,0cAMP,71,89,activator,True
+dinJ,0cAMP,98,119,activator,True
+dinJ,LB,80,83,activator,False
+dinJ,LB,98,111,activator,True
+dinJ,Iron supplemented growth,80,83,activator,False
+dinJ,Iron supplemented growth,98,111,activator,True
+dinJ,xanthosine supplemented growth,80,83,activator,False
+dinJ,xanthosine supplemented growth,99,109,activator,True
+dinJ,Anaerobic growth,80,111,activator,True
+dinJ,Trehalose growth,80,82,activator,False
+dinJ,Trehalose growth,103,111,activator,True
+dinJ,Zinc supplemented growth,80,83,activator,False
+dinJ,Zinc supplemented growth,98,111,activator,True
+dinJ,xylose + arabinose growth,80,83,activator,False
+dinJ,xylose + arabinose growth,98,111,activator,True
+dinJ,heat shock,80,82,activator,False
+dinJ,heat shock,98,111,activator,True
+dinJ,heat shock,79,94,repressor,True
+dinJ,heat shock,120,129,repressor,False
+fdoH,LB,1,13,activator,False
+fdoH,Iron supplemented growth,1,13,activator,False
+fdoH,xanthosine supplemented growth,1,17,activator,False
+fdoH,Anaerobic growth,1,14,activator,False
+fdoH,Trehalose growth,1,9,activator,False
+fdoH,Zinc supplemented growth,1,13,activator,False
+fdoH,xylose + arabinose growth,1,13,activator,False
+fdoH,heat shock,1,13,activator,False
+ilvC,LB,82,115,repressor,True
+ilvC,Iron supplemented growth,40,87,activator,False
+ilvC,Iron supplemented growth,98,119,activator,True
+ilvC,Iron supplemented growth,85,115,repressor,True
+ilvC,xanthosine supplemented growth,51,63,activator,False
+ilvC,xanthosine supplemented growth,73,87,activator,False
+ilvC,xanthosine supplemented growth,98,117,activator,True
+ilvC,xanthosine supplemented growth,85,115,repressor,True
+ilvC,Anaerobic growth,91,115,repressor,True
+ilvC,M9,82,104,activator,True
+ilvC,Zinc supplemented growth,49,87,activator,False
+ilvC,Zinc supplemented growth,98,111,activator,True
+ilvC,Zinc supplemented growth,85,115,repressor,True
+ilvC,xylose + arabinose growth,59,87,activator,False
+ilvC,xylose + arabinose growth,98,117,activator,True
+ilvC,xylose + arabinose growth,85,115,repressor,True
+ilvC,heat shock,80,115,repressor,True
+modE,LB,40,50,activator,False
+modE,LB,90,104,activator,True
+modE,xanthosine supplemented growth,103,120,activator,False
+modE,Anaerobic growth,78,96,activator,True
+modE,Anaerobic growth,78,90,repressor,True
+modE,xylose + arabinose growth,80,96,activator,True
+modE,heat shock,85,98,activator,True
+ykgE,LB,43,78,activator,True
+ykgE,LB,70,93,repressor,True
+ykgE,Iron supplemented growth,36,107,activator,True
+ykgE,Iron supplemented growth,70,102,repressor,True
+ykgE,xanthosine supplemented growth,43,78,activator,True
+ykgE,xanthosine supplemented growth,71,99,repressor,True
+ykgE,Anaerobic growth,13,35,activator,False
+ykgE,Anaerobic growth,40,79,activator,True
+ykgE,Anaerobic growth,71,93,repressor,True
+ykgE,Trehalose growth,17,35,activator,False
+ykgE,Trehalose growth,43,78,activator,True
+ykgE,Trehalose growth,71,93,repressor,True
+ykgE,M9,70,93,activator,True
+ykgE,M9,50,56,repressor,True
+ykgE,M9,67,78,repressor,True
+ykgE,Zinc supplemented growth,41,78,activator,True
+ykgE,Zinc supplemented growth,71,93,repressor,True
+ykgE,xylose + arabinose growth,41,79,activator,True
+ykgE,xylose + arabinose growth,71,93,repressor,True
+ykgE,heat shock,70,99,activator,True
+ykgE,heat shock,43,78,repressor,True
+dicA,arabinose,119,143,repressor,False
+dicA,LB,45,73,activator,False
+dicA,LB,84,107,activator,False
+dicA,LB,118,133,repressor,False
+dicA,xylose + arabinose growth,120,141,repressor,False
+rcsF,deoR knockout growth,72,89,activator,True
+rcsF,deoR knockout growth,106,120,activator,True
+rcsF,LB,75,124,activator,True
+rcsF,LB,91,106,repressor,True
+rcsF,fum1,106,144,act,True
+rcsF,Iron supplemented growth,43,57,activator,True
+rcsF,Iron supplemented growth,76,87,activator,True
+rcsF,Iron supplemented growth,100,119,activator,True
+rcsF,Iron supplemented growth,131,144,activator,False
+rcsF,xanthosine supplemented growth,44,62,activator,True
+rcsF,xanthosine supplemented growth,101,113,activator,True
+rcsF,Anaerobic growth,76,112,activator,True
+rcsF,Anaerobic growth,91,106,repressor,True
+rcsF,Trehalose growth,52,57,activator,True
+rcsF,Trehalose growth,131,144,activator,False
+rcsF,Zinc supplemented growth,45,57,activator,True
+rcsF,Zinc supplemented growth,69,87,activator,True
+rcsF,Zinc supplemented growth,100,113,activator,True
+rcsF,Zinc supplemented growth,124,144,activator,False
+rcsF,xylose + arabinose growth,52,62,activator,True
+rcsF,xylose + arabinose growth,79,85,activator,False
+rcsF,xylose + arabinose growth,100,122,activator,True
+rcsF,heat shock,52,57,activator,True
+rcsF,heat shock,124,144,activator,False
+idnK,0cAMP,36,43,activator,False
+idnK,0cAMP,119,144,activator,False
+idnK,0cAMP,74,82,repressor,False
+idnK,LB,72,85,activator,True
+idnK,LB,101,116,activator,True
+idnK,LB,67,88,repressor,True
+idnK,Iron supplemented growth,102,116,activator,True
+idnK,Iron supplemented growth,67,88,repressor,True
+idnK,xanthosine supplemented growth,72,85,activator,True
+idnK,xanthosine supplemented growth,99,107,activator,True
+idnK,xanthosine supplemented growth,67,83,repressor,False
+idnK,Anaerobic growth,70,79,activator,False
+idnK,Anaerobic growth,91,120,activator,True
+idnK,Anaerobic growth,67,83,repressor,False
+idnK,Trehalose growth,71,87,activator,True
+idnK,Trehalose growth,98,111,activator,True
+idnK,Trehalose growth,67,88,repressor,True
+idnK,Zinc supplemented growth,102,116,activator,True
+idnK,Zinc supplemented growth,67,83,repressor,False
+idnK,xylose + arabinose growth,71,79,activator,False
+idnK,xylose + arabinose growth,102,116,activator,True
+idnK,xylose + arabinose growth,67,88,repressor,True
+idnK,heat shock,74,88,activator,True
+idnK,heat shock,101,116,repressor,True
+minC,LB,77,81,activator,False
+minC,LB,100,113,activator,True
+minC,Iron supplemented growth,77,81,activator,False
+minC,Iron supplemented growth,100,112,activator,True
+minC,xanthosine supplemented growth,76,86,activator,True
+minC,xanthosine supplemented growth,100,110,activator,True
+minC,Anaerobic growth,64,115,activator,True
+minC,Trehalose growth,77,84,activator,False
+minC,Trehalose growth,100,114,activator,True
+minC,Zinc supplemented growth,78,114,activator,True
+minC,xylose + arabinose growth,78,86,activator,True
+minC,xylose + arabinose growth,100,113,activator,True
+minC,heat shock,77,84,activator,False
+minC,heat shock,100,113,activator,True
+ybjT,0cAMP,68,82,activator,False
+ybjT,0cAMP,97,105,repressor,True
+ybjT,LB,79,85,activator,True
+ybjT,LB,97,106,activator,True
+ybjT,LB,99,107,repressor,True
+ybjT,Iron supplemented growth,79,85,activator,True
+ybjT,Iron supplemented growth,97,106,activator,True
+ybjT,xanthosine supplemented growth,79,85,activator,True
+ybjT,xanthosine supplemented growth,97,106,activator,True
+ybjT,xanthosine supplemented growth,99,107,repressor,True
+ybjT,Anaerobic growth,72,106,activator,True
+ybjT,Zinc supplemented growth,79,87,activator,True
+ybjT,Zinc supplemented growth,97,106,activator,True
+ybjT,xylose + arabinose growth,79,106,activator,True
+ybjT,xylose + arabinose growth,99,107,repressor,True
+ybjT,heat shock,79,90,activator,True
+yeiQ,LB,71,81,activator,False
+yeiQ,LB,121,128,repressor,False
+yeiQ,xanthosine supplemented growth,38,51,activator,False
+yeiQ,xanthosine supplemented growth,96,115,activator,True
+yeiQ,Anaerobic growth,38,64,activator,False
+yeiQ,Anaerobic growth,90,108,activator,True
+yeiQ,Anaerobic growth,114,128,repressor,False
+yeiQ,Trehalose growth,35,64,activator,False
+yeiQ,Trehalose growth,96,107,activator,True
+yeiQ,M9,103,109,activator,True
+yeiQ,M9,97,106,repressor,True
+yeiQ,xylose + arabinose growth,38,51,activator,False
+yeiQ,xylose + arabinose growth,79,120,activator,True
+yeiQ,xylose + arabinose growth,123,128,repressor,False
+dicC,LB,74,85,activator,False
+dicC,LB,103,109,activator,True
+dicC,Iron supplemented growth,68,93,activator,True
+dicC,Iron supplemented growth,103,109,activator,True
+dicC,Iron supplemented growth,97,125,repressor,True
+dicC,xanthosine supplemented growth,72,87,activator,True
+dicC,xanthosine supplemented growth,103,109,activator,True
+dicC,xanthosine supplemented growth,110,125,repressor,False
+dicC,Anaerobic growth,79,85,activator,False
+dicC,Anaerobic growth,103,109,activator,True
+dicC,Trehalose growth,80,85,activator,False
+dicC,Trehalose growth,103,109,activator,True
+dicC,Trehalose growth,109,125,repressor,True
+dicC,Zinc supplemented growth,70,85,activator,False
+dicC,Zinc supplemented growth,103,109,activator,True
+dicC,Zinc supplemented growth,109,123,repressor,True
+dicC,acetate growth,67,109,activator,True
+dicC,acetate growth,102,125,repressor,True
+dicC,xylose + arabinose growth,67,85,activator,False
+dicC,xylose + arabinose growth,103,109,activator,True
+dicC,xylose + arabinose growth,102,125,repressor,True
+dicC,heat shock,80,85,activator,False
+dicC,heat shock,103,109,activator,True
+dicC,heat shock,97,125,repressor,True
+rel,M9,105,131,activator,False
+znuCB,LB,80,91,activator,True
+znuCB,LB,97,103,activator,True
+znuCB,LB,71,79,repressor,False
+znuCB,LB,101,112,repressor,True
+znuCB,Iron supplemented growth,101,113,repressor,True
+znuCB,xanthosine supplemented growth,97,107,activator,True
+znuCB,xanthosine supplemented growth,101,113,repressor,True
+znuCB,Anaerobic growth,99,103,activator,True
+znuCB,Anaerobic growth,101,113,repressor,True
+znuCB,Zinc supplemented growth,101,113,repressor,True
+znuCB,xylose + arabinose growth,97,103,activator,True
+znuCB,xylose + arabinose growth,101,115,repressor,True
+znuCB,heat shock,101,115,activator,True
+araAB,arabinose,13,118,activator,True
+araAB,LB,37,52,repressor,True
+araAB,Iron supplemented growth,39,50,activator,True
+araAB,xanthosine supplemented growth,76,78,activator,False
+araAB,xanthosine supplemented growth,93,107,activator,True
+araAB,xanthosine supplemented growth,39,46,repressor,True
+araAB,Anaerobic growth,37,42,repressor,True
+araAB,Anaerobic growth,139,144,repressor,False
+araAB,Zinc supplemented growth,25,51,repressor,True
+araAB,xylose + arabinose growth,13,86,activator,True
+araAB,xylose + arabinose growth,101,107,activator,True
+araAB,heat shock,39,50,activator,True
+ybjX,LB,25,43,activator,False
+ybjX,LB,98,107,activator,False
+zapB,0cAMP,65,116,activator,True
+zapB,LB,64,107,activator,True
+zapB,LB,97,107,repressor,True
+zapB,Iron supplemented growth,64,118,activator,True
+zapB,Iron supplemented growth,97,107,repressor,True
+zapB,xanthosine supplemented growth,77,107,activator,True
+zapB,xanthosine supplemented growth,96,112,repressor,True
+zapB,Anaerobic growth,64,118,activator,True
+zapB,Anaerobic growth,97,107,repressor,True
+zapB,phoP knockout growth,75,83,activator,False
+zapB,phoP knockout growth,101,111,activator,True
+zapB,phoP knockout growth,97,109,repressor,True
+zapB,Trehalose growth,77,107,activator,True
+zapB,Trehalose growth,97,100,repressor,True
+zapB,M9,76,83,activator,False
+zapB,M9,101,118,activator,True
+zapB,Zinc supplemented growth,64,107,activator,True
+zapB,Zinc supplemented growth,97,112,repressor,True
+zapB,acetate growth,70,118,activator,True
+zapB,acetate growth,97,107,repressor,True
+zapB,xylose + arabinose growth,75,107,activator,True
+zapB,xylose + arabinose growth,96,112,repressor,True
+zapB,heat shock,70,83,activator,False
+zapB,heat shock,101,118,activator,True
+zapB,heat shock,97,109,repressor,True
+tar,LB,137,144,activator,False
+tar,fum1,134,144,act,False
+tar,Iron supplemented growth,133,144,repressor,False
+tar,xanthosine supplemented growth,137,144,activator,False
+tar,xanthosine supplemented growth,137,144,repressor,False
+tar,Trehalose growth,111,125,activator,True
+tar,Trehalose growth,137,144,activator,False
+tar,M9,104,116,activator,True
+tar,M9,136,144,activator,False
+tar,Zinc supplemented growth,113,115,activator,True
+tar,xylose + arabinose growth,137,144,repressor,False
+tar,heat shock,110,116,activator,True
+tar,heat shock,137,144,activator,False
+mscL,LB,98,108,activator,True
+mscL,Iron supplemented growth,98,108,activator,True
+mscL,xanthosine supplemented growth,99,108,activator,True
+mscL,M9,92,106,activator,True
+mscL,Zinc supplemented growth,92,106,activator,True
+mscL,Zinc supplemented growth,97,98,repressor,False
+mscL,xylose + arabinose growth,85,106,activator,True
+mscL,xylose + arabinose growth,97,109,repressor,True
+mscL,heat shock,83,121,activator,True
+xylA,xanthosine supplemented growth,68,79,repressor,False
+xylA,xylose + arabinose growth,27,94,activator,True
+zupT,0cAMP,92,112,repressor,True
+zupT,LB,92,112,activator,True
+zupT,fum1,9,49,act,False
+zupT,fum1,66,80,act,True
+zupT,fum1,122,134,act,True
+zupT,fum1,3,10,rep,False
+zupT,fum1,28,37,rep,False
+zupT,fum1,92,112,rep,True
+zupT,Iron supplemented growth,92,102,activator,True
+zupT,xanthosine supplemented growth,92,102,activator,True
+zupT,Anaerobic growth,92,113,activator,True
+zupT,Zinc supplemented growth,92,102,activator,True
+zupT,acetate growth,92,105,repressor,True
+zupT,xylose + arabinose growth,92,101,activator,True
+zupT,heat shock,92,102,activator,True
+eco,arabinose,99,108,activator,False
+eco,arabinose,79,80,repressor,False
+pitA,LB,94,112,activator,True
+pitA,LB,97,101,repressor,True
+pitA,Anaerobic growth,96,107,activator,True
+pitA,Anaerobic growth,79,83,repressor,False
+dgoR,LB,8,15,activator,False
+dgoR,LB,21,30,repressor,False
+yggW,xanthosine supplemented growth,90,104,repressor,True
+yggW,Anaerobic growth,76,82,activator,True
+yggW,M9,61,81,activator,True
+yggW,M9,110,127,activator,False
+yggW,xylose + arabinose growth,68,93,activator,True
+yggW,xylose + arabinose growth,103,109,activator,True
+yggW,xylose + arabinose growth,97,106,repressor,True
+yggW,heat shock,79,85,activator,True
+yggW,heat shock,99,116,activator,True
+rlmA,LB,80,110,activator,True
+rlmA,Iron supplemented growth,105,111,activator,True
+rlmA,Iron supplemented growth,133,138,activator,False
+rlmA,xanthosine supplemented growth,105,110,activator,True
+rlmA,Anaerobic growth,44,57,activator,True
+rlmA,Anaerobic growth,75,110,activator,True
+rlmA,Trehalose growth,45,64,activator,True
+rlmA,Zinc supplemented growth,37,71,activator,True
+rlmA,Zinc supplemented growth,76,78,activator,False
+rlmA,Zinc supplemented growth,86,107,activator,True
+rlmA,Zinc supplemented growth,72,83,repressor,False
+rlmA,Zinc supplemented growth,99,114,repressor,True
+rlmA,xylose + arabinose growth,45,64,activator,True
+rlmA,xylose + arabinose growth,105,110,activator,True
+rlmA,heat shock,37,64,activator,True
+rlmA,heat shock,23,36,repressor,True
+aegA,Anaerobic growth,80,94,activator,True
+aegA,M9,40,51,activator,True
+aegA,M9,109,117,activator,False
+aegA,xylose + arabinose growth,102,121,activator,True
