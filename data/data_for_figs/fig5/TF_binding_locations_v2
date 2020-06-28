@@ -3,57 +3,57 @@ bdcR,rep,88,109,NsrR,yes,Anaero,105
 ftsK,rep,107,119,LexA,no,Fe,100
 ykgE,act,12,33,FNR,yes,Anaero,74
 ykgE,rep,80,92,YieP,yes,Anaero,74
-groSL,act,120,130,,,arabinose,133
-aphA,act,23,43,,,xylara,103
-aphA,act,44,74,,,Anaero,103
-yedJ,rep,75,103,,,LB,85
+groSL,act,120,130,,yes,arabinose,133
+aphA,act,23,43,,yes,xylara,103
+aphA,act,44,74,,yes,Anaero,103
+yedJ,rep,75,103,,yes,LB,85
 rapA,rep,110,125,GlpR,yes,heat shock,105
-mscM,rep,141,155,,,Fe,150
-araAB,act,8,35,,,arabinose,102
-araAB,act,38,61,,,arabinose,102
-araAB,act,62,87,,,arabinose,102
-mscS,act,96,100,,,SS,104
-idnK,rep,67,82,YgbI,no,Anaero,103
-yjjJ,rep,91,122,marA,no,SS,126
-yjjJ,rep,149,159,,,M9,126
-yecE,rep,109,122,,,arabinose,114
-dusC,rep,71,86,,,arabinose,92
-fdhE,act,45,62,,,Anaero,103
-fdhE,act,70,83,,,Anaero,103
-ilvC,act,44,74,,,Fe,107
+mscM,rep,141,155,,yes,Fe,150
+araAB,act,8,35,,yes,arabinose,102
+araAB,act,38,61,,yes,arabinose,102
+araAB,act,62,87,,yes,arabinose,102
+mscS,act,96,100,,yes,SS,104
+idnK,rep,67,82,YgbI,yes,Anaero,103
+yjjJ,rep,91,122,marA,yes,SS,126
+yjjJ,rep,149,159,,yes,M9,126
+yecE,rep,109,122,,yes,arabinose,114
+dusC,rep,71,86,,yes,arabinose,92
+fdhE,act,45,62,,yes,Anaero,103
+fdhE,act,70,83,,yes,Anaero,103
+ilvC,act,44,74,,yes,Fe,107
 ilvC,rep,84,90,IlvY,yes,Fe,107
-rhlE,rep,99,109,GlpR,,M9,104
+rhlE,rep,99,109,GlpR,yes,M9,104
 maoP,act,33,58,HdfR,yes,Anaero,94
 maoP,act,54,87,PhoP,yes,Anaero,94
 maoP,rep,91,102,GlpR,yes,Sodium Salicylate,94
 leuABCD,rep,99,112,YgbI,yes,Anaero,104
 tff-rpsB-tsf,rep,107,113,GlpR,yes,heat shock,103
-rcsF,act,50,57,,,Fe,104
-ybiO,rep,114,120,,,LB,134
+rcsF,act,50,57,,yes,Fe,104
+ybiO,rep,114,120,,yes,LB,134
 tig,rep,100,116,GlpR,yes,M9,104
 znuCB,rep,101,113,Zur,no,metal,104
-ymgG,act,62,77,,,arabinose,103
-ymgG,rep,45,55,,,heat shock,103
-sdiA,rep,54,72,,,LB,60
-thiM,rep,104,120,,,M9,104
+ymgG,act,62,77,,yes,arabinose,103
+ymgG,rep,45,55,,yes,heat shock,103
+sdiA,rep,54,72,,yes,LB,60
+thiM,rep,104,120,,yes,M9,104
 uvrD,rep,141,147,LexA,no,Fe,103
-WaaA-coaD,act,63,83,,,arabinose,102
+WaaA-coaD,act,63,83,,yes,arabinose,102
 znuA,rep,147,158,Zur,no,metal,151
-pcm,rep,102,104,,,metal,104
-ycbZ,rep,81,90,,,Anaero,107
-fdoH,rep,81,84,,,Anaero,6
-aegA,rep,107,119,,,Anaero,105
+pcm,rep,102,104,,yes,metal,104
+ycbZ,rep,81,90,,yes,Anaero,107
+fdoH,rep,81,84,,yes,Anaero,6
+aegA,rep,107,119,,yes,Anaero,105
 araC,act,30,38,AraC,no,Anaero,83
 arcA,act,14,38,FNR,yes,Anaero,103
 arcA,rep,49,51,CpxR,yes,xylara,103
 dicC,rep,102,125,DicA,no,Fe,104
-dinJ,rep,120,128,,,heat shock,104
-yehS,act,111,119,,,Anaero,123
+dinJ,rep,120,128,,yes,heat shock,104
+yehS,act,111,119,,yes,Anaero,123
 rspA,rep,98,117,YdfH,no,Anaero,120
 rspA,act,58,97,CRP,no,Anaero,120
 rspA,act,58,97,DeoR,yes,M9,120
-tar,rep,144,149,,,Fe,146
-ybeZ,rep,137,149,,,Trehalose,144
+tar,rep,144,149,,yes,Fe,146
+ybeZ,rep,137,149,,yes,Trehalose,144
 phnA,rep,80,95,YciT,yes,M9,104
 ybjX,act,20,45,PhoP,yes,LB,103
 ybjX,act,74,90,PhoP,yes,LB,103
@@ -65,15 +65,15 @@ ompR,rep,114,128,IHF,no,Fe,104
 marR,rep,81,91,MarR,no,LB,94
 marR,rep,101,129,MarR,no,LB,94
 marR,31,50,act,MarA,no,LB,94
-ycgB,rep,17,33,,,xylara,104
+ycgB,rep,17,33,,yes,xylara,104
 yehU,act,57,87,FNR,yes,Anaero,107
-yehU,rep,60,74,,,xylara,107
+yehU,rep,60,74,,yes,xylara,107
 yeiQ,act,37,51,FNR,yes,Anaero,103
-yicI,act,8,15,,,Fe,121
-yicI,act,48,53,,,Fe,121
-yicI,act,74,91,,,Fe,121
-mutM,rep,92,106,,,LB,104
-ydjA,rep,103,111,,,heat shock,102
-dcm,rep,79,90,,,M9,149
-ybjL,rep,28,37,,,LB,104
-ybjL,rep,101,113,,,LB,104
+yicI,act,8,15,,yes,Fe,121
+yicI,act,48,53,,yes,Fe,121
+yicI,act,74,91,,yes,Fe,121
+mutM,rep,92,106,,yes,LB,104
+ydjA,rep,103,111,,yes,heat shock,102
+dcm,rep,79,90,,yes,M9,149
+ybjL,rep,28,37,,yes,LB,104
+ybjL,rep,101,113,,yes,LB,104
