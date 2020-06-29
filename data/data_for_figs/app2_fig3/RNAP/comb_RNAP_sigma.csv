@@ -1,0 +1,897 @@
+,gene,sites
+0,ykgE,49 50 51
+1,zupT,69 99
+2,araAB,
+3,mscK,77
+4,bdcR,81
+5,tar,92
+6,dicA,
+7,rapA,81
+8,arcB,80 81
+9,mscM,
+10,acuI,
+11,holC,76 77
+12,ompR,81
+13,adiY,
+14,dicB,
+15,tig,58 80 81
+16,yjjJ, 81 103
+17,xylF,
+18,ybdG,79 80 81
+19,yajL,84
+20,xapAB,
+21,ecnB,79 80 81
+22,yehT,80
+23,aphA,79 80
+24,rcsF,29 30 80 81
+25,ygdH,78 79 80
+26,mtgA,
+27,rlmA,27 28 82
+28,araC,59 60
+29,minC,79 80
+30,yecE,57 90
+31,rumB,
+32,yehS, 98  99 100
+33,yggW,75
+34,yfhG,78
+35,yicI,
+36,ymgG,
+37,coaA,
+38,sdiA,35 36 37
+39,yqhC,100 101
+40,aegA,29
+41,ybiP, 78 120 121
+42,dpiBA,67
+43,idnK,
+44,ynaI,80 81
+45,motAB-cheAW,
+46,rspA,
+47,yedJ,62 81
+48,ybjT, 78  79  80 102 117 118
+49,modE,
+50,yeiQ,
+51,znuCB,
+52,thiM,80 81
+53,dinJ,79 80 81
+54,hslU,82
+55,tff-rpsB-tsf, 7  8 78 79 80
+56,leuABCD,75 79
+57,thrLABC,77 78
+58,eco,
+59,sbcB,82 83
+60,mscL,78 79
+61,ygjP,67 68 69
+62,yedK,103 104 105
+63,ybiO, 93 110 111
+64,ygeR,80 81
+65,hicB,80 81
+66,dusC, 68  69  96 102
+67,yehU,45 52
+68,yjiY,
+69,uvrD,80
+70,pitA,
+71,ftsK,75 76 77
+72,ybeZ, 77 120
+73,cra,79 80
+74,fdhE,77
+75,yncD,
+76,WaaA-coaD,78
+77,znuA,128
+78,zapB,78 79
+79,ilvC,
+80,yagH,
+81,pcm,79 81
+82,iap, 78  79  80 124 125
+83,asnA,80 81 82
+84,ybjL,34 80 81
+85,poxB,78 79 80
+86,fdoH,
+87,maoP,50 70 71
+88,sdaB,
+89,mscS,79 80 81
+90,htrB,
+91,groSL,74 78
+92,ycgB,79 80 81
+93,dicC,80 81
+94,ycbZ, 66  83 118 119 120
+95,ydjA,54 77 78 79
+96,ydhO,102
+97,zupT,69 99
+98,dicA,
+99,acuI,
+100,ompR,81
+101,dicB,
+102,ykgE,49 50 51
+103,zupT,69
+104,araAB,16
+105,mscK,77
+106,bdcR,81 82
+107,tar,
+108,dicA,
+109,rapA,81 82
+110,arcB,80
+111,mscM,
+112,acuI,
+113,holC,
+114,ompR,
+115,adiY,
+116,dicB,
+117,tig,58 79 80 81
+118,yjjJ,103
+119,xylF,
+120,ybdG,80 81
+121,yajL,
+122,xapAB,
+123,ecnB,
+124,yehT,80
+125,aphA,79 80
+126,rcsF,80 81
+127,ygdH, 78  79  80 121
+128,mtgA,21
+129,rlmA,82 83
+130,araC,59 60
+131,minC,79 80
+132,yecE,90 91
+133,rumB,80 81
+134,yehS, 98  99 100
+135,yggW,57 58
+136,yfhG,122 123
+137,yicI,
+138,ymgG,
+139,coaA,25 78 79 80
+140,sdiA,36 37
+141,yqhC,100 101 102
+142,aegA,29
+143,ybiP,121
+144,dpiBA,
+145,idnK,
+146,ynaI,80 81
+147,motAB-cheAW,
+148,rspA,
+149,yedJ,62
+150,ybjT, 78  79  80 118
+151,modE,
+152,yeiQ,
+153,znuCB,78 80
+154,thiM,80 81
+155,dinJ,79 80 81
+156,hslU,
+157,tff-rpsB-tsf,78 79 80
+158,leuABCD, 79 108
+159,thrLABC, 77 105
+160,eco,
+161,sbcB,82 83
+162,mscL,78
+163,ygjP,67 68 69
+164,yedK,104
+165,ybiO,93 94
+166,ygeR,80 81 82
+167,hicB,
+168,dusC,67 68 69 96
+169,yehU,83 84
+170,yjiY,
+171,arcA,26 28
+172,uvrD,79 80
+173,pitA,78 79
+174,ftsK,75 76 77
+175,ybeZ,120
+176,dnaE,80
+177,cra,79 80
+178,fdhE,77 78 79
+179,xylA,
+180,yncD,83
+181,WaaA-coaD,78 79
+182,znuA,127 128
+183,zapB,78 79
+184,ilvC,83
+185,yagH,
+186,pcm,79 81
+187,iap, 79  80 124 125
+188,asnA,80 81 82
+189,ybjL,80
+190,poxB,
+191,fdoH,
+192,maoP,70 71
+193,sdaB,
+194,mscS,
+195,htrB,82
+196,groSL,109
+197,ycgB,
+198,dicC,80 81
+199,ycbZ, 82  83  84 118 119
+200,ydjA,77 78 79
+201,ydhO,102
+202,zupT,69
+203,dicA,
+204,acuI,
+205,ompR,
+206,dicB,
+207,tig,58 79 80 81
+208,rapA,81 82
+209,ygdH,78 79 80
+210,rumB,80 81
+211,yehS, 99 100
+212,ybjT, 78  79  80 118
+213,yeiQ,79 80
+214,sbcB,82
+215,xylA,
+216,pcm,79 81
+217,zupT,68 69
+218,araAB,16
+219,mscK,77 78
+220,bdcR,81
+221,tar,
+222,rapA,81 82
+223,arcB,80
+224,mscM,10
+225,acuI,
+226,holC,
+227,ompR,
+228,tig,58 79 80 81
+229,yjjJ,103
+230,xylF,
+231,ybdG,80 81
+232,ecnB,
+233,yehT,80
+234,aphA,79 80
+235,rcsF,80 81
+236,ygdH,78 79 80
+237,mtgA,
+238,rlmA,82 83
+239,araC,59 60
+240,minC,79 80
+241,yecE,90 91
+242,rumB,80 81
+243,yehS, 99 100
+244,yggW,
+245,yfhG,122 123 124
+246,sdiA,
+247,yqhC,100 101 102
+248,aegA,29
+249,ybiP, 79 120 121
+250,ynaI,80 81
+251,motAB-cheAW,
+252,rspA,
+253,yedJ,62
+254,ybjT, 78  79  80 118
+255,modE,
+256,yeiQ,79 80
+257,znuCB,78 79 80
+258,thiM,80 81
+259,dinJ,79 80 81
+260,tff-rpsB-tsf,78 79 80
+261,thrLABC,77
+262,sbcB,82
+263,ygjP,67 68 69
+264,ybiO,93 94
+265,ygeR,81 82
+266,hicB,80 81
+267,dusC,68 69 96
+268,yehU,83 84
+269,arcA,26
+270,uvrD,79 80
+271,ftsK,75 76 77
+272,ybeZ,120 121
+273,dnaE,80
+274,cra,79 80
+275,fdhE,77
+276,xylA,
+277,WaaA-coaD,77 78 79
+278,znuA,128
+279,zapB,78 79
+280,ilvC,83
+281,pcm,79 81
+282,iap, 79  80 124 125
+283,ybjL,33 34
+284,poxB,
+285,fdoH,
+286,maoP,70
+287,sdaB,
+288,mscS,79 81
+289,htrB,
+290,groSL,109
+291,dicC,80 81
+292,ycbZ, 83  84 119
+293,ydjA,77 78 79
+294,maoP,70 71
+295,ykgE,49 50 51
+296,yehU,83 84
+297,leuABCD,79
+298,yeiQ,79 80
+299,aphA,78 79 80
+300,fdhE,77 78
+301,arcA,26 79
+302,idnK,78 79
+303,ykgE,49 50 51
+304,zupT,69
+305,araAB,
+306,bdcR,81
+307,tar,
+308,rapA,81 82
+309,arcB,80
+310,mscM,10
+311,acuI,
+312,holC,
+313,ompR,
+314,tig,58 79 80 81
+315,yjjJ,103
+316,yajL,
+317,aphA,78 79 80
+318,ygdH,78 79 80
+319,rlmA,82 83
+320,araC,59 60
+321,minC,79 80
+322,yecE,90 91
+323,rumB,80 81
+324,yehS, 99 100
+325,yicI,
+326,coaA,78 79 80
+327,sdiA,36 37
+328,yqhC,100 101 102
+329,aegA,80
+330,ybiP,121
+331,idnK,78 79
+332,ynaI,80 81
+333,rspA,95
+334,yedJ,62
+335,ybjT, 78  79  80 118
+336,yeiQ,79 80
+337,znuCB,80
+338,thiM,80 81
+339,dinJ,80 81
+340,tff-rpsB-tsf,78 79 80
+341,leuABCD,79
+342,thrLABC,77
+343,ygjP,67 68 69
+344,yedK,
+345,dusC,68 69 96
+346,yehU,83 84
+347,arcA,26 79
+348,uvrD,80
+349,ftsK,76 77
+350,ybeZ,120 121
+351,cra,79 80
+352,fdhE,77 78
+353,yncD,
+354,znuA,128
+355,zapB,78 79
+356,pcm,79 81
+357,iap, 78  79  80 124 125
+358,asnA,80 81 82
+359,ybjL,
+360,fdoH,
+361,maoP,70 71
+362,mscS,
+363,groSL,109
+364,dicC,80 81
+365,ycbZ, 82  83  84 118 119 120
+366,mtgA,127
+367,yggW,
+368,modE,63
+369,ybiO,93 94
+370,yjiY,
+371,dnaE,80
+372,htrB,
+373,rapA,81 82
+374,arcB,80 81
+375,holC,
+376,adiY,
+377,xylF,
+378,ybdG,79 80 81
+379,ygdH,74 78 79 80
+380,mtgA,
+381,ymgG,80
+382,dpiBA,67
+383,znuCB,
+384,dinJ,79 80 81
+385,yedK,104 105
+386,dusC,68 69 96
+387,yncD,
+388,WaaA-coaD,78 79
+389,pcm,79 81
+390,ybjL,
+391,mscS,79 80 81
+392,htrB,
+393,dicC,80 81
+394,ykgE,49 50 51
+395,zupT,
+396,araAB,
+397,bdcR,81
+398,tar,
+399,rapA,81 82
+400,arcB,80 81
+401,mscM,
+402,acuI,
+403,tig,58 79 80 81
+404,ybdG,79 80 81
+405,yajL,
+406,ecnB,80 81
+407,yehT,80
+408,aphA,79 80
+409,rcsF,29 30 80 81
+410,ygdH,74 78 79 80
+411,mtgA,
+412,rlmA,27 28 82
+413,araC,59 60
+414,minC,79 80
+415,yecE,90 91
+416,yehS, 98  99 100
+417,yggW,
+418,yfhG,124
+419,yicI,
+420,sdiA,36 37
+421,yqhC,100 101 102
+422,aegA,
+423,ybiP, 56  79 120 121
+424,idnK,
+425,ynaI,80 81
+426,motAB-cheAW,
+427,rspA,95
+428,yedJ,62
+429,ybjT, 78  79  80 118
+430,znuCB,
+431,thiM,80 81
+432,dinJ,79 80 81
+433,tff-rpsB-tsf,78 79 80
+434,leuABCD,79
+435,thrLABC,77
+436,mscL,78 79
+437,ygjP,67 68 69
+438,yedK,104 105
+439,ybiO,93 94
+440,ygeR,81 82
+441,hicB,
+442,dusC,68 69 96
+443,yehU,83 84
+444,arcA,
+445,uvrD,79 80
+446,ftsK,75 76 77
+447,ybeZ,120 121
+448,dnaE,80
+449,cra,79 80
+450,fdhE,77 78
+451,xylA,
+452,yncD,
+453,WaaA-coaD,78 79
+454,znuA,128
+455,zapB,78 79
+456,ilvC,83 84
+457,pcm,79 81
+458,iap, 79  80 124 125
+459,asnA,80 81 82
+460,ybjL,
+461,poxB,78 79 80 81
+462,fdoH,
+463,maoP,70 71
+464,sdaB,
+465,mscS,79 80 81
+466,htrB,
+467,groSL,109
+468,dicC,80 81
+469,ycbZ, 66  83 119 120
+470,ykgE,49 50 51
+471,araAB,77 78 79
+472,dicA,
+473,rapA,81 82
+474,ompR,
+475,dicB,
+476,yajL,
+477,ygdH,78 79 80
+478,rlmA,27 82 83
+479,yfhG, 80 124
+480,sdiA,36 37
+481,znuCB,
+482,thiM,80 81
+483,dinJ,79 80 81
+484,leuABCD,79
+485,arcA,26
+486,ftsK,75 76 77
+487,ybeZ,120 121
+488,pcm,79 81
+489,groSL,109
+490,dicC,80 81
+491,ydjA,77 78 79
+492,ykgE,49 50 51
+493,araAB,77 78 79
+494,mscK,77
+495,bdcR,81
+496,tar,
+497,rapA,81 82
+498,arcB,80 81
+499,mscM,
+500,acuI,
+501,holC,
+502,ompR,
+503,tig,58 79 80 81
+504,yjjJ,103
+505,xylF,
+506,ybdG,80 81
+507,ecnB,
+508,yehT,80
+509,aphA,79 80
+510,rcsF,29 30 80 81
+511,ygdH,78 79 80
+512,rlmA,27 82 83
+513,araC,59 60
+514,minC,79 80
+515,yehS, 98  99 100
+516,yggW,
+517,yfhG, 80 124
+518,coaA,78 79 80
+519,sdiA,36 37
+520,yqhC,101 102
+521,aegA,
+522,ybiP,120 121
+523,idnK,
+524,ynaI,80 81
+525,motAB-cheAW,
+526,rspA,95 97
+527,yedJ,62
+528,ybjT, 78  79  80 118
+529,modE,63
+530,yeiQ,79 80
+531,znuCB,
+532,thiM,80 81
+533,dinJ,79 80 81
+534,leuABCD,79
+535,thrLABC,77
+536,sbcB,82
+537,mscL,78 79
+538,ygjP,67 68 69
+539,yedK,103 104 105
+540,ybiO,93 94
+541,ygeR,80 81 82
+542,hicB,
+543,dusC,68 69 96
+544,yehU,83 84
+545,arcA,26
+546,uvrD,79 80
+547,pitA,
+548,ftsK,75 76 77
+549,ybeZ,120 121
+550,dnaE,
+551,cra,79 80
+552,fdhE,77 78
+553,xylA,80
+554,WaaA-coaD,77 78 79
+555,znuA,127 128
+556,zapB,78 79
+557,ilvC,83 84
+558,pcm,79 81
+559,iap, 79  80 124 125
+560,asnA,80 81 82
+561,ybjL,34
+562,poxB,79 80
+563,fdoH,
+564,maoP,70 71
+565,sdaB,
+566,mscS,79 81
+567,htrB,
+568,groSL,109
+569,dicC,80 81
+570,ycbZ, 66  67  83  84 118 119 120
+571,ydjA,77 78 79
+572,ykgE,49 50 51
+573,zupT,
+574,araAB,77 78 79
+575,mscK,
+576,bdcR,81 82
+577,tar,
+578,dicA,
+579,rapA,81 82
+580,arcB,
+581,mscM,
+582,acuI,
+583,holC,
+584,ompR,
+585,adiY,
+586,dicB,
+587,tig,58 79 80 81
+588,yjjJ,103
+589,xylF,
+590,ybdG,80 81
+591,yajL,
+592,xapAB,
+593,ecnB,80 81
+594,yehT,80
+595,aphA,79 80
+596,rcsF,29 30 80 81
+597,ygdH, 78  79  80 121
+598,mtgA,
+599,rlmA,27 28 82 83
+600,araC,59 60
+601,minC,79 80
+602,yecE,90 91
+603,rumB,
+604,yehS, 98  99 100
+605,yggW,
+606,yfhG,
+607,yicI,
+608,ymgG,80
+609,coaA,78 79 80
+610,sdiA,37
+611,yqhC,100 101 102
+612,aegA,
+613,ybiP,120 121
+614,dpiBA,67
+615,idnK,
+616,ynaI,80 81
+617,motAB-cheAW,
+618,rspA,95
+619,yedJ,62
+620,ybjT, 78  79  80 117 118
+621,modE,63
+622,yeiQ,79 80
+623,znuCB,80
+624,thiM,80 81
+625,dinJ,79 80 81
+626,hslU,
+627,tff-rpsB-tsf,78 79 80
+628,leuABCD, 75  79 108
+629,thrLABC,77
+630,eco,
+631,sbcB,82
+632,mscL,78 79
+633,ygjP,67 68 69
+634,yedK,104 105
+635,ybiO,93 94
+636,ygeR,81 82
+637,hicB,81
+638,dusC,68 69 96
+639,yehU,83
+640,yjiY,
+641,arcA,26
+642,uvrD,80
+643,pitA,
+644,ybeZ,120 121
+645,dnaE,
+646,cra,79 80
+647,fdhE,77
+648,xylA,
+649,yncD,
+650,WaaA-coaD,78 79
+651,znuA,128
+652,zapB,78 79
+653,ilvC,83 84
+654,yagH,
+655,pcm,79 81
+656,iap, 79  80 124 125
+657,asnA,80 81 82
+658,ybjL,
+659,poxB,79 80
+660,fdoH,
+661,maoP,70 71
+662,sdaB,
+663,mscS,79 80 81
+664,htrB,
+665,groSL,109 110
+666,ycgB,79 80 81
+667,dicC,80 81
+668,ycbZ, 83  84 118 119 120
+669,ydjA,56 77 78 79
+670,ydhO,
+671,ykgE,49 50 51
+672,zupT,68 69
+673,araAB,
+674,mscK,77 78
+675,bdcR,81
+676,tar,
+677,yeh, 98  99 100
+678,dicA,
+679,rapA,81
+680,arcB,80 81
+681,mscM,
+682,acuI,
+683,holC,
+684,ompR,
+685,adiY,
+686,dicB,
+687,tig,80 81
+688,yjjJ,103
+689,xylF,
+690,ybdG,80 81
+691,yajL,
+692,xapAB,
+693,ecnB,80 81
+694,yehT, 80 103
+695,aphA,78 79 80
+696,rcsF,29
+697,ygdH, 78  79 121
+698,mtgA,
+699,rlmA,27 82
+700,araC,59 60
+701,minC,79 80
+702,yecE,57 58 90
+703,rumB,
+704,yggW,
+705,yfhG,
+706,yicI,
+707,ymgG,
+708,coaA,78 79 80
+709,sdiA,
+710,yqhC, 21 101
+711,aegA,
+712,ybiP, 56  79 120 121
+713,dpiBA,
+714,idnK,79
+715,ynaI,80
+716,motAB-cheAW,
+717,rspA,95
+718,yedJ,62
+719,ybjT,78 79 80
+720,modE,
+721,yeiQ,
+722,znuCB,
+723,thiM,80 81
+724,dinJ,79 80 81
+725,hslU,
+726,tff-rpsB-tsf,78 79 80
+727,leuABCD,75 79
+728,thrLABC,77
+729,eco,
+730,sbcB,82
+731,mscL,77 78 79
+732,ygjP,67 68
+733,yedK,103 104 105
+734,ybiO, 93 110
+735,ygeR,81
+736,hicB,80 81
+737,dusC,68 96
+738,yehU,
+739,yjiY,
+740,arcA,
+741,uvrD,
+742,pitA,78
+743,ftsK,75 76 77
+744,ybeZ,120
+745,dnaE,80
+746,cra,79 80
+747,fdhE,77 78
+748,xylA,
+749,yncD,
+750,WaaA-coaD,78
+751,znuA,
+752,zapB,78 79
+753,ilvC,83
+754,yagH,
+755,pcm,79
+756,iap, 79 124 125
+757,asnA,80 81
+758,ybjL,33
+759,poxB,78 79 80
+760,fdoH,
+761,maoP,49
+762,sdaB,
+763,msc,79 80 81
+764,htrB,
+765,groSL,109
+766,ycgB,79 80 81
+767,dicC,80 81
+768,ycbZ, 66 119 120
+769,ydjA,78
+770,ydhO,
+771,ykgE,49 50 51
+772,zupT,
+773,mscK,
+774,bdcR,81
+775,tar,92
+776,rapA,81
+777,arcB,
+778,mscM,
+779,holC,
+780,ompR,
+781,adiY,
+782,dicB,
+783,tig,58 80
+784,yjjJ, 81 103
+785,xylF,
+786,ybdG,
+787,xapAB,
+788,ecnB,
+789,rcsF,
+790,ygdH,78 79 80
+791,mtgA,
+792,rlmA,27 28 82
+793,araC,59 60
+794,minC,
+795,yecE,57 58 90
+796,rumB,
+797,yehS, 98  99 100
+798,yggW,
+799,yfhG,122
+800,yicI,
+801,ymgG,
+802,sdiA,
+803,idnK,
+804,ynaI,
+805,motAB-cheAW,
+806,yedJ,
+807,ybjT, 78  79  80 102
+808,yeiQ,
+809,znuCB,
+810,thiM,80 81
+811,dinJ,
+812,tff-rpsB-tsf,79
+813,leuABCD,
+814,thrLABC,
+815,eco,
+816,sbcB,82 83
+817,mscL,78 79
+818,yedK,103 104 105
+819,ygeR,81 82
+820,hicB,
+821,arcA,
+822,ykgE,49 50 51
+823,zupT,69 99
+824,araAB,
+825,mscK,
+826,bdcR,81
+827,tar,
+828,rapA,81 82
+829,arcB,80 81
+830,mscM,
+831,acuI,
+832,holC,
+833,ompR,
+834,tig,58 80 81
+835,yjjJ,103
+836,yajL,
+837,ecnB,81
+838,yehT, 80 103
+839,aphA,79 80
+840,rcsF,29 30 80 81
+841,ygdH,78 79 80
+842,mtgA,
+843,rlmA,27 82 83
+844,araC,59 60
+845,minC,79 80
+846,yecE,90 91
+847,yehS, 98  99 100
+848,yfhG, 78  80 122 123 124
+849,yicI,
+850,coaA,78 79 80
+851,sdiA,36
+852,yqhC,100 101 102
+853,ybiP, 79 120 121
+854,idnK,
+855,ynaI,80 81
+856,motAB-cheAW,
+857,rspA,
+858,yedJ,62
+859,ybjT,78 79 80
+860,znuCB,
+861,thiM,80 81
+862,dinJ,79 80 81
+863,tff-rpsB-tsf,78 79 80
+864,leuABCD,79
+865,thrLABC,77
+866,ygjP,67 68 69
+867,yedK,104 105
+868,ybiO,93 94
+869,dusC,68 69
+870,arcA,26
+871,uvrD,79 80
+872,pitA,
+873,ftsK,75 76 77
+874,ybeZ,120 121
+875,cra,79 80
+876,fdhE,78
+877,xylA,
+878,znuA,128
+879,zapB,78 79
+880,ilvC,83 84
+881,pcm,79 81
+882,iap, 79  80 124 125
+883,asnA,80 81 82
+884,ybjL,80
+885,poxB,78 79 80
+886,fdoH,
+887,maoP,69 70 71
+888,mscS,79 80 81
+889,groSL,109
+890,dicC,80 81
+891,ycbZ, 66  83  84 118 119 120
+892,ydjA,77 78 79
+893,lac,39
+894,dgoR,29
+895,marR,69
