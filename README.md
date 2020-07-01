@@ -57,8 +57,6 @@ Contains prior data files, such as designed sequences, negative controls, or out
 ### reqseq
 Python module which can be easily executed to perform your own analyses.
 
-### figures
-Contains all generated figures.
 
 ### wiki_img
 Contain all figures which are shown in the Wiki.
