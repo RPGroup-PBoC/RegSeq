@@ -25,3 +25,6 @@ Folder that contains all data acquired from sequencing.
 
 ## wild_type
 Folder that contains wild_type genomes.
+
+## Information_footprints
+Contains all information footprints computed in the analysis of the RegSeq experiment.
