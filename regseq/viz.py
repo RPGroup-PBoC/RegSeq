@@ -61,7 +61,12 @@ def footprint(
         TSS = int(genedf.loc[genedf["name"] == gene, "start_site"].values)
         x = x + TSS
         
-    emat = np.loadtxt(matrix)
+    try :
+        emat = np.loadtxt(matrix)
+    except ValueError:
+        emat = np.loadtxt(matrix, skiprows=1)[:, 1]
+        x = np.arange(0, len(emat)-2*cut)
+
     smoothinfo, shiftcolors = information.footprint(emat, windowsize=windowsize)[:2]
     fig,ax = plt.subplots(figsize=(10,2))
     ax.set_ylabel('Information (bits)',fontname='DejaVu Sans',fontsize=12)

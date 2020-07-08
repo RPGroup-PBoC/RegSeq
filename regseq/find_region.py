@@ -325,3 +325,149 @@ def merge_growths(df, windowsize, info_length=160):
                 counter = counter + 1
 
     return processed_df
+
+
+
+def RNAP_sites(files, growth_conditions, alldf_RNAP, thresh=0.00025, windowsize=15):
+    """Find RNAP binding sites in information footprints.
+    
+    Parameters
+    ----------
+    - files : list of files containing information footprints
+    - growth_conditions : list of used growth conditions
+    - alldf_RNAP: List of known RNAP binding sites for genes
+    - thresh : Threshold used to identify significant sites
+    - windowsize : number of bp to average over when smooting the information footprint
+    """
+    counter = 0
+    outdf = pd.DataFrame(columns=["gene", "growth", "feat_num", "start", "end", "type"])
+    for name in files:
+        try:
+            # Get gene name
+            noleader = name.split("/")[-1]
+
+            for x in growth_conditions:
+                if (
+                    x in noleader
+                    and "500cAMP" not in x
+                    and noleader.split("dataset")[0] != ""
+                ):
+                    growth = x
+                    if (
+                        growth == "acetate"
+                        or growth == "42"
+                        or growth == "fructose"
+                        or growth == "_comb"
+                    ):
+                        gene = noleader.split("dataset")[0]
+                    else:
+                        gene = noleader.split(growth)[0]
+            gene = gene.split("_")[-1]
+
+            # load in information footprint
+            df = pd.read_csv(name, delim_whitespace=True)
+            length_info = len(df["info"])
+            em = np.abs(np.array(list(df["info"])))
+            em_noabs = np.array(list(df["info"]))
+
+            # invert information values.
+            em_noabs = em_noabs * -1
+
+            # split the information footprint into two groups of repressor like and activator like bases.
+            pos_mat = np.zeros(length_info)
+            neg_mat = np.zeros(length_info)
+            for q in range(len(em_noabs)):
+                if em_noabs[q] > 0:
+                    pos_mat[q] = np.abs(em_noabs[q])
+                else:
+                    neg_mat[q] = np.abs(em_noabs[q])
+
+            # sum over 15 base pair windows
+            summedarr2 = do_sum2(pos_mat)
+            summedarr2_neg = do_sum2(neg_mat)
+
+            # initialize array where we will store whether or not the average outcome beats threshold.
+            is_thresh = np.zeros(length_info - windowsize)
+            is_thresh_neg = np.zeros(length_info - windowsize)
+            for i in range(length_info - windowsize):
+                is_thresh[i] = summedarr2[i] > thresh * windowsize
+                is_thresh_neg[i] = summedarr2_neg[i] > thresh * windowsize
+                is_thresh_neg[i] = is_thresh_neg[i] * -1
+
+            outdf_temp = select_region(is_thresh, gene, growth)
+            outdf_temp2 = select_region(is_thresh_neg, gene, growth)
+            for i, row in outdf_temp.iterrows():
+                start = row["start"]
+                end = row["end"]
+                newstart, newend = find_edges(pos_mat, start, end)
+                outdf.loc[
+                    counter, ["gene", "growth", "feat_num", "start", "end", "type"]
+                ] = [
+                    row["gene"],
+                    growth,
+                    row["feat_num"],
+                    newstart,
+                    newend,
+                    row["type"],
+                ]
+                counter = counter + 1
+            for i, row in outdf_temp2.iterrows():
+                start = row["start"]
+                end = row["end"]
+                newstart, newend = find_edges(neg_mat, start, end)
+                outdf.loc[
+                    counter, ["gene", "growth", "feat_num", "start", "end", "type"]
+                ] = [
+                    row["gene"],
+                    growth,
+                    row["feat_num"],
+                    newstart,
+                    newend,
+                    row["type"],
+                ]
+                counter = counter + 1
+        except Exception as e:
+            print(e)
+            
+        
+    outdf["RNAP"] = outdf.apply(find_RNAP, axis=1, args=(alldf_RNAP,))
+    outdf.to_csv("all_features_auto20_for_check_split_" + str(thresh) + ".csv", index=False)
+    z = merge_growths(outdf, 15)
+    z["contains RNAP"] = z.apply(find_RNAP, axis=1, args=(alldf_RNAP,))
+    z.to_csv(
+        "all_features_auto_merged_20_scaled_for_RNAP_check_" + str(thresh) + ".csv",
+        index=False
+    )
+    
+    
+def concat_RNAP_sites(df):
+    """Concatenate all binding sites from DataFrame into list."""
+    outsites = []
+    for i, row in df.iterrows():
+        q = row["sites"]
+        q2 = q.split()
+        q3 = [int(x) for x in q2]
+        outsites = outsites + q3
+    return list(set(outsites))
+
+
+def find_RNAP(df, alldf_RNAP):
+    """Identify if a given putative regulatory region contains an RNAP binding site.
+    To do this we cross reference the location of the putative binding site with a list of identified
+    RNAP sites."""
+    gene = df["gene"]
+    try:
+        RNAP_sites = concat_RNAP_sites(alldf_RNAP[alldf_RNAP["gene"] == gene])
+    except:
+        RNAP_sites = []
+    is_RNAP = False
+    start = df["start"]
+    end = df["end"]
+    for RNAP in RNAP_sites:
+        """Our RNAP sites are listed based on the location of the RNAP minus 35. We check whether that
+        or the minus 10 region (which is why we have to possible regions), exist in the region."""
+        if ((start - 2 < RNAP) and (end > RNAP + 5)) or (
+            (start < RNAP + 29) and (end > RNAP + 21)
+        ):
+            is_RNAP = True
+    return is_RNAP
