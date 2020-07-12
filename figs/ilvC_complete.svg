@@ -20,7 +20,7 @@
    sodipodi:docname="ilvC_complete.svg"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6"><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath54"><path
@@ -128,13 +128,13 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="1134"
+     inkscape:window-height="873"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="0.49686979"
-     inkscape:cx="499.41562"
-     inkscape:cy="167.23813"
+     inkscape:zoom="1.40536"
+     inkscape:cx="643.14098"
+     inkscape:cy="224.77059"
      inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="0"
@@ -159,7 +159,8 @@
          x="0 1.9309212 3.878346 7.8474617"
          y="0"
          sodipodi:role="line"
-         id="tspan20">ilvC</tspan><tspan
+         id="tspan20"
+         style="font-style:italic">ilvC</tspan><tspan
          x="44.501957 46.474136 48.421562 52.390678"
          y="14.003305"
          sodipodi:role="line"

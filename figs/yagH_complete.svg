@@ -19,7 +19,7 @@
    sodipodi:docname="yagH_complete.svg"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6" /><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -29,15 +29,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="1165"
+     inkscape:window-height="798"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="0.65185594"
-     inkscape:cx="389.375"
-     inkscape:cy="72.1875"
-     inkscape:window-x="65"
-     inkscape:window-y="24"
+     inkscape:zoom="2.6074238"
+     inkscape:cx="632.5408"
+     inkscape:cy="46.482693"
+     inkscape:window-x="75"
+     inkscape:window-y="34"
      inkscape:window-maximized="0"
      inkscape:current-layer="g10" /><g
      id="g10"
@@ -60,7 +60,8 @@
          x="0 4.0800376 8.2553625 13.0977"
          y="0"
          sodipodi:role="line"
-         id="tspan20">yagH</tspan></text>
+         id="tspan20"
+         style="font-style:italic">yagH</tspan></text>
 <path
        d="m 438.788,23.574 165.493,0 0,14.782 -165.493,0 0,-14.782 z"
        style="fill:#f0d4c8;fill-opacity:1;fill-rule:nonzero;stroke:none"

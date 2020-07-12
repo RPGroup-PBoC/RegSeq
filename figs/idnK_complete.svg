@@ -20,7 +20,7 @@
    sodipodi:docname="idnK_complete.svg"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6"><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath52"><path
@@ -206,7 +206,8 @@
          x="0 2.027025 6.9126749 11.720363"
          y="0"
          sodipodi:role="line"
-         id="tspan20">idnK</tspan></text>
+         id="tspan20"
+         style="font-style:italic">idnK</tspan></text>
 <path
        d="m 436.758,176.512 167.818,0 0,13.959 -167.818,0 0,-13.959 z"
        style="fill:#f0d4c8;fill-opacity:1;fill-rule:nonzero;stroke:none"

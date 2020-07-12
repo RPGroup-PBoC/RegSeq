@@ -20,7 +20,7 @@
    sodipodi:docname="tff_complete.svg"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6"><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath30"><path
@@ -190,15 +190,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="923"
+     inkscape:window-height="597"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="0.62818519"
-     inkscape:cx="389.375"
-     inkscape:cy="72.1875"
-     inkscape:window-x="65"
-     inkscape:window-y="24"
+     inkscape:zoom="1.776776"
+     inkscape:cx="557.29254"
+     inkscape:cy="80.306861"
+     inkscape:window-x="75"
+     inkscape:window-y="34"
      inkscape:window-maximized="0"
      inkscape:current-layer="g10" /><g
      id="g10"
@@ -218,10 +218,10 @@
        transform="matrix(1,0,0,-1,517.5537,85.6655)"
        style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.66250038px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#221f1f;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="text18"><tspan
-         x="0 2.8672874"
-         y="0"
          sodipodi:role="line"
-         id="tspan20">tf</tspan><tspan
+         id="tspan20"
+         x="0"
+         y="0" /><tspan
          x="70.001663 75.597641 77.641991 82.570953"
          y="15.999638"
          sodipodi:role="line"
@@ -1068,4 +1068,19 @@
          y="0"
          sodipodi:role="line"
          id="tspan766">-50</tspan></text>
+<text
+       y="-97.078979"
+       x="517.01282"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.66250038px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#221f1f;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text18-3"
+       transform="scale(1,-1)"><tspan
+         sodipodi:role="line"
+         id="tspan20-6"
+         x="517.01282"
+         y="-97.078979" /><tspan
+         sodipodi:role="line"
+         id="tspan22-7"
+         x="517.01282"
+         y="-86.250854"
+         style="font-style:italic">tff</tspan></text>
 </g></svg>

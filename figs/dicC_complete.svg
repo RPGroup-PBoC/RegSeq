@@ -20,7 +20,7 @@
    sodipodi:docname="dicC_complete.svg"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6"><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath30"><path
@@ -295,13 +295,13 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="1578"
+     inkscape:window-height="855"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="0.64457263"
-     inkscape:cx="389.375"
-     inkscape:cy="72.1875"
+     inkscape:zoom="2.5782905"
+     inkscape:cx="596.33613"
+     inkscape:cy="125.68528"
      inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="0"
@@ -323,14 +323,11 @@
        transform="matrix(1,0,0,-1,515.5537,85.6655)"
        style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.66250038px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#221f1f;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="text18"><tspan
-         x="0 4.8856502 6.9126749 10.793475"
+         sodipodi:role="line"
+         id="tspan22"
+         x="0"
          y="0"
-         sodipodi:role="line"
-         id="tspan20">dicC</tspan><tspan
-         x="71.335686 76.221336 78.24836 82.129166"
-         y="16.666651"
-         sodipodi:role="line"
-         id="tspan22">dicA</tspan></text>
+         style="font-style:italic">dicC</tspan></text>
 <path
        d="m 20.946,21.41 290.761,0 0,70.814 -290.761,0 0,-70.814 z"
        style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1434,4 +1431,15 @@
              d="m 0,0 0,0.727 -2.601,0 0,0.301 4.178,0 0,-1.163 c -0.614,-0.1 -1.292,-0.176 -2.033,-0.227 -0.74,-0.052 -1.53,-0.077 -2.371,-0.077 -1.84,0 -3.28,0.123 -4.319,0.371 -1.038,0.247 -1.557,0.591 -1.557,1.032 0,0.443 0.519,0.788 1.557,1.035 1.039,0.248 2.479,0.371 4.319,0.371 0.766,0 1.495,-0.022 2.186,-0.065 C 0.051,2.261 0.688,2.197 1.271,2.112 l 0,-0.39 C 0.683,1.837 0.058,1.924 -0.605,1.982 -1.268,2.04 -1.964,2.069 -2.694,2.069 -4.135,2.069 -5.218,1.977 -5.94,1.792 -6.662,1.606 -7.022,1.331 -7.022,0.964 c 0,-0.365 0.36,-0.64 1.082,-0.825 0.722,-0.185 1.805,-0.277 3.246,-0.277 0.562,0 1.063,0.011 1.504,0.034 C -0.748,-0.082 -0.352,-0.047 0,0"
              style="fill:#fbb216;fill-opacity:1;fill-rule:nonzero;stroke:none"
              id="path1066"
-             inkscape:connector-curvature="0" /></g></g></g></g></svg>
+             inkscape:connector-curvature="0" /></g></g></g><text
+       y="-67.406723"
+       x="588.61682"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.66250038px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#221f1f;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text18-3"
+       transform="scale(1,-1)"><tspan
+         sodipodi:role="line"
+         id="tspan22-6"
+         x="588.61682"
+         y="-67.406723"
+         style="font-style:normal">DicA</tspan></text>
+</g></svg>

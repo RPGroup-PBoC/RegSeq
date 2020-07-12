@@ -19,7 +19,7 @@
    sodipodi:docname="pitA_complete.svg"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6" /><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -29,15 +29,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="1314"
+     inkscape:window-height="913"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="0.64457263"
-     inkscape:cx="389.375"
-     inkscape:cy="72.1875"
-     inkscape:window-x="65"
-     inkscape:window-y="24"
+     inkscape:zoom="1.8231267"
+     inkscape:cx="576.15998"
+     inkscape:cy="109.48794"
+     inkscape:window-x="75"
+     inkscape:window-y="34"
      inkscape:window-maximized="0"
      inkscape:current-layer="g10" /><g
      id="g10"
@@ -60,7 +60,8 @@
          x="0 4.9289627 6.9559875 9.8232746"
          y="0"
          sodipodi:role="line"
-         id="tspan20">pitA</tspan></text>
+         id="tspan20"
+         style="font-style:italic">pitA</tspan></text>
 <path
        d="m 438.788,23.574 165.493,0 0,14.782 -165.493,0 0,-14.782 z"
        style="fill:#f0d4c8;fill-opacity:1;fill-rule:nonzero;stroke:none"

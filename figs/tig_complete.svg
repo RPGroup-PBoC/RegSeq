@@ -20,7 +20,7 @@
    sodipodi:docname="tig_complete.svg"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6"><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath58"><path
@@ -75,13 +75,13 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="1425"
+     inkscape:window-height="739"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="0.63000602"
-     inkscape:cx="389.375"
-     inkscape:cy="72.1875"
+     inkscape:zoom="2.5200241"
+     inkscape:cx="602.61372"
+     inkscape:cy="59.303467"
      inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="0"
@@ -185,7 +185,8 @@
          x="0 2.8923442 4.9370828"
          y="0"
          sodipodi:role="line"
-         id="tspan78">tig</tspan><tspan
+         id="tspan78"
+         style="font-style:italic">tig</tspan><tspan
          x="59.498405 65.14328 67.205498 72.177528"
          y="13.002442"
          sodipodi:role="line"

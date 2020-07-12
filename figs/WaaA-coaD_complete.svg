@@ -20,7 +20,7 @@
    sodipodi:docname="WaaA-coaD_complete.svg"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6"><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath342"><path
@@ -98,13 +98,13 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="1181"
+     inkscape:window-height="808"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="0.7174057"
-     inkscape:cx="389.375"
-     inkscape:cy="72.1875"
+     inkscape:zoom="2.8696228"
+     inkscape:cx="569.78249"
+     inkscape:cy="70.443839"
      inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="0"
@@ -1452,7 +1452,8 @@
          x="0 6.4386754 10.655308 14.87194 20.225838 22.911535 26.830729 31.633492 35.850124"
          y="0"
          sodipodi:role="line"
-         id="tspan830">waaA-coaD</tspan></text>
+         id="tspan830"
+         style="font-style:italic">waaA-coaD</tspan></text>
 <path
        d="m 437.092,24.074 167.13,0 0,14.929 -167.13,0 0,-14.929 z"
        style="fill:#f0d4c8;fill-opacity:1;fill-rule:nonzero;stroke:none"
