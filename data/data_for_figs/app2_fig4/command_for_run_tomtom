@@ -1,5 +1,0 @@
-#we use tomtom (run from the command line) to perform the analysis. 
-#tomtom only saves results below a certain p-val, and we want to list all results so we pass the option -thresh .99999999
-
-tomtom tf_targets_sortseq.txt tf_targets_RegSeq.txt -thresh .9999999
-

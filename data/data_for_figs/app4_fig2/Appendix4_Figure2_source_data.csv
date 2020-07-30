@@ -1,0 +1,32 @@
+The overall percentages that each architecture comprises of the Reg-Seq dataset or RegulonDB,
+RegSeq,
+architecture (num activator num repressor),percentage of total RegSeq promoters (excluding promoters with no RNAP found)
+(0 0),0.414634146
+(0 1),0.256098
+(1 0),0.121951
+(1 1),0.036585
+(0 2),0.04878
+(2 0),0.02439
+(1 2),0.036585
+(2 1),0.02439
+(2 2),0.012195
+(3 0),0.012195
+(0 3),0.012195
+(0 4),0
+,
+,
+RegulonDB,
+(0 0),3.85E-03
+(0 1),2.60E-01
+(1 0),2.54E-01
+(1 1),1.02E-01
+(0 2),6.94E-02
+(2 0),4.05E-02
+(1 2),5.59E-02
+(2 1),5.39E-02
+(2 2),1.16E-02
+(3 0),5.78E-03
+(0 3),2.70E-02
+(0 4),0.00E+00
+,
+Percentages do not sum to zero as more complicated architectures are not included in figure.,
