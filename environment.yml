@@ -5,7 +5,7 @@ dependencies:
   - python=3.6.9
   - numpy
   - pandas
-  - Biopython
+  - Biopython=1.77
   - matplotlib
   - seaborn
   - scipy
