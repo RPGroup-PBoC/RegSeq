@@ -323,7 +323,7 @@ def findgene(s, df):
     maxind = np.argmin(np.array(tempdf))
     genename = df.loc[maxind, 'name']
     return genename
-
+ßß
 
 def findgene_nmut(s, df):
     """Return the number equal bp of sequence compared to wt.

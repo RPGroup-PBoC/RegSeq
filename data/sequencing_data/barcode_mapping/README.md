@@ -1,0 +1,1 @@
+# Folder to store barcode mapping dictionaries
