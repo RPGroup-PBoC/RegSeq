@@ -9,7 +9,7 @@ dependencies:
   - backcall=0.2.0
   - backports=1.1
   - backports.functools_lru_cache=1.6.4
-  - biopython=1.79
+  - biopython=1.77
   - ca-certificates=2022.6.15
   - certifi=2021.5.30
   - cycler=0.11.0
