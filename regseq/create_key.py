@@ -15,9 +15,9 @@ def check_length(
     """
     Check length of sequences.
     
-    Return sequences that have 24 or 20 trailing bp, and have 20 bp at the end. Sequences
+    Return sequences that have 24 or 20 trailing bp, and have 20 bp at the start. Sequences
     with varying length have insertions and deletions and are filtered out.
-    Paramters:
+    Parameters:
     ----------
     input_file_name : str
         file name for the fastq sequencing
@@ -28,7 +28,7 @@ def check_length(
     trailing_lengths : array-like, default np.array([24, 20])
         Numpy array containing possible number of trailing bp after barcode
     starting_length : int, default 20
-        Number of bp preceeding the sequence of interest
+        Number of bp preceding the sequence of interest
     
     Return
     ------
@@ -51,10 +51,10 @@ def check_length(
         raise RuntimeError("`optimal_lengths` has to be a numpy array or list.")
         
     # Load data
-    df = pd.io.parsers.read_csv(input_file_name,delim_whitespace=True,header=None)
+    df = pd.io.parsers.read_csv(input_file_name, delim_whitespace=True, header=None)
 
     #Select only rows with sequences (fastq format).
-    df = df.loc[1::4,0]
+    df = df.loc[1::4, 0]
 
     # Find all lengths
     lengths = df.apply(len)
@@ -67,11 +67,11 @@ def check_length(
     # Find all sequences with correct length.
     goodlength = (df.apply(len) == lengthsmax)
     df = df.loc[goodlength]
-    ind = np.where(optimal_lengths ==lengthsmax)[0]
+    ind = np.where(optimal_lengths == lengthsmax)[0]
     if len(ind) == 0:
         raise ValueError('Sequence length not in the list of required lengths.')
     else:
-        sliceddf = df.str.slice(starting_length,-trailing_lengths[ind[0]])
+        sliceddf = df.str.slice(starting_length, -trailing_lengths[ind[0]])
         
     return sliceddf
 
@@ -223,9 +223,9 @@ def detect_genes(df, wildtypefile):
     
 def key_barcode_sequence(data_file, output_path, wildtypefile='../data/prior_designs/wtsequences.csv', genes=None): 
     """
-    Go through functions to create unique map of barcode to sequence and gene in wiltype.
+    Go through functions to create unique map of barcode to sequence and gene in wildtype.
     
-    The sequences are checked for correct lengths, to exlude insertion and deletion events.
+    The sequences are checked for correct lengths, to exclude insertion and deletion events.
     Then, created sequences and barcodes are extracted (removing overhangs) and unique barcode/
     sequence maps are found. Possible sequencing errors that lead to false negatives in uniqueness
     are considered. Sequences are compared to gene sequences in wildtype.
@@ -283,7 +283,7 @@ def findmaxseq(df):
     Parameters
     -----------
     df : Pandas.DataFrame
-        Dataframe with colums `seq`: sequences, and `count`: sequence abundance.
+        Dataframe with columns `seq`: sequences, and `count`: sequence abundance.
     
     Returns
     -------
