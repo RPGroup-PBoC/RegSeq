@@ -1,4 +1,3 @@
 # Sequence processing scripts
 
-In this folder you can find bash scripts that are used to process and analyze sequencing data. Using bash scripts can be beneficial when handling large datasets.
-You can find explanatory notebooks in the `notebooks` folder in this repository, that go through the workflow in Python.
+In this folder you can find bash and Python scripts that are used to process sequencing data and prepare it for downstream analysis. These scripts need to be run before data can be used in the notebooks.

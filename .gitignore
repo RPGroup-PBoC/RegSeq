@@ -11,3 +11,5 @@
 #Ignore files generated when installing package
 RegSeq.egg-info/
 regseq.egg-info/
+
+data/*

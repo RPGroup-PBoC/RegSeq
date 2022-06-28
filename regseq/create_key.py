@@ -51,10 +51,10 @@ def check_length(
         raise RuntimeError("`optimal_lengths` has to be a numpy array or list.")
         
     # Load data
-    df = pd.io.parsers.read_csv(input_file_name, delim_whitespace=True, header=None)
-
+    df = pd.read_csv(input_file_name)#, delim_whitespace=True, header=None)
+    print(df)
     #Select only rows with sequences (fastq format).
-    df = df.loc[1::4, 0]
+    #df = df.loc[1::4, 0]
 
     # Find all lengths
     lengths = df.apply(len)
