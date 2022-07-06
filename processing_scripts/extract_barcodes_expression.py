@@ -12,7 +12,6 @@ barcode_dict = {
 
 # Arrays to store barcodes
 barcode1_arr = []
-barcode2_arr = []
 barcode_promoter_arr = []
 
 # Find project parental directory
@@ -28,30 +27,23 @@ with open(f'{homedir}/data/sequencing_data/processed_sequencing/{filename}') as 
             break
         ind = line.find("TATTAGGCTTCTCCTCAGCG")
 
-        if ind > 0 :
-            if (ind > 3) and (ind < 76):
-                # Identify barcodes
-                barcode1 = line[ind-4:ind]
+        if ind == 4 :
+            # Identify barcodes
+            barcode1 = line[0:4]
 
-                # Map barcode to condition
-                if barcode1 in barcode_dict.keys():
-                    barcode1_arr.append(barcode_dict[barcode1])
-                else:
-                    barcode1_arr.append("None")
-                
+            # Map barcode to condition
+            if barcode1 in barcode_dict.keys():
+                barcode1_arr.append(barcode_dict[barcode1])
             else:
                 barcode1_arr.append("None")
-                barcode2_arr.append("None")
+        else:
+            barcode1_arr.append("None")
             
-            ind_prom_bc = line.find("TTTTACATGACTGACTGA")
-            if ind_prom_bc > 0:
-                if ind_prom_bc < 80-18:
-                    barcode_promoter_arr.append(line[ind_prom_bc+18:ind_prom_bc+38])
-                else:
-                    barcode_promoter_arr.append("None")
-                
-            else:
-                barcode_promoter_arr.append("None")
+        ind_prom_bc = line.find("TCACTGGCCGTCGTTTTACATGACTGACTGA")
+        if ind_prom_bc == 28:
+            barcode_promoter_arr.append(line[59:79])
+        else:
+            barcode_promoter_arr.append("None")
 
 
 pd.DataFrame(data={
