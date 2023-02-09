@@ -6,8 +6,8 @@ RESULT=${PARENT_PATH##*/}
 
 # Go back path
 PARENT_PATH=${PARENT_PATH%/*}
-IN=$PARENT_PATH"/sequencing_data/filtered_sequencing/mapping_merged.fastq"
-OUT=$PARENT_PATH"/mapping_sequences"
+IN=$PARENT_PATH"/data/sequencing_data/filtered_sequencing/mapping_merged.fastq"
+OUT=$PARENT_PATH"/data/sequencing_data/mapping_sequences"
 
 rm -rf $OUT
 mkdir $OUT
