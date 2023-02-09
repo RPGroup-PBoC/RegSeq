@@ -12,4 +12,6 @@ OUT_PATH=$PARENT_PATH"/data/sequencing_data/filtered_sequencing/"$OUT"_barcodes.
 
 HTML=$PARENT_PATH"/data/sequencing_data/filtered_sequencing/mapping_fastp_report.html"
 JSON=$PARENT_PATH"/data/sequencing_data/filtered_sequencing/mapping_fastp_report.json"
+
+source activate fastp
 fastp -i $IN_PATH -o $OUT_PATH  --verbose --html $HTML --json $JSON --report_title $html_report --thread '12'  --average_qual '30'  --n_base_limit '0' --unqualified_percent_limit '10'
