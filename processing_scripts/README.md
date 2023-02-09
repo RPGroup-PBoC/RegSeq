@@ -1,3 +1,5 @@
 # Sequence processing scripts
 
-In this folder you can find bash and Python scripts that are used to process sequencing data and prepare it for downstream analysis. These scripts need to be run before data can be used in the notebooks.
+In this folder you can find bash scripts that perform the processing of sequence data and put it in the format needed to perform MCMC step to infer information footprints.
+To perform quality filtering on sequence files, we use [`fastp`](https://github.com/OpenGene/fastp). Follow the installation instructions and create a conda environment called `fastp`.
+
