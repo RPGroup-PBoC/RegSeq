@@ -15,6 +15,10 @@ To reproduce this work, you will need to use the RegSeq module -- a homegrown Py
 
 `conda env create -f environment.yml`
 
+If a Mac silicon chip is in use, run this line instead
+
+`conda env create --platform osx-64 -f environment.yml`.
+
 Now there should be new python environment titled `mpathic_env`. The environment can be activated by:
 
 `conda activate mpathic_env`
